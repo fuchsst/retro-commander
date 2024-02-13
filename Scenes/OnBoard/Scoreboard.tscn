@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://6m5tvrm8clwv"]
+
+[ext_resource type="Script" path="res://Scenes/OnBoard/Scoreboard.gd" id="1_5d4bg"]
+[ext_resource type="Texture2D" uid="uid://bfvfeebvdd2no" path="res://Sprites/LeaderBoard.png" id="2_cebo2"]
+[ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="3_b3c0w"]
+
+[node name="Scoreboard" type="Node2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_5d4bg")
+
+[node name="Background" type="TextureButton" parent="."]
+texture_normal = ExtResource("2_cebo2")
+
+[node name="OverlayCanvas" type="CanvasLayer" parent="."]
+scale = Vector2(4, 4)
+transform = Transform2D(4, 0, 0, 4, 0, 0)
+
+[node name="Cursor" parent="OverlayCanvas" instance=ExtResource("3_b3c0w")]
+
+[connection signal="pressed" from="Background" to="." method="_on_background_pressed"]

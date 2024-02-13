@@ -1,0 +1,49 @@
+[gd_scene load_steps=10 format=3 uid="uid://b2n3jpy1sa6jy"]
+
+[ext_resource type="Texture2D" uid="uid://dwrqhibdenma7" path="res://Gamedata/pilotanm.vga/001/000.png" id="1_x4xuq"]
+[ext_resource type="Texture2D" uid="uid://dyevl2fs168x4" path="res://Gamedata/pilotanm.vga/001/001.png" id="2_tbosi"]
+[ext_resource type="Texture2D" uid="uid://bjbjhm3lrnhpa" path="res://Gamedata/pilotanm.vga/001/002.png" id="3_s2le0"]
+[ext_resource type="Texture2D" uid="uid://bcv12lyvc27ob" path="res://Gamedata/pilotanm.vga/001/003.png" id="4_0wwh5"]
+[ext_resource type="Texture2D" uid="uid://ct8lwx5h61djd" path="res://Gamedata/pilotanm.vga/001/004.png" id="5_i6wng"]
+[ext_resource type="Texture2D" uid="uid://ly46yd4c6a72" path="res://Gamedata/pilotanm.vga/001/005.png" id="6_systd"]
+[ext_resource type="Texture2D" uid="uid://bnsfnf7u51yqg" path="res://Gamedata/pilotanm.vga/001/006.png" id="7_v3ax2"]
+[ext_resource type="Texture2D" uid="uid://dqqcul6avk4m4" path="res://Gamedata/pilotanm.vga/001/007.png" id="8_qk0gc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbgks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x4xuq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tbosi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s2le0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0wwh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i6wng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_systd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v3ax2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qk0gc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Eject" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vbgks")
+frame = 7
+frame_progress = 0.422471

@@ -1,0 +1,88 @@
+[gd_scene load_steps=20 format=3 uid="uid://dvqmh1gasufc3"]
+
+[ext_resource type="Texture2D" uid="uid://bdfdqswb4yy0r" path="res://Gamedata/pilotanm.vga/003/000.png" id="1_hcnfs"]
+[ext_resource type="Texture2D" uid="uid://b6mwmk7qfd00s" path="res://Gamedata/pilotanm.vga/003/001.png" id="2_m7jlt"]
+[ext_resource type="Texture2D" uid="uid://cla75cgj4ack0" path="res://Gamedata/pilotanm.vga/003/002.png" id="3_q727m"]
+[ext_resource type="Texture2D" uid="uid://cgm4skmtq32wy" path="res://Gamedata/pilotanm.vga/003/003.png" id="4_88nt4"]
+[ext_resource type="Texture2D" uid="uid://cs63p2xaxg2p4" path="res://Gamedata/pilotanm.vga/003/004.png" id="5_13fxw"]
+[ext_resource type="Texture2D" uid="uid://wsk20yp5v4ds" path="res://Gamedata/pilotanm.vga/003/005.png" id="6_ma8l0"]
+[ext_resource type="Texture2D" uid="uid://wnhsp5hipphl" path="res://Gamedata/pilotanm.vga/003/006.png" id="7_w6y2q"]
+[ext_resource type="Texture2D" uid="uid://c5j8it0urdops" path="res://Gamedata/pilotanm.vga/003/007.png" id="8_77wvw"]
+[ext_resource type="Texture2D" uid="uid://ch3vjjp167si6" path="res://Gamedata/pilotanm.vga/003/008.png" id="9_fb5xq"]
+[ext_resource type="Texture2D" uid="uid://cw7p7ggy3hew" path="res://Gamedata/pilotanm.vga/003/009.png" id="10_ikj2h"]
+[ext_resource type="Texture2D" uid="uid://c1r3p1rwhd2gr" path="res://Gamedata/pilotanm.vga/003/010.png" id="11_i5gbi"]
+[ext_resource type="Texture2D" uid="uid://s2lurenayi5l" path="res://Gamedata/pilotanm.vga/003/011.png" id="12_c73lq"]
+[ext_resource type="Texture2D" uid="uid://bobkhgly7gf3x" path="res://Gamedata/pilotanm.vga/003/012.png" id="13_cek0d"]
+[ext_resource type="Texture2D" uid="uid://b3rus38ac0uam" path="res://Gamedata/pilotanm.vga/003/013.png" id="14_qy04q"]
+[ext_resource type="Texture2D" uid="uid://cx6xrtn28ta03" path="res://Gamedata/pilotanm.vga/003/014.png" id="15_jrdgj"]
+[ext_resource type="Texture2D" uid="uid://dip0tqeaj2ikx" path="res://Gamedata/pilotanm.vga/003/015.png" id="16_omtci"]
+[ext_resource type="Texture2D" uid="uid://bdkr2c265igdp" path="res://Gamedata/pilotanm.vga/003/016.png" id="17_5q3kd"]
+[ext_resource type="Texture2D" uid="uid://dt1maimskqbso" path="res://Gamedata/pilotanm.vga/003/017.png" id="18_duhww"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbgks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hcnfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m7jlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q727m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_88nt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_13fxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ma8l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w6y2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_77wvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fb5xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ikj2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i5gbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_c73lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cek0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qy04q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jrdgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_omtci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5q3kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_duhww")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="HandOnControlStick" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vbgks")
+frame_progress = 0.739054

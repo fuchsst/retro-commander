@@ -1,0 +1,69 @@
+[gd_scene load_steps=15 format=3 uid="uid://ks3u03dj8qwd"]
+
+[ext_resource type="Texture2D" uid="uid://bod5i2kgtm74" path="res://Gamedata/pilotanm.vga/002/000.png" id="1_3e3sd"]
+[ext_resource type="Texture2D" uid="uid://doilupwfx0gmy" path="res://Gamedata/pilotanm.vga/002/001.png" id="2_p0ouq"]
+[ext_resource type="Texture2D" uid="uid://bq61ddocot8st" path="res://Gamedata/pilotanm.vga/002/002.png" id="3_uh5gl"]
+[ext_resource type="Texture2D" uid="uid://dvpyyovgp1jqc" path="res://Gamedata/pilotanm.vga/002/003.png" id="4_rcffl"]
+[ext_resource type="Texture2D" uid="uid://54t4benak5j1" path="res://Gamedata/pilotanm.vga/002/004.png" id="5_7sm3c"]
+[ext_resource type="Texture2D" uid="uid://d0csw3e06v88n" path="res://Gamedata/pilotanm.vga/002/005.png" id="6_clbl3"]
+[ext_resource type="Texture2D" uid="uid://cvrydoftke05l" path="res://Gamedata/pilotanm.vga/002/006.png" id="7_pvy8i"]
+[ext_resource type="Texture2D" uid="uid://b5hqsud3dxnbn" path="res://Gamedata/pilotanm.vga/002/007.png" id="8_omrc0"]
+[ext_resource type="Texture2D" uid="uid://dnyyjxospqldp" path="res://Gamedata/pilotanm.vga/002/008.png" id="9_x7c6i"]
+[ext_resource type="Texture2D" uid="uid://c5u2kmqhlh5cr" path="res://Gamedata/pilotanm.vga/002/009.png" id="10_t0jbd"]
+[ext_resource type="Texture2D" uid="uid://b0pgc2hnlrosq" path="res://Gamedata/pilotanm.vga/002/010.png" id="11_8vhlh"]
+[ext_resource type="Texture2D" uid="uid://bnkdlydkcur60" path="res://Gamedata/pilotanm.vga/002/011.png" id="12_vslrq"]
+[ext_resource type="Texture2D" uid="uid://cdkdr3xt43hfk" path="res://Gamedata/pilotanm.vga/002/012.png" id="13_ddb52"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbgks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3e3sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_p0ouq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uh5gl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rcffl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7sm3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_clbl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pvy8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_omrc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x7c6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_t0jbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8vhlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vslrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ddb52")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FloatingEjectSeat" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_vbgks")
+frame_progress = 0.78508

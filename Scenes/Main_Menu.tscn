@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm1daripjif2p"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aopvj"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock004-ImageItem000.png-6d19d1f75bb222f390ce24789a0ba2d7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_27bs1"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock004-ImageItem001.png-93bb51195460ef49de4e2d52f34baa4d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b043o"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock004-ImageItem002.png-a8cf45e23f880fa8e067c5742b1a8ba4.ctex"
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_jxghw"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="ButtonStartVegaCampaign" type="Button" parent="."]
+offset_left = 355.0
+offset_top = 220.0
+offset_right = 1022.0
+offset_bottom = 334.0
+icon = SubResource("CompressedTexture2D_aopvj")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonContiniueCampaign" type="Button" parent="."]
+offset_left = 359.0
+offset_top = 349.0
+offset_right = 1026.0
+offset_bottom = 463.0
+icon = SubResource("CompressedTexture2D_27bs1")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonStartSecretMissions" type="Button" parent="."]
+offset_left = 358.0
+offset_top = 488.0
+offset_right = 1025.0
+offset_bottom = 602.0
+icon = SubResource("CompressedTexture2D_b043o")
+icon_alignment = 1
+expand_icon = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+stream = SubResource("VideoStreamTheora_jxghw")

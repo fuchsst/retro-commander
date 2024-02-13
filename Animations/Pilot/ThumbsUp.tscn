@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://da2das6txxgjf"]
+
+[ext_resource type="Texture2D" uid="uid://7aowqwttqwte" path="res://Gamedata/pilotanm.vga/004/001.png" id="1_dtqiv"]
+
+[node name="ThumbsUp" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dtqiv")
+centered = false

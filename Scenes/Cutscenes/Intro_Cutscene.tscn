@@ -1,0 +1,987 @@
+[gd_scene load_steps=126 format=3 uid="uid://dbpd238mkqnb1"]
+
+[ext_resource type="Texture2D" uid="uid://ceek3771sdl3m" path="res://Gamedata/title.vga/006/001.png" id="1_uddyn"]
+[ext_resource type="Texture2D" uid="uid://2rs7u3nbh7cd" path="res://Gamedata/title.vga/006/002.png" id="2_cufd2"]
+[ext_resource type="Texture2D" uid="uid://o6mmq1kla3vn" path="res://Gamedata/title.vga/006/003.png" id="3_y3pc6"]
+[ext_resource type="Texture2D" uid="uid://bjsx3hd4ympv2" path="res://Gamedata/title.vga/013/000.png" id="4_cv8in"]
+[ext_resource type="Texture2D" uid="uid://dvxp6mf8x48b2" path="res://Gamedata/title.vga/013/001.png" id="5_bkl0b"]
+[ext_resource type="Texture2D" uid="uid://b05n75jhpn78o" path="res://Gamedata/title.vga/013/002.png" id="6_bbfwi"]
+[ext_resource type="Texture2D" uid="uid://cqikasueo1yja" path="res://Gamedata/title.vga/013/003.png" id="7_vo5ps"]
+[ext_resource type="Texture2D" uid="uid://ux17qe72hqsb" path="res://Gamedata/title.vga/013/004.png" id="8_ap2yf"]
+[ext_resource type="Texture2D" uid="uid://cyb7wqmgxgk0d" path="res://Gamedata/title.vga/007/000.png" id="9_p8yiv"]
+[ext_resource type="Texture2D" uid="uid://bfxyfqo8kxo58" path="res://Gamedata/title.vga/007/001.png" id="10_nedhg"]
+[ext_resource type="Texture2D" uid="uid://chy2mlcgjh0b0" path="res://Gamedata/title.vga/007/002.png" id="11_4o203"]
+[ext_resource type="Texture2D" uid="uid://bahal8rs2rlor" path="res://Gamedata/title.vga/007/003.png" id="12_rwgyj"]
+[ext_resource type="Texture2D" uid="uid://dpsj02m7y5w1u" path="res://Gamedata/title.vga/007/004.png" id="13_3ddvr"]
+[ext_resource type="Texture2D" uid="uid://dhmn4q0rc5v7p" path="res://Gamedata/title.vga/007/005.png" id="14_fg2xl"]
+[ext_resource type="Texture2D" uid="uid://7v7a72736wtd" path="res://Gamedata/title.vga/007/006.png" id="15_ad6a3"]
+[ext_resource type="Texture2D" uid="uid://dx7sr7hykrnv5" path="res://Gamedata/title.vga/007/007.png" id="16_kfrf3"]
+[ext_resource type="Texture2D" uid="uid://vsecadsqyd55" path="res://Gamedata/title.vga/007/008.png" id="17_b33m3"]
+[ext_resource type="Texture2D" uid="uid://cw8fsaoyadp57" path="res://Gamedata/title.vga/007/009.png" id="18_ctuqr"]
+[ext_resource type="Texture2D" uid="uid://c05gsgyr4uwmh" path="res://Gamedata/title.vga/007/010.png" id="19_ccwx2"]
+[ext_resource type="Texture2D" uid="uid://rvff8hlv52jw" path="res://Gamedata/title.vga/007/011.png" id="20_rcywr"]
+[ext_resource type="Texture2D" uid="uid://cxo0uc86sa413" path="res://Gamedata/title.vga/007/012.png" id="21_npkqx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1bbi0"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock006-ImageItem000.png-23422be6437759124f91135e9bc209b7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bgtbl"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock003-ImageItem000.png-a6b248dc853a9359528252eb66e8941f.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wqc80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_cv8in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bkl0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bbfwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vo5ps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ap2yf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hc7re"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock014-ImageItem000.png-c956fb4c16cd60deb44dab4924cc70dd.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u8fe2"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock014-ImageItem001.png-57a7082d8a25cd3570d7563f58690fd0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mfux7"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock014-ImageItem002.png-07389f616624753de53f24483da8c78a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g1yp8"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock014-ImageItem003.png-420196d42555a8511f34c2900436dbed.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4naje"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock014-ImageItem004.png-bb9b9676177456564504e0417009d434.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xi2dn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_hc7re")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_u8fe2")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_mfux7")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_g1yp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_4naje")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hqi3d"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock015-ImageItem000.png-dd4a3117beedb7492b096b7ee97e1c1f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l3es2"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock015-ImageItem001.png-043c9348e1351aec28fa9e95b24519cb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5j3ur"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock015-ImageItem002.png-f9074326164d1efe4ce3e7a965fde44e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2x1cm"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock015-ImageItem003.png-20e23ae56c9a1ef794fe611e345bfd9f.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fposi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_hqi3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_l3es2")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5j3ur")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2x1cm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m4hd7"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem000.png-aff4e476392447baf5fbe46b0834b48b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j2twe"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem001.png-d01a8e4d89b6be53c4218424a2dd5961.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r6adm"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem002.png-e4a29da31ee05308afcafb4d881b9645.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j06gy"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem003.png-139e449468e8b30c3103ee9a8b869d80.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y78w3"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem004.png-70918873181fcfb4d067b7cf651fc997.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ix7g"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem005.png-275be8c5035b1b9c1263ef224b15af2c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2vtcd"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock010-ImageItem006.png-6f779bd3897dca955a7dfa9863d128c6.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h6sxd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_m4hd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_j2twe")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_r6adm")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_j06gy")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_y78w3")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2ix7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2vtcd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2848t"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock011-ImageItem000.png-7c31b27ca5e8b1a203f4b19a9eff7f8c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jenlv"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock011-ImageItem001.png-dbb793de633e07812efc4a172aef5978.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nieca"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock011-ImageItem002.png-19d37ddf67e91dd4f2bb0d376d5145f3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5uryc"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock011-ImageItem003.png-2582c4ec5bc544212dcee65aacf92f67.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y5rbp"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock011-ImageItem004.png-dd0e45b7fe0c47c3b5059811ad7e08ce.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a3i6v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2848t")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jenlv")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_nieca")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5uryc")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_y5rbp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bk7hw"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock012-ImageItem000.png-d2b64604241a5188d8697ee3cc0afbe1.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ed7fq"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock012-ImageItem001.png-c40ebfa1ad640b9121ef1fd2b02695f6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qjb4j"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock012-ImageItem002.png-480b9b70ba47ec4c72d32852926b5559.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q0heo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_bk7hw")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ed7fq")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_qjb4j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w1jvf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_p8yiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nedhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4o203")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rwgyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3ddvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_fg2xl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ad6a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_kfrf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_b33m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ctuqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ccwx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rcywr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_npkqx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h00i6"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem000.png-46868941e2de80bffcc61a7cf4f84e64.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_co0df"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem001.png-1202ec0568fcb7ec65dcad14a6d20c03.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_emnnc"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem002.png-3c4ff0243c43a2979de626c01b837c4c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eaxo6"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem003.png-ac74b77cc56f5d056f3933c3829bf3e8.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7qpee"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem004.png-88e4d2eb8d7ddc14187c111aff3271b2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1vbkn"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem005.png-c34b2b41848a6c18912457d6181aee6b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l7wac"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem006.png-38ad7847f1d67ac951540020bac46ce4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ux7ah"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem007.png-d7d90e9917eb887f9624a6767f3bef78.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dfedn"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock008-ImageItem008.png-a0b90aaa23da932ef3a0c3844862f7a1.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sd2sp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_h00i6")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_co0df")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_emnnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_eaxo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_7qpee")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_1vbkn")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_l7wac")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ux7ah")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_dfedn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j46le"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock009-ImageItem000.png-258d36c6c9ccd5940dd13fee71827b8e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hb1g2"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock009-ImageItem001.png-21178681496e6b759f2ff4cacf4cace6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_um4fd"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock009-ImageItem002.png-d6446f649461fed58bef9761d03534eb.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7fo33"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_j46le")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_hb1g2")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_um4fd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y66yn"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem000.png-5f3151b740f9757fea0f70bdbfa3cb2b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s4wos"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem001.png-eab0e26160a67fb11acca2ed34803e28.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_on5vi"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem002.png-e6aeb0514d4bcf929ca43187db1ff2f0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oex4l"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem003.png-9e7a5ecc9ab3b55b0b0407f8fff13b09.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tgkpg"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem004.png-24cbb4d8cba0fd2a2711731527e94a1f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_22kh1"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem005.png-4ef6eddc055049f6b0e1ed24ccc71f6c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_las8m"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem006.png-4c3f95270e341ad83625d8fb3a32f536.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_palof"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem007.png-cedf02391c50336fd4614fa5ece2177a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8tt5w"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem008.png-2d8ed453b772ab67d03ec7c84b07d95d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ocjw"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem009.png-f894d5aa9be6c8f86d6b54eb6eae69d9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0ol6j"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem010.png-133847619ddcfe38cc45bfb7ab646789.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vnbb7"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem011.png-066546ccfc98e65e935f5abebca7f409.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fdqhi"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem012.png-48186a8fa51654fe89a86fa197dd74e3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ks84v"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem013.png-8c29ab8aaeae92ffaeeba429fb24d774.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pelwg"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem014.png-c36bacc643c6d1d1aae809cfcc2ac051.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dyhbx"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem015.png-ee8623177be937eb746a7994b220d651.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5lh1h"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem016.png-c0be84bfe25d5a29a20d9a1117273e8c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_61w6t"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem017.png-fcf02ae79b1d44f39a73cbd0f70f0213.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qw8p4"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem018.png-a77890100c0395c84740f95ab5168a90.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rhu3m"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem019.png-201294cee49657969431fef32bc7001f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ycpmi"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock016-ImageItem020.png-f3da6f0700c2992cafa43b96d1b4c0ac.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b8lys"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_y66yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_s4wos")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_on5vi")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_oex4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_tgkpg")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_22kh1")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_las8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_palof")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_8tt5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_7ocjw")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_0ol6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_vnbb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_fdqhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ks84v")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_pelwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_dyhbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5lh1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_61w6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_qw8p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_rhu3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ycpmi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dew5j"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem000.png-eac4e8292296125c4529d702e9824c4e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jq1j8"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem001.png-40833f5991015a91ef292c0169ae64f0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q2tp3"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem002.png-7d758be7a641e3399f09d2188a23f76b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hg3sv"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem003.png-b882994a68e5a5da5a1629dc56bf85e1.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r10uu"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem004.png-f3994ebf11f58cfde00268df5b2d8a3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j3dp5"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem005.png-d57077d529d78496a9a62dc88e933c03.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_61ykt"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem006.png-6f0fc206b45d7e9c38ea3a97a4ecd7fe.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_38ukk"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem007.png-2c11729c32debd666491efb699950f96.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7pobb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_dew5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jq1j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_q2tp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_hg3sv")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_r10uu")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_j3dp5")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_61ykt")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_38ukk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ig562"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem008.png-e3a48488486fbcec952af11b25ace717.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ho01r"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem009.png-0dda0eb5478341cd430f7fe3bcfb1ee5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u8my5"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem010.png-1fe490a6ef42c6ab30b73111b1558bfb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vkat5"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem011.png-353f9c2e0297c6d3272bf8998507330d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fj3lq"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem012.png-83f19d814a3455d6188c09985b3f5a81.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_slnph"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem013.png-b7d8d325a5eea4e918a58cb5b88f028d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p2ifs"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem014.png-925847ec72807bddc34ec131f3b05724.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7yelh"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem015.png-7ab5a2c59cc8d141c6ed7e89db03e55e.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fqnmg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ig562")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ho01r")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_u8my5")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_vkat5")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_fj3lq")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_slnph")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_p2ifs")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_7yelh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jg6gx"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem016.png-6d846abb38fd0fa37443ba0576dac3aa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xlorb"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem017.png-2adcd49abe199968c01b96183fc4c9af.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2dyw4"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem018.png-0fa136507a914060245d406d566fbed2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dbn7p"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem019.png-1957f54b4f141846568d0c0061b942eb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ke3d2"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem020.png-8c86919b7c1d28aaa82a2a31ebe10d03.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_piqd0"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem021.png-bf04c881759d5bc3651927a4003b2c2c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_trwu3"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem022.png-a03aeea3b5fa7be35f38efbd2e02daf3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_axh1e"]
+load_path = "res://.godot/imported/TITLE.VGA-ImageBlock017-ImageItem023.png-bc5ca934ae3dc0b4d708d8faa0004909.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2qr1o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_jg6gx")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_xlorb")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_2dyw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_dbn7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_ke3d2")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_piqd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_trwu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_axh1e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_j1vl1"]
+resource_name = "Intro"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/OriginFxLogo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 13.5, 14.2, 15.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(150, 30), Vector2(150, 30), Vector2(130, 6), Vector2(16, 21)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../ColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.3, 3.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Planet:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(13.5, 15.3),
+"transitions": PackedFloat32Array(1.56917, 1),
+"update": 0,
+"values": [Vector2(76, 0), Vector2(76, 128)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/OriginFxLogo:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(13.5, 14.2, 15.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(0.25, 0.25), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6cs4n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/OriginFxLogo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(16.75, -120.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../ColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Planet:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(76, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/OriginFxLogo:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sw4pp"]
+_data = {
+"Intro": SubResource("Animation_j1vl1"),
+"RESET": SubResource("Animation_6cs4n")
+}
+
+[sub_resource type="GDScript" id="GDScript_5xc13"]
+script/source = "extends AnimationPlayer
+
+
+func _on_animation_finished(anim_name):
+	get_tree().change_scene_to_file(\"res://Scenes/Main_Menu.tscn\")
+"
+
+[sub_resource type="Gradient" id="Gradient_ydgbu"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_f1fgw"]
+gradient = SubResource("Gradient_ydgbu")
+width = 320
+height = 36
+
+[sub_resource type="Gradient" id="Gradient_ul86w"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_p2e1l"]
+gradient = SubResource("Gradient_ul86w")
+width = 320
+height = 36
+
+[node name="TitleAnimation" type="Node2D"]
+position = Vector2(4, 0)
+
+[node name="Canvas" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+centered = false
+
+[node name="MovieStrip" type="Sprite2D" parent="Canvas"]
+position = Vector2(0, 36)
+
+[node name="Background" type="Sprite2D" parent="Canvas/MovieStrip"]
+texture = SubResource("CompressedTexture2D_1bbi0")
+centered = false
+
+[node name="OriginFxLogo" type="Sprite2D" parent="Canvas/MovieStrip/Background"]
+position = Vector2(16.75, -120.25)
+
+[node name="LogoLeft" type="Sprite2D" parent="Canvas/MovieStrip/Background/OriginFxLogo"]
+position = Vector2(-52.25, -24.5)
+scale = Vector2(1.09766, 1)
+texture = ExtResource("1_uddyn")
+centered = false
+
+[node name="LogoMiddle" type="Sprite2D" parent="Canvas/MovieStrip/Background/OriginFxLogo"]
+position = Vector2(78.5, -28.75)
+texture = ExtResource("2_cufd2")
+centered = false
+
+[node name="LogoRight" type="Sprite2D" parent="Canvas/MovieStrip/Background/OriginFxLogo"]
+position = Vector2(253, -56.75)
+texture = ExtResource("3_y3pc6")
+centered = false
+
+[node name="Planet" type="Sprite2D" parent="Canvas/MovieStrip/Background"]
+z_index = 5
+position = Vector2(76, 0)
+texture = SubResource("CompressedTexture2D_bgtbl")
+centered = false
+
+[node name="Orchestra" type="Node2D" parent="Canvas/MovieStrip/Background"]
+z_index = 10
+position = Vector2(0, 33)
+
+[node name="FrontRow" type="Node2D" parent="Canvas/MovieStrip/Background/Orchestra"]
+z_index = 2
+position = Vector2(0, 72)
+
+[node name="Orchestra31" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/FrontRow"]
+position = Vector2(59, 36)
+sprite_frames = SubResource("SpriteFrames_wqc80")
+frame = 3
+frame_progress = 0.23439
+offset = Vector2(0, -24)
+metadata/ImageBlock = 13
+
+[node name="Orchestra32" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/FrontRow"]
+position = Vector2(116, 1)
+sprite_frames = SubResource("SpriteFrames_xi2dn")
+frame = 1
+frame_progress = 0.975248
+centered = false
+metadata/ImageBlock = 14
+
+[node name="Orchestra33" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/FrontRow"]
+position = Vector2(245, 0)
+sprite_frames = SubResource("SpriteFrames_fposi")
+frame_progress = 0.537094
+centered = false
+
+[node name="MiddleRow" type="Node2D" parent="Canvas/MovieStrip/Background/Orchestra"]
+z_index = 1
+position = Vector2(0, 55)
+
+[node name="Orchestra21" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/MiddleRow"]
+sprite_frames = SubResource("SpriteFrames_h6sxd")
+frame = 5
+frame_progress = 0.0725853
+centered = false
+metadata/ImageBlock = 10
+
+[node name="Orchestra22" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/MiddleRow"]
+position = Vector2(120, 6)
+sprite_frames = SubResource("SpriteFrames_a3i6v")
+centered = false
+metadata/ImageBlock = 11
+
+[node name="Orchestra23" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/MiddleRow"]
+position = Vector2(249, 11)
+sprite_frames = SubResource("SpriteFrames_q0heo")
+frame = 2
+frame_progress = 0.792204
+centered = false
+metadata/ImageBlock = 12
+
+[node name="BackRow" type="Node2D" parent="Canvas/MovieStrip/Background/Orchestra"]
+position = Vector2(0, 38)
+
+[node name="Orchestra11" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/BackRow"]
+position = Vector2(0, 5)
+sprite_frames = SubResource("SpriteFrames_w1jvf")
+frame_progress = 0.544943
+centered = false
+metadata/ImageBlock = 7
+
+[node name="Orchestra12" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/BackRow"]
+position = Vector2(120, 0)
+sprite_frames = SubResource("SpriteFrames_sd2sp")
+frame_progress = 0.0127889
+centered = false
+metadata/ImageBlock = 8
+
+[node name="Orchestra13" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra/BackRow"]
+position = Vector2(249, 6)
+sprite_frames = SubResource("SpriteFrames_7fo33")
+frame = 2
+frame_progress = 0.210713
+centered = false
+metadata/ImageBlock = 9
+
+[node name="Maestro" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Orchestra"]
+z_index = 4
+position = Vector2(145.25, 38)
+sprite_frames = SubResource("SpriteFrames_b8lys")
+frame = 3
+frame_progress = 0.779674
+
+[node name="AnimationTree" type="AnimationTree" parent="Canvas/MovieStrip/Background/Orchestra"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Canvas/MovieStrip/Background/Orchestra"]
+
+[node name="Fireworks" type="Sprite2D" parent="Canvas/MovieStrip/Background"]
+position = Vector2(-42.5, 0)
+
+[node name="FireworksRed" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Fireworks"]
+position = Vector2(-35.75, 38.75)
+sprite_frames = SubResource("SpriteFrames_7pobb")
+frame = 2
+frame_progress = 0.58465
+
+[node name="FireworksGreen" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Fireworks"]
+position = Vector2(0, -20)
+sprite_frames = SubResource("SpriteFrames_fqnmg")
+frame = 3
+frame_progress = 0.711338
+
+[node name="FireworksBlue" type="AnimatedSprite2D" parent="Canvas/MovieStrip/Background/Fireworks"]
+sprite_frames = SubResource("SpriteFrames_2qr1o")
+frame = 3
+frame_progress = 0.158247
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Canvas/MovieStrip"]
+libraries = {
+"": SubResource("AnimationLibrary_sw4pp")
+}
+script = SubResource("GDScript_5xc13")
+
+[node name="TopStrip" type="Sprite2D" parent="Canvas"]
+z_index = 100
+texture = SubResource("GradientTexture2D_f1fgw")
+centered = false
+
+[node name="BottomStrip" type="Sprite2D" parent="Canvas"]
+z_index = 100
+position = Vector2(0, 164)
+texture = SubResource("GradientTexture2D_p2e1l")
+centered = false
+
+[node name="ColorRect" type="ColorRect" parent="Canvas"]
+z_index = 100
+offset_left = 377.5
+offset_top = 37.0
+offset_right = 697.5
+offset_bottom = 165.0
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+anchor_mode = 0
+
+[connection signal="animation_finished" from="Canvas/MovieStrip/AnimationPlayer" to="Canvas/MovieStrip/AnimationPlayer" method="_on_animation_finished"]

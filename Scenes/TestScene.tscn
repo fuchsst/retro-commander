@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbwk28klfregn"]
+
+[ext_resource type="PackedScene" uid="uid://dr6ib2wpohw78" path="res://Scripts/GameState.tscn" id="1_c5qvd"]
+
+[sub_resource type="GDScript" id="GDScript_kgdgk"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_game_main_savegame_file_loaded(saves: Array[GameState]):
+	for i in range(saves.size()):
+		print(i)
+"
+
+[node name="TestScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_kgdgk")
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_right = 1273.0
+offset_bottom = 799.0
+item_count = 3
+max_columns = 2
+item_0/text = "Hello"
+item_1/text = "World"
+item_2/text = "World"
+
+[node name="GameState" parent="." node_paths=PackedStringArray("pilots") instance=ExtResource("1_c5qvd")]
+pilots = [null]
+
+[connection signal="savegame_file_loaded" from="GameState" to="." method="_on_game_main_savegame_file_loaded"]

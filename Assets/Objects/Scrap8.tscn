@@ -1,0 +1,82 @@
+[gd_scene load_steps=18 format=3 uid="uid://drcgkg0v2hvll"]
+
+[ext_resource type="Texture2D" uid="uid://y4rgfccg8uq6" path="res://Gamedata/objects.vga/005/013.png" id="14_nbg76"]
+[ext_resource type="Texture2D" uid="uid://da2i74td4ncmu" path="res://Gamedata/objects.vga/005/014.png" id="15_g87k6"]
+[ext_resource type="Texture2D" uid="uid://c7nrkp0stvhum" path="res://Gamedata/objects.vga/005/015.png" id="16_w3ao5"]
+[ext_resource type="Texture2D" uid="uid://bh5xhp4fqjaew" path="res://Gamedata/objects.vga/005/016.png" id="17_5d24t"]
+[ext_resource type="Texture2D" uid="uid://dpxy8pbam4u2t" path="res://Gamedata/objects.vga/005/017.png" id="18_52su7"]
+[ext_resource type="Texture2D" uid="uid://5t6vwieors4" path="res://Gamedata/objects.vga/005/018.png" id="19_miwpy"]
+[ext_resource type="Texture2D" uid="uid://c7u7y5oln3vt7" path="res://Gamedata/objects.vga/005/019.png" id="20_2d7un"]
+[ext_resource type="Texture2D" uid="uid://n6oelp4ea785" path="res://Gamedata/objects.vga/005/020.png" id="21_166gt"]
+[ext_resource type="Texture2D" uid="uid://bwnnklm7lartj" path="res://Gamedata/objects.vga/005/021.png" id="22_a633l"]
+[ext_resource type="Texture2D" uid="uid://cthydhepuyq5n" path="res://Gamedata/objects.vga/005/022.png" id="23_dgm3e"]
+[ext_resource type="Texture2D" uid="uid://6wyvbgvyeqck" path="res://Gamedata/objects.vga/005/023.png" id="24_w3i04"]
+[ext_resource type="Texture2D" uid="uid://orqo6g7cj2w6" path="res://Gamedata/objects.vga/005/024.png" id="25_r25co"]
+[ext_resource type="Texture2D" uid="uid://wmgac8pf8so4" path="res://Gamedata/objects.vga/005/025.png" id="26_p1gt1"]
+[ext_resource type="Texture2D" uid="uid://bc6btnun60c4v" path="res://Gamedata/objects.vga/005/026.png" id="27_n1yyo"]
+[ext_resource type="Texture2D" uid="uid://dtq2g7or1p8d0" path="res://Gamedata/objects.vga/005/027.png" id="28_7hbd7"]
+[ext_resource type="Texture2D" uid="uid://dc53uwaw783a5" path="res://Gamedata/objects.vga/005/028.png" id="29_s2uu8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o6est"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_nbg76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_g87k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_w3ao5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_5d24t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_52su7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_miwpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2d7un")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_166gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_a633l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_dgm3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_w3i04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_r25co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_p1gt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_n1yyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7hbd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_s2uu8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Scrap8" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_o6est")
+frame = 15
+frame_progress = 0.703574

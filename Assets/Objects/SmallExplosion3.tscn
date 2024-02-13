@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bf0wejm55sujt"]
+
+[ext_resource type="Texture2D" uid="uid://c78dofl5w7tcq" path="res://Gamedata/objects.vga/011/000.png" id="1_7mdbu"]
+[ext_resource type="Texture2D" uid="uid://bls6k18yx8umg" path="res://Gamedata/objects.vga/011/001.png" id="2_065h8"]
+[ext_resource type="Texture2D" uid="uid://drwsrqb4rxec3" path="res://Gamedata/objects.vga/011/002.png" id="3_crpb4"]
+[ext_resource type="Texture2D" uid="uid://cmv8f2fcnxgbm" path="res://Gamedata/objects.vga/011/003.png" id="4_tgkfu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o6est"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7mdbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_065h8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_crpb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tgkfu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SmallExplosion3" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_o6est")
+frame_progress = 0.705679

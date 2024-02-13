@@ -1,0 +1,642 @@
+[gd_scene load_steps=103 format=3 uid="uid://ehnv0r8gyjty"]
+
+[ext_resource type="Script" path="res://Scenes/OnBoard/Bar.gd" id="1_d6lfd"]
+[ext_resource type="Texture2D" uid="uid://bniaenbl8oams" path="res://Gamedata/recroom.vga/000/000.png" id="1_q1mcf"]
+[ext_resource type="Texture2D" uid="uid://dytd578barvs" path="res://Gamedata/title.vga/006/000.png" id="1_v0boc"]
+[ext_resource type="Texture2D" uid="uid://ctxaipxp4oddr" path="res://Gamedata/recroom.vga/011/000.png" id="2_g7jky"]
+[ext_resource type="Texture2D" uid="uid://ccjeroikj6i1o" path="res://Gamedata/recroom.vga/011/001.png" id="3_7u570"]
+[ext_resource type="Texture2D" uid="uid://b41himgb870dy" path="res://Gamedata/recroom.vga/011/002.png" id="4_pynbw"]
+[ext_resource type="Texture2D" uid="uid://nbr107cxs78g" path="res://Gamedata/recroom.vga/011/003.png" id="5_bryuu"]
+[ext_resource type="Texture2D" uid="uid://bvrn013isyajl" path="res://Gamedata/recroom.vga/011/004.png" id="6_2vifj"]
+[ext_resource type="Texture2D" uid="uid://b7hwt2w3fcb03" path="res://Gamedata/recroom.vga/011/005.png" id="7_gf6pm"]
+[ext_resource type="Texture2D" uid="uid://mmosixblappy" path="res://Gamedata/recroom.vga/011/006.png" id="8_g7621"]
+[ext_resource type="Texture2D" uid="uid://dg7euqrm0s5ui" path="res://Gamedata/recroom.vga/011/007.png" id="9_lrei4"]
+[ext_resource type="Texture2D" uid="uid://ch2f1gjvb6pvw" path="res://Gamedata/recroom.vga/011/008.png" id="10_ucktl"]
+[ext_resource type="Texture2D" uid="uid://dvi1ba5cj6vsw" path="res://Gamedata/recroom.vga/011/009.png" id="11_bgn8u"]
+[ext_resource type="Texture2D" uid="uid://wd24tdffq7p7" path="res://Gamedata/recroom.vga/011/010.png" id="12_v7wro"]
+[ext_resource type="Texture2D" uid="uid://btixpiscyxqe5" path="res://Gamedata/recroom.vga/011/011.png" id="13_k541e"]
+[ext_resource type="Texture2D" uid="uid://dtuq4rg6bj8pi" path="res://Gamedata/recroom.vga/011/012.png" id="14_82a6p"]
+[ext_resource type="Texture2D" uid="uid://crv0qex4swu6p" path="res://Gamedata/recroom.vga/011/013.png" id="15_eqrx6"]
+[ext_resource type="Texture2D" uid="uid://d3onjbvpn4o0" path="res://Gamedata/recroom.vga/011/014.png" id="16_gkbi6"]
+[ext_resource type="Texture2D" uid="uid://yjbqfihvcjwp" path="res://Gamedata/recroom.vga/011/015.png" id="17_2h18h"]
+[ext_resource type="Texture2D" uid="uid://b02chmm3xfjxy" path="res://Gamedata/recroom.vga/011/016.png" id="18_g4es5"]
+[ext_resource type="Texture2D" uid="uid://kv7nbruhrbsx" path="res://Gamedata/recroom.vga/011/017.png" id="19_fgurf"]
+[ext_resource type="Texture2D" uid="uid://kgv440ydnw6x" path="res://Gamedata/recroom.vga/011/018.png" id="20_fq8oy"]
+[ext_resource type="Texture2D" uid="uid://bvd6vg2xig4j4" path="res://Gamedata/recroom.vga/011/019.png" id="21_7rvfi"]
+[ext_resource type="Texture2D" uid="uid://b3wvu78xewcvc" path="res://Gamedata/recroom.vga/011/020.png" id="22_s5cje"]
+[ext_resource type="Texture2D" uid="uid://bganf5mkiumps" path="res://Gamedata/recroom.vga/011/021.png" id="23_gefun"]
+[ext_resource type="Texture2D" uid="uid://4mdqi0nla8i8" path="res://Gamedata/recroom.vga/011/022.png" id="24_kibnu"]
+[ext_resource type="Texture2D" uid="uid://b3e3rubho5rgy" path="res://Gamedata/recroom.vga/011/023.png" id="25_216w6"]
+[ext_resource type="Texture2D" uid="uid://pcke66u7678f" path="res://Gamedata/recroom.vga/011/024.png" id="26_lpf43"]
+[ext_resource type="Texture2D" uid="uid://d3dhyqmnvmk0d" path="res://Gamedata/recroom.vga/011/025.png" id="27_sgvj5"]
+[ext_resource type="Texture2D" uid="uid://cqmsg58dhj0ms" path="res://Gamedata/recroom.vga/011/026.png" id="28_4r5my"]
+[ext_resource type="Texture2D" uid="uid://pxj6m6qjwlqr" path="res://Gamedata/recroom.vga/011/027.png" id="29_t0ux3"]
+[ext_resource type="Texture2D" uid="uid://csldin8q6ayc0" path="res://Gamedata/recroom.vga/011/028.png" id="30_k07ak"]
+[ext_resource type="Texture2D" uid="uid://1xavk7mhnc10" path="res://Gamedata/recroom.vga/011/029.png" id="31_dsybo"]
+[ext_resource type="Texture2D" uid="uid://chea21jxke70a" path="res://Gamedata/recroom.vga/011/030.png" id="32_ar8ji"]
+[ext_resource type="Texture2D" uid="uid://b5thp5a62b032" path="res://Gamedata/recroom.vga/011/031.png" id="33_y2xdt"]
+[ext_resource type="Texture2D" uid="uid://bvx4nouxbaqyx" path="res://Gamedata/recroom.vga/011/032.png" id="34_0564o"]
+[ext_resource type="Texture2D" uid="uid://chv8ekggkwk4j" path="res://Gamedata/recroom.vga/011/033.png" id="35_e5vcg"]
+[ext_resource type="Texture2D" uid="uid://bybs0y4xrhwti" path="res://Gamedata/recroom.vga/011/034.png" id="36_hlk3p"]
+[ext_resource type="Texture2D" uid="uid://brwbxpjoeon03" path="res://Gamedata/recroom.vga/011/035.png" id="37_fi3wk"]
+[ext_resource type="Texture2D" uid="uid://dwgkpio82486w" path="res://Gamedata/recroom.vga/011/036.png" id="38_oksgt"]
+[ext_resource type="Texture2D" uid="uid://dr1uxmfnwdk7a" path="res://Gamedata/recroom.vga/011/037.png" id="39_5l3k7"]
+[ext_resource type="Texture2D" uid="uid://jy7il4df0vjh" path="res://Gamedata/recroom.vga/011/038.png" id="40_hd82i"]
+[ext_resource type="Texture2D" uid="uid://efvl2bragkop" path="res://Gamedata/recroom.vga/011/039.png" id="41_7chrt"]
+[ext_resource type="Texture2D" uid="uid://drkrcru1lly06" path="res://Gamedata/recroom.vga/011/040.png" id="42_wrgku"]
+[ext_resource type="Texture2D" uid="uid://cksn58ly1yy1d" path="res://Gamedata/recroom.vga/003/000.png" id="43_qam88"]
+[ext_resource type="Texture2D" uid="uid://b34g4hrfc2cw7" path="res://Gamedata/recroom.vga/003/001.png" id="44_ca8hu"]
+[ext_resource type="Texture2D" uid="uid://cencnx20e134b" path="res://Gamedata/recroom.vga/003/002.png" id="45_g0hua"]
+[ext_resource type="Texture2D" uid="uid://dw3tq10ccsx2m" path="res://Gamedata/recroom.vga/003/003.png" id="46_qk2tc"]
+[ext_resource type="Texture2D" uid="uid://cnq38mci0omnp" path="res://Gamedata/recroom.vga/003/004.png" id="47_77qf6"]
+[ext_resource type="Texture2D" uid="uid://dkox7b4i6rnkc" path="res://Gamedata/recroom.vga/003/005.png" id="48_mv3ac"]
+[ext_resource type="Texture2D" uid="uid://cdly12x8tqpml" path="res://Gamedata/recroom.vga/006/000.png" id="49_wgmmp"]
+[ext_resource type="Texture2D" uid="uid://c653miiu0l7aj" path="res://Gamedata/recroom.vga/006/001.png" id="50_ko4rl"]
+[ext_resource type="Texture2D" uid="uid://b8whaono1q8be" path="res://Gamedata/recroom.vga/006/002.png" id="51_qke1l"]
+[ext_resource type="Texture2D" uid="uid://bp55qbyi3i3bh" path="res://Gamedata/recroom.vga/006/003.png" id="52_phvb6"]
+[ext_resource type="Texture2D" uid="uid://dqmfyu1by3bk8" path="res://Gamedata/recroom.vga/006/004.png" id="53_etdcl"]
+[ext_resource type="Texture2D" uid="uid://bixb5wbp3ncgh" path="res://Gamedata/recroom.vga/006/005.png" id="54_mybfp"]
+[ext_resource type="Texture2D" uid="uid://bdswqc2mq4l2k" path="res://Gamedata/recroom.vga/008/000.png" id="55_pwid3"]
+[ext_resource type="Texture2D" uid="uid://b7ff4y8rmnbp6" path="res://Gamedata/recroom.vga/008/001.png" id="56_q4spd"]
+[ext_resource type="Texture2D" uid="uid://dw41jcm0ltwe0" path="res://Gamedata/recroom.vga/008/002.png" id="57_f2lkj"]
+[ext_resource type="Texture2D" uid="uid://drs1sa2stp8dr" path="res://Gamedata/recroom.vga/008/003.png" id="58_mftw4"]
+[ext_resource type="Texture2D" uid="uid://boyn8kc8vxidp" path="res://Gamedata/recroom.vga/008/004.png" id="59_yvdue"]
+[ext_resource type="Texture2D" uid="uid://vhgav22x81oh" path="res://Gamedata/recroom.vga/008/005.png" id="60_bhquq"]
+[ext_resource type="Texture2D" uid="uid://da0ly60loapvd" path="res://Gamedata/recroom.vga/009/000.png" id="61_4dwa6"]
+[ext_resource type="Texture2D" uid="uid://bugbsi8ig7gaf" path="res://Gamedata/recroom.vga/009/001.png" id="62_ewc42"]
+[ext_resource type="Texture2D" uid="uid://dj4qfqq3qb6nd" path="res://Gamedata/recroom.vga/009/002.png" id="63_h5xhh"]
+[ext_resource type="Texture2D" uid="uid://darw3ow0rbrvu" path="res://Gamedata/recroom.vga/009/003.png" id="64_cij31"]
+[ext_resource type="Texture2D" uid="uid://dulmd7fm8gtx5" path="res://Gamedata/recroom.vga/009/004.png" id="65_5v5y7"]
+[ext_resource type="Texture2D" uid="uid://dfoi2c62hugwd" path="res://Gamedata/recroom.vga/009/005.png" id="66_65yqy"]
+[ext_resource type="Texture2D" uid="uid://c7kwrj63i4wp6" path="res://Gamedata/recroom.vga/004/000.png" id="67_8h0nn"]
+[ext_resource type="Texture2D" uid="uid://b5dx2hvkphwtp" path="res://Gamedata/recroom.vga/004/001.png" id="68_2xpkp"]
+[ext_resource type="Texture2D" uid="uid://dttxyqtwjqpuv" path="res://Gamedata/recroom.vga/004/002.png" id="69_62m7e"]
+[ext_resource type="Texture2D" uid="uid://c6nvoyq65map3" path="res://Gamedata/recroom.vga/004/003.png" id="70_6gd8s"]
+[ext_resource type="Texture2D" uid="uid://7kx5yvf8pc61" path="res://Gamedata/recroom.vga/004/004.png" id="71_hdiqj"]
+[ext_resource type="Texture2D" uid="uid://crtiepiw8xtwr" path="res://Gamedata/recroom.vga/004/005.png" id="72_uw0fi"]
+[ext_resource type="Texture2D" uid="uid://dhgtuqtm44xwn" path="res://Gamedata/recroom.vga/005/000.png" id="73_bgjfi"]
+[ext_resource type="Texture2D" uid="uid://xiujew6inrfa" path="res://Gamedata/recroom.vga/005/001.png" id="74_ciuto"]
+[ext_resource type="Texture2D" uid="uid://do4yu30ftafmq" path="res://Gamedata/recroom.vga/005/002.png" id="75_s3ofj"]
+[ext_resource type="Texture2D" uid="uid://cb20k2hqr2mp7" path="res://Gamedata/recroom.vga/005/003.png" id="76_00340"]
+[ext_resource type="Texture2D" uid="uid://db0uvoed74a8o" path="res://Gamedata/recroom.vga/005/004.png" id="77_tihjt"]
+[ext_resource type="Texture2D" uid="uid://dpbppst03j6sx" path="res://Gamedata/recroom.vga/005/005.png" id="78_t6j02"]
+[ext_resource type="Texture2D" uid="uid://b1o32xf7vpxop" path="res://Gamedata/recroom.vga/007/000.png" id="79_ktjnf"]
+[ext_resource type="Texture2D" uid="uid://qpoavppmkqpk" path="res://Gamedata/recroom.vga/007/001.png" id="80_kkuq6"]
+[ext_resource type="Texture2D" uid="uid://b2giq04vloo5n" path="res://Gamedata/recroom.vga/007/002.png" id="81_dhcru"]
+[ext_resource type="Texture2D" uid="uid://cdf3xq45kox0q" path="res://Gamedata/recroom.vga/007/003.png" id="82_b2doa"]
+[ext_resource type="Texture2D" uid="uid://ba55uj6d4lria" path="res://Gamedata/recroom.vga/007/004.png" id="83_j28ig"]
+[ext_resource type="Texture2D" uid="uid://bw1si5sb0ms1c" path="res://Gamedata/recroom.vga/007/005.png" id="84_k65b2"]
+[ext_resource type="Texture2D" uid="uid://dqwje10kndtyj" path="res://Gamedata/recroom.vga/010/000.png" id="85_vyak0"]
+[ext_resource type="Texture2D" uid="uid://c6ohkaoxklrd0" path="res://Gamedata/recroom.vga/010/001.png" id="86_7uquc"]
+[ext_resource type="Texture2D" uid="uid://c5d407epfnq4p" path="res://Gamedata/recroom.vga/010/002.png" id="87_wgnin"]
+[ext_resource type="Texture2D" uid="uid://btk2ua66tma2s" path="res://Gamedata/recroom.vga/010/003.png" id="88_ylgs6"]
+[ext_resource type="Texture2D" uid="uid://cjyggdxpo31qn" path="res://Gamedata/recroom.vga/010/004.png" id="89_guxol"]
+[ext_resource type="Texture2D" uid="uid://cu14tsogpxcyr" path="res://Gamedata/recroom.vga/010/005.png" id="90_0wer0"]
+[ext_resource type="Texture2D" uid="uid://dirdhqtinmyg8" path="res://Gamedata/recroom.vga/000/001.png" id="91_am7l5"]
+[ext_resource type="Texture2D" uid="uid://b1gtqpd2ifovn" path="res://Gamedata/recroom.vga/000/002.png" id="92_wgrx3"]
+[ext_resource type="Texture2D" uid="uid://qnbqtfmi8i8t" path="res://Gamedata/recroom.vga/000/003.png" id="93_x7fjo"]
+[ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="94_jixm7"]
+[ext_resource type="PackedScene" uid="uid://cae73w4fy8nvl" path="res://Assets/TooltipText.tscn" id="95_sa2r1"]
+
+[sub_resource type="Animation" id="Animation_r7oy7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Space/Space1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Space/Space2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(320, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kslnu"]
+resource_name = "default"
+length = 15.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Space/Space1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-320, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Space/Space2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.89366, 15),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(320, 16), Vector2(279.602, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_30xru"]
+_data = {
+"RESET": SubResource("Animation_r7oy7"),
+"default": SubResource("Animation_kslnu")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n1igi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g7jky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7u570")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pynbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bryuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2vifj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gf6pm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g7621")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lrei4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ucktl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bgn8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_v7wro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_k541e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_82a6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_eqrx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gkbi6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2h18h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_g4es5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_fgurf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fq8oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7rvfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_s5cje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_gefun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_kibnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_216w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_lpf43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sgvj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_4r5my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_t0ux3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_k07ak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dsybo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ar8ji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_y2xdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0564o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_e5vcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_hlk3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_fi3wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_oksgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_5l3k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_hd82i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_7chrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_wrgku")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_6i7q7"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_pressed():
+	get_tree().change_scene_to_file(\"res://Scenes/OnBoard/Baracks.tscn\")
+
+
+func _on_view_pilot_stats_button_pressed():
+	get_tree().change_scene_to_file(\"res://Scenes/OnBoard/Scoreboard.tscn\")
+"
+
+[node name="BarScene" type="CanvasLayer"]
+script = ExtResource("1_d6lfd")
+
+[node name="BackgroundCanvas" type="CanvasLayer" parent="."]
+scale = Vector2(4, 4)
+transform = Transform2D(4, 0, 0, 4, 0, 0)
+
+[node name="Space" type="Node2D" parent="BackgroundCanvas"]
+position = Vector2(0, 16)
+
+[node name="SpaceAnimation" type="AnimationPlayer" parent="BackgroundCanvas/Space"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_30xru")
+}
+
+[node name="Space1" type="Sprite2D" parent="BackgroundCanvas/Space"]
+scale = Vector2(1, 0.5)
+texture = ExtResource("1_v0boc")
+centered = false
+
+[node name="Space2" type="Sprite2D" parent="BackgroundCanvas/Space"]
+position = Vector2(320, 0)
+scale = Vector2(1, 0.5)
+texture = ExtResource("1_v0boc")
+centered = false
+
+[node name="SceneBackground" type="TextureRect" parent="BackgroundCanvas"]
+offset_right = 320.0
+offset_bottom = 200.0
+texture = ExtResource("1_q1mcf")
+
+[node name="ForegroundCanvas" type="CanvasLayer" parent="."]
+layer = 10
+scale = Vector2(4, 4)
+transform = Transform2D(4, 0, 0, 4, 0, 0)
+
+[node name="TableTop" type="Node2D" parent="ForegroundCanvas"]
+
+[node name="Barman" type="AnimatedSprite2D" parent="ForegroundCanvas/TableTop"]
+position = Vector2(94, 60)
+sprite_frames = SubResource("SpriteFrames_n1igi")
+frame = 29
+frame_progress = 0.742977
+centered = false
+
+[node name="LeftCharacter" type="Node2D" parent="ForegroundCanvas/TableTop"]
+position = Vector2(183, 102)
+
+[node name="Character003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+texture = ExtResource("43_qam88")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+visible = false
+texture = ExtResource("44_ca8hu")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+visible = false
+texture = ExtResource("45_g0hua")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+visible = false
+texture = ExtResource("46_qk2tc")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+visible = false
+texture = ExtResource("47_77qf6")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+visible = false
+texture = ExtResource("48_mv3ac")
+
+[node name="Character006" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+visible = false
+texture = ExtResource("49_wgmmp")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+visible = false
+texture = ExtResource("50_ko4rl")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+visible = false
+texture = ExtResource("51_qke1l")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+visible = false
+texture = ExtResource("52_phvb6")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+visible = false
+texture = ExtResource("53_etdcl")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+visible = false
+texture = ExtResource("54_mybfp")
+
+[node name="Character008" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+visible = false
+texture = ExtResource("55_pwid3")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+visible = false
+texture = ExtResource("56_q4spd")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+visible = false
+texture = ExtResource("57_f2lkj")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+visible = false
+texture = ExtResource("58_mftw4")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+visible = false
+texture = ExtResource("59_yvdue")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+visible = false
+texture = ExtResource("60_bhquq")
+
+[node name="Character009" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+visible = false
+texture = ExtResource("61_4dwa6")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+visible = false
+texture = ExtResource("62_ewc42")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+visible = false
+texture = ExtResource("63_h5xhh")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+visible = false
+texture = ExtResource("64_cij31")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+visible = false
+texture = ExtResource("65_5v5y7")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+texture = ExtResource("66_65yqy")
+
+[node name="RightCharacter" type="Node2D" parent="ForegroundCanvas/TableTop"]
+position = Vector2(225, 102)
+
+[node name="Character004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+texture = ExtResource("67_8h0nn")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+visible = false
+texture = ExtResource("68_2xpkp")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+visible = false
+texture = ExtResource("69_62m7e")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+visible = false
+texture = ExtResource("70_6gd8s")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+visible = false
+texture = ExtResource("71_hdiqj")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+visible = false
+texture = ExtResource("72_uw0fi")
+
+[node name="Character005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+visible = false
+texture = ExtResource("73_bgjfi")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+visible = false
+texture = ExtResource("74_ciuto")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+visible = false
+texture = ExtResource("75_s3ofj")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+visible = false
+texture = ExtResource("76_00340")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+visible = false
+texture = ExtResource("77_tihjt")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+visible = false
+texture = ExtResource("78_t6j02")
+
+[node name="Character007" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+visible = false
+texture = ExtResource("79_ktjnf")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+visible = false
+texture = ExtResource("80_kkuq6")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+visible = false
+texture = ExtResource("81_dhcru")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+visible = false
+texture = ExtResource("82_b2doa")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+visible = false
+texture = ExtResource("83_j28ig")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+visible = false
+texture = ExtResource("84_k65b2")
+
+[node name="Character010" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+visible = false
+texture = ExtResource("85_vyak0")
+
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+visible = false
+texture = ExtResource("86_7uquc")
+
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+visible = false
+texture = ExtResource("87_wgnin")
+
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+visible = false
+texture = ExtResource("88_ylgs6")
+
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+visible = false
+texture = ExtResource("89_guxol")
+
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+visible = false
+texture = ExtResource("90_0wer0")
+
+[node name="Node2D" type="Node2D" parent="ForegroundCanvas/TableTop"]
+
+[node name="TableBottom" type="Node2D" parent="ForegroundCanvas"]
+
+[node name="OnePersonRight" type="Sprite2D" parent="ForegroundCanvas/TableBottom"]
+visible = false
+position = Vector2(158, 129)
+texture = ExtResource("91_am7l5")
+centered = false
+
+[node name="OnePersonLeft" type="Sprite2D" parent="ForegroundCanvas/TableBottom"]
+visible = false
+position = Vector2(158, 129)
+texture = ExtResource("92_wgrx3")
+centered = false
+
+[node name="TwoPerson" type="Sprite2D" parent="ForegroundCanvas/TableBottom"]
+position = Vector2(158, 129)
+texture = ExtResource("93_x7fjo")
+centered = false
+
+[node name="OverlayCanvas" type="CanvasLayer" parent="."]
+layer = 100
+scale = Vector2(4, 4)
+transform = Transform2D(4, 0, 0, 4, 0, 0)
+
+[node name="EnterSimulatorButton" type="TextureButton" parent="OverlayCanvas"]
+offset_top = 102.0
+offset_right = 90.0
+offset_bottom = 178.0
+
+[node name="TalkToShotglassButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 95.0
+offset_top = 57.0
+offset_right = 138.0
+offset_bottom = 102.0
+
+[node name="ViewPilotStatsButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 182.0
+offset_top = 47.0
+offset_right = 258.0
+offset_bottom = 81.0
+
+[node name="TalkToLeftCharacterButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 159.0
+offset_top = 82.5
+offset_right = 203.0
+offset_bottom = 169.5
+
+[node name="TalkToRightCharacterButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 203.0
+offset_top = 83.0
+offset_right = 247.0
+offset_bottom = 168.0
+
+[node name="ExitToBaracksButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 277.0
+offset_top = 43.0
+offset_right = 320.0
+offset_bottom = 137.0
+script = SubResource("GDScript_6i7q7")
+
+[node name="TooltipText" parent="OverlayCanvas" instance=ExtResource("95_sa2r1")]
+position = Vector2(0, 180)
+text_color = Color(0.909804, 0.921569, 1, 1)
+
+[node name="Cursor" parent="OverlayCanvas" instance=ExtResource("94_jixm7")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
+anchor_mode = 0
+
+[connection signal="mouse_entered" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Fly training mission"]]
+[connection signal="mouse_exited" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="mouse_entered" from="OverlayCanvas/TalkToShotglassButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Talk to Shotglass"]]
+[connection signal="mouse_exited" from="OverlayCanvas/TalkToShotglassButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="mouse_entered" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Check pilot scores"]]
+[connection signal="mouse_exited" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/ExitToBaracksButton" method="_on_view_pilot_stats_button_pressed"]
+[connection signal="mouse_entered" from="OverlayCanvas/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_exited" from="OverlayCanvas/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="mouse_entered" from="OverlayCanvas/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_exited" from="OverlayCanvas/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="mouse_entered" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Enter Baracks"]]
+[connection signal="mouse_exited" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/ExitToBaracksButton" method="_on_pressed"]

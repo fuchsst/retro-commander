@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://chhyghl2xpynm"]
+
+[ext_resource type="Script" path="res://Scripts/SaveGame.gd" id="1_s3blg"]
+[ext_resource type="Script" path="res://Scripts/Pilot.gd" id="2_70qx7"]
+[ext_resource type="Script" path="res://Scripts/CutsceneCharacter.gd" id="3_r82fc"]
+
+[node name="SaveGame" type="ResourcePreloader"]
+script = ExtResource("1_s3blg")
+
+[node name="Node" type="Node" parent="." node_paths=PackedStringArray("cutscene_character")]
+script = ExtResource("2_70qx7")
+cutscene_character = NodePath("CutsceneCharacter")
+
+[node name="CutsceneCharacter" type="Node" parent="Node"]
+script = ExtResource("3_r82fc")

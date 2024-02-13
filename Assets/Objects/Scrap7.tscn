@@ -1,0 +1,70 @@
+[gd_scene load_steps=15 format=3 uid="uid://bxx1pam3s5c6d"]
+
+[ext_resource type="Texture2D" uid="uid://ctxdsdo2bm6k8" path="res://Gamedata/objects.vga/005/000.png" id="1_hng8l"]
+[ext_resource type="Texture2D" uid="uid://bodrmypqaf3dw" path="res://Gamedata/objects.vga/005/001.png" id="2_44nhn"]
+[ext_resource type="Texture2D" uid="uid://bj7k8omwyr1rn" path="res://Gamedata/objects.vga/005/002.png" id="3_lc53v"]
+[ext_resource type="Texture2D" uid="uid://cwcjgv1eofyym" path="res://Gamedata/objects.vga/005/003.png" id="4_d1ya0"]
+[ext_resource type="Texture2D" uid="uid://cyvgtbqs1afai" path="res://Gamedata/objects.vga/005/004.png" id="5_anha5"]
+[ext_resource type="Texture2D" uid="uid://tx1kd104bn53" path="res://Gamedata/objects.vga/005/005.png" id="6_81nqr"]
+[ext_resource type="Texture2D" uid="uid://bxnbhve162d15" path="res://Gamedata/objects.vga/005/006.png" id="7_ksjlf"]
+[ext_resource type="Texture2D" uid="uid://5ycpggloymr2" path="res://Gamedata/objects.vga/005/007.png" id="8_oqglb"]
+[ext_resource type="Texture2D" uid="uid://6ehpurppavsx" path="res://Gamedata/objects.vga/005/008.png" id="9_koos3"]
+[ext_resource type="Texture2D" uid="uid://cvwik8dirbrh5" path="res://Gamedata/objects.vga/005/009.png" id="10_l5cus"]
+[ext_resource type="Texture2D" uid="uid://dsova4a8gakeg" path="res://Gamedata/objects.vga/005/010.png" id="11_n5j5p"]
+[ext_resource type="Texture2D" uid="uid://d2t7ovpafloi" path="res://Gamedata/objects.vga/005/011.png" id="12_4ik8i"]
+[ext_resource type="Texture2D" uid="uid://bpujn11hrcrmq" path="res://Gamedata/objects.vga/005/012.png" id="13_gr8sm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o6est"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hng8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_44nhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lc53v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d1ya0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_anha5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_81nqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ksjlf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_oqglb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_koos3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l5cus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_n5j5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4ik8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gr8sm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Scrap7" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_o6est")
+frame = 12
+frame_progress = 0.703574

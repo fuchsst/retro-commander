@@ -1,0 +1,925 @@
+[gd_scene load_steps=227 format=3 uid="uid://cae73w4fy8nvl"]
+
+[ext_resource type="Script" path="res://Assets/TooltipText.gd" id="1_wi0yf"]
+[ext_resource type="Texture2D" uid="uid://b30hh6jfm3g7o" path="res://Gamedata/fonts.fnt/000/032.png" id="30_1dm38"]
+[ext_resource type="Texture2D" uid="uid://bucvhqrrl1mll" path="res://Gamedata/fonts.fnt/000/033.png" id="31_h7c8m"]
+[ext_resource type="Texture2D" uid="uid://tjvgrqnltdns" path="res://Gamedata/fonts.fnt/000/034.png" id="32_6f6oe"]
+[ext_resource type="Texture2D" uid="uid://ckqrjtrdarvfb" path="res://Gamedata/fonts.fnt/000/035.png" id="33_6go1p"]
+[ext_resource type="Texture2D" uid="uid://3nlko2li3rgd" path="res://Gamedata/fonts.fnt/000/036.png" id="34_apd10"]
+[ext_resource type="Texture2D" uid="uid://cv8wo2jpmlxv4" path="res://Gamedata/fonts.fnt/000/037.png" id="35_pygh5"]
+[ext_resource type="Texture2D" uid="uid://b1fgdkyt22kg7" path="res://Gamedata/fonts.fnt/000/038.png" id="36_ge6ds"]
+[ext_resource type="Texture2D" uid="uid://bblj6ch2c1yrg" path="res://Gamedata/fonts.fnt/000/039.png" id="37_0u03k"]
+[ext_resource type="Texture2D" uid="uid://bdrpay344tgo5" path="res://Gamedata/fonts.fnt/000/040.png" id="38_j6vav"]
+[ext_resource type="Texture2D" uid="uid://b8vn0r8lg5i3q" path="res://Gamedata/fonts.fnt/000/041.png" id="39_yh06q"]
+[ext_resource type="Texture2D" uid="uid://dpytjvmbcqgsp" path="res://Gamedata/fonts.fnt/000/042.png" id="40_bg3xt"]
+[ext_resource type="Texture2D" uid="uid://clti4btylbed4" path="res://Gamedata/fonts.fnt/000/043.png" id="41_syjng"]
+[ext_resource type="Texture2D" uid="uid://bk0hl4326r3cn" path="res://Gamedata/fonts.fnt/000/044.png" id="42_bbvvi"]
+[ext_resource type="Texture2D" uid="uid://c7qy10d1kr60l" path="res://Gamedata/fonts.fnt/000/045.png" id="43_qngqt"]
+[ext_resource type="Texture2D" uid="uid://dshvmcbufimuf" path="res://Gamedata/fonts.fnt/000/046.png" id="44_uyq7m"]
+[ext_resource type="Texture2D" uid="uid://be6g8mv64n0s" path="res://Gamedata/fonts.fnt/000/047.png" id="45_0mdk3"]
+[ext_resource type="Texture2D" uid="uid://drhr0tjbdpgem" path="res://Gamedata/fonts.fnt/000/048.png" id="46_iv4uf"]
+[ext_resource type="Texture2D" uid="uid://bvi61qtly8qll" path="res://Gamedata/fonts.fnt/000/049.png" id="47_w2tjh"]
+[ext_resource type="Texture2D" uid="uid://dg02eep0re2qg" path="res://Gamedata/fonts.fnt/000/050.png" id="48_np484"]
+[ext_resource type="Texture2D" uid="uid://c07hn8xeo2su1" path="res://Gamedata/fonts.fnt/000/051.png" id="49_erbg3"]
+[ext_resource type="Texture2D" uid="uid://dkovl14imxcrf" path="res://Gamedata/fonts.fnt/000/052.png" id="50_51so5"]
+[ext_resource type="Texture2D" uid="uid://c6vywucfs3giq" path="res://Gamedata/fonts.fnt/000/053.png" id="51_v8vgu"]
+[ext_resource type="Texture2D" uid="uid://dvyw0ov4k3qjr" path="res://Gamedata/fonts.fnt/000/054.png" id="52_s644b"]
+[ext_resource type="Texture2D" uid="uid://doaxvvdj0cd3n" path="res://Gamedata/fonts.fnt/000/055.png" id="53_gbuiu"]
+[ext_resource type="Texture2D" uid="uid://dw442cxj34q7b" path="res://Gamedata/fonts.fnt/000/056.png" id="54_5hncd"]
+[ext_resource type="Texture2D" uid="uid://cwglsjdmj3gfc" path="res://Gamedata/fonts.fnt/000/057.png" id="55_54tnd"]
+[ext_resource type="Texture2D" uid="uid://dn6oj83sb3wcy" path="res://Gamedata/fonts.fnt/000/058.png" id="56_r7srd"]
+[ext_resource type="Texture2D" uid="uid://da2qi7dyi12am" path="res://Gamedata/fonts.fnt/000/059.png" id="57_rrmm4"]
+[ext_resource type="Texture2D" uid="uid://cdiuvqvbkmjoi" path="res://Gamedata/fonts.fnt/000/060.png" id="58_ihd8r"]
+[ext_resource type="Texture2D" uid="uid://bsg5twqcu4au0" path="res://Gamedata/fonts.fnt/000/061.png" id="59_joigi"]
+[ext_resource type="Texture2D" uid="uid://cxwitjlisogis" path="res://Gamedata/fonts.fnt/000/062.png" id="60_woplp"]
+[ext_resource type="Texture2D" uid="uid://d4b6trv6ek1nn" path="res://Gamedata/fonts.fnt/000/063.png" id="61_e3krl"]
+[ext_resource type="Texture2D" uid="uid://qm062vjffywd" path="res://Gamedata/fonts.fnt/000/064.png" id="62_6vsij"]
+[ext_resource type="Texture2D" uid="uid://bp8gw8a5xcjlp" path="res://Gamedata/fonts.fnt/000/065.png" id="63_yx104"]
+[ext_resource type="Texture2D" uid="uid://dcesb1e54uju6" path="res://Gamedata/fonts.fnt/000/066.png" id="64_rm8xu"]
+[ext_resource type="Texture2D" uid="uid://2gi52pihd6lm" path="res://Gamedata/fonts.fnt/000/067.png" id="65_7ga3t"]
+[ext_resource type="Texture2D" uid="uid://biu6a4hk3b47u" path="res://Gamedata/fonts.fnt/000/068.png" id="66_s4wkh"]
+[ext_resource type="Texture2D" uid="uid://c5kpkai2nh4by" path="res://Gamedata/fonts.fnt/000/069.png" id="67_4pvuw"]
+[ext_resource type="Texture2D" uid="uid://blr6whu5m70fj" path="res://Gamedata/fonts.fnt/000/070.png" id="68_cau8a"]
+[ext_resource type="Texture2D" uid="uid://c06e1c5uifvce" path="res://Gamedata/fonts.fnt/000/071.png" id="69_0fcjc"]
+[ext_resource type="Texture2D" uid="uid://bxyywpcth8s7u" path="res://Gamedata/fonts.fnt/000/072.png" id="70_yql5c"]
+[ext_resource type="Texture2D" uid="uid://utxu733mvrjc" path="res://Gamedata/fonts.fnt/000/073.png" id="71_i75lc"]
+[ext_resource type="Texture2D" uid="uid://bhrydtn3csak0" path="res://Gamedata/fonts.fnt/000/074.png" id="72_t1ori"]
+[ext_resource type="Texture2D" uid="uid://cu4ktc0kee5xv" path="res://Gamedata/fonts.fnt/000/075.png" id="73_n48r5"]
+[ext_resource type="Texture2D" uid="uid://x8ygdjb5y0ke" path="res://Gamedata/fonts.fnt/000/076.png" id="74_vvw0c"]
+[ext_resource type="Texture2D" uid="uid://kcbkgimbeibb" path="res://Gamedata/fonts.fnt/000/077.png" id="75_qdn07"]
+[ext_resource type="Texture2D" uid="uid://cb6edq48n7aqk" path="res://Gamedata/fonts.fnt/000/078.png" id="76_sbs4o"]
+[ext_resource type="Texture2D" uid="uid://dbffq53r6d6p7" path="res://Gamedata/fonts.fnt/000/079.png" id="77_fnmvh"]
+[ext_resource type="Texture2D" uid="uid://kt4mgrdlwn50" path="res://Gamedata/fonts.fnt/000/080.png" id="78_ixcf8"]
+[ext_resource type="Texture2D" uid="uid://cbuvbkwn42eo6" path="res://Gamedata/fonts.fnt/000/081.png" id="79_uxg2n"]
+[ext_resource type="Texture2D" uid="uid://dsoljketld48j" path="res://Gamedata/fonts.fnt/000/082.png" id="80_iq2qk"]
+[ext_resource type="Texture2D" uid="uid://5v7nq6rj84eg" path="res://Gamedata/fonts.fnt/000/083.png" id="81_f2blt"]
+[ext_resource type="Texture2D" uid="uid://cyf2n2btobpye" path="res://Gamedata/fonts.fnt/000/084.png" id="82_6gicm"]
+[ext_resource type="Texture2D" uid="uid://f3a3jndd1tk1" path="res://Gamedata/fonts.fnt/000/085.png" id="83_ex7e8"]
+[ext_resource type="Texture2D" uid="uid://cb76apeuuk2v5" path="res://Gamedata/fonts.fnt/000/086.png" id="84_fodul"]
+[ext_resource type="Texture2D" uid="uid://cg0tv71sdjs58" path="res://Gamedata/fonts.fnt/000/087.png" id="85_64oxx"]
+[ext_resource type="Texture2D" uid="uid://ck5jvqevw0fi4" path="res://Gamedata/fonts.fnt/000/088.png" id="86_djkvg"]
+[ext_resource type="Texture2D" uid="uid://cb27bq6q8s46m" path="res://Gamedata/fonts.fnt/000/089.png" id="87_h64e0"]
+[ext_resource type="Texture2D" uid="uid://4hqqll1ok4um" path="res://Gamedata/fonts.fnt/000/090.png" id="88_6fpny"]
+[ext_resource type="Texture2D" uid="uid://3pxfqx30jhhc" path="res://Gamedata/fonts.fnt/000/091.png" id="89_idk5p"]
+[ext_resource type="Texture2D" uid="uid://bgprrmy367pkt" path="res://Gamedata/fonts.fnt/000/092.png" id="90_lgn5k"]
+[ext_resource type="Texture2D" uid="uid://b0nra4hu12rn7" path="res://Gamedata/fonts.fnt/000/093.png" id="91_2dg52"]
+[ext_resource type="Texture2D" uid="uid://01mr5dgcugfr" path="res://Gamedata/fonts.fnt/000/094.png" id="92_mj744"]
+[ext_resource type="Texture2D" uid="uid://bioaa8inwg35c" path="res://Gamedata/fonts.fnt/000/095.png" id="93_xqxfy"]
+[ext_resource type="Texture2D" uid="uid://bs36g6alb1rby" path="res://Gamedata/fonts.fnt/000/096.png" id="94_ac8y4"]
+[ext_resource type="Texture2D" uid="uid://81lmm6j04uuy" path="res://Gamedata/fonts.fnt/000/097.png" id="95_sgxld"]
+[ext_resource type="Texture2D" uid="uid://bqlabnuojqfeh" path="res://Gamedata/fonts.fnt/000/098.png" id="96_yfx85"]
+[ext_resource type="Texture2D" uid="uid://c783ie0vstl7y" path="res://Gamedata/fonts.fnt/000/099.png" id="97_whwlx"]
+[ext_resource type="Texture2D" uid="uid://biknsnhfi4to8" path="res://Gamedata/fonts.fnt/000/100.png" id="98_x6id8"]
+[ext_resource type="Texture2D" uid="uid://bg0q53tb53mt" path="res://Gamedata/fonts.fnt/000/101.png" id="99_1osbr"]
+[ext_resource type="Texture2D" uid="uid://chtilf1qhdbpt" path="res://Gamedata/fonts.fnt/000/102.png" id="100_5slha"]
+[ext_resource type="Texture2D" uid="uid://c2sbtvi71wdem" path="res://Gamedata/fonts.fnt/000/103.png" id="101_pjb0g"]
+[ext_resource type="Texture2D" uid="uid://cr46eox428roi" path="res://Gamedata/fonts.fnt/000/104.png" id="102_kwcws"]
+[ext_resource type="Texture2D" uid="uid://b65pie48tychy" path="res://Gamedata/fonts.fnt/000/105.png" id="103_j018y"]
+[ext_resource type="Texture2D" uid="uid://wbe2my2hhebe" path="res://Gamedata/fonts.fnt/000/106.png" id="104_d6wpq"]
+[ext_resource type="Texture2D" uid="uid://c3rn12p4eipsc" path="res://Gamedata/fonts.fnt/000/107.png" id="105_b7c2a"]
+[ext_resource type="Texture2D" uid="uid://cikd4c36b8yw2" path="res://Gamedata/fonts.fnt/000/108.png" id="106_3mels"]
+[ext_resource type="Texture2D" uid="uid://bwu6q6aliy46r" path="res://Gamedata/fonts.fnt/000/109.png" id="107_gymsy"]
+[ext_resource type="Texture2D" uid="uid://byr1lo7now0lm" path="res://Gamedata/fonts.fnt/000/110.png" id="108_68gjp"]
+[ext_resource type="Texture2D" uid="uid://bnhq2fw0g52dq" path="res://Gamedata/fonts.fnt/000/111.png" id="109_2l3te"]
+[ext_resource type="Texture2D" uid="uid://2xbmde8pnrwm" path="res://Gamedata/fonts.fnt/000/112.png" id="110_8p14f"]
+[ext_resource type="Texture2D" uid="uid://cuxv5blb4dcjk" path="res://Gamedata/fonts.fnt/000/113.png" id="111_yt8xo"]
+[ext_resource type="Texture2D" uid="uid://cmtg8b6333aix" path="res://Gamedata/fonts.fnt/000/114.png" id="112_u6v2s"]
+[ext_resource type="Texture2D" uid="uid://4bicpu3imncy" path="res://Gamedata/fonts.fnt/000/115.png" id="113_5b7ss"]
+[ext_resource type="Texture2D" uid="uid://b11bcvdcmgu26" path="res://Gamedata/fonts.fnt/000/116.png" id="114_qdivn"]
+[ext_resource type="Texture2D" uid="uid://da2l474t0dswo" path="res://Gamedata/fonts.fnt/000/117.png" id="115_c1ru4"]
+[ext_resource type="Texture2D" uid="uid://d1d175klnyuub" path="res://Gamedata/fonts.fnt/000/118.png" id="116_otttn"]
+[ext_resource type="Texture2D" uid="uid://f0ag6n57k4gs" path="res://Gamedata/fonts.fnt/000/119.png" id="117_mtxex"]
+[ext_resource type="Texture2D" uid="uid://da4n7f0asaaa0" path="res://Gamedata/fonts.fnt/000/120.png" id="118_5yhc6"]
+[ext_resource type="Texture2D" uid="uid://cjpnsdqhhig1i" path="res://Gamedata/fonts.fnt/000/121.png" id="119_1wtwl"]
+[ext_resource type="Texture2D" uid="uid://cmipvpv0ptwgl" path="res://Gamedata/fonts.fnt/000/122.png" id="120_to4if"]
+[ext_resource type="Texture2D" uid="uid://c0koqcg70accu" path="res://Gamedata/fonts.fnt/000/123.png" id="121_eelwe"]
+[ext_resource type="Texture2D" uid="uid://bkon3d8yndump" path="res://Gamedata/fonts.fnt/000/124.png" id="122_410b7"]
+[ext_resource type="Texture2D" uid="uid://vu6aqcdkupbs" path="res://Gamedata/fonts.fnt/000/125.png" id="123_r6ouu"]
+[ext_resource type="Texture2D" uid="uid://8hvq4a14xwum" path="res://Gamedata/fonts.fnt/000/126.png" id="124_mn351"]
+[ext_resource type="Texture2D" uid="uid://buon43epj4oy2" path="res://Gamedata/fonts.fnt/000/127.png" id="125_a4y2q"]
+[ext_resource type="Texture2D" uid="uid://c7xfynuksewok" path="res://Gamedata/fonts.fnt/000/128.png" id="126_uomvd"]
+[ext_resource type="Texture2D" uid="uid://ku23nc2vt0h1" path="res://Gamedata/fonts.fnt/000/129.png" id="127_mspbq"]
+[ext_resource type="Texture2D" uid="uid://bot17aluudgny" path="res://Gamedata/fonts.fnt/000/130.png" id="128_m7rqs"]
+[ext_resource type="Texture2D" uid="uid://bfan62ti4h63l" path="res://Gamedata/fonts.fnt/000/131.png" id="129_cbhfk"]
+[ext_resource type="Texture2D" uid="uid://dfqmdn46fas45" path="res://Gamedata/fonts.fnt/000/132.png" id="130_5r66o"]
+[ext_resource type="Texture2D" uid="uid://cp8k3ir0rjgpk" path="res://Gamedata/fonts.fnt/000/133.png" id="131_jpvr8"]
+[ext_resource type="Texture2D" uid="uid://capewby5lnys6" path="res://Gamedata/fonts.fnt/000/134.png" id="132_ibt2w"]
+[ext_resource type="Texture2D" uid="uid://dga1shgqx1v37" path="res://Gamedata/fonts.fnt/000/135.png" id="133_xddo5"]
+[ext_resource type="Texture2D" uid="uid://b1687iglpkdiy" path="res://Gamedata/fonts.fnt/000/136.png" id="134_pfpkl"]
+[ext_resource type="Texture2D" uid="uid://bm8oflsc85vvv" path="res://Gamedata/fonts.fnt/000/137.png" id="135_k32qq"]
+[ext_resource type="Texture2D" uid="uid://bf7075md1ve8k" path="res://Gamedata/fonts.fnt/000/138.png" id="136_86eum"]
+[ext_resource type="Texture2D" uid="uid://b2mfktbdw4h0k" path="res://Gamedata/fonts.fnt/000/139.png" id="137_h0yhq"]
+[ext_resource type="Texture2D" uid="uid://drg3vv38ypwww" path="res://Gamedata/fonts.fnt/000/140.png" id="138_asm45"]
+[ext_resource type="Texture2D" uid="uid://d33q6cmtxnrtn" path="res://Gamedata/fonts.fnt/000/141.png" id="139_sbscb"]
+[ext_resource type="Texture2D" uid="uid://d2rao4r2rphtb" path="res://Gamedata/fonts.fnt/000/142.png" id="140_k37bk"]
+[ext_resource type="Texture2D" uid="uid://dswo8ulj8gt85" path="res://Gamedata/fonts.fnt/000/143.png" id="141_vuy5a"]
+[ext_resource type="Texture2D" uid="uid://cg4ju57wadf0c" path="res://Gamedata/fonts.fnt/000/144.png" id="142_lwsn3"]
+[ext_resource type="Texture2D" uid="uid://b1ql3kb0yfny4" path="res://Gamedata/fonts.fnt/000/145.png" id="143_7tal0"]
+[ext_resource type="Texture2D" uid="uid://bd482vtiteer7" path="res://Gamedata/fonts.fnt/000/146.png" id="144_6cbe2"]
+[ext_resource type="Texture2D" uid="uid://cuq713gjlgqgj" path="res://Gamedata/fonts.fnt/000/147.png" id="145_f4n0k"]
+[ext_resource type="Texture2D" uid="uid://dv7wacye3cvry" path="res://Gamedata/fonts.fnt/000/148.png" id="146_igs2i"]
+[ext_resource type="Texture2D" uid="uid://b2wtubnmqdfl4" path="res://Gamedata/fonts.fnt/000/149.png" id="147_w8yex"]
+[ext_resource type="Texture2D" uid="uid://sitjkeqavvc2" path="res://Gamedata/fonts.fnt/000/150.png" id="148_6iafi"]
+[ext_resource type="Texture2D" uid="uid://ddeixlj2snoei" path="res://Gamedata/fonts.fnt/000/151.png" id="149_wnve2"]
+[ext_resource type="Texture2D" uid="uid://3p8wqjbgxke" path="res://Gamedata/fonts.fnt/000/152.png" id="150_ug0hn"]
+[ext_resource type="Texture2D" uid="uid://dpev82q8xfsuv" path="res://Gamedata/fonts.fnt/000/153.png" id="151_8hqpc"]
+[ext_resource type="Texture2D" uid="uid://cwucpcy5h40qj" path="res://Gamedata/fonts.fnt/000/154.png" id="152_t38al"]
+[ext_resource type="Texture2D" uid="uid://bt6h22mog4yfe" path="res://Gamedata/fonts.fnt/000/155.png" id="153_hs5cd"]
+[ext_resource type="Texture2D" uid="uid://dn1jb4wi6b7rk" path="res://Gamedata/fonts.fnt/000/156.png" id="154_itr34"]
+[ext_resource type="Texture2D" uid="uid://8a0x822p80p5" path="res://Gamedata/fonts.fnt/000/157.png" id="155_qqihn"]
+[ext_resource type="Texture2D" uid="uid://cnlooie34twpq" path="res://Gamedata/fonts.fnt/000/158.png" id="156_m8qqc"]
+[ext_resource type="Texture2D" uid="uid://do8b3oc0v2kh4" path="res://Gamedata/fonts.fnt/000/159.png" id="157_8pn75"]
+[ext_resource type="Texture2D" uid="uid://juxtwrlxbbvg" path="res://Gamedata/fonts.fnt/000/160.png" id="158_qhc3y"]
+[ext_resource type="Texture2D" uid="uid://bo6i46o15d1du" path="res://Gamedata/fonts.fnt/000/161.png" id="159_832u3"]
+[ext_resource type="Texture2D" uid="uid://cvmvaav3ssysa" path="res://Gamedata/fonts.fnt/000/162.png" id="160_5rj0b"]
+[ext_resource type="Texture2D" uid="uid://bswsd825ta6ub" path="res://Gamedata/fonts.fnt/000/163.png" id="161_mtd8n"]
+[ext_resource type="Texture2D" uid="uid://8pxia5rbddiy" path="res://Gamedata/fonts.fnt/000/164.png" id="162_dh11w"]
+[ext_resource type="Texture2D" uid="uid://ua5jlnh6c7ff" path="res://Gamedata/fonts.fnt/000/165.png" id="163_qq5bq"]
+[ext_resource type="Texture2D" uid="uid://8tux6bk2gixm" path="res://Gamedata/fonts.fnt/000/166.png" id="164_crnn1"]
+[ext_resource type="Texture2D" uid="uid://2dis6i3n6p1s" path="res://Gamedata/fonts.fnt/000/167.png" id="165_oyfws"]
+[ext_resource type="Texture2D" uid="uid://di4a5bk67dsc5" path="res://Gamedata/fonts.fnt/000/168.png" id="166_3envi"]
+[ext_resource type="Texture2D" uid="uid://b6lwfqttplca8" path="res://Gamedata/fonts.fnt/000/169.png" id="167_h2rrs"]
+[ext_resource type="Texture2D" uid="uid://j0fo0r6xt57q" path="res://Gamedata/fonts.fnt/000/170.png" id="168_0mwii"]
+[ext_resource type="Texture2D" uid="uid://bvtgd0h1qemwx" path="res://Gamedata/fonts.fnt/000/171.png" id="169_vr0ry"]
+[ext_resource type="Texture2D" uid="uid://um4ffvmsh74p" path="res://Gamedata/fonts.fnt/000/172.png" id="170_5ogfa"]
+[ext_resource type="Texture2D" uid="uid://dt4tvtui8qtp0" path="res://Gamedata/fonts.fnt/000/173.png" id="171_cp234"]
+[ext_resource type="Texture2D" uid="uid://bwyyjk6j2sjtn" path="res://Gamedata/fonts.fnt/000/174.png" id="172_5wbfk"]
+[ext_resource type="Texture2D" uid="uid://r12dsytwqyjw" path="res://Gamedata/fonts.fnt/000/175.png" id="173_6cya5"]
+[ext_resource type="Texture2D" uid="uid://tjom7o0upv5c" path="res://Gamedata/fonts.fnt/000/176.png" id="174_8ay8n"]
+[ext_resource type="Texture2D" uid="uid://b53xa2m22rrbs" path="res://Gamedata/fonts.fnt/000/177.png" id="175_y76w5"]
+[ext_resource type="Texture2D" uid="uid://d1ova23lr4ims" path="res://Gamedata/fonts.fnt/000/178.png" id="176_xj32i"]
+[ext_resource type="Texture2D" uid="uid://cguvnjrw8rxuq" path="res://Gamedata/fonts.fnt/000/179.png" id="177_g26jm"]
+[ext_resource type="Texture2D" uid="uid://dyuxk8i7e88go" path="res://Gamedata/fonts.fnt/000/180.png" id="178_0g4df"]
+[ext_resource type="Texture2D" uid="uid://c8shwlof1be02" path="res://Gamedata/fonts.fnt/000/181.png" id="179_a4vgi"]
+[ext_resource type="Texture2D" uid="uid://cxmwd0kccf1ea" path="res://Gamedata/fonts.fnt/000/182.png" id="180_vct60"]
+[ext_resource type="Texture2D" uid="uid://cn31pio8mxaxq" path="res://Gamedata/fonts.fnt/000/183.png" id="181_jctw7"]
+[ext_resource type="Texture2D" uid="uid://dc3ikhnm78cp2" path="res://Gamedata/fonts.fnt/000/184.png" id="182_5656u"]
+[ext_resource type="Texture2D" uid="uid://cdm41woktw0rt" path="res://Gamedata/fonts.fnt/000/185.png" id="183_eg4p0"]
+[ext_resource type="Texture2D" uid="uid://brrldlqbw8mpn" path="res://Gamedata/fonts.fnt/000/186.png" id="184_npg31"]
+[ext_resource type="Texture2D" uid="uid://dy20mxnjx0ryg" path="res://Gamedata/fonts.fnt/000/187.png" id="185_y8qk4"]
+[ext_resource type="Texture2D" uid="uid://c7k010fc0oe1" path="res://Gamedata/fonts.fnt/000/188.png" id="186_xtoek"]
+[ext_resource type="Texture2D" uid="uid://blr858e2ekp6o" path="res://Gamedata/fonts.fnt/000/189.png" id="187_qgsby"]
+[ext_resource type="Texture2D" uid="uid://djucncjcn6x88" path="res://Gamedata/fonts.fnt/000/190.png" id="188_n2rbi"]
+[ext_resource type="Texture2D" uid="uid://cy4j6sbienbp1" path="res://Gamedata/fonts.fnt/000/191.png" id="189_3l5ii"]
+[ext_resource type="Texture2D" uid="uid://d3aplavta2san" path="res://Gamedata/fonts.fnt/000/192.png" id="190_5x32n"]
+[ext_resource type="Texture2D" uid="uid://dn3fv43r73b67" path="res://Gamedata/fonts.fnt/000/193.png" id="191_lhtu7"]
+[ext_resource type="Texture2D" uid="uid://cm5m8nucffq1j" path="res://Gamedata/fonts.fnt/000/194.png" id="192_lwoxd"]
+[ext_resource type="Texture2D" uid="uid://b4m4ttubak7da" path="res://Gamedata/fonts.fnt/000/195.png" id="193_vqs3f"]
+[ext_resource type="Texture2D" uid="uid://c0ue2n0ojq7no" path="res://Gamedata/fonts.fnt/000/196.png" id="194_w62uc"]
+[ext_resource type="Texture2D" uid="uid://b675srdtt2pd2" path="res://Gamedata/fonts.fnt/000/197.png" id="195_4dr2k"]
+[ext_resource type="Texture2D" uid="uid://duqssx3w7suu1" path="res://Gamedata/fonts.fnt/000/198.png" id="196_5rjfl"]
+[ext_resource type="Texture2D" uid="uid://bqx81ag4rqmrx" path="res://Gamedata/fonts.fnt/000/199.png" id="197_4q3yv"]
+[ext_resource type="Texture2D" uid="uid://dpx6yqe0hkrun" path="res://Gamedata/fonts.fnt/000/200.png" id="198_7b4we"]
+[ext_resource type="Texture2D" uid="uid://bajbe6cq6c2m2" path="res://Gamedata/fonts.fnt/000/201.png" id="199_5qwbl"]
+[ext_resource type="Texture2D" uid="uid://dw68gp62xqtt7" path="res://Gamedata/fonts.fnt/000/202.png" id="200_k6da5"]
+[ext_resource type="Texture2D" uid="uid://bweor1nelkfp4" path="res://Gamedata/fonts.fnt/000/203.png" id="201_c2flj"]
+[ext_resource type="Texture2D" uid="uid://mlfyhrqaq7hr" path="res://Gamedata/fonts.fnt/000/204.png" id="202_7opdf"]
+[ext_resource type="Texture2D" uid="uid://b3n5utx8db57x" path="res://Gamedata/fonts.fnt/000/205.png" id="203_x0kb1"]
+[ext_resource type="Texture2D" uid="uid://jdv61cgbpkp7" path="res://Gamedata/fonts.fnt/000/206.png" id="204_jvodn"]
+[ext_resource type="Texture2D" uid="uid://vl8i3umn40u7" path="res://Gamedata/fonts.fnt/000/207.png" id="205_hv26q"]
+[ext_resource type="Texture2D" uid="uid://clba2pqjb5vmv" path="res://Gamedata/fonts.fnt/000/208.png" id="206_u1sjo"]
+[ext_resource type="Texture2D" uid="uid://bjqrrok7le2c" path="res://Gamedata/fonts.fnt/000/209.png" id="207_tm8iy"]
+[ext_resource type="Texture2D" uid="uid://dyc800v0xojgu" path="res://Gamedata/fonts.fnt/000/210.png" id="208_jr2q2"]
+[ext_resource type="Texture2D" uid="uid://nsk8duym1ao0" path="res://Gamedata/fonts.fnt/000/211.png" id="209_bgs63"]
+[ext_resource type="Texture2D" uid="uid://difyw1td4vjft" path="res://Gamedata/fonts.fnt/000/212.png" id="210_q711h"]
+[ext_resource type="Texture2D" uid="uid://cof6ctjiw05ca" path="res://Gamedata/fonts.fnt/000/213.png" id="211_g5gnu"]
+[ext_resource type="Texture2D" uid="uid://slcs5fwjtxpk" path="res://Gamedata/fonts.fnt/000/214.png" id="212_taj8o"]
+[ext_resource type="Texture2D" uid="uid://1k151ul5df3n" path="res://Gamedata/fonts.fnt/000/215.png" id="213_er4g3"]
+[ext_resource type="Texture2D" uid="uid://b3eorwiwjvu67" path="res://Gamedata/fonts.fnt/000/216.png" id="214_kkxtp"]
+[ext_resource type="Texture2D" uid="uid://ccwetnylnj40b" path="res://Gamedata/fonts.fnt/000/217.png" id="215_u52vl"]
+[ext_resource type="Texture2D" uid="uid://bm3fgjj7f45ot" path="res://Gamedata/fonts.fnt/000/218.png" id="216_s7k03"]
+[ext_resource type="Texture2D" uid="uid://c5timy7jngi56" path="res://Gamedata/fonts.fnt/000/219.png" id="217_pf40e"]
+[ext_resource type="Texture2D" uid="uid://clcgb3ei7q52l" path="res://Gamedata/fonts.fnt/000/220.png" id="218_visg1"]
+[ext_resource type="Texture2D" uid="uid://cudexlfbh3q38" path="res://Gamedata/fonts.fnt/000/221.png" id="219_bngur"]
+[ext_resource type="Texture2D" uid="uid://cr3cql7rtevb5" path="res://Gamedata/fonts.fnt/000/222.png" id="220_md7d3"]
+[ext_resource type="Texture2D" uid="uid://bmlvtqsalkohi" path="res://Gamedata/fonts.fnt/000/223.png" id="221_rcyld"]
+[ext_resource type="Texture2D" uid="uid://iwypdbp1ys6a" path="res://Gamedata/fonts.fnt/000/224.png" id="222_c0o84"]
+[ext_resource type="Texture2D" uid="uid://bq1u172va75di" path="res://Gamedata/fonts.fnt/000/225.png" id="223_vtsv2"]
+[ext_resource type="Texture2D" uid="uid://dadxkfvbuj7e1" path="res://Gamedata/fonts.fnt/000/226.png" id="224_580nv"]
+[ext_resource type="Texture2D" uid="uid://cuhqcf5uv15gi" path="res://Gamedata/fonts.fnt/000/227.png" id="225_m1b1d"]
+[ext_resource type="Texture2D" uid="uid://c2nga4kiyjual" path="res://Gamedata/fonts.fnt/000/228.png" id="226_eheyx"]
+[ext_resource type="Texture2D" uid="uid://dvtdi8o4x8gdu" path="res://Gamedata/fonts.fnt/000/229.png" id="227_2awh6"]
+[ext_resource type="Texture2D" uid="uid://wgvklm65h837" path="res://Gamedata/fonts.fnt/000/230.png" id="228_cvgme"]
+[ext_resource type="Texture2D" uid="uid://b2ht3cx6853ko" path="res://Gamedata/fonts.fnt/000/231.png" id="229_s2257"]
+[ext_resource type="Texture2D" uid="uid://dmtus0ti78auy" path="res://Gamedata/fonts.fnt/000/232.png" id="230_up4ur"]
+[ext_resource type="Texture2D" uid="uid://c8xa1epse5t40" path="res://Gamedata/fonts.fnt/000/233.png" id="231_qmljq"]
+[ext_resource type="Texture2D" uid="uid://w6a5x62hknnx" path="res://Gamedata/fonts.fnt/000/234.png" id="232_lc36s"]
+[ext_resource type="Texture2D" uid="uid://c4w6tiifn1ny4" path="res://Gamedata/fonts.fnt/000/235.png" id="233_a3wr1"]
+[ext_resource type="Texture2D" uid="uid://ofv0ou56lv0j" path="res://Gamedata/fonts.fnt/000/236.png" id="234_gayp2"]
+[ext_resource type="Texture2D" uid="uid://ba3qavp4mvd63" path="res://Gamedata/fonts.fnt/000/237.png" id="235_2bmt4"]
+[ext_resource type="Texture2D" uid="uid://bxa0g32n42w2a" path="res://Gamedata/fonts.fnt/000/238.png" id="236_v1v4c"]
+[ext_resource type="Texture2D" uid="uid://cxje5g3v8mvxr" path="res://Gamedata/fonts.fnt/000/239.png" id="237_odwum"]
+[ext_resource type="Texture2D" uid="uid://db8l3auwphrru" path="res://Gamedata/fonts.fnt/000/240.png" id="238_oe550"]
+[ext_resource type="Texture2D" uid="uid://komiatj8bat1" path="res://Gamedata/fonts.fnt/000/241.png" id="239_jgll8"]
+[ext_resource type="Texture2D" uid="uid://doyjco8g3fdmf" path="res://Gamedata/fonts.fnt/000/242.png" id="240_kuki2"]
+[ext_resource type="Texture2D" uid="uid://ckeaq88y7sjtc" path="res://Gamedata/fonts.fnt/000/243.png" id="241_hry0e"]
+[ext_resource type="Texture2D" uid="uid://cjt0jkh0k5b13" path="res://Gamedata/fonts.fnt/000/244.png" id="242_5orq0"]
+[ext_resource type="Texture2D" uid="uid://cdv872gqusg7a" path="res://Gamedata/fonts.fnt/000/245.png" id="243_h1878"]
+[ext_resource type="Texture2D" uid="uid://ccfk6kfstj6t6" path="res://Gamedata/fonts.fnt/000/246.png" id="244_t4mmw"]
+[ext_resource type="Texture2D" uid="uid://m1veb7b305bi" path="res://Gamedata/fonts.fnt/000/247.png" id="245_kpc1r"]
+[ext_resource type="Texture2D" uid="uid://btvo62sj2f8rk" path="res://Gamedata/fonts.fnt/000/248.png" id="246_vab2r"]
+[ext_resource type="Texture2D" uid="uid://coqd04q0llndb" path="res://Gamedata/fonts.fnt/000/249.png" id="247_xt08g"]
+[ext_resource type="Texture2D" uid="uid://dwiu78wjaxpy8" path="res://Gamedata/fonts.fnt/000/250.png" id="248_q20ng"]
+[ext_resource type="Texture2D" uid="uid://df0cjfqfxpqjo" path="res://Gamedata/fonts.fnt/000/251.png" id="249_fgydf"]
+[ext_resource type="Texture2D" uid="uid://nu7lcpa5qd7r" path="res://Gamedata/fonts.fnt/000/252.png" id="250_ok311"]
+[ext_resource type="Texture2D" uid="uid://bpvinnagbktr6" path="res://Gamedata/fonts.fnt/000/253.png" id="251_ln147"]
+[ext_resource type="Texture2D" uid="uid://cof48gwnb5hut" path="res://Gamedata/fonts.fnt/000/254.png" id="252_xhbo3"]
+[ext_resource type="Texture2D" uid="uid://de3y2uws8u75v" path="res://Gamedata/fonts.fnt/000/255.png" id="253_wlhkg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jmwko"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_1dm38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_h7c8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_6f6oe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_6go1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_apd10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pygh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ge6ds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_0u03k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_j6vav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yh06q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_bg3xt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_syjng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_bbvvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_qngqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_uyq7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_0mdk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_iv4uf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_w2tjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_np484")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_erbg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_51so5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_v8vgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_s644b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_gbuiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_5hncd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_54tnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_r7srd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_rrmm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ihd8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_joigi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_woplp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_e3krl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_6vsij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_yx104")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_rm8xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_7ga3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_s4wkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4pvuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_cau8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_0fcjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_yql5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_i75lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_t1ori")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_n48r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_vvw0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_qdn07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_sbs4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_fnmvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ixcf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_uxg2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_iq2qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_f2blt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_6gicm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ex7e8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_fodul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_64oxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_djkvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_h64e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_6fpny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_idk5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_lgn5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_2dg52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_mj744")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_xqxfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_ac8y4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_sgxld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_yfx85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_whwlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_x6id8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_1osbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_5slha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_pjb0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_kwcws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_j018y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_d6wpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_b7c2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_3mels")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_gymsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_68gjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_2l3te")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_8p14f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_yt8xo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_u6v2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_5b7ss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_qdivn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_c1ru4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_otttn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_mtxex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_5yhc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_1wtwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_to4if")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_eelwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_410b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_r6ouu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_mn351")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_a4y2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_uomvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_mspbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_m7rqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_cbhfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_5r66o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_jpvr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_ibt2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_xddo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_pfpkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_k32qq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_86eum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_h0yhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_asm45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_sbscb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_k37bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_vuy5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_lwsn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_7tal0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_6cbe2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_f4n0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_igs2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_w8yex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_6iafi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_wnve2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_ug0hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_8hqpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_t38al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_hs5cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_itr34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_qqihn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_m8qqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_8pn75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_qhc3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_832u3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_5rj0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_mtd8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_dh11w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_qq5bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_crnn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_oyfws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_3envi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_h2rrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_0mwii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_vr0ry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_5ogfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_cp234")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_5wbfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_6cya5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_8ay8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_y76w5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_xj32i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_g26jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_0g4df")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_a4vgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_vct60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_jctw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_5656u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_eg4p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_npg31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_y8qk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_xtoek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_qgsby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_n2rbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_3l5ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_5x32n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_lhtu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_lwoxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_vqs3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_w62uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_4dr2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_5rjfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_4q3yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_7b4we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_5qwbl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_k6da5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_c2flj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_7opdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_x0kb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_jvodn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_hv26q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_u1sjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_tm8iy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_jr2q2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_bgs63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_q711h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_g5gnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_taj8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_er4g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_kkxtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_u52vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_s7k03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_pf40e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_visg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_bngur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_md7d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("221_rcyld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_c0o84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_vtsv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_580nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_m1b1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_eheyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_2awh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("228_cvgme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("229_s2257")
+}, {
+"duration": 1.0,
+"texture": ExtResource("230_up4ur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("231_qmljq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("232_lc36s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("233_a3wr1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("234_gayp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("235_2bmt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("236_v1v4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_odwum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_oe550")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_jgll8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_kuki2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("241_hry0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("242_5orq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("243_h1878")
+}, {
+"duration": 1.0,
+"texture": ExtResource("244_t4mmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("245_kpc1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("246_vab2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("247_xt08g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("248_q20ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("249_fgydf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("250_ok311")
+}, {
+"duration": 1.0,
+"texture": ExtResource("251_ln147")
+}, {
+"duration": 1.0,
+"texture": ExtResource("252_xhbo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("253_wlhkg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="TooltipText" type="Node2D"]
+script = ExtResource("1_wi0yf")
+text_color = Color(0.231373, 0.709804, 0.65098, 1)
+text = "Test Text. This is a longer text that might extend the max width and even further and further and."
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 0.396078, 0.396078, 1)
+offset_right = 320.0
+offset_bottom = 8.0
+stretch_mode = 3
+
+[node name="Letters" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(8, 10)
+sprite_frames = SubResource("SpriteFrames_jmwko")
+frame = 87
+centered = false

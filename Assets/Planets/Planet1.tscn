@@ -1,0 +1,170 @@
+[gd_scene load_steps=40 format=3 uid="uid://c4jnbrusfnrs8"]
+
+[ext_resource type="Texture2D" uid="uid://bbum06udt1oh" path="res://Gamedata/planets.vga/000/000.png" id="1_1c75g"]
+[ext_resource type="Texture2D" uid="uid://df4qpk1fdf1tb" path="res://Gamedata/planets.vga/000/001.png" id="2_vnxq7"]
+[ext_resource type="Texture2D" uid="uid://badeai6pyeap2" path="res://Gamedata/planets.vga/000/002.png" id="3_0jabc"]
+[ext_resource type="Texture2D" uid="uid://ci6unwcr15aa3" path="res://Gamedata/planets.vga/000/003.png" id="4_3sqgq"]
+[ext_resource type="Texture2D" uid="uid://ne2mlb0q4ilg" path="res://Gamedata/planets.vga/000/004.png" id="5_gudxx"]
+[ext_resource type="Texture2D" uid="uid://dvxswsdja7bmo" path="res://Gamedata/planets.vga/000/005.png" id="6_mc2gu"]
+[ext_resource type="Texture2D" uid="uid://ca518xew5q4cs" path="res://Gamedata/planets.vga/000/006.png" id="7_w6qpr"]
+[ext_resource type="Texture2D" uid="uid://djubwrqnhxiqp" path="res://Gamedata/planets.vga/000/007.png" id="8_73b12"]
+[ext_resource type="Texture2D" uid="uid://ivqtrlouj8ld" path="res://Gamedata/planets.vga/000/008.png" id="9_kb5hj"]
+[ext_resource type="Texture2D" uid="uid://c3gg8h8hr1cag" path="res://Gamedata/planets.vga/000/009.png" id="10_yb8a7"]
+[ext_resource type="Texture2D" uid="uid://brbjme61mxy31" path="res://Gamedata/planets.vga/000/010.png" id="11_uv42c"]
+[ext_resource type="Texture2D" uid="uid://bfok507w3fgy3" path="res://Gamedata/planets.vga/000/011.png" id="12_1xmqu"]
+[ext_resource type="Texture2D" uid="uid://bhpwcwursyody" path="res://Gamedata/planets.vga/000/012.png" id="13_po6hr"]
+[ext_resource type="Texture2D" uid="uid://uevrxqyelyq" path="res://Gamedata/planets.vga/000/013.png" id="14_be7gm"]
+[ext_resource type="Texture2D" uid="uid://jrucilf5d2r7" path="res://Gamedata/planets.vga/000/014.png" id="15_d330y"]
+[ext_resource type="Texture2D" uid="uid://b6p16d0pby3rw" path="res://Gamedata/planets.vga/000/015.png" id="16_4nkic"]
+[ext_resource type="Texture2D" uid="uid://bw030aqp7gh5x" path="res://Gamedata/planets.vga/000/016.png" id="17_n73qj"]
+[ext_resource type="Texture2D" uid="uid://bf3yccug75jit" path="res://Gamedata/planets.vga/000/017.png" id="18_u6klt"]
+[ext_resource type="Texture2D" uid="uid://ds1ajenul616o" path="res://Gamedata/planets.vga/000/018.png" id="19_bx42n"]
+[ext_resource type="Texture2D" uid="uid://b7saw0jcwv6n7" path="res://Gamedata/planets.vga/000/019.png" id="20_37my1"]
+[ext_resource type="Texture2D" uid="uid://bor3nwv04k7rv" path="res://Gamedata/planets.vga/000/020.png" id="21_61vdx"]
+[ext_resource type="Texture2D" uid="uid://b22yuxeduvq6g" path="res://Gamedata/planets.vga/000/021.png" id="22_tqlap"]
+[ext_resource type="Texture2D" uid="uid://d157w1ciwqlw0" path="res://Gamedata/planets.vga/000/022.png" id="23_2uu0t"]
+[ext_resource type="Texture2D" uid="uid://yip4bxlkmkle" path="res://Gamedata/planets.vga/000/023.png" id="24_ypqkj"]
+[ext_resource type="Texture2D" uid="uid://h02wcs3ui74v" path="res://Gamedata/planets.vga/000/024.png" id="25_swlqu"]
+[ext_resource type="Texture2D" uid="uid://bj8inkbd2864i" path="res://Gamedata/planets.vga/000/025.png" id="26_lif8u"]
+[ext_resource type="Texture2D" uid="uid://b45nqg2hx7tgq" path="res://Gamedata/planets.vga/000/026.png" id="27_bpsl3"]
+[ext_resource type="Texture2D" uid="uid://h7g83yc8dyj4" path="res://Gamedata/planets.vga/000/027.png" id="28_i25hk"]
+[ext_resource type="Texture2D" uid="uid://cc0xhd7v2bbe1" path="res://Gamedata/planets.vga/000/028.png" id="29_xyb7g"]
+[ext_resource type="Texture2D" uid="uid://beacr7jm0xlvo" path="res://Gamedata/planets.vga/000/029.png" id="30_xevs3"]
+[ext_resource type="Texture2D" uid="uid://b6oqpi6eaqtsm" path="res://Gamedata/planets.vga/000/030.png" id="31_p2nko"]
+[ext_resource type="Texture2D" uid="uid://c11coufgulpgr" path="res://Gamedata/planets.vga/000/031.png" id="32_ajhj1"]
+[ext_resource type="Texture2D" uid="uid://dqj77ulrh0qo" path="res://Gamedata/planets.vga/000/032.png" id="33_2awcl"]
+[ext_resource type="Texture2D" uid="uid://dp6xuje4l0twk" path="res://Gamedata/planets.vga/000/033.png" id="34_fnrks"]
+[ext_resource type="Texture2D" uid="uid://cshecv3of5j50" path="res://Gamedata/planets.vga/000/034.png" id="35_wr1ct"]
+[ext_resource type="Texture2D" uid="uid://c1vlcb2wfjmcj" path="res://Gamedata/planets.vga/000/035.png" id="36_eeaip"]
+[ext_resource type="Texture2D" uid="uid://c8f8clcyw6ylb" path="res://Gamedata/planets.vga/000/036.png" id="37_nudqk"]
+[ext_resource type="Texture2D" uid="uid://ds5opm0w0pdfy" path="res://Gamedata/planets.vga/000/037.png" id="38_ntpu4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h584i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1c75g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vnxq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0jabc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3sqgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gudxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mc2gu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w6qpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_73b12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_kb5hj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yb8a7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_uv42c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1xmqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_po6hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_be7gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d330y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4nkic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_n73qj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_u6klt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bx42n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_37my1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_61vdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_tqlap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2uu0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ypqkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_swlqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_lif8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bpsl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_i25hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xyb7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_xevs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_p2nko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ajhj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2awcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_fnrks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_wr1ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_eeaip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_nudqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ntpu4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Planet" type="Node3D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_h584i")
+frame = 8
+frame_progress = 0.553142

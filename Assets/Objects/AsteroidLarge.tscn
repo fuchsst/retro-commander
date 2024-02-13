@@ -1,0 +1,76 @@
+[gd_scene load_steps=16 format=3 uid="uid://bxth1n5w7xcca"]
+
+[ext_resource type="Texture2D" uid="uid://bb58d5j2fsa4b" path="res://Gamedata/objects.vga/017/000.png" id="1_u6rih"]
+[ext_resource type="Texture2D" uid="uid://b8ptkkj364ydl" path="res://Gamedata/objects.vga/017/001.png" id="2_axd0c"]
+[ext_resource type="Texture2D" uid="uid://ce0hek17qnobt" path="res://Gamedata/objects.vga/017/002.png" id="3_m1i4r"]
+[ext_resource type="Texture2D" uid="uid://bhf13dafrp43u" path="res://Gamedata/objects.vga/017/003.png" id="4_g2apt"]
+[ext_resource type="Texture2D" uid="uid://ccisidiidnbei" path="res://Gamedata/objects.vga/017/004.png" id="5_om5ri"]
+[ext_resource type="Texture2D" uid="uid://bxckmc78slhqq" path="res://Gamedata/objects.vga/017/005.png" id="6_oavk0"]
+[ext_resource type="Texture2D" uid="uid://bjgqs83onkhhp" path="res://Gamedata/objects.vga/017/006.png" id="7_yiawv"]
+[ext_resource type="Texture2D" uid="uid://dl1p0jwo7pqn4" path="res://Gamedata/objects.vga/017/007.png" id="8_em80n"]
+[ext_resource type="Texture2D" uid="uid://c0fxxxu3n03ba" path="res://Gamedata/objects.vga/017/008.png" id="9_5gg0r"]
+[ext_resource type="Texture2D" uid="uid://nihtadolfgyi" path="res://Gamedata/objects.vga/017/009.png" id="10_yql4h"]
+[ext_resource type="Texture2D" uid="uid://o636uwtq6yac" path="res://Gamedata/objects.vga/017/010.png" id="11_id5ch"]
+[ext_resource type="Texture2D" uid="uid://4qh2rng5r805" path="res://Gamedata/objects.vga/017/011.png" id="12_wgvpp"]
+[ext_resource type="Texture2D" uid="uid://blkdmt20e0r8t" path="res://Gamedata/objects.vga/017/012.png" id="13_vkc21"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h584i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_u6rih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_axd0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_m1i4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g2apt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_om5ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oavk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yiawv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_em80n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5gg0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yql4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_id5ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wgvpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vkc21")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vqvgt"]
+radius = 0.333134
+
+[node name="AsteroidLarge" type="CharacterBody3D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_h584i")
+frame = 1
+frame_progress = 0.892402
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_vqvgt")

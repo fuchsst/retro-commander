@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmsnu2gvm1yip"]
+
+[ext_resource type="Texture2D" uid="uid://cwfilwwmputir" path="res://Gamedata/objects.vga/009/000.png" id="1_b8taq"]
+[ext_resource type="Texture2D" uid="uid://idpw5002exer" path="res://Gamedata/objects.vga/009/001.png" id="2_4hok1"]
+[ext_resource type="Texture2D" uid="uid://cxnt8ytbt5g62" path="res://Gamedata/objects.vga/009/002.png" id="3_we4mc"]
+[ext_resource type="Texture2D" uid="uid://drwqjndfkfydo" path="res://Gamedata/objects.vga/009/003.png" id="4_wq1k4"]
+[ext_resource type="Texture2D" uid="uid://dvefx4xfwugy8" path="res://Gamedata/objects.vga/009/004.png" id="5_gdunk"]
+[ext_resource type="Texture2D" uid="uid://bqdocxf7w3tqc" path="res://Gamedata/objects.vga/009/005.png" id="6_pj5oy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o6est"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_b8taq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4hok1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_we4mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wq1k4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gdunk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pj5oy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SmallExplosion1" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_o6est")
+frame = 1
+frame_progress = 0.00711794

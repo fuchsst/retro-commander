@@ -1,0 +1,57 @@
+[gd_scene load_steps=12 format=3 uid="uid://ofk55e3ugttl"]
+
+[ext_resource type="Texture2D" uid="uid://b5k83sisn4dfw" path="res://Gamedata/objects.vga/001/000.png" id="1_buewg"]
+[ext_resource type="Texture2D" uid="uid://c7taw8s0lvelk" path="res://Gamedata/objects.vga/001/001.png" id="2_o16bv"]
+[ext_resource type="Texture2D" uid="uid://c8trgncl5jcm4" path="res://Gamedata/objects.vga/001/002.png" id="3_svb6x"]
+[ext_resource type="Texture2D" uid="uid://cmqdl3jgderha" path="res://Gamedata/objects.vga/001/003.png" id="4_8uodj"]
+[ext_resource type="Texture2D" uid="uid://dolx51n0j63w" path="res://Gamedata/objects.vga/001/004.png" id="5_joth0"]
+[ext_resource type="Texture2D" uid="uid://dnaiipg6qwmps" path="res://Gamedata/objects.vga/001/005.png" id="6_gbwha"]
+[ext_resource type="Texture2D" uid="uid://cuqqlnjtuwj7n" path="res://Gamedata/objects.vga/001/006.png" id="7_bqg65"]
+[ext_resource type="Texture2D" uid="uid://qb4b6msdn8fd" path="res://Gamedata/objects.vga/001/007.png" id="8_1ffjy"]
+[ext_resource type="Texture2D" uid="uid://csuynhkdtvye6" path="res://Gamedata/objects.vga/001/008.png" id="9_fk8uu"]
+[ext_resource type="Texture2D" uid="uid://db01odceju512" path="res://Gamedata/objects.vga/001/009.png" id="10_b5g8c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gisv2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_buewg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o16bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_svb6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8uodj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_joth0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gbwha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bqg65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1ffjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fk8uu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_b5g8c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Explosion1" type="Node3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_gisv2")
+frame_progress = 0.643646
