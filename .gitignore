@@ -5,4 +5,7 @@ addons/
 .vs/
 .vscode/
 venv
+# these two folders are populated by the asset_importer scripts
+Assets/
 Gamedata/
+*.tmp

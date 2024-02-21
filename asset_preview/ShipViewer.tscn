@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwydhmi0t7eyb"]
+[gd_scene load_steps=5 format=3 uid="uid://bwydhmi0t7eyb"]
 
 [ext_resource type="Script" path="res://asset_preview/ShipViewer.gd" id="1_wpl14"]
-[ext_resource type="ArrayMesh" uid="uid://danpfdpq34xej" path="res://Assets/Ships/Hornet.vox" id="3_0mmf2"]
+[ext_resource type="ArrayMesh" uid="uid://dvklbg13ci8q6" path="res://Assets/Ships/Dralthi.vox" id="3_x2gkn"]
+[ext_resource type="ArrayMesh" uid="uid://voq18j7v7iv" path="res://Assets/Ships/Salthi.vox" id="4_ubxpp"]
+[ext_resource type="PackedScene" uid="uid://hqji3px5w272" path="res://Assets/Ships/Hornet.tscn" id="4_yx048"]
 
 [node name="ShipViewer" type="Node3D"]
 script = ExtResource("1_wpl14")
@@ -30,7 +32,14 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-1, 1.77636e-15, -8.74228e-08, -1.52815e-08, 0.984604, 0.1748, 8.60768e-08, 0.1748, -0.984604, 0, 4.77832, -8.26846)
+transform = Transform3D(-1, 7.66711e-15, -8.74228e-08, -3.72214e-08, 0.904834, 0.425764, 7.91031e-08, 0.425764, -0.904834, 0, 10.978, -25.0789)
 
-[node name="Hornet" type="MeshInstance3D" parent="."]
-mesh = ExtResource("3_0mmf2")
+[node name="Dralthi" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7773, -1.66943, 6.14337)
+mesh = ExtResource("3_x2gkn")
+
+[node name="Salthi" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.815511, 0.244902, -0.52437, 0.521757, 0.703165, -0.483041, 0.250422, -0.667519, -0.701218, -3.3144, 2.17087, 7.97487)
+mesh = ExtResource("4_ubxpp")
+
+[node name="Hornet2" parent="." instance=ExtResource("4_yx048")]

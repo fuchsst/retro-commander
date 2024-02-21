@@ -1,0 +1,5 @@
+fire
+pillow
+realesrgan
+torch
+torchvision

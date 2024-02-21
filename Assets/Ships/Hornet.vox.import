@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Hornet.vox-ebaeeaaec757266e18bb5ec0057f2b42.m
 
 [params]
 
-Scale=0.1
+Scale=0.3
 GreedyMeshGenerator=true
 SnapToGround=false
 FirstKeyframeOnly=true
