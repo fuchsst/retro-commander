@@ -41,7 +41,7 @@ Even entries are data selecting faces, font colors, and backgrounds.  These entr
 
 #### Dialog Settings
 
-#### Foregrounds
+#### Briefing Room Foregrounds
 
 0: Briefing crowd moving
 1: Briefing crowd still
@@ -75,6 +75,14 @@ Even entries are data selecting faces, font colors, and backgrounds.  These entr
 255 (-1): nobody
 MAY BE MORE FOR HALCYON OFFICE, FUNERAL, AND MEDAL SCENES
 
+#### Medal Ceremony Foregrounds
+
+6: Crowd with Halcyon talking to Blair (BRIEFING.VGA-ImageBlock008-ImageItem000)
+12: BRIEFING.VGA-ImageBlock010-ImageItem001
+13: BRIEFING.VGA-ImageBlock010-ImageItem000
+
+#### Halycons Office Foregrounds
+
 #### Text colors
 0: Light blue
 1: Lavendar (Spirit)
@@ -98,13 +106,21 @@ MAY BE MORE FOR HALCYON OFFICE, FUNERAL, AND MEDAL SCENES
 various grays from here on?
 
 #### Backgrounds
+-2: blue empty background
 0: briefing room wall
 1: briefing room crowd
 2: shotglass window
 3: left bar seat
 4: right bar seat
+5: funeral
+6: farewell (space with debris background)
+7: halcyon office door
+8: halcyon office window
+9: halcyon office room (desk)
 10: halcyon background during debriefing
 11: pilot background during debriefing (hangar door)
+12:
+13:
 255: nothing
 MAY BE MORE FOR HALCYON OFFICE, FUNERAL, AND MEDAL SCENES
 

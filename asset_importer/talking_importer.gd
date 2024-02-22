@@ -1,17 +1,19 @@
 extends Node
 
+const SCALE_FACTOR = 4
+
 const character_mapping = [
-	{ "foreground_index": 20, "name": "Halcyon" },
-	{ "foreground_index": 21, "name": "Spirit" },
-	{ "foreground_index": 22, "name": "Hunter" },
-	{ "foreground_index": 23, "name": "Bossman" },
-	{ "foreground_index": 24, "name": "Iceman" },
-	{ "foreground_index": 25, "name": "Angel" },
-	{ "foreground_index": 26, "name": "Paladin" },
-	{ "foreground_index": 27, "name": "Maniac" },
-	{ "foreground_index": 28, "name": "Knight" },
-	{ "foreground_index": 29, "name": "Bluehair" },
-	{ "foreground_index": 30, "name": "Shotglass" }
+	{ "foreground_index": 20, "name": "Halcyon",   "mouth_pos" : Vector2(138*SCALE_FACTOR, 74*SCALE_FACTOR), "eyes_pos" : Vector2(113*SCALE_FACTOR, 45*SCALE_FACTOR) },
+	{ "foreground_index": 21, "name": "Spirit",    "mouth_pos" : Vector2(139*SCALE_FACTOR, 77*SCALE_FACTOR), "eyes_pos" : Vector2(126*SCALE_FACTOR, 47*SCALE_FACTOR) },
+	{ "foreground_index": 22, "name": "Hunter",    "mouth_pos" : Vector2(152*SCALE_FACTOR, 82*SCALE_FACTOR), "eyes_pos" : Vector2(140*SCALE_FACTOR, 47*SCALE_FACTOR) },
+	{ "foreground_index": 23, "name": "Bossman",   "mouth_pos" : Vector2(116*SCALE_FACTOR, 80*SCALE_FACTOR), "eyes_pos" : Vector2(112*SCALE_FACTOR, 41*SCALE_FACTOR) },
+	{ "foreground_index": 24, "name": "Iceman",    "mouth_pos" : Vector2(142*SCALE_FACTOR, 86*SCALE_FACTOR), "eyes_pos" : Vector2(124*SCALE_FACTOR, 43*SCALE_FACTOR) },
+	{ "foreground_index": 25, "name": "Angel",     "mouth_pos" : Vector2(126*SCALE_FACTOR, 80*SCALE_FACTOR), "eyes_pos" : Vector2(120*SCALE_FACTOR, 55*SCALE_FACTOR) },
+	{ "foreground_index": 26, "name": "Paladin",   "mouth_pos" : Vector2(131*SCALE_FACTOR, 76*SCALE_FACTOR), "eyes_pos" : Vector2(116*SCALE_FACTOR, 43*SCALE_FACTOR) },
+	{ "foreground_index": 27, "name": "Maniac",    "mouth_pos" : Vector2(138*SCALE_FACTOR, 79*SCALE_FACTOR), "eyes_pos" : Vector2(116*SCALE_FACTOR, 48*SCALE_FACTOR) },
+	{ "foreground_index": 28, "name": "Knight",    "mouth_pos" : Vector2(132*SCALE_FACTOR, 77*SCALE_FACTOR), "eyes_pos" : Vector2(125*SCALE_FACTOR, 44*SCALE_FACTOR) },
+	{ "foreground_index": 29, "name": "Bluehair",  "mouth_pos" : Vector2(127*SCALE_FACTOR, 81*SCALE_FACTOR), "eyes_pos" : Vector2(127*SCALE_FACTOR, 44*SCALE_FACTOR) },
+	{ "foreground_index": 30, "name": "Shotglass", "mouth_pos" : Vector2(124*SCALE_FACTOR, 76*SCALE_FACTOR), "eyes_pos" : Vector2(113*SCALE_FACTOR, 46*SCALE_FACTOR) }
 ]
 
 func convert_talking():
@@ -31,13 +33,15 @@ func convert_talking():
 		for i in range(len(character_mapping)):
 			var block = image_blocks[i]
 			var file_name = ("%03d" % character_mapping[i]["foreground_index"]) + "_"+character_mapping[i]["name"]+".tscn"
-			var scene = create_cutscene_character_scene(block, image_dir)
+			var mouth_pos = character_mapping[i]["mouth_pos"]
+			var eyes_pos = character_mapping[i]["eyes_pos"]
+			var scene = create_cutscene_character_scene(block, image_dir, mouth_pos, eyes_pos)
 			ResourceSaver.save(scene, dst_dir + file_name)
 
 	else:
 		print("Failed to open file: " + src_file)
 		
-func create_cutscene_character_scene(json_data: Dictionary, base_path: String) -> PackedScene:
+func create_cutscene_character_scene(json_data: Dictionary, base_path: String, mouth_pos: Vector2, eyes_pos: Vector2) -> PackedScene:
 	var root = Node2D.new()
 	root.name = "CutsceneCharacter"
 	
@@ -69,12 +73,12 @@ func create_cutscene_character_scene(json_data: Dictionary, base_path: String) -
 			mouth_node.add_child(sprite)
 			sprite.name = "Mouth" + ("%02d" % i)
 			sprite.owner = root
-			sprite.position = Vector2(552, 296) # Vector2(json_data["Images"][i]["origin"]["x"], json_data["Images"][i]["origin"]["y"])
+			sprite.position = mouth_pos
 		else:
 			eyes_node.add_child(sprite)
 			sprite.name = "Eyes" + ("%02d" % (i-10))
 			sprite.owner = root
-			sprite.position = Vector2(448, 176)	
+			sprite.position = eyes_pos
 
 
 	var script = load("res://Scripts/Cutscenes/CutsceneCharacter.gd")

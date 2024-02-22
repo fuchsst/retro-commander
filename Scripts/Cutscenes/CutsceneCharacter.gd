@@ -6,13 +6,13 @@ extends Node2D
 	set(new_index):
 		mouth_index = new_index
 		for i in range(len(mouth_sprites)):
-			mouth_sprites[i].visible = i == mouth_index
+			mouth_sprites[i].visible = i == mouth_index-1
 			
 @export_range(0, 10) var eye_index: int:
 	set(new_index):
 		eye_index = new_index
 		for i in range(len(eye_sprites)):
-			eye_sprites[i].visible = i == eye_index
+			eye_sprites[i].visible = i == eye_index-1
 
 @onready var mouth_sprites = $Mouth.get_children()
 @onready var eye_sprites = $Eyes.get_children()

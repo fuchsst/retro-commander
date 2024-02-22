@@ -42,7 +42,6 @@ def convert_gamepal_xml(input_xml_file: str, output_json_file: str):
     json_output = json.dumps(result, indent=2)
     with open(output_json_file, "w", encoding="utf-8") as f:
         f.write(json_output)
-    raise Exception
 
 
 def _convert_filename(file_path):

@@ -70,7 +70,7 @@ def _convert_image(new_file_path: str, original_file_path: str, image_scale_fact
         logging.info(f"Converting {original_file_path} to {new_file_path}")
         with Image.open(original_file_path) as img:
             img = img.convert("RGBA")
-            result_img = scale_image(scale_image(img)).filter(ImageFilter.GaussianBlur(0.5))
+            result_img = scale_image(scale_image(img))
             # img = hqx.hqx_scale(img, image_scale_factor)
             result_img.save(new_file_path, "PNG")
     except FileNotFoundError:
