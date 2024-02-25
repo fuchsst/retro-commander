@@ -153,8 +153,6 @@ static func deserialize_savegame(savegame_bytes:PackedByteArray) -> GameState:
 		#loaded_game_state.mission_data.append(nav_data.duplicate())
 		pass
 		
-	print(loaded_game_state)
-		
 	return loaded_game_state
 
 static func _to_little_endian(value, bytes_length):

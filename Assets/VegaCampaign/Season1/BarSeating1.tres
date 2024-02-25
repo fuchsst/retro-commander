@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="BarSeatingProperties" load_steps=2 format=3 uid="uid://dma6u52j5t0ln"]
+
+[ext_resource type="Script" path="res://Scripts/Briefings/BarSeatingProperties.gd" id="1_svhih"]
+
+[resource]
+script = ExtResource("1_svhih")
+left_pilot_id = 21
+right_pilot_id = 22

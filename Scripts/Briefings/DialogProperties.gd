@@ -11,3 +11,16 @@ class_name DialogProperties
 @export var foreground: int
 @export var delay: int
 @export var text_color: int
+
+
+func _to_string() -> String:
+	return "{ " + \
+		'"commands": ' + str(commands) + ', ' + \
+		'"facial_expressions": ' + str(facial_expressions) + ', ' + \
+		'"lip_sync_text": ' + lip_sync_text + '", ' + \
+		'"text": '  + text +  '", ' + \
+		'"background": ' + str(background) + ', ' + \
+		'"foreground": ' + str(foreground) + ', ' + \
+		'"delay": ' + str(delay) + ', ' + \
+		'"text_color": ' + str(text_color) + \
+		' }'

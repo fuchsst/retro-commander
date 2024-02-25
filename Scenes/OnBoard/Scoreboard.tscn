@@ -1,19 +1,317 @@
-[gd_scene load_steps=4 format=3 uid="uid://6m5tvrm8clwv"]
+[gd_scene load_steps=6 format=3 uid="uid://6m5tvrm8clwv"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/Scoreboard.gd" id="1_5d4bg"]
-[ext_resource type="Texture2D" uid="uid://bfvfeebvdd2no" path="res://Sprites/LeaderBoard.png" id="2_cebo2"]
+[ext_resource type="Texture2D" uid="uid://c7q6xi4clxgao" path="res://Gamedata/recroom.vga/002/000.png" id="2_jrgka"]
 [ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="3_b3c0w"]
+[ext_resource type="FontFile" uid="uid://ndla46epdras" path="res://Fonts/EraserDust.ttf" id="3_uiief"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b1qes"]
+font = ExtResource("3_uiief")
+font_size = 58
+font_color = Color(0.950119, 0.950119, 0.950119, 0.866667)
 
 [node name="Scoreboard" type="Node2D"]
-scale = Vector2(4, 4)
 script = ExtResource("1_5d4bg")
 
 [node name="Background" type="TextureButton" parent="."]
-texture_normal = ExtResource("2_cebo2")
+offset_right = 1280.0
+offset_bottom = 800.0
+texture_normal = ExtResource("2_jrgka")
+stretch_mode = 0
+
+[node name="Title" type="Label" parent="Background"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 23.0
+offset_right = 1188.0
+offset_bottom = 90.0
+text = "Carrier - Tigers Claw"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TableTitles" type="HFlowContainer" parent="Background"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 100.0
+offset_right = 1140.0
+offset_bottom = 167.0
+
+[node name="NameColumTitle" type="Label" parent="Background/TableTitles"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "Pilot"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SortiesColumTitle" type="Label" parent="Background/TableTitles"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "Sorties"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="KillsColumTitle" type="Label" parent="Background/TableTitles"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "Kills"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TableRows" type="VFlowContainer" parent="Background"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 169.0
+offset_right = 1164.0
+offset_bottom = 753.0
+
+[node name="Row1" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row1"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row1"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row1"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row2" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row2"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row2"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row2"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row3" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row3"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row3"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row3"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row4" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row4"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row4"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row4"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row5" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row5"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row5"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row5"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row6" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row6"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row6"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row6"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row7" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row7"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row7"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row7"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row8" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row8"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row8"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row8"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Row9" type="HFlowContainer" parent="Background/TableRows"]
+custom_minimum_size = Vector2(1050, 0)
+layout_mode = 2
+
+[node name="PilotName" type="Label" parent="Background/TableRows/Row9"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+text = "---"
+label_settings = SubResource("LabelSettings_b1qes")
+vertical_alignment = 1
+
+[node name="Sorties" type="Label" parent="Background/TableRows/Row9"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Kills" type="Label" parent="Background/TableRows/Row9"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_b1qes")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="OverlayCanvas" type="CanvasLayer" parent="."]
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="Cursor" parent="OverlayCanvas" instance=ExtResource("3_b3c0w")]
 

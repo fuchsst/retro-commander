@@ -166,5 +166,5 @@ animations = [{
 [node name="AnimatedSprite" type="AnimatedSprite3D" parent="."]
 billboard = 1
 sprite_frames = SubResource("SpriteFrames_h584i")
-frame = 8
-frame_progress = 0.553142
+frame = 17
+frame_progress = 0.718243

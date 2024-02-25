@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://ehnv0r8gyjty"]
+[gd_scene load_steps=106 format=3 uid="uid://ehnv0r8gyjty"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/Bar.gd" id="1_d6lfd"]
 [ext_resource type="Texture2D" uid="uid://bniaenbl8oams" path="res://Gamedata/recroom.vga/000/000.png" id="1_q1mcf"]
@@ -46,6 +46,7 @@
 [ext_resource type="Texture2D" uid="uid://drkrcru1lly06" path="res://Gamedata/recroom.vga/011/040.png" id="42_wrgku"]
 [ext_resource type="Texture2D" uid="uid://cksn58ly1yy1d" path="res://Gamedata/recroom.vga/003/000.png" id="43_qam88"]
 [ext_resource type="Texture2D" uid="uid://b34g4hrfc2cw7" path="res://Gamedata/recroom.vga/003/001.png" id="44_ca8hu"]
+[ext_resource type="Script" path="res://Scenes/OnBoard/BarCharacter.gd" id="45_5cqss"]
 [ext_resource type="Texture2D" uid="uid://cencnx20e134b" path="res://Gamedata/recroom.vga/003/002.png" id="45_g0hua"]
 [ext_resource type="Texture2D" uid="uid://dw3tq10ccsx2m" path="res://Gamedata/recroom.vga/003/003.png" id="46_qk2tc"]
 [ext_resource type="Texture2D" uid="uid://cnq38mci0omnp" path="res://Gamedata/recroom.vga/003/004.png" id="47_77qf6"]
@@ -96,7 +97,8 @@
 [ext_resource type="Texture2D" uid="uid://b1gtqpd2ifovn" path="res://Gamedata/recroom.vga/000/002.png" id="92_wgrx3"]
 [ext_resource type="Texture2D" uid="uid://qnbqtfmi8i8t" path="res://Gamedata/recroom.vga/000/003.png" id="93_x7fjo"]
 [ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="94_jixm7"]
-[ext_resource type="PackedScene" uid="uid://cae73w4fy8nvl" path="res://Assets/TooltipText.tscn" id="95_sa2r1"]
+[ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="96_8n8a7"]
+[ext_resource type="Script" path="res://Assets/TooltipText.gd" id="97_gfrr6"]
 
 [sub_resource type="Animation" id="Animation_r7oy7"]
 length = 0.001
@@ -313,15 +315,17 @@ func _on_view_pilot_stats_button_pressed():
 	get_tree().change_scene_to_file(\"res://Scenes/OnBoard/Scoreboard.tscn\")
 "
 
+[sub_resource type="LabelSettings" id="LabelSettings_jlayi"]
+font = ExtResource("96_8n8a7")
+font_size = 48
+
 [node name="BarScene" type="CanvasLayer"]
 script = ExtResource("1_d6lfd")
 
 [node name="BackgroundCanvas" type="CanvasLayer" parent="."]
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="Space" type="Node2D" parent="BackgroundCanvas"]
-position = Vector2(0, 16)
+position = Vector2(0, 64)
 
 [node name="SpaceAnimation" type="AnimationPlayer" parent="BackgroundCanvas/Space"]
 root_node = NodePath("../..")
@@ -347,278 +351,283 @@ texture = ExtResource("1_q1mcf")
 
 [node name="ForegroundCanvas" type="CanvasLayer" parent="."]
 layer = 10
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="TableTop" type="Node2D" parent="ForegroundCanvas"]
 
 [node name="Barman" type="AnimatedSprite2D" parent="ForegroundCanvas/TableTop"]
-position = Vector2(94, 60)
+position = Vector2(376, 240)
 sprite_frames = SubResource("SpriteFrames_n1igi")
 frame = 29
 frame_progress = 0.742977
 centered = false
 
 [node name="LeftCharacter" type="Node2D" parent="ForegroundCanvas/TableTop"]
-position = Vector2(183, 102)
+position = Vector2(736, 404)
+script = ExtResource("45_5cqss")
 
-[node name="Character003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+[node name="021_Spirit" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+visible = false
 texture = ExtResource("43_qam88")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/021_Spirit"]
 visible = false
 texture = ExtResource("44_ca8hu")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/021_Spirit"]
 visible = false
 texture = ExtResource("45_g0hua")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/021_Spirit"]
 visible = false
 texture = ExtResource("46_qk2tc")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/021_Spirit"]
 visible = false
 texture = ExtResource("47_77qf6")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character003"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/021_Spirit"]
 visible = false
 texture = ExtResource("48_mv3ac")
 
-[node name="Character006" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+[node name="024_Iceman" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
 visible = false
 texture = ExtResource("49_wgmmp")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/024_Iceman"]
 visible = false
 texture = ExtResource("50_ko4rl")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/024_Iceman"]
 visible = false
 texture = ExtResource("51_qke1l")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/024_Iceman"]
 visible = false
 texture = ExtResource("52_phvb6")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/024_Iceman"]
 visible = false
 texture = ExtResource("53_etdcl")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character006"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/024_Iceman"]
 visible = false
 texture = ExtResource("54_mybfp")
 
-[node name="Character008" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+[node name="026_Paladin" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
 visible = false
 texture = ExtResource("55_pwid3")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/026_Paladin"]
 visible = false
 texture = ExtResource("56_q4spd")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/026_Paladin"]
 visible = false
 texture = ExtResource("57_f2lkj")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/026_Paladin"]
 visible = false
 texture = ExtResource("58_mftw4")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/026_Paladin"]
 visible = false
 texture = ExtResource("59_yvdue")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character008"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/026_Paladin"]
 visible = false
 texture = ExtResource("60_bhquq")
 
-[node name="Character009" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
+[node name="027_Maniac" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter"]
 visible = false
 texture = ExtResource("61_4dwa6")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/027_Maniac"]
 visible = false
 texture = ExtResource("62_ewc42")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/027_Maniac"]
 visible = false
 texture = ExtResource("63_h5xhh")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/027_Maniac"]
 visible = false
 texture = ExtResource("64_cij31")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/027_Maniac"]
 visible = false
 texture = ExtResource("65_5v5y7")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/Character009"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/LeftCharacter/027_Maniac"]
+visible = false
 texture = ExtResource("66_65yqy")
 
-[node name="RightCharacter" type="Node2D" parent="ForegroundCanvas/TableTop"]
-position = Vector2(225, 102)
+[node name="TalkToLeftCharacterButton" type="TextureButton" parent="ForegroundCanvas/TableTop"]
+offset_left = 636.0
+offset_top = 330.0
+offset_right = 812.0
+offset_bottom = 678.0
 
-[node name="Character004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+[node name="RightCharacter" type="Node2D" parent="ForegroundCanvas/TableTop"]
+position = Vector2(900, 408)
+script = ExtResource("45_5cqss")
+
+[node name="022_Hunter" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+visible = false
 texture = ExtResource("67_8h0nn")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/022_Hunter"]
 visible = false
 texture = ExtResource("68_2xpkp")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/022_Hunter"]
 visible = false
 texture = ExtResource("69_62m7e")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/022_Hunter"]
 visible = false
 texture = ExtResource("70_6gd8s")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/022_Hunter"]
 visible = false
 texture = ExtResource("71_hdiqj")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character004"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/022_Hunter"]
 visible = false
 texture = ExtResource("72_uw0fi")
 
-[node name="Character005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+[node name="023_Bossman" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
 visible = false
 texture = ExtResource("73_bgjfi")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/023_Bossman"]
 visible = false
 texture = ExtResource("74_ciuto")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/023_Bossman"]
 visible = false
 texture = ExtResource("75_s3ofj")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/023_Bossman"]
 visible = false
 texture = ExtResource("76_00340")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/023_Bossman"]
 visible = false
 texture = ExtResource("77_tihjt")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character005"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/023_Bossman"]
 visible = false
 texture = ExtResource("78_t6j02")
 
-[node name="Character007" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
+[node name="025_Angel" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
 visible = false
 texture = ExtResource("79_ktjnf")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/025_Angel"]
 visible = false
 texture = ExtResource("80_kkuq6")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/025_Angel"]
 visible = false
 texture = ExtResource("81_dhcru")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/025_Angel"]
 visible = false
 texture = ExtResource("82_b2doa")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/025_Angel"]
 visible = false
 texture = ExtResource("83_j28ig")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character007"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/025_Angel"]
 visible = false
 texture = ExtResource("84_k65b2")
 
-[node name="Character010" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
-visible = false
+[node name="028_Knight" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter"]
 texture = ExtResource("85_vyak0")
 
-[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+[node name="001" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/028_Knight"]
 visible = false
 texture = ExtResource("86_7uquc")
 
-[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+[node name="002" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/028_Knight"]
 visible = false
 texture = ExtResource("87_wgnin")
 
-[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+[node name="003" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/028_Knight"]
 visible = false
 texture = ExtResource("88_ylgs6")
 
-[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+[node name="004" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/028_Knight"]
 visible = false
 texture = ExtResource("89_guxol")
 
-[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/Character010"]
+[node name="005" type="Sprite2D" parent="ForegroundCanvas/TableTop/RightCharacter/028_Knight"]
 visible = false
 texture = ExtResource("90_0wer0")
+
+[node name="TalkToRightCharacterButton" type="TextureButton" parent="ForegroundCanvas/TableTop"]
+offset_left = 812.0
+offset_top = 332.0
+offset_right = 988.0
+offset_bottom = 672.0
 
 [node name="Node2D" type="Node2D" parent="ForegroundCanvas/TableTop"]
 
 [node name="TableBottom" type="Node2D" parent="ForegroundCanvas"]
 
 [node name="OnePersonRight" type="Sprite2D" parent="ForegroundCanvas/TableBottom"]
-visible = false
-position = Vector2(158, 129)
+position = Vector2(632, 516)
 texture = ExtResource("91_am7l5")
 centered = false
 
 [node name="OnePersonLeft" type="Sprite2D" parent="ForegroundCanvas/TableBottom"]
 visible = false
-position = Vector2(158, 129)
+position = Vector2(632, 516)
 texture = ExtResource("92_wgrx3")
 centered = false
 
 [node name="TwoPerson" type="Sprite2D" parent="ForegroundCanvas/TableBottom"]
-position = Vector2(158, 129)
+visible = false
+position = Vector2(632, 516)
 texture = ExtResource("93_x7fjo")
 centered = false
 
 [node name="OverlayCanvas" type="CanvasLayer" parent="."]
 layer = 100
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="EnterSimulatorButton" type="TextureButton" parent="OverlayCanvas"]
-offset_top = 102.0
-offset_right = 90.0
-offset_bottom = 178.0
+offset_top = 408.0
+offset_right = 360.0
+offset_bottom = 712.0
 
 [node name="TalkToShotglassButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 95.0
-offset_top = 57.0
-offset_right = 138.0
-offset_bottom = 102.0
+offset_left = 380.0
+offset_top = 228.0
+offset_right = 552.0
+offset_bottom = 408.0
 
 [node name="ViewPilotStatsButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 182.0
-offset_top = 47.0
-offset_right = 258.0
-offset_bottom = 81.0
-
-[node name="TalkToLeftCharacterButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 159.0
-offset_top = 82.5
-offset_right = 203.0
-offset_bottom = 169.5
-
-[node name="TalkToRightCharacterButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 203.0
-offset_top = 83.0
-offset_right = 247.0
-offset_bottom = 168.0
+offset_left = 728.0
+offset_top = 188.0
+offset_right = 1032.0
+offset_bottom = 324.0
 
 [node name="ExitToBaracksButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 277.0
-offset_top = 43.0
-offset_right = 320.0
-offset_bottom = 137.0
+offset_left = 1108.0
+offset_top = 172.0
+offset_right = 1280.0
+offset_bottom = 548.0
 script = SubResource("GDScript_6i7q7")
 
-[node name="TooltipText" parent="OverlayCanvas" instance=ExtResource("95_sa2r1")]
-position = Vector2(0, 180)
-text_color = Color(0.909804, 0.921569, 1, 1)
+[node name="TooltipTextLabel" type="Label" parent="OverlayCanvas"]
+offset_top = 736.0
+offset_right = 1280.0
+offset_bottom = 800.0
+label_settings = SubResource("LabelSettings_jlayi")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("97_gfrr6")
 
 [node name="Cursor" parent="OverlayCanvas" instance=ExtResource("94_jixm7")]
 
@@ -626,6 +635,10 @@ text_color = Color(0.909804, 0.921569, 1, 1)
 position = Vector2(0, 1)
 anchor_mode = 0
 
+[connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_exited" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_exited" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="mouse_entered" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Fly training mission"]]
 [connection signal="mouse_exited" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="mouse_entered" from="OverlayCanvas/TalkToShotglassButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Talk to Shotglass"]]
@@ -633,10 +646,6 @@ anchor_mode = 0
 [connection signal="mouse_entered" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Check pilot scores"]]
 [connection signal="mouse_exited" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="pressed" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/ExitToBaracksButton" method="_on_view_pilot_stats_button_pressed"]
-[connection signal="mouse_entered" from="OverlayCanvas/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
-[connection signal="mouse_exited" from="OverlayCanvas/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
-[connection signal="mouse_entered" from="OverlayCanvas/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
-[connection signal="mouse_exited" from="OverlayCanvas/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="mouse_entered" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Enter Baracks"]]
 [connection signal="mouse_exited" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="pressed" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/ExitToBaracksButton" method="_on_pressed"]

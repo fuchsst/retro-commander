@@ -1,0 +1,827 @@
+[gd_resource type="Resource" script_class="MissionDialogs" load_steps=77 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Briefings/DialogProperties.gd" id="1_v6ncb"]
+[ext_resource type="Script" path="res://Scripts/Briefings/MissionDialogs.gd" id="2_4vpih"]
+
+[sub_resource type="Resource" id="Resource_hlcxy"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "a3bansur2kaptan"
+text = "Ah, bonjour, $R."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_btp7r"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "ihavbanravuagardataantekalratestarfitrs"
+text = "I have been reviewing our data on the Kilrathi starfighters."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_anuff"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "435", "81", "01", "A50", "81", "02"])
+lip_sync_text = "aranformatanandakatstatanalcasas"
+text = "Our information indicates that in all cases..."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_h6xsq"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "tarsidarmraswekrtantatutefranarrer"
+text = "...their side armor is weaker than that to the front or rear."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_ob4wf"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[4]:0", "6;"])
+facial_expressions = Array[String](["240", "81", "02", "R145", "81", "01", "A35", "81", "01"])
+lip_sync_text = "maikinitdublifoolistocloshedon3entewtenemisguns"
+text = "Making it doubly foolish to close head on, into the enemy's guns."
+background = 3
+foreground = 21
+delay = 50
+text_color = 1
+
+[sub_resource type="Resource" id="Resource_3d6ve"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["140", "81", "01", "RA45", "81", "01", "A35", "81", "01"])
+lip_sync_text = "indeed3madamosel"
+text = "Indeed, mademoiselle."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_2nt7l"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["140", "81", "01", "RA45", "81", "01", "A35", "81", "01"])
+lip_sync_text = "tebestataclinwudbefrumteflanks"
+text = "The best attack line would be from the flanks."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_4rr8d"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = ""
+background = 4
+foreground = -2
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_wsko6"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["45", "81", "02", "430", "R81", "01", "A35", "81", "01", "A40"])
+lip_sync_text = "conisiwa3honorabldipstic"
+text = "Konichi-wa, honorable $R."
+background = 3
+foreground = 21
+delay = 50
+text_color = 1
+
+[sub_resource type="Resource" id="Resource_hodns"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["A10", "81", "01", "235", "R81", "01", "A45", "81", "01", "A35"])
+lip_sync_text = "captindeverowandiwerjustdiscusinteenimisselds"
+text = "Captain Devereaux and I were just discussing the enemy's shields."
+background = 3
+foreground = 21
+delay = 50
+text_color = 1
+
+[sub_resource type="Resource" id="Resource_usqaa"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "02", "435", "81", "01", "440", "81", "02"])
+lip_sync_text = "sewaspointinawtanecselentacticihafusdmiself"
+text = "She was pointing out an excellent tactic I have used myself."
+background = 3
+foreground = 21
+delay = 50
+text_color = 1
+
+[sub_resource type="Resource" id="Resource_inens"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["R81", "01", "A35", "81", "01", "A40"])
+lip_sync_text = "wintailinteenemi3itisgodtofirsefrulvolisuflasers"
+text = "When tailing the enemy, it is good to fire several volleys of lasers..."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_up15x"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA30", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "whilkepinanionhissildsinyurtargatagcamputr"
+text = "...while keeping an eye on his sheilds in your targetting computer."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_wb7w6"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["R145", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "wunsyerlasurshafbrawthissildsdown"
+text = "Once your lasers have brought his shields down..."
+background = 3
+foreground = 21
+delay = 50
+text_color = 1
+
+[sub_resource type="Resource" id="Resource_axltn"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "tenfiraheetseekinmisiltofinishim"
+text = "...then fire a heat-seeking missile to finish him."
+background = 3
+foreground = 21
+delay = 50
+text_color = 1
+
+[sub_resource type="Resource" id="Resource_786yg"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["420", "R81", "01", "A45", "81", "01", "A35"])
+lip_sync_text = "dataindicatsamisilisofurtwisasliklitodistroiafitur"
+text = "Data indicates a missile is over twice as likely to destroy a fighter..."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_4mis2"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A30", "81", "01"])
+lip_sync_text = "ifithitswinhursildsardown"
+text = "...if it hits when her shields are down."
+background = 4
+foreground = 25
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_n710j"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = ""
+background = 4
+foreground = -2
+delay = 50
+text_color = 5
+
+[sub_resource type="Resource" id="Resource_clwp8"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A25", "81", "01", "A30", "81", "01"])
+lip_sync_text = "so2dipstic4herwearintesingtusistim"
+text = "So, $C. Here we are in the Chengdu system."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_hmio6"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "02", "A25", "81", "01", "A30", "81", "01"])
+lip_sync_text = "efurbintosingtubefor"
+text = "Ever been to the planet Nanjing, before?"
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_p6sa2"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A30", "81", "01"])
+lip_sync_text = "wondufulplais5notasingulhieranimulnatiftoteplanit"
+text = "Wonderful place. Not a single higher animal native to the planet."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_g1h7f"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A45", "81", "01", "A30"])
+lip_sync_text = "butitmaiksupfortatwitbugs5bigwuns"
+text = "But it makes up for that with bugs ... big ones."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_e5qng"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["A10", "81", "01", "RA35", "81", "01", "A30", "81", "01"])
+lip_sync_text = "teygawtsicsfutlonhuntininsectsinteforists"
+text = "They got six-foot-long huntin' insects in the forests..."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_2lyhh"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA40", "81", "01", "A30", "81", "02", "A45", "81", "01"])
+lip_sync_text = "cawlonistscalembugbers3anteystaicliroftem"
+text = "Colonists call 'em bugbears, and they stay clear of them."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_hqu1m"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA30", "81", "01", "A40", "81", "01"])
+lip_sync_text = "noideawhianiwundsetulhir"
+text = "No idea why anyone'd settle here."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_dpgri"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA40", "81", "02", "A25", "81", "01", "A35", "81", "01"])
+lip_sync_text = "teysaiterslotsofhidrocarbons"
+text = "They say there's lots of hydrocarbons..."
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_py4il"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A40", "81", "01"])
+lip_sync_text = "butitjustdontseemwurtittome3witaltembugs"
+text = "...but it just don't seem worth it to me, with all them bugs!"
+background = 2
+foreground = 30
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_ddfup"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = ""
+background = 2
+foreground = -2
+delay = 50
+text_color = 10
+
+[sub_resource type="Resource" id="Resource_vw2i0"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "Mission Briefing.
+Chengdu System, $T hours, $D."
+background = -1
+foreground = 0
+delay = 200
+text_color = 11
+
+[sub_resource type="Resource" id="Resource_3pgit"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "We've got a Hornet coming in from patrol with four Krant on her tail."
+background = -1
+foreground = 1
+delay = 150
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_litd6"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["110", "81", "01", "R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "dipstic3yewandanjulargointogoawtandsetatsegetsbacsaif"
+text = "$C, you and Angel are going to go out and see that she gets back safe."
+background = -1
+foreground = 2
+delay = 80
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_v06lw"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA40", "81", "01", "A30", "81", "01"])
+lip_sync_text = "itsvalkare3ufyelojacetscwadrunonhurwaibacin"
+text = "It's Valkyrie, of Yellow Jacket squadron, on her way back in."
+background = 1
+foreground = 2
+delay = 90
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_noc7m"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["A10", "81", "02", "R140", "81", "01", "135", "81", "01"])
+lip_sync_text = "sesgotaficsonaralariclasdestrorinsistim"
+text = "She's got a fix on a Ralari-class destroyer in system..."
+background = 0
+foreground = 20
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_wp2hu"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["220", "81", "01", "A40", "81", "01", "R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "soitsfitalsegetbactodownlowdhurmisonreport"
+text = "...so it's vital she get back to download her mission report."
+background = 0
+foreground = 20
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_g7it3"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "compewtr2displaiepsilon"
+text = "Computer, display Epsilon."
+background = 0
+foreground = 20
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_ajgel"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = "herstesanareo"
+text = "Here's the scenario..."
+background = -1
+foreground = 3
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_makxv"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "This is Valkyrie's current position."
+background = 0
+foreground = 4
+delay = 300
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_8m1go"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "She's got a wing of four Krant on her tail..."
+background = 1
+foreground = 4
+delay = 300
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_n80nh"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "They're within 20,000 klicks and closing."
+background = 1
+foreground = 4
+delay = 300
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_52nld"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "yewlrandevoowither3andcuferherretreetbactoteclaw"
+text = "You'll rendezvous with her, and cover her retreat back to the Claw."
+background = -1
+foreground = 2
+delay = 90
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_navqk"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["A30", "81", "01", "R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "wenededatainhurcompewtr3sokeephursaif"
+text = "We need the data in her computer, so keep her safe."
+background = -1
+foreground = 2
+delay = 90
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_6ghcp"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["140", "81", "02", "RA40", "81", "01"])
+lip_sync_text = "andremembur3tersatleastwunralariintissistum"
+text = "And remember, there's at least one Ralari in this system..."
+background = 0
+foreground = 20
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_oqreg"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA40", "81", "01", "A30", "81", "01"])
+lip_sync_text = "sostaialurtawttere"
+text = "...so stay alert out there."
+background = 0
+foreground = 20
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_ifruh"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "cwestons3dipstic5anjul"
+text = "Questions, $C? Angel?"
+background = 0
+foreground = 20
+delay = 90
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_dinf7"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["R140", "81", "01", "130", "81", "01"])
+lip_sync_text = "nosir4weedbeturjustgetawtter"
+text = "No, sir. We'd better just get out there!"
+background = 1
+foreground = 29
+delay = 90
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_3yje6"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["140", "81", "01", "RA40", "81", "01", "A30", "81", "01"])
+lip_sync_text = "awlrit2ten4gettowerk"
+text = "All right then, get to work."
+background = -1
+foreground = 2
+delay = 90
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_yju41"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "Squadron dismissed."
+background = -1
+foreground = 5
+delay = 300
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_84oab"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = ""
+background = -1
+foreground = -2
+delay = 300
+text_color = -1
+
+[sub_resource type="Resource" id="Resource_sb0ai"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = "Mission debriefing. $T hours, $D."
+background = -1
+foreground = 10
+delay = 225
+text_color = 11
+
+[sub_resource type="Resource" id="Resource_44ntp"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[11]:1", "5;[4]:4", "2;"])
+facial_expressions = Array[String]([])
+lip_sync_text = "gudwirkprotekinvalkire2utu4shejustucheddon"
+text = "Good work protecting Valkyrie, you two. She just touched down."
+background = -1
+foreground = 11
+delay = 60
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_uvavo"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[5]:4", "3;"])
+facial_expressions = Array[String]([])
+lip_sync_text = "gudwirkcoverinvalkire3dipstik4shelandedritbehinu"
+text = "Good work covering Valkyrie, $C. She landed right behind you."
+background = -1
+foreground = 11
+delay = 70
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_83gun"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "tacticalisdownlodinhermisonreportritnow"
+text = "Tactical is downloading her mission report right now..."
+background = 10
+foreground = 20
+delay = 70
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_3wumf"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A40", "81", "01", "A30", "81", "02"])
+lip_sync_text = "welhavfulinformasunontatralariiniminut"
+text = "We'll have full information on that Ralari any minute."
+background = 10
+foreground = 20
+delay = 80
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_fj3lb"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[12]:1", "9;"])
+facial_expressions = Array[String]([])
+lip_sync_text = "sotheharbahlsgotvalkire3eh"
+text = "So the hairballs got Valkyrie, eh?"
+background = -1
+foreground = 11
+delay = 60
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_msc44"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["630", "81", "01", "R125", "81", "01", "135", "81", "01"])
+lip_sync_text = "tatsgointocostus3dipstic"
+text = "That's going to cost us, $C."
+background = 10
+foreground = 20
+delay = 70
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_8jfgo"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA25", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "nawevgotatlestwonkilratiwarsiplusintesistim"
+text = "Now we've got at least one Kilrathi warship loose in the system..."
+background = 10
+foreground = 20
+delay = 70
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_5mrxl"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA25", "81", "01", "A35", "81", "01", "630", "81", "02"])
+lip_sync_text = "andnoideawerseisorwutsesupto"
+text = "...and no idea where she is or what she's up to."
+background = 10
+foreground = 20
+delay = 90
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_ibvvq"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[28]:2", "16;[4]:4", "10;"])
+facial_expressions = Array[String](["RA25", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "actualy3sur3wedidrunintoteralari"
+text = "Actually, sir, we did run into the Ralari."
+background = 11
+foreground = 29
+delay = 70
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_ows4e"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[5]:4", "11;"])
+facial_expressions = Array[String](["RA25", "81", "01", "A35", "81", "01"])
+lip_sync_text = "actualy3sur3ididrunintoteralari"
+text = "Actually, sir, I did run into the Ralari."
+background = 11
+foreground = 29
+delay = 70
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_cn5mr"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["A30", "81", "02", "RA40", "81", "01", "A35", "81", "01"])
+lip_sync_text = "gud5teboisintacticalwilbegladtogetyurdataonher"
+text = "Good. The boys in Tactical will be glad to get your data on her."
+background = 10
+foreground = 20
+delay = 85
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_bn6s5"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[11]:2", "16;"])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "sewontbegivinusanitrubul"
+text = "She won't be giving us any trouble..."
+background = 11
+foreground = 29
+delay = 60
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_xcvv4"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[4]:4", "14;"])
+facial_expressions = Array[String](["RA25", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "wescaturdheratomsacrostesistim"
+text = "We scattered her atoms across the system!"
+background = 11
+foreground = 29
+delay = 70
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_0rpt7"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[5]:4", "15;"])
+facial_expressions = Array[String](["RA35", "81", "01", "A35", "81", "01"])
+lip_sync_text = "iscaturdheratomsacrostesisitim"
+text = "I scattered her atoms across the system!"
+background = 11
+foreground = 29
+delay = 70
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_cxjkr"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01"])
+lip_sync_text = "ecselintwurk3dipstic$50"
+text = "Excellent work, $C!"
+background = 10
+foreground = 20
+delay = 85
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_qhfwe"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA35", "81", "01", "A45", "81", "02", "A30", "81", "01"])
+lip_sync_text = "ihafntseentemisonreportyet3sofilmein"
+text = "I haven't seen the mission report yet, so fill me in."
+background = 10
+foreground = 20
+delay = 70
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_k4ver"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[6]:18;"])
+facial_expressions = Array[String](["RA35", "81", "01"])
+lip_sync_text = "igotsevnoftehairbals3sur"
+text = "I got $K of the hairballs, sir..."
+background = 11
+foreground = 29
+delay = 50
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_uf2ig"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[7]:19;"])
+facial_expressions = Array[String](["420", "81", "01", "RA30", "81", "01", "A40", "81", "01"])
+lip_sync_text = "icaimupempti3sur"
+text = "I came up empty, sir..."
+background = 11
+foreground = 29
+delay = 50
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_t6qrs"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[29]:4", "22;[8]:20;"])
+facial_expressions = Array[String](["240", "81", "02", "RA30", "81", "01", "A35", "81", "01"])
+lip_sync_text = "andanjilgotsevn"
+text = "and Angel got $L."
+background = 11
+foreground = 29
+delay = 50
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_xk0ho"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[9]:21;"])
+facial_expressions = Array[String](["220", "81", "01", "430", "81", "01", "RA40", "81", "01"])
+lip_sync_text = "andanjilwusblancd"
+text = "and Angel was blanked."
+background = 11
+foreground = 29
+delay = 50
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_5c3wk"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[5]:4", "22;"])
+facial_expressions = Array[String](["430", "81", "02", "R425", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "andtekilratigotanjil"
+text = "And the Kilrathi got Angel."
+background = 11
+foreground = 29
+delay = 50
+text_color = 9
+
+[sub_resource type="Resource" id="Resource_l2vad"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA25", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "isi"
+text = "I see..."
+background = 10
+foreground = 20
+delay = 60
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_vx01f"]
+script = ExtResource("1_v6ncb")
+commands = Array[String](["[10]:24;"])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A30", "81", "02"])
+lip_sync_text = "ilwanttosiyuinmiofislaturon3dipstic"
+text = "I'll want to see you in my office later on, $C."
+background = 10
+foreground = 20
+delay = 70
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_d6trb"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = "tatsalten4dismised"
+text = "That'll be all then, dismissed."
+background = -1
+foreground = 11
+delay = 50
+text_color = 0
+
+[sub_resource type="Resource" id="Resource_xkbck"]
+script = ExtResource("1_v6ncb")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = ""
+background = -1
+foreground = -2
+delay = 50
+text_color = 0
+
+[resource]
+script = ExtResource("2_4vpih")
+briefing = Array[ExtResource("1_v6ncb")]([SubResource("Resource_vw2i0"), SubResource("Resource_3pgit"), SubResource("Resource_litd6"), SubResource("Resource_v06lw"), SubResource("Resource_noc7m"), SubResource("Resource_wp2hu"), SubResource("Resource_g7it3"), SubResource("Resource_ajgel"), SubResource("Resource_makxv"), SubResource("Resource_8m1go"), SubResource("Resource_n80nh"), SubResource("Resource_52nld"), SubResource("Resource_navqk"), SubResource("Resource_6ghcp"), SubResource("Resource_oqreg"), SubResource("Resource_ifruh"), SubResource("Resource_dinf7"), SubResource("Resource_3yje6"), SubResource("Resource_yju41"), SubResource("Resource_84oab")])
+debriefing = Array[ExtResource("1_v6ncb")]([SubResource("Resource_sb0ai"), SubResource("Resource_44ntp"), SubResource("Resource_uvavo"), SubResource("Resource_83gun"), SubResource("Resource_3wumf"), SubResource("Resource_fj3lb"), SubResource("Resource_msc44"), SubResource("Resource_8jfgo"), SubResource("Resource_5mrxl"), SubResource("Resource_ibvvq"), SubResource("Resource_ows4e"), SubResource("Resource_cn5mr"), SubResource("Resource_bn6s5"), SubResource("Resource_xcvv4"), SubResource("Resource_0rpt7"), SubResource("Resource_cxjkr"), SubResource("Resource_qhfwe"), SubResource("Resource_k4ver"), SubResource("Resource_uf2ig"), SubResource("Resource_t6qrs"), SubResource("Resource_xk0ho"), SubResource("Resource_5c3wk"), SubResource("Resource_l2vad"), SubResource("Resource_vx01f"), SubResource("Resource_d6trb"), SubResource("Resource_xkbck")])
+bar_shotglass = Array[ExtResource("1_v6ncb")]([SubResource("Resource_clwp8"), SubResource("Resource_hmio6"), SubResource("Resource_p6sa2"), SubResource("Resource_g1h7f"), SubResource("Resource_e5qng"), SubResource("Resource_2lyhh"), SubResource("Resource_hqu1m"), SubResource("Resource_dpgri"), SubResource("Resource_py4il"), SubResource("Resource_ddfup")])
+bar_left_pilot = Array[ExtResource("1_v6ncb")]([SubResource("Resource_hlcxy"), SubResource("Resource_btp7r"), SubResource("Resource_anuff"), SubResource("Resource_h6xsq"), SubResource("Resource_ob4wf"), SubResource("Resource_3d6ve"), SubResource("Resource_2nt7l"), SubResource("Resource_4rr8d")])
+bar_right_pilot = Array[ExtResource("1_v6ncb")]([SubResource("Resource_wsko6"), SubResource("Resource_hodns"), SubResource("Resource_usqaa"), SubResource("Resource_inens"), SubResource("Resource_up15x"), SubResource("Resource_wb7w6"), SubResource("Resource_axltn"), SubResource("Resource_786yg"), SubResource("Resource_4mis2"), SubResource("Resource_n710j")])

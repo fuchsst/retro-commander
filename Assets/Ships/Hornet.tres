@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3 uid="uid://dpc3cdt3ve5qj"]
+
+[ext_resource type="Script" path="res://Assets/Ships/ShipProperties.gd" id="1_en4nr"]
+
+[resource]
+script = ExtResource("1_en4nr")
+angular_inertia = 0
+armor_front = 0
+armor_left = 0
+armor_right = 0
+armor_back = 0
+cruise_speed = 0
+damage = 0
+explosive_force = 0
+fuel = 0
+mass = 0
+maximum_acceleration = 0
+maximum_speed = 0
+naximum_yaw = 0
+naximum_pitch = 0
+naximum_roll = 0
+power_plant = 0
+radius = 0
+shields_front = 0
+shields_back = 0
+ship_class = 0
+weapons = 0

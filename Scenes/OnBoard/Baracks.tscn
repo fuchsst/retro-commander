@@ -1,5 +1,6 @@
-[gd_scene load_steps=60 format=3 uid="uid://de8aij61getho"]
+[gd_scene load_steps=63 format=3 uid="uid://de8aij61getho"]
 
+[ext_resource type="Script" path="res://Scenes/OnBoard/Baracks.gd" id="1_4ds00"]
 [ext_resource type="Texture2D" uid="uid://ctoqrb1jp66vg" path="res://Gamedata/recroom.vga/012/000.png" id="1_qr57b"]
 [ext_resource type="Texture2D" uid="uid://c8qx857c1mqoy" path="res://Gamedata/recroom.vga/012/036.png" id="2_gwplc"]
 [ext_resource type="Texture2D" uid="uid://ceps1cpg5hlho" path="res://Gamedata/recroom.vga/012/001.png" id="3_ieqqb"]
@@ -12,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://ldmk3tjrucwr" path="res://Gamedata/recroom.vga/012/008.png" id="10_1xnn0"]
 [ext_resource type="Texture2D" uid="uid://dbddwdkulw0tg" path="res://Gamedata/recroom.vga/012/026.png" id="11_d3vvb"]
 [ext_resource type="Texture2D" uid="uid://ddfw8k0i6p328" path="res://Gamedata/recroom.vga/012/049.png" id="12_266gq"]
-[ext_resource type="Texture2D" uid="uid://78f0w3v3tfu0" path="res://Gamedata/recroom.vga/012/025.png" id="13_o030k"]
 [ext_resource type="Texture2D" uid="uid://b628x5uejmstf" path="res://Gamedata/recroom.vga/012/011.png" id="14_b3ie0"]
 [ext_resource type="Texture2D" uid="uid://dt05047bp805v" path="res://Gamedata/recroom.vga/012/012.png" id="15_yxv7l"]
 [ext_resource type="Texture2D" uid="uid://chqiv77yypsxd" path="res://Gamedata/recroom.vga/012/013.png" id="16_jnrjk"]
@@ -52,7 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://kugxpdepcde5" path="res://Gamedata/recroom.vga/012/048.png" id="50_4ukmm"]
 [ext_resource type="Texture2D" uid="uid://b5nexmqu4ah0p" path="res://Gamedata/recroom.vga/012/050.png" id="51_bcgdk"]
 [ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="52_n4lwg"]
-[ext_resource type="PackedScene" uid="uid://cae73w4fy8nvl" path="res://Assets/TooltipText.tscn" id="53_p8u8f"]
+[ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="53_rn6ds"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c6h05"]
 animations = [{
@@ -231,11 +231,52 @@ func _on_pressed():
 	get_tree().quit()
 "
 
+[sub_resource type="GDScript" id="GDScript_3lrq1"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_pressed() -> void:
+	print(\"_on_pressed on StartMission\")
+
+"
+
+[sub_resource type="GDScript" id="GDScript_510oe"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+
+func _on_pressed() -> void:
+	print(\"_on_pressed on ShowMedals\")
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_t8o3c"]
+font = ExtResource("53_rn6ds")
+font_size = 48
+
 [node name="BaracksScene" type="CanvasLayer"]
+script = ExtResource("1_4ds00")
 
 [node name="BackgroundCanvas" type="CanvasLayer" parent="."]
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="EmptyBaracks" type="Sprite2D" parent="BackgroundCanvas"]
 texture = ExtResource("1_qr57b")
@@ -243,129 +284,320 @@ centered = false
 
 [node name="ForegroundCanvas" type="CanvasLayer" parent="."]
 layer = 10
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="WaterdropBackground" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(291, 0)
+position = Vector2(1164, 0)
 texture = ExtResource("2_gwplc")
 centered = false
 
-[node name="Bed1" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(110, 87)
+[node name="Beds" type="Node2D" parent="ForegroundCanvas"]
+
+[node name="Bed0" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(440, 348)
 texture = ExtResource("3_ieqqb")
 centered = false
 
-[node name="Bed2" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(171, 86)
+[node name="Bed1" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(684, 344)
 texture = ExtResource("4_rn5xh")
 centered = false
 
-[node name="Bed3" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(98, 96)
+[node name="Bed2" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(392, 384)
 texture = ExtResource("5_lgawi")
 centered = false
 
-[node name="Bed4" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(174, 96)
+[node name="Bed3" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(696, 384)
 texture = ExtResource("6_5baaw")
 centered = false
 
-[node name="Bed5" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(79, 111)
+[node name="Bed4" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(316, 444)
 texture = ExtResource("7_vafru")
 centered = false
 
-[node name="Bed6" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(177, 111)
+[node name="Bed5" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(708, 444)
 texture = ExtResource("8_rbhsd")
 centered = false
 
-[node name="Bed7" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(43, 137)
+[node name="Bed6" type="Sprite2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(172, 548)
 texture = ExtResource("9_6nb2w")
 centered = false
 
-[node name="Bed8" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(183, 136)
+[node name="Bed7" type="Node2D" parent="ForegroundCanvas/Beds"]
+position = Vector2(732, 544)
+
+[node name="Used" type="Sprite2D" parent="ForegroundCanvas/Beds/Bed7"]
 texture = ExtResource("10_1xnn0")
 centered = false
 
+[node name="LoadSlot" type="TextureButton" parent="ForegroundCanvas/Beds/Bed7/Used"]
+offset_right = 186.0
+offset_bottom = 120.0
+
+[node name="SaveSlot" type="TextureButton" parent="ForegroundCanvas/Beds/Bed7/Used"]
+offset_left = 186.0
+offset_right = 372.0
+offset_bottom = 120.0
+
+[node name="Unused" type="TextureButton" parent="ForegroundCanvas/Beds/Bed7"]
+visible = false
+offset_right = 372.0
+offset_bottom = 120.0
+
 [node name="CeilingLight" type="AnimatedSprite2D" parent="ForegroundCanvas"]
-position = Vector2(45, 0)
+position = Vector2(180, 0)
 sprite_frames = SubResource("SpriteFrames_c6h05")
 frame_progress = 0.22782
 centered = false
 
-[node name="HealthPannel" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(147, 167)
-texture = ExtResource("13_o030k")
-centered = false
+[node name="HealthPannel" type="Node2D" parent="ForegroundCanvas"]
+position = Vector2(563, 661)
 
-[node name="Healthbar1" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel"]
-position = Vector2(1, -1)
-sprite_frames = SubResource("SpriteFrames_cuidl")
-frame_progress = 0.902515
-centered = false
+[node name="HealthStatus1" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(9, 7)
 
-[node name="Active1" type="Sprite2D" parent="ForegroundCanvas/HealthPannel"]
-position = Vector2(-4, 0)
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus1"]
+visible = false
 texture = ExtResource("28_rsgn4")
 centered = false
 
-[node name="Inactive1" type="Sprite2D" parent="ForegroundCanvas/HealthPannel"]
-visible = false
-position = Vector2(-2, 2)
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus1"]
 texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus1"]
+visible = false
+position = Vector2(20, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.080987
+centered = false
+
+[node name="HealthStatus2" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(88, 7)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus2"]
+visible = false
+position = Vector2(45, 0)
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus2"]
+position = Vector2(45, 0)
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus2"]
+visible = false
+position = Vector2(-1, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.296783
+centered = false
+
+[node name="HealthStatus3" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(9, 27)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus3"]
+visible = false
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus3"]
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus3"]
+visible = false
+position = Vector2(20, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.535666
+centered = false
+
+[node name="HealthStatus4" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(88, 27)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus4"]
+visible = false
+position = Vector2(45, 0)
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus4"]
+position = Vector2(45, 0)
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus4"]
+visible = false
+position = Vector2(-1, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.175395
+centered = false
+
+[node name="HealthStatus5" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(9, 47)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus5"]
+visible = false
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus5"]
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus5"]
+visible = false
+position = Vector2(20, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.535666
+centered = false
+
+[node name="HealthStatus6" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(88, 47)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus6"]
+visible = false
+position = Vector2(45, 0)
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus6"]
+position = Vector2(45, 0)
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus6"]
+visible = false
+position = Vector2(-1, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.175395
+centered = false
+
+[node name="HealthStatus7" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(9, 67)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus7"]
+visible = false
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus7"]
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus7"]
+visible = false
+position = Vector2(20, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.535666
+centered = false
+
+[node name="HealthStatus8" type="Node2D" parent="ForegroundCanvas/HealthPannel"]
+position = Vector2(88, 67)
+
+[node name="Active" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus8"]
+visible = false
+position = Vector2(45, 0)
+texture = ExtResource("28_rsgn4")
+centered = false
+
+[node name="Inactive" type="Sprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus8"]
+position = Vector2(45, 0)
+texture = ExtResource("29_3xiiy")
+centered = false
+
+[node name="Healthbar" type="AnimatedSprite2D" parent="ForegroundCanvas/HealthPannel/HealthStatus8"]
+visible = false
+position = Vector2(-1, -4)
+sprite_frames = SubResource("SpriteFrames_cuidl")
+frame_progress = 0.175395
+centered = false
 
 [node name="PipePart" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(301, 36)
+position = Vector2(1204, 144)
 texture = ExtResource("30_6c8t1")
 
 [node name="FalingWaterdrop" type="AnimatedSprite2D" parent="ForegroundCanvas"]
-position = Vector2(302, 35)
+position = Vector2(1208, 140)
 sprite_frames = SubResource("SpriteFrames_i10sk")
 frame_progress = 0.386524
 centered = false
 
 [node name="BucketWaterdrop" type="AnimatedSprite2D" parent="ForegroundCanvas"]
-position = Vector2(290, 139)
+position = Vector2(1160, 556)
 sprite_frames = SubResource("SpriteFrames_xul8f")
 frame_progress = 0.444017
 centered = false
 
 [node name="Status" type="Sprite2D" parent="ForegroundCanvas"]
-position = Vector2(0, 187)
+position = Vector2(0, 748)
 texture = ExtResource("51_bcgdk")
 centered = false
 
 [node name="OverlayCanvas" type="CanvasLayer" parent="."]
 layer = 100
-scale = Vector2(4, 4)
-transform = Transform2D(4, 0, 0, 4, 0, 0)
 
 [node name="EnterBarButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 8.0
-offset_top = 29.0
-offset_right = 48.0
-offset_bottom = 104.0
+offset_left = 32.0
+offset_top = 116.0
+offset_right = 192.0
+offset_bottom = 416.0
 script = SubResource("GDScript_auwpx")
 
 [node name="ExitGameButton" type="TextureButton" parent="OverlayCanvas"]
-offset_left = 212.0
-offset_top = 33.0
-offset_right = 248.0
-offset_bottom = 86.0
+offset_left = 848.0
+offset_top = 132.0
+offset_right = 992.0
+offset_bottom = 344.0
 script = SubResource("GDScript_3kvyj")
+
+[node name="StartMissionButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 1094.0
+offset_top = 121.0
+offset_right = 1251.0
+offset_bottom = 412.0
+script = SubResource("GDScript_3lrq1")
+
+[node name="ShowMedalsButton" type="TextureButton" parent="OverlayCanvas"]
+offset_left = 347.0
+offset_top = 179.0
+offset_right = 489.0
+offset_bottom = 323.0
+script = SubResource("GDScript_510oe")
 
 [node name="Cursor" parent="OverlayCanvas" instance=ExtResource("52_n4lwg")]
 
-[node name="TooltipText" parent="OverlayCanvas" instance=ExtResource("53_p8u8f")]
-position = Vector2(0, 170)
+[node name="TooltipTextLabel" type="Label" parent="OverlayCanvas"]
+offset_top = 736.0
+offset_right = 1280.0
+offset_bottom = 800.0
+text = "..."
+label_settings = SubResource("LabelSettings_t8o3c")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[connection signal="mouse_entered" from="OverlayCanvas/EnterBarButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_entered" from="ForegroundCanvas/Beds/Bed7/Used/LoadSlot" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Load Slot 8"]]
+[connection signal="mouse_exited" from="ForegroundCanvas/Beds/Bed7/Used/LoadSlot" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="ForegroundCanvas/Beds/Bed7/Used/LoadSlot" to="." method="_on_load_slot_pressed" binds= [7]]
+[connection signal="mouse_entered" from="ForegroundCanvas/Beds/Bed7/Used/SaveSlot" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Save Slot 8"]]
+[connection signal="mouse_exited" from="ForegroundCanvas/Beds/Bed7/Used/SaveSlot" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="ForegroundCanvas/Beds/Bed7/Used/SaveSlot" to="." method="_on_save_slot_pressed" binds= [7]]
+[connection signal="mouse_entered" from="ForegroundCanvas/Beds/Bed7/Unused" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Save Slot 8"]]
+[connection signal="mouse_exited" from="ForegroundCanvas/Beds/Bed7/Unused" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="ForegroundCanvas/Beds/Bed7/Unused" to="." method="_on_unused_pressed" binds= [7]]
+[connection signal="mouse_entered" from="OverlayCanvas/EnterBarButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Enter Bar"]]
 [connection signal="mouse_exited" from="OverlayCanvas/EnterBarButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="pressed" from="OverlayCanvas/EnterBarButton" to="OverlayCanvas/EnterBarButton" method="_on_pressed"]
-[connection signal="mouse_entered" from="OverlayCanvas/ExitGameButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_entered" from="OverlayCanvas/ExitGameButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Exit Game"]]
 [connection signal="mouse_exited" from="OverlayCanvas/ExitGameButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="pressed" from="OverlayCanvas/ExitGameButton" to="OverlayCanvas/ExitGameButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="OverlayCanvas/StartMissionButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Start Mission"]]
+[connection signal="mouse_exited" from="OverlayCanvas/StartMissionButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="OverlayCanvas/StartMissionButton" to="OverlayCanvas/StartMissionButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="OverlayCanvas/ShowMedalsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Show Medals"]]
+[connection signal="mouse_exited" from="OverlayCanvas/ShowMedalsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="OverlayCanvas/ShowMedalsButton" to="OverlayCanvas/ShowMedalsButton" method="_on_pressed"]

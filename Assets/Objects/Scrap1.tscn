@@ -38,5 +38,5 @@ animations = [{
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 billboard = 1
 sprite_frames = SubResource("SpriteFrames_o6est")
-frame = 3
-frame_progress = 0.694702
+frame = 1
+frame_progress = 0.431888

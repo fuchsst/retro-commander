@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/GameState.gd" id="1_4oqp6"]
 [ext_resource type="Script" path="res://Scripts/Pilot.gd" id="2_idh0v"]
-[ext_resource type="Script" path="res://Scripts/CutsceneCharacter.gd" id="3_hf1sf"]
+[ext_resource type="PackedScene" uid="uid://c6j624biymbyu" path="res://Assets/Cutscenes/Foregrounds/021_Spirit.tscn" id="3_fexb0"]
 [ext_resource type="Script" path="res://Scripts/EnemyAce.gd" id="4_57km2"]
 
 [node name="GameState" type="Node" node_paths=PackedStringArray("pilots")]
@@ -12,15 +12,11 @@ pilots = [null]
 
 [node name="Pilots" type="Node" parent="."]
 
-[node name="Spirit" type="Node" parent="Pilots" node_paths=PackedStringArray("cutscene_character")]
+[node name="Spirit" type="Node" parent="Pilots"]
 script = ExtResource("2_idh0v")
-cutscene_character = NodePath("CutsceneCharacter")
+cutscene_character = ExtResource("3_fexb0")
 callsign = "Spirit"
 pilot_name = "Tanaka"
-
-[node name="CutsceneCharacter" type="Node" parent="Pilots/Spirit"]
-script = ExtResource("3_hf1sf")
-assets_folder = "res://Gamedata/talking.vga/001"
 
 [node name="Hunter" type="Node" parent="Pilots"]
 script = ExtResource("2_idh0v")

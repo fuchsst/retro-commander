@@ -10,7 +10,7 @@ const Rank_Label_Mapping = {
 	Rank.LT_COL: "LT COL"
 }
 
-@export var cutscene_character: CutsceneCharacter # Closeup of the face used in cutscenes
+@export var cutscene_character: PackedScene # Closeup of the face used in cutscenes
 @export var scene_character: CutsceneCharacter # Bodyshot of the character used in the bar
 
 @export var callsign: String

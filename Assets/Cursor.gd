@@ -3,6 +3,10 @@ extends Node
 
 @export var is_hovering_action_area = false
 
+@onready var tooltip_text_label: Label = $"../TooltipTextLabel"
+@onready var arrow_sprite: AnimatedSprite2D = $ArrowSprite
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
@@ -12,19 +16,19 @@ func _ready():
 func _process(delta):
 	$".".global_position = get_viewport().get_mouse_position() / $"..".get_scale()
 	if(is_hovering_action_area):
-		$ArrowSprite.set_frame(1)
-		$ArrowSprite.set_centered(true)
+		arrow_sprite.set_frame(1)
+		arrow_sprite.set_centered(true)
 	else:
-		$ArrowSprite.set_frame(0)
-		$ArrowSprite.set_centered(false)
+		arrow_sprite.set_frame(0)
+		arrow_sprite.set_centered(false)
 
 
 
 func _on_interaction_area_entered(tooltip_text: String):
 	is_hovering_action_area=true
-	$"../TooltipText".text = tooltip_text
+	tooltip_text_label.text = tooltip_text
 
 
 func _on_interaction_area_exited():
 	is_hovering_action_area=false
-	$"../TooltipText".text = ""
+	tooltip_text_label.text = ""

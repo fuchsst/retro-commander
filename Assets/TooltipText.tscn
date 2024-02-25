@@ -908,8 +908,6 @@ animations = [{
 
 [node name="TooltipText" type="Node2D"]
 script = ExtResource("1_wi0yf")
-text_color = Color(0.231373, 0.709804, 0.65098, 1)
-text = "Test Text. This is a longer text that might extend the max width and even further and further and."
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(1, 0.396078, 0.396078, 1)

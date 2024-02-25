@@ -6,14 +6,14 @@ signal savegame_file_saved(saves: Array[GameState])
 
 @export_file var savegame_filepath: String:
 	set(value):
-		_read_savegame_file(savegame_filepath)
 		savegame_filepath = value
+		_read_savegame_file(savegame_filepath)
 		
 @export var player: Pilot
 @export var pilots: Array[Pilot] = []
 @export var ace_states: Array[int] = [1,1,1,1] #0A=KIA, 01=not seen, 29=fled  
-@export var series: int # One-Based. ie S1M1 is 1, S2M1 is 2, etc 
-@export var mission:int # Zero-Based. ie S1M1 is 0, S1M2 is 1, etc 
+@export var series: int = 1 # One-Based. ie S1M1 is 1, S2M1 is 2, etc 
+@export var mission:int = 0 # Zero-Based. ie S1M1 is 0, S1M2 is 1, etc 
 @export var campaign:int # 0=Vega Campaign, 1=Secret Missions
 @export var kill_points:int
 @export var victory_points:int
@@ -22,8 +22,10 @@ signal savegame_file_saved(saves: Array[GameState])
 @export var prev_kills: int
 @export var wingman_prev_kills:int
 @export var ejection_count: int
-@export var date: int
-@export var year: int
+@export var date: int = 110
+@export var year: int = 2654
+
+
 
 var saves: Array[GameState] = []
 
@@ -36,8 +38,7 @@ func _process(delta):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	if savegame_filepath != "":
+	if savegame_filepath:
 		_read_savegame_file(savegame_filepath)
 		
 func _to_string():
@@ -58,7 +59,7 @@ func _to_string():
 
 func _read_savegame_file(filepath):
 	var file = FileAccess.open(filepath, FileAccess.READ)
-	if file != null:
+	if file:
 		var data = file.get_buffer(file.get_length())
 		file.close()
 		var num_saves = data.size() / SAVEGAME_BLOCK_SIZE
@@ -69,6 +70,7 @@ func _read_savegame_file(filepath):
 			var name = save_slot_data.slice(0, name_end_index).get_string_from_ascii()
 			print("Loading ", name)
 			saves[i] = null if name.begins_with("game ") else SaveGame.deserialize_savegame(save_slot_data)
+		print("Savegame file " + filepath + " loaded")
 		emit_signal("savegame_file_loaded")
 	else:
 		print_debug("Could not open savegame file ", savegame_filepath)
@@ -85,15 +87,8 @@ func load(index: int) -> GameState:
 		print("Slot empty")
 		return
 	var new_game_state=saves[index]
-	for i in range($Pilots.get_child_count()):
-		var srcPilot: Pilot = new_game_state.pilots[0]
-		var dstPilotNode: Pilot = $Pilots/Spirit.get_child(i)
-		dstPilotNode.callsign = srcPilot.callsign
-		dstPilotNode.pilot_name = srcPilot.pilot_name
-		dstPilotNode.pilot_status = srcPilot.pilot_status
-		dstPilotNode.kills = srcPilot.kills
-		dstPilotNode.missions = srcPilot.missions
-	return saves[index]
+	print("Savegame " + str(index) + " loaded")
+	return new_game_state
 
 func save(index: int, savegame_name: String):
 	if index == null or index < 0:
@@ -108,4 +103,5 @@ func save(index: int, savegame_name: String):
 		file.seek(index * 828)
 		file.store_buffer(serialized_data)
 		file.close()
+		print("Savegame " + str(index) + " saved as " + savegame_name)
 		emit_signal("savegame_file_saved")

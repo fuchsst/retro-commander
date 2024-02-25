@@ -1,0 +1,212 @@
+[gd_scene load_steps=37 format=3 uid="uid://febouepvqdew"]
+
+[ext_resource type="Texture2D" uid="uid://7ur1tyswbwdm" path="res://Gamedata/recroom.vga/001/000.png" id="1_ep4wn"]
+[ext_resource type="Texture2D" uid="uid://dytd578barvs" path="res://Gamedata/title.vga/006/000.png" id="1_wvotw"]
+[ext_resource type="Texture2D" uid="uid://dqj77ulrh0qo" path="res://Gamedata/planets.vga/000/032.png" id="2_50apm"]
+[ext_resource type="Texture2D" uid="uid://dp6xuje4l0twk" path="res://Gamedata/planets.vga/000/033.png" id="3_02urn"]
+[ext_resource type="Texture2D" uid="uid://cshecv3of5j50" path="res://Gamedata/planets.vga/000/034.png" id="4_brjdy"]
+[ext_resource type="Texture2D" uid="uid://c1vlcb2wfjmcj" path="res://Gamedata/planets.vga/000/035.png" id="5_2qmst"]
+[ext_resource type="Texture2D" uid="uid://c8f8clcyw6ylb" path="res://Gamedata/planets.vga/000/036.png" id="6_7shso"]
+[ext_resource type="Texture2D" uid="uid://ds5opm0w0pdfy" path="res://Gamedata/planets.vga/000/037.png" id="7_7jx20"]
+[ext_resource type="Texture2D" uid="uid://bbum06udt1oh" path="res://Gamedata/planets.vga/000/000.png" id="9_cysp4"]
+[ext_resource type="Texture2D" uid="uid://df4qpk1fdf1tb" path="res://Gamedata/planets.vga/000/001.png" id="10_4es4j"]
+[ext_resource type="Texture2D" uid="uid://badeai6pyeap2" path="res://Gamedata/planets.vga/000/002.png" id="11_isaho"]
+[ext_resource type="Texture2D" uid="uid://ci6unwcr15aa3" path="res://Gamedata/planets.vga/000/003.png" id="12_04s2w"]
+[ext_resource type="Texture2D" uid="uid://ne2mlb0q4ilg" path="res://Gamedata/planets.vga/000/004.png" id="13_ajhcn"]
+[ext_resource type="Texture2D" uid="uid://dvxswsdja7bmo" path="res://Gamedata/planets.vga/000/005.png" id="14_au300"]
+[ext_resource type="Texture2D" uid="uid://ca518xew5q4cs" path="res://Gamedata/planets.vga/000/006.png" id="15_jok6j"]
+[ext_resource type="Texture2D" uid="uid://djubwrqnhxiqp" path="res://Gamedata/planets.vga/000/007.png" id="16_p1m0a"]
+[ext_resource type="Texture2D" uid="uid://ivqtrlouj8ld" path="res://Gamedata/planets.vga/000/008.png" id="17_kondh"]
+[ext_resource type="Texture2D" uid="uid://c3gg8h8hr1cag" path="res://Gamedata/planets.vga/000/009.png" id="18_n3ask"]
+[ext_resource type="Texture2D" uid="uid://ds1ajenul616o" path="res://Gamedata/planets.vga/000/018.png" id="27_7alt6"]
+[ext_resource type="Texture2D" uid="uid://b7saw0jcwv6n7" path="res://Gamedata/planets.vga/000/019.png" id="28_jal7e"]
+[ext_resource type="Texture2D" uid="uid://bor3nwv04k7rv" path="res://Gamedata/planets.vga/000/020.png" id="29_h17l6"]
+[ext_resource type="Texture2D" uid="uid://b22yuxeduvq6g" path="res://Gamedata/planets.vga/000/021.png" id="30_hc1ym"]
+[ext_resource type="Texture2D" uid="uid://d157w1ciwqlw0" path="res://Gamedata/planets.vga/000/022.png" id="31_11sft"]
+[ext_resource type="Texture2D" uid="uid://yip4bxlkmkle" path="res://Gamedata/planets.vga/000/023.png" id="32_deljf"]
+[ext_resource type="Texture2D" uid="uid://h02wcs3ui74v" path="res://Gamedata/planets.vga/000/024.png" id="33_usyr7"]
+[ext_resource type="Texture2D" uid="uid://bj8inkbd2864i" path="res://Gamedata/planets.vga/000/025.png" id="34_8tfrg"]
+[ext_resource type="Texture2D" uid="uid://b45nqg2hx7tgq" path="res://Gamedata/planets.vga/000/026.png" id="35_pggkb"]
+[ext_resource type="Texture2D" uid="uid://h7g83yc8dyj4" path="res://Gamedata/planets.vga/000/027.png" id="36_hgvlw"]
+
+[sub_resource type="Gradient" id="Gradient_x35ua"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lix76"]
+gradient = SubResource("Gradient_x35ua")
+width = 1280
+height = 144
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_06pvk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cysp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4es4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_isaho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_04s2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ajhcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_au300")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jok6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_p1m0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_kondh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_n3ask")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m1swk"]
+resource_local_to_scene = true
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jtw4v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_7alt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_jal7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_h17l6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_hc1ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_11sft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_deljf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yaq0h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_usyr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_8tfrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pggkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_hgvlw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_hi0md"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1rhrp"]
+gradient = SubResource("Gradient_hi0md")
+width = 1280
+height = 144
+
+[node name="ShotglassWindow" type="Node2D"]
+
+[node name="ColorRectTop" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_lix76")
+centered = false
+
+[node name="SpaceBackground" type="Sprite2D" parent="."]
+position = Vector2(0, 144)
+texture = ExtResource("1_wvotw")
+centered = false
+
+[node name="BarWindow" type="Sprite2D" parent="SpaceBackground"]
+texture = ExtResource("1_ep4wn")
+centered = false
+
+[node name="Stars" type="Node2D" parent="SpaceBackground"]
+
+[node name="032" type="Sprite2D" parent="SpaceBackground/Stars"]
+position = Vector2(1164, 246)
+texture = ExtResource("2_50apm")
+
+[node name="033" type="Sprite2D" parent="SpaceBackground/Stars"]
+position = Vector2(793, 33)
+texture = ExtResource("3_02urn")
+
+[node name="034" type="Sprite2D" parent="SpaceBackground/Stars"]
+position = Vector2(186, 75)
+texture = ExtResource("4_brjdy")
+
+[node name="035" type="Sprite2D" parent="SpaceBackground/Stars"]
+position = Vector2(556, 89)
+texture = ExtResource("5_2qmst")
+
+[node name="036" type="Sprite2D" parent="SpaceBackground/Stars"]
+position = Vector2(326, 139)
+texture = ExtResource("6_7shso")
+
+[node name="037" type="Sprite2D" parent="SpaceBackground/Stars"]
+position = Vector2(836, 130)
+texture = ExtResource("7_7jx20")
+
+[node name="Debris" type="Node2D" parent="SpaceBackground"]
+visible = false
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="SpaceBackground/Debris"]
+position = Vector2(-116, 140)
+sprite_frames = SubResource("SpriteFrames_06pvk")
+frame_progress = 0.997325
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="SpaceBackground/Debris/AnimatedSprite2D6"]
+material = SubResource("CanvasItemMaterial_m1swk")
+position = Vector2(1539, 13)
+amount = 16
+lifetime = 10.0
+emission_shape = 3
+emission_rect_extents = Vector2(20, 160)
+gravity = Vector2(-200, 0)
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="SpaceBackground/Debris"]
+position = Vector2(-58, 112)
+sprite_frames = SubResource("SpriteFrames_jtw4v")
+frame = 5
+frame_progress = 0.989909
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="SpaceBackground/Debris"]
+position = Vector2(-51, 157)
+sprite_frames = SubResource("SpriteFrames_yaq0h")
+frame = 3
+frame_progress = 0.117517
+
+[node name="ColorRectBottom" type="Sprite2D" parent="."]
+position = Vector2(0, 660)
+texture = SubResource("GradientTexture2D_1rhrp")
+centered = false

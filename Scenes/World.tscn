@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkdue6giw6rxf"]
+
+[ext_resource type="Script" path="res://Scenes/World.gd" id="1_cl72q"]
+[ext_resource type="Resource" uid="uid://u7c7xevp3eow" path="res://Assets/ColorPalette.tres" id="2_e65sj"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_cl72q")
+color_pallete = ExtResource("2_e65sj")
