@@ -311,8 +311,7 @@ func _on_pressed():
 	get_tree().change_scene_to_file(\"res://Scenes/OnBoard/Baracks.tscn\")
 
 
-func _on_view_pilot_stats_button_pressed():
-	get_tree().change_scene_to_file(\"res://Scenes/OnBoard/Scoreboard.tscn\")
+
 "
 
 [sub_resource type="LabelSettings" id="LabelSettings_jlayi"]
@@ -635,17 +634,18 @@ script = ExtResource("97_gfrr6")
 position = Vector2(0, 1)
 anchor_mode = 0
 
-[connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="." method="_on_talk_to_left_character_button_mouse_entered"]
 [connection signal="mouse_exited" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
-[connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered"]
+[connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="." method="_on_talk_to_right_character_button_mouse_entered"]
 [connection signal="mouse_exited" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="mouse_entered" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Fly training mission"]]
 [connection signal="mouse_exited" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="mouse_entered" from="OverlayCanvas/TalkToShotglassButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Talk to Shotglass"]]
 [connection signal="mouse_exited" from="OverlayCanvas/TalkToShotglassButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="OverlayCanvas/TalkToShotglassButton" to="." method="_on_talk_to_shotglass_button_pressed"]
 [connection signal="mouse_entered" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Check pilot scores"]]
 [connection signal="mouse_exited" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
-[connection signal="pressed" from="OverlayCanvas/ViewPilotStatsButton" to="OverlayCanvas/ExitToBaracksButton" method="_on_view_pilot_stats_button_pressed"]
+[connection signal="pressed" from="OverlayCanvas/ViewPilotStatsButton" to="." method="_on_view_pilot_stats_button_pressed"]
 [connection signal="mouse_entered" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Enter Baracks"]]
 [connection signal="mouse_exited" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="pressed" from="OverlayCanvas/ExitToBaracksButton" to="OverlayCanvas/ExitToBaracksButton" method="_on_pressed"]

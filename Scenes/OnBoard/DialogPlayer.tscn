@@ -1,23 +1,25 @@
-[gd_scene load_steps=7 format=3 uid="uid://dd4k824wg1e4l"]
+[gd_scene load_steps=8 format=3 uid="uid://c7h5u5pfecfnh"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/DialogPlayer.gd" id="1_uu3da"]
 [ext_resource type="Resource" uid="uid://3yrd38a52ldr" path="res://Assets/VegaCampaign/Season1/MissionDialogs0.tres" id="2_lsgrn"]
 [ext_resource type="PackedScene" uid="uid://febouepvqdew" path="res://Assets/Cutscenes/Backgrounds/002_ShotglassWindow.tscn" id="3_7121y"]
 [ext_resource type="PackedScene" uid="uid://cmlc6yiwuphc2" path="res://Assets/Cutscenes/Foregrounds/030_Shotglass.tscn" id="4_n2dun"]
 [ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="5_j37wj"]
+[ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="6_utvca"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tq4ot"]
 font = ExtResource("5_j37wj")
 font_size = 48
 font_color = Color(0.258824, 0.431373, 0.0235294, 1)
 
-[node name="DialogShotglass" type="Node2D"]
+[node name="DialogPlayer" type="Node2D"]
 script = ExtResource("1_uu3da")
-mission_dialogs = ExtResource("2_lsgrn")
+background = ExtResource("3_7121y")
+foreground = ExtResource("4_n2dun")
 
-[node name="ShotglassWindow" parent="." instance=ExtResource("3_7121y")]
+[node name="Background" parent="." instance=ExtResource("3_7121y")]
 
-[node name="CutsceneCharacter" parent="." instance=ExtResource("4_n2dun")]
+[node name="Foreground" parent="." instance=ExtResource("4_n2dun")]
 position = Vector2(0, 142)
 mission_dialogs = ExtResource("2_lsgrn")
 
@@ -38,3 +40,11 @@ label_settings = SubResource("LabelSettings_tq4ot")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="Cursor" parent="." instance=ExtResource("6_utvca")]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 1280.0
+offset_bottom = 800.0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
