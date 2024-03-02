@@ -1,153 +1,10 @@
 [gd_resource type="Resource" script_class="MissionDialogs" load_steps=81 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Briefings/DialogProperties.gd" id="1_25g1h"]
-[ext_resource type="Script" path="res://Scripts/Briefings/MissionDialogs.gd" id="2_scesn"]
+[ext_resource type="Script" path="res://Scripts/Briefings/DialogProperties.gd" id="1_imcao"]
+[ext_resource type="Script" path="res://Scripts/Briefings/MissionDialogs.gd" id="2_ngtad"]
 
-[sub_resource type="Resource" id="Resource_lrkx8"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "sitdown2dipstik5tacalmebasman5ivbanwajagyu"
-text = "Sit down, $C. They call me Bossman. I've been watching you."
-background = 4
-foreground = 23
-delay = 75
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_pjupe"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "yulukgud7foraruke"
-text = "You look good for a rookie."
-background = 4
-foreground = 23
-delay = 65
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_n74n8"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "yuhadlyursafwalanadagfit"
-text = "You handle yourself well in a dogfight..."
-background = 4
-foreground = 23
-delay = 65
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_4j3l8"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "batwergoagtubefasagsambagrsapssun"
-text = "...but we're going to be facing some bigger ships soon."
-background = 4
-foreground = 23
-delay = 65
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_2iym3"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA15", "81", "01", "A20", "81", "01"])
-lip_sync_text = "alrit4samsereasaksan$50"
-text = "All right! Some serious action!"
-background = 3
-foreground = 27
-delay = 75
-text_color = 7
-
-[sub_resource type="Resource" id="Resource_nfc7f"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "alatafyagpilatsgataksitadwantasetarfarscorvat"
-text = "A lot of young pilots get excited when they see their first destroyer..."
-background = 4
-foreground = 23
-delay = 50
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_gjnf7"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["R215", "81", "01", "225", "81", "01", "220", "81", "02"])
-lip_sync_text = "jaswatduyumenbitat3bas"
-text = "Just what do you mean by that, Boss?"
-background = 3
-foreground = 27
-delay = 55
-text_color = 7
-
-[sub_resource type="Resource" id="Resource_n4fpw"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["140", "R81", "02", "A45", "81", "01", "A35", "81", "01", "A50"])
-lip_sync_text = "thalustarhadsadgostratanfortebatlsap"
-text = "...they lose their heads and go straight in for the battleship."
-background = 4
-foreground = 23
-delay = 50
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_ibtka"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "tanalitfitrtaforgatabowtblatstamframbehid"
-text = "Then a light fighter they forgot about blasts them from behind."
-background = 4
-foreground = 23
-delay = 50
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_ccqat"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "bagsapsmuvsloadtarnlikpigs"
-text = "Big ships move slow and turn like pigs."
-background = 4
-foreground = 23
-delay = 70
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_b0a2j"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "tagtuduasclenaptefitrcavrfars"
-text = "Thing to do is clean up the fighter cover first..."
-background = 4
-foreground = 23
-delay = 60
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_l7vld"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
-lip_sync_text = "tangoanfortebatlsap"
-text = "...then go in for the battleship."
-background = 4
-foreground = 23
-delay = 70
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_rvh0l"]
-script = ExtResource("1_25g1h")
-commands = Array[String]([])
-facial_expressions = Array[String]([])
-lip_sync_text = ""
-text = ""
-background = 4
-foreground = -2
-delay = 70
-text_color = 3
-
-[sub_resource type="Resource" id="Resource_4nf61"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_1yikq"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA15", "81", "01", "A25", "81", "01", "A30", "81", "02"])
 lip_sync_text = "ha2dipstik5immaniak4gladtumeja"
@@ -157,8 +14,8 @@ foreground = 27
 delay = 45
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_c4h1s"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_epfhn"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["220", "R81", "01", "A15", "81", "01", "A20", "81", "02"])
 lip_sync_text = "basmansaswergunasesamaksanaganssambatlsapssun$99"
@@ -168,8 +25,8 @@ foreground = 27
 delay = 45
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_jo0ff"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_e5h1l"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["R81", "01", "A15", "81", "01", "A20"])
 lip_sync_text = "ikantwat"
@@ -179,8 +36,8 @@ foreground = 27
 delay = 30
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_li5ev"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_2tp86"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA25", "81", "01", "A15", "81", "01", "A20", "81", "02"])
 lip_sync_text = "dajagflakadfitrcavrtumakamislranatadestruar"
@@ -190,8 +47,8 @@ foreground = 27
 delay = 45
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_6ibp0"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_dt706"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["R81", "01", "A15", "81", "01", "A20"])
 lip_sync_text = "ma3n4tatlbearas"
@@ -201,8 +58,8 @@ foreground = 27
 delay = 45
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_ko2j3"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_ojd2a"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA15", "81", "01", "A25", "81", "01", "A20", "81", "02"])
 lip_sync_text = "gatantarkwik4wasttematrdak"
@@ -212,8 +69,8 @@ foreground = 27
 delay = 30
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_ep5ht"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_t3gfk"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["R81", "01", "A25", "81", "01", "A10"])
 lip_sync_text = "tanpaktedaklagsafwanbiwan"
@@ -223,8 +80,8 @@ foreground = 27
 delay = 30
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_gwrxg"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_w34rf"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA15", "81", "01", "A25", "81", "01", "A20", "81", "01"])
 lip_sync_text = "tatstewatuduat"
@@ -234,8 +91,8 @@ foreground = 27
 delay = 75
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_33luo"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_3rj2u"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -245,8 +102,151 @@ foreground = -2
 delay = 75
 text_color = 7
 
-[sub_resource type="Resource" id="Resource_qknbs"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_1egrs"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "sitdown2dipstik5tacalmebasman5ivbanwajagyu"
+text = "Sit down, $C. They call me Bossman. I've been watching you."
+background = 4
+foreground = 23
+delay = 75
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_gwv7y"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "yulukgud7foraruke"
+text = "You look good for a rookie."
+background = 4
+foreground = 23
+delay = 65
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_hjibw"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "yuhadlyursafwalanadagfit"
+text = "You handle yourself well in a dogfight..."
+background = 4
+foreground = 23
+delay = 65
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_6rh4n"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "batwergoagtubefasagsambagrsapssun"
+text = "...but we're going to be facing some bigger ships soon."
+background = 4
+foreground = 23
+delay = 65
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_myhsu"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA15", "81", "01", "A20", "81", "01"])
+lip_sync_text = "alrit4samsereasaksan$50"
+text = "All right! Some serious action!"
+background = 3
+foreground = 27
+delay = 75
+text_color = 7
+
+[sub_resource type="Resource" id="Resource_7vpmo"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "alatafyagpilatsgataksitadwantasetarfarscorvat"
+text = "A lot of young pilots get excited when they see their first destroyer..."
+background = 4
+foreground = 23
+delay = 50
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_kafi3"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["R215", "81", "01", "225", "81", "01", "220", "81", "02"])
+lip_sync_text = "jaswatduyumenbitat3bas"
+text = "Just what do you mean by that, Boss?"
+background = 3
+foreground = 27
+delay = 55
+text_color = 7
+
+[sub_resource type="Resource" id="Resource_fbsua"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["140", "R81", "02", "A45", "81", "01", "A35", "81", "01", "A50"])
+lip_sync_text = "thalustarhadsadgostratanfortebatlsap"
+text = "...they lose their heads and go straight in for the battleship."
+background = 4
+foreground = 23
+delay = 50
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_p6vsd"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "tanalitfitrtaforgatabowtblatstamframbehid"
+text = "Then a light fighter they forgot about blasts them from behind."
+background = 4
+foreground = 23
+delay = 50
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_2qulj"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "bagsapsmuvsloadtarnlikpigs"
+text = "Big ships move slow and turn like pigs."
+background = 4
+foreground = 23
+delay = 70
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_7mlru"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "tagtuduasclenaptefitrcavrfars"
+text = "Thing to do is clean up the fighter cover first..."
+background = 4
+foreground = 23
+delay = 60
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_mmjxb"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
+lip_sync_text = "tangoanfortebatlsap"
+text = "...then go in for the battleship."
+background = 4
+foreground = 23
+delay = 70
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_nu7mg"]
+script = ExtResource("1_imcao")
+commands = Array[String]([])
+facial_expressions = Array[String]([])
+lip_sync_text = ""
+text = ""
+background = 4
+foreground = -2
+delay = 70
+text_color = 3
+
+[sub_resource type="Resource" id="Resource_na6i1"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["245", "R81", "02", "A45", "81", "01", "A35", "81", "01", "A50"])
 lip_sync_text = "yumatmaniakadbasmanovrtaryat"
@@ -256,8 +256,8 @@ foreground = 30
 delay = 60
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_ric1i"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_cosfy"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "maniaksarellunatac9agudpilat4batwatuaratac"
@@ -268,8 +268,8 @@ foreground = -1
 delay = 60
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_hknel"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_e8mba"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "hewasjascamagapastaflebagspatmeowtacamasan"
@@ -279,8 +279,8 @@ foreground = -1
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_dq3tp"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_0nkm2"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["A45", "81", "01", "235", "R81", "01", "240", "81", "01", "A50"])
 lip_sync_text = "jasbetwenyuadme4idrathrflialontanwatmaniakanmiwag"
@@ -290,8 +290,8 @@ foreground = -1
 delay = 60
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_g24as"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_sspom"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["235", "R81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "basmansanathrstore3tho"
@@ -301,8 +301,8 @@ foreground = 30
 delay = 70
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_wo1is"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_b7jyr"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "hesareltemledr"
@@ -312,8 +312,8 @@ foreground = 30
 delay = 70
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_sjbdp"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_i04qq"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "akrakpilat4watsavntenyersbehidham"
@@ -323,8 +323,8 @@ foreground = 30
 delay = 65
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_rcky4"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_t8wfa"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "flownavretagantetaranflet"
@@ -334,8 +334,8 @@ foreground = 30
 delay = 65
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_78omr"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_gaahr"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "adblonapatleswanafavreclastekalratehav"
@@ -345,8 +345,8 @@ foreground = 30
 delay = 70
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_k8a1t"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_g5iuv"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -356,8 +356,8 @@ foreground = -2
 delay = 70
 text_color = 10
 
-[sub_resource type="Resource" id="Resource_yae4h"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_4kl3a"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -368,8 +368,8 @@ foreground = 1
 delay = 225
 text_color = 11
 
-[sub_resource type="Resource" id="Resource_powfc"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_xtt5i"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = "walbusadgrls3tagsargatagradetuhetap"
@@ -379,8 +379,8 @@ foreground = 2
 delay = 60
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_5ar72"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_tk28s"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "235", "81", "01", "A50", "81", "02", "135", "81", "01"])
 lip_sync_text = "tecanfadaratanasgatagradetumownamajrafansiv"
@@ -390,8 +390,8 @@ foreground = 2
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_x3pi0"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_g3k0v"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "235", "81", "01", "A50", "81", "02", "135", "81", "01"])
 lip_sync_text = "sowerakspactagsavralsaplisapswatantenaksforteathowrs"
@@ -401,8 +401,8 @@ foreground = 2
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_pdurv"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_d28g1"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "235", "81", "01", "A50", "81", "02", "135", "81", "01"])
 lip_sync_text = "batskanrssoancresdkalrateaktavateantassastm"
@@ -412,8 +412,8 @@ foreground = 20
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_kdg3v"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_xw6yd"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "135", "81", "01", "A50", "81", "02", "240", "81", "01"])
 lip_sync_text = "wevgattuclenapteanameprasnsheratgatwa"
@@ -423,8 +423,8 @@ foreground = 20
 delay = 80
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_vunjt"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_371lx"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "135", "81", "01", "A50", "81", "02", "240", "81", "01"])
 lip_sync_text = "befortetankrsadsportsstarttuarivtumaro"
@@ -434,8 +434,8 @@ foreground = 20
 delay = 80
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_enwi6"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_6mvp4"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "wevdetaktdalarjbogeabowtnintetowsndkliksowt"
@@ -445,8 +445,8 @@ foreground = 20
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_q0g4j"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_wcatj"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "atjampdanabowttwanemanatsago3adsemstubehadadtaswa"
@@ -456,8 +456,8 @@ foreground = 20
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_vn0bf"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_cmwq8"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "atmitbejasatankr5batatsprabbleasmalwarsip"
@@ -467,8 +467,8 @@ foreground = 20
 delay = 80
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_73sng"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_mjqv0"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[4]:5", "11;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "dipstik3yuadpaladanargoagtugoowtadgatalukatat"
@@ -478,8 +478,8 @@ foreground = 20
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_ysy8d"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_7n1ts"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[5]:5", "12;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "dipstik4iwanyutugoowtadgatalukatat"
@@ -489,8 +489,8 @@ foreground = 20
 delay = 80
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_tiku8"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_jmsb3"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "addestruatafyucan"
@@ -500,8 +500,8 @@ foreground = 20
 delay = 80
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_xkhx2"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_48tca"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[4]:5", "14;"])
 facial_expressions = Array[String](["RA5", "81", "01", "135", "81", "01", "A30", "81", "02"])
 lip_sync_text = "fat2lad4battatlbeajalaj"
@@ -511,8 +511,8 @@ foreground = 26
 delay = 70
 text_color = 6
 
-[sub_resource type="Resource" id="Resource_thfbc"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_leqtf"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = "hersyurflitplan"
@@ -522,8 +522,8 @@ foreground = 3
 delay = 120
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_41p3x"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_ubyuk"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["A45", "81", "01", "A35", "81", "01", "R250", "81", "02"])
 lip_sync_text = ""
@@ -533,8 +533,8 @@ foreground = 4
 delay = 300
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_t0sqs"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_364gi"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -544,8 +544,8 @@ foreground = 4
 delay = 225
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_j363g"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_11l36"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -555,8 +555,8 @@ foreground = 4
 delay = 300
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_qjbgm"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_rxts5"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = "sobeantelukowtforadatanalboges"
@@ -566,8 +566,8 @@ foreground = 2
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_j7dch"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_jt81x"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -577,8 +577,8 @@ foreground = 2
 delay = 175
 text_color = 11
 
-[sub_resource type="Resource" id="Resource_h7bg6"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_dmqbx"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -588,8 +588,8 @@ foreground = 1
 delay = 250
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_2846w"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_4h0of"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -599,8 +599,8 @@ foreground = 5
 delay = 125
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_t883n"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_1powh"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -610,8 +610,8 @@ foreground = -2
 delay = 125
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_qe4nf"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_n15ey"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -621,8 +621,8 @@ foreground = 10
 delay = 125
 text_color = 11
 
-[sub_resource type="Resource" id="Resource_2v75f"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_v1ksv"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[11]:1", "6;"])
 facial_expressions = Array[String]([])
 lip_sync_text = "nisjab2dipstik"
@@ -632,8 +632,8 @@ foreground = 11
 delay = 50
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_eier3"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_jmfto"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[4]:5", "4;"])
 facial_expressions = Array[String]([])
 lip_sync_text = "yutu2paladan4cangrajulatanstutebotafyu"
@@ -643,8 +643,8 @@ foreground = 11
 delay = 60
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_fs16g"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_odi55"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["A45", "81", "01", "A35", "R81", "02", "250", "81", "01", "235"])
 lip_sync_text = "tekadadaltewarksr3iwasjasalagfarterid"
@@ -654,8 +654,8 @@ foreground = 26
 delay = 70
 text_color = 6
 
-[sub_resource type="Resource" id="Resource_tm2r4"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_ywwn6"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["225", "81", "02", "230", "R81", "02", "A45", "81", "01", "A35"])
 lip_sync_text = "tekalratecorvatsrelearntmujtuwareabowt2sar"
@@ -665,8 +665,8 @@ foreground = 29
 delay = 70
 text_color = 9
 
-[sub_resource type="Resource" id="Resource_458d1"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_hwrh0"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["A45", "81", "05", "RA35", "81", "03", "A50", "81", "02"])
 lip_sync_text = "idontno3lutanant6tahadyuowtgundaswalasowtnambrd"
@@ -676,8 +676,8 @@ foreground = 20
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_1j6ls"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_uu8u8"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[12]:1", "12;"])
 facial_expressions = Array[String](["A45", "81", "03", "A35", "R81", "05", "A35", "81", "04", "A40"])
 lip_sync_text = "didntgathar2a4"
@@ -687,8 +687,8 @@ foreground = 20
 delay = 60
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_2l4vv"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_5xpsk"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "nosar4imsare"
@@ -698,8 +698,8 @@ foreground = 29
 delay = 60
 text_color = 9
 
-[sub_resource type="Resource" id="Resource_0d7e5"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_hrq8y"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[28]:1", "9;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "02"])
 lip_sync_text = "wal3nomatr5yugatclosenafforyurcamputrtumakher"
@@ -709,8 +709,8 @@ foreground = 20
 delay = 60
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_xbq1m"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_8ensy"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "wevalradedownlodedyurrecanframyurflitcamputr"
@@ -720,8 +720,8 @@ foreground = 20
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_ry42j"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_xjda8"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[27]:1", "11;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "tubadyudidntgatclosr10wecudhavusdapasatavideanhar"
@@ -731,8 +731,8 @@ foreground = 20
 delay = 60
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_t1bq4"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_3kyr4"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA15", "81", "01", "A15", "81", "01", "A10", "81", "02"])
 lip_sync_text = "idispajdaskwadranafraptorstuintrsept6sewontgatpastem"
@@ -742,8 +742,8 @@ foreground = 20
 delay = 60
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_7pua6"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_3jf24"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "450", "81", "02"])
 lip_sync_text = "now4turevutemisn"
@@ -753,8 +753,8 @@ foreground = 20
 delay = 70
 text_color = 0
 
-[sub_resource type="Resource" id="Resource_rkf4e"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_uei5s"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[6]:14;"])
 facial_expressions = Array[String]([])
 lip_sync_text = "reportsosyukilt2dipstik"
@@ -764,8 +764,8 @@ foreground = 11
 delay = 60
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_1lwg7"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_wr7c3"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[7]:15;"])
 facial_expressions = Array[String]([])
 lip_sync_text = "reportsosnokalsforyu2dipstik"
@@ -775,8 +775,8 @@ foreground = 11
 delay = 60
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_tivht"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_20ppf"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[29]:5", "18;[8]:16;"])
 facial_expressions = Array[String]([])
 lip_sync_text = "adfivkalsforpaladan"
@@ -786,8 +786,8 @@ foreground = 11
 delay = 60
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_p5uy7"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_xtk7v"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[9]:17;"])
 facial_expressions = Array[String]([])
 lip_sync_text = "adnanforpaladan"
@@ -797,8 +797,8 @@ foreground = 11
 delay = 60
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_ydsq6"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_7s3h4"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[5]:5", "18;"])
 facial_expressions = Array[String](["A45", "81", "01", "A35", "81", "01", "R435", "81", "02"])
 lip_sync_text = "adpaladandidnmakatbak"
@@ -808,8 +808,8 @@ foreground = 20
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_7hvi0"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_c5dvw"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[28]:1", "20;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "bytewa4wevidantafidtebagbogeasaspakereclascorvet"
@@ -819,8 +819,8 @@ foreground = 20
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_vsgtl"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_ad162"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[11]:1", "20;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "gudjabtakagharowt"
@@ -830,8 +830,8 @@ foreground = 20
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_atvce"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_ulgp0"]
+script = ExtResource("1_imcao")
 commands = Array[String](["[10]:21;"])
 facial_expressions = Array[String](["RA45", "81", "01", "A35", "81", "01", "A50", "81", "02"])
 lip_sync_text = "addipstik4iwanttuseyuanmiafisananowr"
@@ -841,8 +841,8 @@ foreground = -1
 delay = 70
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_hqotv"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_equje"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = "tatsalten4dasmasd"
@@ -852,8 +852,8 @@ foreground = 11
 delay = 130
 text_color = -1
 
-[sub_resource type="Resource" id="Resource_ftul3"]
-script = ExtResource("1_25g1h")
+[sub_resource type="Resource" id="Resource_o3ixi"]
+script = ExtResource("1_imcao")
 commands = Array[String]([])
 facial_expressions = Array[String]([])
 lip_sync_text = ""
@@ -864,9 +864,9 @@ delay = 130
 text_color = -1
 
 [resource]
-script = ExtResource("2_scesn")
-briefing = Array[ExtResource("1_25g1h")]([SubResource("Resource_yae4h"), SubResource("Resource_powfc"), SubResource("Resource_5ar72"), SubResource("Resource_x3pi0"), SubResource("Resource_pdurv"), SubResource("Resource_kdg3v"), SubResource("Resource_vunjt"), SubResource("Resource_enwi6"), SubResource("Resource_q0g4j"), SubResource("Resource_vn0bf"), SubResource("Resource_73sng"), SubResource("Resource_ysy8d"), SubResource("Resource_tiku8"), SubResource("Resource_xkhx2"), SubResource("Resource_thfbc"), SubResource("Resource_41p3x"), SubResource("Resource_t0sqs"), SubResource("Resource_j363g"), SubResource("Resource_qjbgm"), SubResource("Resource_j7dch"), SubResource("Resource_h7bg6"), SubResource("Resource_2846w"), SubResource("Resource_t883n")])
-debriefing = Array[ExtResource("1_25g1h")]([SubResource("Resource_qe4nf"), SubResource("Resource_2v75f"), SubResource("Resource_eier3"), SubResource("Resource_fs16g"), SubResource("Resource_tm2r4"), SubResource("Resource_458d1"), SubResource("Resource_1j6ls"), SubResource("Resource_2l4vv"), SubResource("Resource_0d7e5"), SubResource("Resource_xbq1m"), SubResource("Resource_ry42j"), SubResource("Resource_t1bq4"), SubResource("Resource_7pua6"), SubResource("Resource_rkf4e"), SubResource("Resource_1lwg7"), SubResource("Resource_tivht"), SubResource("Resource_p5uy7"), SubResource("Resource_ydsq6"), SubResource("Resource_7hvi0"), SubResource("Resource_vsgtl"), SubResource("Resource_atvce"), SubResource("Resource_hqotv"), SubResource("Resource_ftul3")])
-bar_shotglass = Array[ExtResource("1_25g1h")]([SubResource("Resource_qknbs"), SubResource("Resource_ric1i"), SubResource("Resource_hknel"), SubResource("Resource_dq3tp"), SubResource("Resource_g24as"), SubResource("Resource_wo1is"), SubResource("Resource_sjbdp"), SubResource("Resource_rcky4"), SubResource("Resource_78omr"), SubResource("Resource_k8a1t")])
-bar_left_pilot = Array[ExtResource("1_25g1h")]([SubResource("Resource_lrkx8"), SubResource("Resource_pjupe"), SubResource("Resource_n74n8"), SubResource("Resource_4j3l8"), SubResource("Resource_2iym3"), SubResource("Resource_nfc7f"), SubResource("Resource_gjnf7"), SubResource("Resource_n4fpw"), SubResource("Resource_ibtka"), SubResource("Resource_ccqat"), SubResource("Resource_b0a2j"), SubResource("Resource_l7vld"), SubResource("Resource_rvh0l")])
-bar_right_pilot = Array[ExtResource("1_25g1h")]([SubResource("Resource_4nf61"), SubResource("Resource_c4h1s"), SubResource("Resource_jo0ff"), SubResource("Resource_li5ev"), SubResource("Resource_6ibp0"), SubResource("Resource_ko2j3"), SubResource("Resource_ep5ht"), SubResource("Resource_gwrxg"), SubResource("Resource_33luo")])
+script = ExtResource("2_ngtad")
+briefing = Array[ExtResource("1_imcao")]([SubResource("Resource_4kl3a"), SubResource("Resource_xtt5i"), SubResource("Resource_tk28s"), SubResource("Resource_g3k0v"), SubResource("Resource_d28g1"), SubResource("Resource_xw6yd"), SubResource("Resource_371lx"), SubResource("Resource_6mvp4"), SubResource("Resource_wcatj"), SubResource("Resource_cmwq8"), SubResource("Resource_mjqv0"), SubResource("Resource_7n1ts"), SubResource("Resource_jmsb3"), SubResource("Resource_48tca"), SubResource("Resource_leqtf"), SubResource("Resource_ubyuk"), SubResource("Resource_364gi"), SubResource("Resource_11l36"), SubResource("Resource_rxts5"), SubResource("Resource_jt81x"), SubResource("Resource_dmqbx"), SubResource("Resource_4h0of"), SubResource("Resource_1powh")])
+debriefing = Array[ExtResource("1_imcao")]([SubResource("Resource_n15ey"), SubResource("Resource_v1ksv"), SubResource("Resource_jmfto"), SubResource("Resource_odi55"), SubResource("Resource_ywwn6"), SubResource("Resource_hwrh0"), SubResource("Resource_uu8u8"), SubResource("Resource_5xpsk"), SubResource("Resource_hrq8y"), SubResource("Resource_8ensy"), SubResource("Resource_xjda8"), SubResource("Resource_3kyr4"), SubResource("Resource_3jf24"), SubResource("Resource_uei5s"), SubResource("Resource_wr7c3"), SubResource("Resource_20ppf"), SubResource("Resource_xtk7v"), SubResource("Resource_7s3h4"), SubResource("Resource_c5dvw"), SubResource("Resource_ad162"), SubResource("Resource_ulgp0"), SubResource("Resource_equje"), SubResource("Resource_o3ixi")])
+bar_shotglass = Array[ExtResource("1_imcao")]([SubResource("Resource_na6i1"), SubResource("Resource_cosfy"), SubResource("Resource_e8mba"), SubResource("Resource_0nkm2"), SubResource("Resource_sspom"), SubResource("Resource_b7jyr"), SubResource("Resource_i04qq"), SubResource("Resource_t8wfa"), SubResource("Resource_gaahr"), SubResource("Resource_g5iuv")])
+bar_left_pilot = Array[ExtResource("1_imcao")]([SubResource("Resource_1yikq"), SubResource("Resource_epfhn"), SubResource("Resource_e5h1l"), SubResource("Resource_2tp86"), SubResource("Resource_dt706"), SubResource("Resource_ojd2a"), SubResource("Resource_t3gfk"), SubResource("Resource_w34rf"), SubResource("Resource_3rj2u")])
+bar_right_pilot = Array[ExtResource("1_imcao")]([SubResource("Resource_1egrs"), SubResource("Resource_gwv7y"), SubResource("Resource_hjibw"), SubResource("Resource_6rh4n"), SubResource("Resource_myhsu"), SubResource("Resource_7vpmo"), SubResource("Resource_kafi3"), SubResource("Resource_fbsua"), SubResource("Resource_p6vsd"), SubResource("Resource_2qulj"), SubResource("Resource_7mlru"), SubResource("Resource_mmjxb"), SubResource("Resource_nu7mg")])

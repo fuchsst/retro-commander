@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://c7h5u5pfecfnh"]
+[gd_scene load_steps=7 format=3 uid="uid://c7h5u5pfecfnh"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/DialogPlayer.gd" id="1_uu3da"]
-[ext_resource type="Resource" uid="uid://3yrd38a52ldr" path="res://Assets/VegaCampaign/Season1/MissionDialogs0.tres" id="2_lsgrn"]
 [ext_resource type="PackedScene" uid="uid://febouepvqdew" path="res://Assets/Cutscenes/Backgrounds/002_ShotglassWindow.tscn" id="3_7121y"]
 [ext_resource type="PackedScene" uid="uid://cmlc6yiwuphc2" path="res://Assets/Cutscenes/Foregrounds/030_Shotglass.tscn" id="4_n2dun"]
 [ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="5_j37wj"]
@@ -17,11 +16,10 @@ script = ExtResource("1_uu3da")
 background = ExtResource("3_7121y")
 foreground = ExtResource("4_n2dun")
 
-[node name="Background" parent="." instance=ExtResource("3_7121y")]
+[node name="Background" type="Node2D" parent="."]
 
-[node name="Foreground" parent="." instance=ExtResource("4_n2dun")]
-position = Vector2(0, 142)
-mission_dialogs = ExtResource("2_lsgrn")
+[node name="Foreground" type="Node2D" parent="."]
+position = Vector2(0, 144)
 
 [node name="SubtitlesLabel" type="Label" parent="."]
 custom_minimum_size = Vector2(1280, 144)
@@ -47,4 +45,6 @@ autowrap_mode = 3
 offset_right = 1280.0
 offset_bottom = 800.0
 
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="ready" from="SubtitlesLabel" to="." method="_on_subtitles_label_ready"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

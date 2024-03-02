@@ -270,17 +270,22 @@ Eye positions:
 9: 
 10: 
 
+
 Mouth positions:
-11: open
-12: 
-13: 
-14: 
-15: 
-16: 
-17: 
-18: 
-19: 
-20: 
+0: Silence
+11: open (4: ɛ, ʊ) -> e
+12: wide open (12: h) -> h
+13: big o-form (13: ɹ) -> o 
+14: small o-form (16: ʃ, tʃ, dʒ, ʒ) -> l, d, t
+15: wide teeth together (15: s, z) -> c, s, z
+16: closed mouth (21: p, b, m) -> n, m, b, p
+17: lips pointed (7: w, u) -> w, u, q
+18: opened (5: ɝ) -> r
+19: slightly opened (18: f, v) -> f,v, 
+20: smiling (6: j, i, ɪ) -> i, j, g, k
+
+first number is image index, number in parenthesis is visime id from [azure/ai-services/speech-service/how-to-speech-synthesis-viseme](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/how-to-speech-synthesis-viseme?tabs=visemeid&pivots=programming-language-csharp)
+
 
 
 Example:

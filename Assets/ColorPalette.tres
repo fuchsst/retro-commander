@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ColorPalette" load_steps=2 format=3 uid="uid://u7c7xevp3eow"]
 
-[ext_resource type="Script" path="res://Scripts/Briefings/ColorPalette.gd" id="1_gc2he"]
+[ext_resource type="Script" path="res://Scripts/ColorPalette.gd" id="1_gc2he"]
 
 [resource]
 script = ExtResource("1_gc2he")

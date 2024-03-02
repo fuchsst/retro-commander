@@ -144,8 +144,8 @@ func convert_mission_dialogs(mission_dialogs: Array) -> MissionDialogs:
 	result.briefing = convert_to_dialog_properties(mission_dialogs[0])
 	result.debriefing = convert_to_dialog_properties(mission_dialogs[1])
 	result.bar_shotglass = convert_to_dialog_properties(mission_dialogs[2])
-	result.bar_left_pilot = convert_to_dialog_properties(mission_dialogs[3])
-	result.bar_right_pilot = convert_to_dialog_properties(mission_dialogs[4])
+	result.bar_right_pilot = convert_to_dialog_properties(mission_dialogs[3])
+	result.bar_left_pilot = convert_to_dialog_properties(mission_dialogs[4])	
 
 	return result
 	

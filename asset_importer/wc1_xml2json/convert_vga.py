@@ -93,6 +93,7 @@ def scale_image(img):
     for y in range(height):
         for x in range(width):
             color = pixels[x, y]
+            if color
             tmp_pixels[x * 2, y * 2] = color
             tmp_pixels[x * 2 + 1, y * 2] = color
             tmp_pixels[x * 2, y * 2 + 1] = color

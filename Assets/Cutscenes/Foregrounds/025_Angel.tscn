@@ -1,137 +1,138 @@
 [gd_scene load_steps=23 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Cutscenes/CutsceneCharacter.gd" id="1_oxp1g"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/000.png" id="2_0kby5"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/001.png" id="3_amc3o"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/002.png" id="4_2wqkp"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/003.png" id="5_no64a"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/004.png" id="6_whg4w"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/005.png" id="7_ue0a2"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/006.png" id="8_kdws1"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/007.png" id="9_pkfd5"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/008.png" id="10_fybyh"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/009.png" id="11_s4rok"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/010.png" id="12_bwv4s"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/011.png" id="13_kybmj"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/012.png" id="14_jdh1d"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/013.png" id="15_l7n05"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/014.png" id="16_axn4o"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/015.png" id="17_o5nx1"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/016.png" id="18_vr4oi"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/017.png" id="19_ailr0"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/018.png" id="20_cq100"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/019.png" id="21_i0i5k"]
-[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/020.png" id="22_c62po"]
+[ext_resource type="Script" path="res://Scripts/Cutscenes/CutsceneCharacter.gd" id="1_vukoo"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/000.png" id="2_2iq2w"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/001.png" id="3_1r70h"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/002.png" id="4_1t3wp"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/003.png" id="5_2l1cy"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/004.png" id="6_18ix3"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/005.png" id="7_sy4qf"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/006.png" id="8_ynmem"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/007.png" id="9_g804r"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/008.png" id="10_sd6h6"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/009.png" id="11_6aqru"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/010.png" id="12_1n1rs"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/011.png" id="13_v6dt4"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/012.png" id="14_6k5lw"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/013.png" id="15_biep0"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/014.png" id="16_pmq37"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/015.png" id="17_thgal"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/016.png" id="18_35sq7"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/017.png" id="19_jl7fc"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/018.png" id="20_sljb3"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/019.png" id="21_h8q4o"]
+[ext_resource type="Texture2D" path="res://Gamedata/talking.vga/005/020.png" id="22_pjal4"]
 
 [node name="CutsceneCharacter" type="Node2D"]
-script = ExtResource("1_oxp1g")
+script = ExtResource("1_vukoo")
+mission_dialogs = null
 mouth_index = 0
 eye_index = 0
 
 [node name="Face" type="Sprite2D" parent="."]
-texture = ExtResource("2_0kby5")
+texture = ExtResource("2_2iq2w")
 centered = false
 
 [node name="Mouth" type="Node2D" parent="."]
 
 [node name="Mouth01" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("3_amc3o")
+texture = ExtResource("3_1r70h")
 centered = false
 
 [node name="Mouth02" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("4_2wqkp")
+texture = ExtResource("4_1t3wp")
 centered = false
 
 [node name="Mouth03" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("5_no64a")
+texture = ExtResource("5_2l1cy")
 centered = false
 
 [node name="Mouth04" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("6_whg4w")
+texture = ExtResource("6_18ix3")
 centered = false
 
 [node name="Mouth05" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("7_ue0a2")
+texture = ExtResource("7_sy4qf")
 centered = false
 
 [node name="Mouth06" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("8_kdws1")
+texture = ExtResource("8_ynmem")
 centered = false
 
 [node name="Mouth07" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("9_pkfd5")
+texture = ExtResource("9_g804r")
 centered = false
 
 [node name="Mouth08" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("10_fybyh")
+texture = ExtResource("10_sd6h6")
 centered = false
 
 [node name="Mouth09" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("11_s4rok")
+texture = ExtResource("11_6aqru")
 centered = false
 
 [node name="Mouth10" type="Sprite2D" parent="Mouth"]
 position = Vector2(504, 320)
-texture = ExtResource("12_bwv4s")
+texture = ExtResource("12_1n1rs")
 centered = false
 
 [node name="Eyes" type="Node2D" parent="."]
 
 [node name="Eyes01" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("13_kybmj")
+texture = ExtResource("13_v6dt4")
 centered = false
 
 [node name="Eyes02" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("14_jdh1d")
+texture = ExtResource("14_6k5lw")
 centered = false
 
 [node name="Eyes03" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("15_l7n05")
+texture = ExtResource("15_biep0")
 centered = false
 
 [node name="Eyes04" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("16_axn4o")
+texture = ExtResource("16_pmq37")
 centered = false
 
 [node name="Eyes05" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("17_o5nx1")
+texture = ExtResource("17_thgal")
 centered = false
 
 [node name="Eyes06" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("18_vr4oi")
+texture = ExtResource("18_35sq7")
 centered = false
 
 [node name="Eyes07" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("19_ailr0")
+texture = ExtResource("19_jl7fc")
 centered = false
 
 [node name="Eyes08" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("20_cq100")
+texture = ExtResource("20_sljb3")
 centered = false
 
 [node name="Eyes09" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("21_i0i5k")
+texture = ExtResource("21_h8q4o")
 centered = false
 
 [node name="Eyes10" type="Sprite2D" parent="Eyes"]
 position = Vector2(480, 220)
-texture = ExtResource("22_c62po")
+texture = ExtResource("22_pjal4")
 centered = false

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/Bar.gd" id="1_d6lfd"]
 [ext_resource type="Texture2D" uid="uid://bniaenbl8oams" path="res://Gamedata/recroom.vga/000/000.png" id="1_q1mcf"]
-[ext_resource type="Texture2D" uid="uid://dytd578barvs" path="res://Gamedata/title.vga/006/000.png" id="1_v0boc"]
+[ext_resource type="Texture2D" uid="uid://dftyurd73c0n0" path="res://Gamedata/title.vga/006/000.png" id="1_v0boc"]
 [ext_resource type="Texture2D" uid="uid://ctxaipxp4oddr" path="res://Gamedata/recroom.vga/011/000.png" id="2_g7jky"]
 [ext_resource type="Texture2D" uid="uid://ccjeroikj6i1o" path="res://Gamedata/recroom.vga/011/001.png" id="3_7u570"]
 [ext_resource type="Texture2D" uid="uid://b41himgb870dy" path="res://Gamedata/recroom.vga/011/002.png" id="4_pynbw"]
@@ -636,8 +636,10 @@ anchor_mode = 0
 
 [connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="." method="_on_talk_to_left_character_button_mouse_entered"]
 [connection signal="mouse_exited" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="ForegroundCanvas/TableTop/TalkToLeftCharacterButton" to="." method="_on_talk_to_left_character_button_pressed"]
 [connection signal="mouse_entered" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="." method="_on_talk_to_right_character_button_mouse_entered"]
 [connection signal="mouse_exited" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
+[connection signal="pressed" from="ForegroundCanvas/TableTop/TalkToRightCharacterButton" to="." method="_on_talk_to_right_character_button_pressed"]
 [connection signal="mouse_entered" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Fly training mission"]]
 [connection signal="mouse_exited" from="OverlayCanvas/EnterSimulatorButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_exited"]
 [connection signal="mouse_entered" from="OverlayCanvas/TalkToShotglassButton" to="OverlayCanvas/Cursor" method="_on_interaction_area_entered" binds= ["Talk to Shotglass"]]

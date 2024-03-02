@@ -39,3 +39,17 @@ func _on_talk_to_left_character_button_mouse_entered() -> void:
 
 func _on_talk_to_right_character_button_mouse_entered() -> void:
 	cursor._on_interaction_area_entered("Talk to " + right_character.get_active_character_name())
+
+
+func _on_talk_to_right_character_button_pressed() -> void:
+	var cutscene_player = preload("res://Scenes/OnBoard/DialogPlayer.tscn").instantiate()
+	cutscene_player.set_dialogs(World.current_mission_dialogs.bar_right_pilot)
+	get_tree().root.add_child(cutscene_player)
+	get_tree().root.remove_child(self)
+
+
+func _on_talk_to_left_character_button_pressed() -> void:
+	var cutscene_player = preload("res://Scenes/OnBoard/DialogPlayer.tscn").instantiate()
+	cutscene_player.set_dialogs(World.current_mission_dialogs.bar_left_pilot)
+	get_tree().root.add_child(cutscene_player)
+	get_tree().root.remove_child(self)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dd4k824wg1e4l"]
+[gd_scene load_steps=7 format=3 uid="uid://crjfh1ek7nwgg"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/DialogPlayer.gd" id="1_uu3da"]
 [ext_resource type="Resource" uid="uid://3yrd38a52ldr" path="res://Assets/VegaCampaign/Season1/MissionDialogs0.tres" id="2_lsgrn"]
@@ -13,7 +13,6 @@ font_color = Color(0.258824, 0.431373, 0.0235294, 1)
 
 [node name="DialogShotglass" type="Node2D"]
 script = ExtResource("1_uu3da")
-mission_dialogs = ExtResource("2_lsgrn")
 
 [node name="ShotglassWindow" parent="." instance=ExtResource("3_7121y")]
 

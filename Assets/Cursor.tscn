@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cw0hthoxdkc04"]
 
 [ext_resource type="Script" path="res://Assets/Cursor.gd" id="1_trpoq"]
-[ext_resource type="Texture2D" uid="uid://bagqutnaeldnk" path="res://Gamedata/arrow.vga/000/000.png" id="2_47k0y"]
-[ext_resource type="Texture2D" uid="uid://dfqdqcrvphd86" path="res://Gamedata/arrow.vga/000/001.png" id="3_ute4x"]
-[ext_resource type="Texture2D" uid="uid://bs7seacndc04t" path="res://Gamedata/arrow.vga/000/002.png" id="4_ey7ey"]
+[ext_resource type="Texture2D" uid="uid://cmm7muy30q81m" path="res://Gamedata/arrow.vga/000/000.png" id="2_47k0y"]
+[ext_resource type="Texture2D" uid="uid://vhn7trfbqkf1" path="res://Gamedata/arrow.vga/000/001.png" id="3_ute4x"]
+[ext_resource type="Texture2D" uid="uid://cjqyxe00tfd6x" path="res://Gamedata/arrow.vga/000/002.png" id="4_ey7ey"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cnvr6"]
 animations = [{

@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://44ytahk2ag5x"]
+
+[ext_resource type="Texture2D" uid="uid://swgatdn2euxj" path="res://Gamedata/recroom.vga/001/002.png" id="1_hqnis"]
+
+[sub_resource type="Gradient" id="Gradient_x35ua"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lix76"]
+gradient = SubResource("Gradient_x35ua")
+width = 1280
+height = 144
+
+[sub_resource type="Gradient" id="Gradient_hi0md"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1rhrp"]
+gradient = SubResource("Gradient_hi0md")
+width = 1280
+height = 144
+
+[node name="LeftBarSeat" type="Node2D"]
+
+[node name="ColorRectTop" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_lix76")
+centered = false
+
+[node name="BackgroundWall" type="Sprite2D" parent="."]
+position = Vector2(1, 144)
+texture = ExtResource("1_hqnis")
+centered = false
+
+[node name="ColorRectBottom" type="Sprite2D" parent="."]
+position = Vector2(0, 656)
+texture = SubResource("GradientTexture2D_1rhrp")
+centered = false
