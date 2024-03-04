@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyfg5fo5jbgs4"]
+
+[ext_resource type="Script" path="res://Assets/Cockpits/Instruments/RadarWidget.gd" id="1_3i838"]
+
+[node name="RadarWidget" type="Node2D" node_paths=PackedStringArray("player_position")]
+position = Vector2(302, 190)
+script = ExtResource("1_3i838")
+player_position = NodePath("Player")
+
+[node name="Player" type="Node3D" parent="."]
+
+[node name="Wingman" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.8178, 6.10352e-05, -23.7556)
+
+[node name="Enemy1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 750, -750)
+
+[node name="Missle" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -142.528, -530.454, -50.8726)

@@ -62,13 +62,53 @@ func convert_vega_campaign_camp_file():
 	const src_file = "res://asset_importer/wc1_xml2json/output/camp.000.json"
 	const assets_dir = "res://Assets/"
 	const dst_dir = assets_dir+ "VegaCampaign/"
-
+	
 	var dir = DirAccess.open(assets_dir)
 	dir.make_dir_recursive(dst_dir)
 	
 	if FileAccess.file_exists(src_file):
 		var json_as_text = FileAccess.get_file_as_string(src_file)
 		var json_as_dict = JSON.parse_string(json_as_text)
+
+		var stellar_backgrounds = json_as_dict["StellarBackgrounds"]
+		for i in range(len(stellar_backgrounds)):
+			if stellar_backgrounds[i]["Image"] != -1:
+				var stellar_background_properties = StellarBackgroundProperties.new()
+				stellar_background_properties.image = stellar_backgrounds[i]["Image"]
+				stellar_background_properties.rotation = Vector3(stellar_backgrounds[i]["Rotation"]["x"], stellar_backgrounds[i]["Rotation"]["y"], stellar_backgrounds[i]["Rotation"]["z"])
+
+				var season = floor(i / 4)+1
+				var mission = i - ((season-1)*4)
+				var season_dir = dst_dir + "Season" + str(season) + "/"
+				dir.make_dir_recursive(season_dir)
+				ResourceSaver.save(stellar_background_properties, season_dir + "StellarBackground" + str(mission) + ".tres")
+		
+		var series_branches = json_as_dict["SeriesBranch"]
+		for branch_idx in range(len(series_branches)):
+			var branch = series_branches[branch_idx]
+			var series_branch_properties = SeriesBranchProperties.new()
+			series_branch_properties.cutscene = branch["Cutscene"]
+			series_branch_properties.failure_series = branch["FailureSeries"]
+			series_branch_properties.failure_ship = branch["FailureShip"]
+			series_branch_properties.missions_active = branch["MissionsActive"]
+			series_branch_properties.success_score = branch["SuccessScore"]
+			series_branch_properties.success_series = branch["SuccessSeries"]
+			series_branch_properties.success_ship = branch["SuccessShip"]
+			series_branch_properties.wingman = branch["Wingman"]
+
+			var season_dir = dst_dir + "Season" + str(branch_idx+1) + "/"
+			dir.make_dir_recursive(season_dir)
+			ResourceSaver.save(series_branch_properties, season_dir + "BranchProperties.tres")
+
+			for mission_idx in range(len(branch["MissionScorings"])):
+				var mission = branch["MissionScorings"][mission_idx]
+				if mission["FlightPathScoring"].any(func(score): return score != 0):
+					var mission_scoring_properties = MissionScoringProperties.new()
+					mission_scoring_properties.flight_path_scoring.assign(mission["FlightPathScoring"] as Array[int])
+						
+					mission_scoring_properties.medal = mission["Medal"]
+					mission_scoring_properties.medal_score = mission["MedalScore"]
+					ResourceSaver.save(mission_scoring_properties, season_dir + "MissionScorings" + str(mission_idx) + ".tres")
 
 		var bar_seatings = json_as_dict["BarSeating"]
 		for i in range(len(bar_seatings)):

@@ -207,6 +207,6 @@ frame = 3
 frame_progress = 0.117517
 
 [node name="ColorRectBottom" type="Sprite2D" parent="."]
-position = Vector2(0, 660)
+position = Vector2(0, 656)
 texture = SubResource("GradientTexture2D_1rhrp")
 centered = false

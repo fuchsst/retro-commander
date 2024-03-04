@@ -1,26 +1,39 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=12 format=3]
 
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/000/000.png" id="1_r7h4g"]
-[ext_resource type="Script" path="res://Scripts/Cockpit/Cockpit.gd" id="2_unjoi"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/002.png" id="3_cws4w"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/006.png" id="4_juq2y"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/000.png" id="5_1nfg1"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/004.png" id="6_xawp0"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/003.png" id="7_tmwax"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/007.png" id="8_trygq"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/001.png" id="9_a0l2a"]
-[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/005.png" id="10_p571q"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/000/000.png" id="1_81gg4"]
+[ext_resource type="Script" path="res://Scripts/Cockpit/Cockpit.gd" id="2_bw5iu"]
+[ext_resource type="Script" path="res://Assets/Cockpits/Instruments/RadarWidget.gd" id="3_3trgw"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/002.png" id="4_ktvvr"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/006.png" id="5_nrnwg"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/000.png" id="6_yhe2x"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/004.png" id="7_legyl"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/003.png" id="8_wis6b"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/007.png" id="9_iva7o"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/001.png" id="10_prgt3"]
+[ext_resource type="Texture2D" path="res://Gamedata/pcship.v04/007/005.png" id="11_k6yp0"]
 
 [node name="Cockpit" type="Sprite2D"]
-texture = ExtResource("1_r7h4g")
+texture = ExtResource("1_81gg4")
 centered = false
-script = ExtResource("2_unjoi")
+script = ExtResource("2_bw5iu")
 
-[node name="ControlStick" type="Node2D" parent="."]
-position = Vector2(480, 608)
+[node name="Damages" type="Node2D" parent="."]
 
-[node name="Radar" type="Node2D" parent="."]
+[node name="Damage0" type="Sprite2D" parent="Damages"]
+
+[node name="Damage1" type="Sprite2D" parent="Damages"]
+
+[node name="Damage2" type="Sprite2D" parent="Damages"]
+
+[node name="Damage3" type="Sprite2D" parent="Damages"]
+
+[node name="Radar" type="Node2D" parent="." node_paths=PackedStringArray("wingmen", "enemies", "missles")]
 position = Vector2(636, 520)
+script = ExtResource("3_3trgw")
+wingmen = []
+enemies = []
+missles = []
+radius = 52.0
 
 [node name="Gauges" type="Node2D" parent="."]
 
@@ -28,88 +41,88 @@ position = Vector2(636, 520)
 position = Vector2(720, 496)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge0"]
-texture = ExtResource("3_cws4w")
+texture = ExtResource("4_ktvvr")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge0"]
-texture = ExtResource("4_juq2y")
+texture = ExtResource("5_nrnwg")
 centered = false
 
 [node name="Gauge1" type="Node2D" parent="Gauges"]
 position = Vector2(572, 440)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge1"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge1"]
-texture = ExtResource("6_xawp0")
+texture = ExtResource("7_legyl")
 centered = false
 
 [node name="Gauge2" type="Node2D" parent="Gauges"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge2"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge2"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="Gauge3" type="Node2D" parent="Gauges"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge3"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge3"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="Gauge4" type="Node2D" parent="Gauges"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge4"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge4"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="Gauge5" type="Node2D" parent="Gauges"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge5"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge5"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="Gauge6" type="Node2D" parent="Gauges"]
 position = Vector2(536, 496)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge6"]
-texture = ExtResource("7_tmwax")
+texture = ExtResource("8_wis6b")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge6"]
-texture = ExtResource("8_trygq")
+texture = ExtResource("9_iva7o")
 centered = false
 
 [node name="Gauge7" type="Node2D" parent="Gauges"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge7"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge7"]
-texture = ExtResource("5_1nfg1")
+texture = ExtResource("6_yhe2x")
 centered = false
 
 [node name="Lights" type="Node2D" parent="."]
@@ -118,77 +131,77 @@ centered = false
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light0"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light0"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Light1" type="Node2D" parent="Lights"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light1"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light1"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Light2" type="Node2D" parent="Lights"]
 position = Vector2(716, 460)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light2"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light2"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Light3" type="Node2D" parent="Lights"]
 position = Vector2(532, 456)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light3"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light3"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Light4" type="Node2D" parent="Lights"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light4"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light4"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Light5" type="Node2D" parent="Lights"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light5"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light5"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Light6" type="Node2D" parent="Lights"]
 position = Vector2(-396, -396)
 
 [node name="OnSprite" type="Sprite2D" parent="Lights/Light6"]
-texture = ExtResource("9_a0l2a")
+texture = ExtResource("10_prgt3")
 centered = false
 
 [node name="OffSprite" type="Sprite2D" parent="Lights/Light6"]
-texture = ExtResource("10_p571q")
+texture = ExtResource("11_k6yp0")
 centered = false
 
 [node name="Readouts" type="Node2D" parent="."]
@@ -218,3 +231,9 @@ offset_left = 792.0
 offset_top = 504.0
 offset_right = 1080.0
 offset_bottom = 764.0
+
+[node name="CockpitMessaging" type="Node2D" parent="."]
+position = Vector2(56, 52)
+
+[node name="ControlStick" type="Node2D" parent="."]
+position = Vector2(480, 608)

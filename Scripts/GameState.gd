@@ -32,7 +32,7 @@ var saves: Array[GameState] = []
 const SAVEGAME_BLOCK_SIZE = 828
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
@@ -62,7 +62,7 @@ func _read_savegame_file(filepath):
 	if file:
 		var data = file.get_buffer(file.get_length())
 		file.close()
-		var num_saves = data.size() / SAVEGAME_BLOCK_SIZE
+		var num_saves = int(data.size() / SAVEGAME_BLOCK_SIZE)
 		saves.resize(num_saves)
 		for i in range(0, num_saves):
 			var save_slot_data = data.slice(i*SAVEGAME_BLOCK_SIZE, (i+1)*SAVEGAME_BLOCK_SIZE)

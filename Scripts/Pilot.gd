@@ -29,14 +29,14 @@ func _init(callsign: String,
 			pilot_name: String,
 			rank: Rank=Rank.SECOND_LT,
 			pilot_status: int=-1,
-			kills: int=0,
-			missions: int=0):
+			kill_count: int=0,
+			mission_count: int=0):
 	self.callsign=callsign
 	self.pilot_name=pilot_name
 	self.rank=rank
 	self.pilot_status=pilot_status
-	self.kills=kills
-	self.missions=missions
+	self.kills=kill_count
+	self.missions=mission_count
 
 func _to_string() -> String:
 	return "Pilot(callsign=" +callsign + ", pilot_name=" + pilot_name+", rank="+str(rank) + ", pilot_status=" +str(pilot_status)+ ", kills="+str(kills) + ", missions=" + str(missions) + ")"

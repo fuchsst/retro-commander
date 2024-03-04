@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MissionScoringProperties" load_steps=2 format=3 uid="uid://dbgw1u1hknnx3"]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionScoringProperties.gd" id="1_vtp52"]
+
+[resource]
+script = ExtResource("1_vtp52")
+flight_path_scoring = Array[int]([1, 1, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+medal = 0
+medal_score = 50

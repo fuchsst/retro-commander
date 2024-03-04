@@ -88,18 +88,18 @@ static func deserialize_savegame(savegame_bytes:PackedByteArray) -> GameState:
 		var callsign_end_index = p.slice(14, 28).find(0)
 		var callsign = p.slice(14, 14 + callsign_end_index).get_string_from_ascii()
 		var rank = Pilot.Rank.values()[_little_endian_to_int(p.slice(30, 32))]
-		var missions = _little_endian_to_int(p.slice(32, 34))
-		var kills = _little_endian_to_int(p.slice(34, 36))
+		var mission_count = _little_endian_to_int(p.slice(32, 34))
+		var kill_count = _little_endian_to_int(p.slice(34, 36))
 		
 		if (i<num_wingman):
-			loaded_game_state.pilots.append(Pilot.new(callsign, name,  rank, -1, kills, missions))
+			loaded_game_state.pilots.append(Pilot.new(callsign, name,  rank, -1, kill_count, mission_count))
 		else:
 			loaded_game_state.player = Player.new(callsign,
 			name,
 			rank,
 			-1,
-			kills,
-			missions)
+			kill_count,
+			mission_count)
 		
 	var player_data = savegame_bytes.slice(364, 381)
 	loaded_game_state.player.medals.bronze_stars = player_data[0]

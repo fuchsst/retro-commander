@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MissionInfoProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionInfoProperties.gd" id="1_xitit"]
+
+[resource]
+script = ExtResource("1_xitit")
+carrier = -1
+convoy = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1])
+initial_sphere = -1
+your_ship = -1
+wing_name = "Easy"

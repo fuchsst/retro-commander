@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SeriesBranchProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/SeriesBranchProperties.gd" id="1_j3s75"]
+
+[resource]
+script = ExtResource("1_j3s75")
+cutscene = 1
+failure_series = 8
+failure_ship = 2
+missions_active = 3
+success_score = 25
+success_series = 7
+success_ship = 3
+wingman = 6

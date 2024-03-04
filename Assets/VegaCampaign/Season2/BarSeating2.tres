@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="BarSeatingProperties" load_steps=2 format=3 uid="uid://b3xlpixjejssm"]
+[gd_resource type="Resource" script_class="BarSeatingProperties" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Briefings/BarSeatingProperties.gd" id="1_cfdsc"]
+[ext_resource type="Script" path="res://Scripts/Briefings/BarSeatingProperties.gd" id="1_1lm8o"]
 
 [resource]
-script = ExtResource("1_cfdsc")
+script = ExtResource("1_1lm8o")
 left_pilot_id = 26
 right_pilot_id = 23

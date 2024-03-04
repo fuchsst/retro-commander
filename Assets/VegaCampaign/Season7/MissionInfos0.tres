@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MissionInfoProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionInfoProperties.gd" id="1_7w8d4"]
+
+[resource]
+script = ExtResource("1_7w8d4")
+carrier = 0
+convoy = Array[int]([2, 5, 18, -1, -1, -1, -1, -1])
+initial_sphere = 0
+your_ship = 0
+wing_name = "Gamma Wing"

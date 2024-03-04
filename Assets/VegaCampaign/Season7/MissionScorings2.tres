@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="MissionScoringProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionScoringProperties.gd" id="1_c3ofw"]
+
+[resource]
+script = ExtResource("1_c3ofw")
+flight_path_scoring = Array[int]([0, 5, 0, 5, 10, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+medal = 2
+medal_score = 141

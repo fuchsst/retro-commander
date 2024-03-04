@@ -1,2 +1,3 @@
-extends Node2D
+extends Sprite2D
 class_name Cockpit
+

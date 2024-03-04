@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="BarSeatingProperties" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Briefings/BarSeatingProperties.gd" id="1_fbapw"]
+[ext_resource type="Script" path="res://Scripts/Briefings/BarSeatingProperties.gd" id="1_gk41q"]
 
 [resource]
-script = ExtResource("1_fbapw")
+script = ExtResource("1_gk41q")
 left_pilot_id = 21
 right_pilot_id = 25

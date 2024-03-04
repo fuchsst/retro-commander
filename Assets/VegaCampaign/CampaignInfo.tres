@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CampaignProperties" load_steps=2 format=3 uid="uid://bxiq14h8yrltm"]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/CampaignProperties.gd" id="1_7mp8b"]
+
+[resource]
+script = ExtResource("1_7mp8b")
+campaign_id = 0
+campaign_name = "Vega Campaign"
+system_names = Array[String](["Squadron", "Enyo", "McAuliffe", "Gateway", "Gimle", "Brimstone", "Chengdu", "Dakota", "Port Hedland", "Kurasawa", "Rostov", "Hubble's Star", "Venice", "Hell's Kitchen", "-Kirov", "-Cambria"])

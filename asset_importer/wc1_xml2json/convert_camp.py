@@ -43,7 +43,7 @@ def convert_camp_xml(input_xml_file: str, output_json_file: str):
         for mission_scoring_item in series_branch_item.findall('.//wc:MissionScoringItem', namespace):
             mission_scoring_item_dict = dict(mission_scoring_item.attrib.items())
             series_branch["MissionScorings"].append({
-                "FlightPathScoring": mission_scoring_item_dict["FlightPathScoring"].split(),
+                "FlightPathScoring": list(map(int, mission_scoring_item_dict["FlightPathScoring"].split())),
                 "Medal": int(mission_scoring_item_dict["Medal"]),
                 "MedalScore": int(mission_scoring_item_dict["MedalScore"])
             })

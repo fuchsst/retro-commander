@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://beq5k7lpj4hej"]
+[gd_scene load_steps=8 format=3 uid="uid://beq5k7lpj4hej"]
 
 [ext_resource type="Script" path="res://asset_importer/ship_importer.gd" id="1_xpnvy"]
 [ext_resource type="Script" path="res://asset_importer/briefing_cutscene_importer.gd" id="2_yfxlc"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://asset_importer/camp_importer.gd" id="4_8x2f8"]
 [ext_resource type="Script" path="res://asset_importer/gamepal_importer.gd" id="5_iewxl"]
 [ext_resource type="Script" path="res://asset_importer/exe_importer.gd" id="6_x2yde"]
+[ext_resource type="Script" path="res://asset_importer/module_importer.gd" id="7_a2ata"]
 
 [node name="ImporterUi" type="Control"]
 layout_mode = 3
@@ -22,10 +23,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -67.0
-offset_top = -79.0
-offset_right = 294.0
-offset_bottom = 89.0
+offset_left = -180.5
+offset_top = -164.5
+offset_right = 180.5
+offset_bottom = 164.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -75,6 +76,12 @@ size_flags_horizontal = 3
 text = "Import wc.exe"
 script = ExtResource("6_x2yde")
 
+[node name="import_module_button" type="Button" parent="Panel/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Import module.000"
+script = ExtResource("7_a2ata")
+
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_right = 40.0
@@ -86,3 +93,4 @@ offset_bottom = 23.0
 [connection signal="pressed" from="Panel/GridContainer/import_camp_button" to="Panel/GridContainer/import_camp_button" method="_on_pressed"]
 [connection signal="pressed" from="Panel/GridContainer/import_colorpalette_button2" to="Panel/GridContainer/import_colorpalette_button2" method="_on_pressed"]
 [connection signal="pressed" from="Panel/GridContainer/import_exe_button" to="Panel/GridContainer/import_exe_button" method="_on_pressed"]
+[connection signal="pressed" from="Panel/GridContainer/import_module_button" to="Panel/GridContainer/import_module_button" method="_on_pressed"]

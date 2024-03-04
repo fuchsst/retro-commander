@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StellarBackgroundProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Campaign/StellarBackgroundProperties.gd" id="1_1lrwq"]
+
+[resource]
+script = ExtResource("1_1lrwq")
+image = 8
+rotation = Vector3(50, 150, 0)

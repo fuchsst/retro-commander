@@ -33,19 +33,33 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 	print(ship_image_dir)
 	root.texture = load(ship_image_dir + "000/000.png")
 	root.centered = false
-
-	# TODO: replace Node2D with controlstick scene
-	var constrol_stick_node = Node2D.new()
-	constrol_stick_node.position.x = instrument_layout["ControlStick"]["Bounds"]["x1"]
-	constrol_stick_node.position.y = instrument_layout["ControlStick"]["Bounds"]["y1"]
-	constrol_stick_node.name = "ControlStick"
-	root.add_child(constrol_stick_node)
-	constrol_stick_node.owner = root
+		
+	var damages_node = Node2D.new()
+	damages_node.name = "Damages"
+	root.add_child(damages_node)
+	damages_node.owner = root
+	for damage_idx in range(4):
+		var damage = damage_layouts[damage_idx]
+		var damage_node = Sprite2D.new()
+		damage_node.position.x = damage["x"]
+		damage_node.position.y = damage["y"]
+		damage_node.texture = load(ship_image_dir + "004/" + str(damage_idx).pad_zeros(3) + ".png")
+		damage_node.name = "Damage" + str(damage_idx)
+		print(damage_node.name)
+		damages_node.add_child(damage_node)
+		damage_node.owner = root
 
 	# TODO: replace Node2D with radar scene
-	var radar_node = Node2D.new()
+	var radar_node = RadarWidget.new()
 	radar_node.position.x = instrument_layout["Radar"]["Center"]["x"]
 	radar_node.position.y = instrument_layout["Radar"]["Center"]["y"]
+	radar_node.radius = min(
+		instrument_layout["Radar"]["Center"]["x"] - instrument_layout["Radar"]["Bounds"]["x1"],
+		instrument_layout["Radar"]["Center"]["y"] - instrument_layout["Radar"]["Bounds"]["y1"],
+		instrument_layout["Radar"]["Bounds"]["x2"] - instrument_layout["Radar"]["Center"]["x"],
+		instrument_layout["Radar"]["Bounds"]["y2"] - instrument_layout["Radar"]["Center"]["y"]
+	)
+	
 	radar_node.name = "Radar"
 	root.add_child(radar_node)
 	radar_node.owner = root
@@ -138,7 +152,22 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 	right_display_node.name = "Right"
 	displays_node.add_child(right_display_node)
 	right_display_node.owner = root
+	
+		
+	var massagings_node = Node2D.new()
+	massagings_node.name = "CockpitMessaging"
+	massagings_node.position.x = messaging["x"]
+	massagings_node.position.y = messaging["y"]
+	root.add_child(massagings_node)
+	massagings_node.owner = root
 
+	# TODO: replace Node2D with controlstick scene
+	var constrol_stick_node = Node2D.new()
+	constrol_stick_node.position.x = instrument_layout["ControlStick"]["Bounds"]["x1"]
+	constrol_stick_node.position.y = instrument_layout["ControlStick"]["Bounds"]["y1"]
+	constrol_stick_node.name = "ControlStick"
+	root.add_child(constrol_stick_node)
+	constrol_stick_node.owner = root
 		
 	
 
