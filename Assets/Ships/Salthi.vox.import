@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Salthi.vox-e8b98b63af113f26e0fda761cb88de2a.m
 
 [params]
 
-Scale=0.06
+Scale=0.3
 GreedyMeshGenerator=true
 SnapToGround=false
 FirstKeyframeOnly=true

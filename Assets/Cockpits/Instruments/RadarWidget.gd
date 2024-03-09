@@ -31,7 +31,6 @@ func _draw_radar_objects(object: Node3D, color:Color) -> void:
 	
 	var relative_position = object.global_transform.origin - player_position.global_transform.origin
 	var rotated_position = player_position.global_transform * relative_position
-	print(rotated_position)
 
 	var blip_position = map_3d_to_2d(rotated_position)
 	print(blip_position)

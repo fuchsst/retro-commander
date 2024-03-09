@@ -1,262 +1,282 @@
-[gd_scene load_steps=30 format=3 uid="uid://dr7bbmlladhmc"]
+[gd_scene load_steps=34 format=3 uid="uid://clle2yu5u1sqv"]
 
-[ext_resource type="Texture2D" uid="uid://d3cpk87jkurq1" path="res://Gamedata/pcship.v00/000/000.png" id="1_ukiyi"]
-[ext_resource type="Script" path="res://Scripts/Cockpit/Cockpit.gd" id="2_73fxs"]
-[ext_resource type="Texture2D" uid="uid://du5v4px5krd46" path="res://Gamedata/pcship.v00/004/000.png" id="3_te3q5"]
-[ext_resource type="Texture2D" uid="uid://dwq2y7p8ewokh" path="res://Gamedata/pcship.v00/004/001.png" id="4_c6sei"]
-[ext_resource type="Texture2D" uid="uid://bcws6qmo43b1s" path="res://Gamedata/pcship.v00/004/002.png" id="5_1gisx"]
-[ext_resource type="Texture2D" uid="uid://cftq3fx1yvgkw" path="res://Gamedata/pcship.v00/004/003.png" id="6_njjyj"]
-[ext_resource type="Script" path="res://Assets/Cockpits/Instruments/RadarWidget.gd" id="7_61hgm"]
-[ext_resource type="Texture2D" uid="uid://c10ud7itqmull" path="res://Gamedata/pcship.v00/007/005.png" id="8_jpm5p"]
-[ext_resource type="Texture2D" uid="uid://dw8h17w2p5yen" path="res://Gamedata/pcship.v00/007/016.png" id="9_bcdqg"]
-[ext_resource type="Texture2D" uid="uid://dtpq24us2t14h" path="res://Gamedata/pcship.v00/007/001.png" id="10_c7ttm"]
-[ext_resource type="Texture2D" uid="uid://cbebfcrf172lx" path="res://Gamedata/pcship.v00/007/012.png" id="11_1kvy4"]
-[ext_resource type="Texture2D" uid="uid://c6d5iu8g3jqbd" path="res://Gamedata/pcship.v00/007/006.png" id="12_wa1mm"]
-[ext_resource type="Texture2D" uid="uid://bfclvwefud8m4" path="res://Gamedata/pcship.v00/007/017.png" id="13_5eorv"]
-[ext_resource type="Texture2D" uid="uid://duk60hrk42q3t" path="res://Gamedata/pcship.v00/007/009.png" id="14_i2n4l"]
-[ext_resource type="Texture2D" uid="uid://dlvtq0d3ns0tj" path="res://Gamedata/pcship.v00/007/020.png" id="15_043b7"]
-[ext_resource type="Texture2D" uid="uid://c0cfn1beyb722" path="res://Gamedata/pcship.v00/007/007.png" id="16_ofmpe"]
-[ext_resource type="Texture2D" uid="uid://clawpui0hn3dk" path="res://Gamedata/pcship.v00/007/018.png" id="17_mgwqq"]
-[ext_resource type="Texture2D" uid="uid://ciy2iorkx833i" path="res://Gamedata/pcship.v00/007/008.png" id="18_xv38b"]
-[ext_resource type="Texture2D" uid="uid://dv6di0tmcp551" path="res://Gamedata/pcship.v00/007/019.png" id="19_d31qu"]
-[ext_resource type="Texture2D" uid="uid://c0wv50b4yo28l" path="res://Gamedata/pcship.v00/007/004.png" id="20_6kvm8"]
-[ext_resource type="Texture2D" uid="uid://brb3yclptlnrx" path="res://Gamedata/pcship.v00/007/015.png" id="21_2vnhu"]
-[ext_resource type="Texture2D" uid="uid://cydw4kv1oxcbq" path="res://Gamedata/pcship.v00/007/010.png" id="22_84utc"]
-[ext_resource type="Texture2D" uid="uid://dkimr5xriyn0r" path="res://Gamedata/pcship.v00/007/021.png" id="23_rn3g0"]
-[ext_resource type="Texture2D" uid="uid://cm6c0gi7g8bue" path="res://Gamedata/pcship.v00/007/003.png" id="24_go453"]
-[ext_resource type="Texture2D" uid="uid://bi5po70aqq7qk" path="res://Gamedata/pcship.v00/007/014.png" id="25_thdao"]
-[ext_resource type="Texture2D" uid="uid://sfagti2nd2po" path="res://Gamedata/pcship.v00/007/000.png" id="26_xjyfu"]
-[ext_resource type="Texture2D" uid="uid://yfnputi3nwmj" path="res://Gamedata/pcship.v00/007/011.png" id="27_qkovv"]
-[ext_resource type="Texture2D" uid="uid://cmr80x7lag675" path="res://Gamedata/pcship.v00/007/002.png" id="28_2ee2m"]
-[ext_resource type="Texture2D" uid="uid://e3n6cfptcglb" path="res://Gamedata/pcship.v00/007/013.png" id="29_reyr8"]
+[ext_resource type="Script" path="res://Scripts/Cockpit/Cockpit.gd" id="1_tt2uo"]
+[ext_resource type="Texture2D" uid="uid://d3cpk87jkurq1" path="res://Gamedata/pcship.v00/000/000.png" id="2_dd8eg"]
+[ext_resource type="Texture2D" uid="uid://du5v4px5krd46" path="res://Gamedata/pcship.v00/004/000.png" id="3_pbfsu"]
+[ext_resource type="Texture2D" uid="uid://dwq2y7p8ewokh" path="res://Gamedata/pcship.v00/004/001.png" id="4_y7dkc"]
+[ext_resource type="Texture2D" uid="uid://bcws6qmo43b1s" path="res://Gamedata/pcship.v00/004/002.png" id="5_or4a2"]
+[ext_resource type="Texture2D" uid="uid://cftq3fx1yvgkw" path="res://Gamedata/pcship.v00/004/003.png" id="6_8f3ja"]
+[ext_resource type="PackedScene" uid="uid://cyfg5fo5jbgs4" path="res://Assets/Cockpits/Instruments/RadarWidget.tscn" id="7_6ul7b"]
+[ext_resource type="Texture2D" uid="uid://c10ud7itqmull" path="res://Gamedata/pcship.v00/007/005.png" id="9_sai1y"]
+[ext_resource type="Texture2D" uid="uid://dw8h17w2p5yen" path="res://Gamedata/pcship.v00/007/016.png" id="10_1m360"]
+[ext_resource type="Texture2D" uid="uid://dtpq24us2t14h" path="res://Gamedata/pcship.v00/007/001.png" id="11_np61p"]
+[ext_resource type="Texture2D" uid="uid://cbebfcrf172lx" path="res://Gamedata/pcship.v00/007/012.png" id="12_q6om7"]
+[ext_resource type="Texture2D" uid="uid://c6d5iu8g3jqbd" path="res://Gamedata/pcship.v00/007/006.png" id="13_jqd7g"]
+[ext_resource type="Texture2D" uid="uid://bfclvwefud8m4" path="res://Gamedata/pcship.v00/007/017.png" id="14_qllkh"]
+[ext_resource type="Texture2D" uid="uid://duk60hrk42q3t" path="res://Gamedata/pcship.v00/007/009.png" id="15_3468o"]
+[ext_resource type="Texture2D" uid="uid://dlvtq0d3ns0tj" path="res://Gamedata/pcship.v00/007/020.png" id="16_6l84y"]
+[ext_resource type="Texture2D" uid="uid://c0cfn1beyb722" path="res://Gamedata/pcship.v00/007/007.png" id="17_u4ey1"]
+[ext_resource type="Texture2D" uid="uid://clawpui0hn3dk" path="res://Gamedata/pcship.v00/007/018.png" id="18_l83oo"]
+[ext_resource type="Texture2D" uid="uid://ciy2iorkx833i" path="res://Gamedata/pcship.v00/007/008.png" id="19_efg4u"]
+[ext_resource type="Texture2D" uid="uid://dv6di0tmcp551" path="res://Gamedata/pcship.v00/007/019.png" id="20_vkt1m"]
+[ext_resource type="Texture2D" uid="uid://c0wv50b4yo28l" path="res://Gamedata/pcship.v00/007/004.png" id="21_3i668"]
+[ext_resource type="Texture2D" uid="uid://brb3yclptlnrx" path="res://Gamedata/pcship.v00/007/015.png" id="22_gn11l"]
+[ext_resource type="Texture2D" uid="uid://cydw4kv1oxcbq" path="res://Gamedata/pcship.v00/007/010.png" id="23_pfjo6"]
+[ext_resource type="Texture2D" uid="uid://dkimr5xriyn0r" path="res://Gamedata/pcship.v00/007/021.png" id="24_txb43"]
+[ext_resource type="Texture2D" uid="uid://cm6c0gi7g8bue" path="res://Gamedata/pcship.v00/007/003.png" id="25_1o46f"]
+[ext_resource type="Texture2D" uid="uid://bi5po70aqq7qk" path="res://Gamedata/pcship.v00/007/014.png" id="26_mvp4a"]
+[ext_resource type="Texture2D" uid="uid://sfagti2nd2po" path="res://Gamedata/pcship.v00/007/000.png" id="27_ipix6"]
+[ext_resource type="Texture2D" uid="uid://yfnputi3nwmj" path="res://Gamedata/pcship.v00/007/011.png" id="28_10221"]
+[ext_resource type="Texture2D" uid="uid://cmr80x7lag675" path="res://Gamedata/pcship.v00/007/002.png" id="29_g4t8n"]
+[ext_resource type="Texture2D" uid="uid://e3n6cfptcglb" path="res://Gamedata/pcship.v00/007/013.png" id="30_inb8i"]
+[ext_resource type="PackedScene" uid="uid://b2r2h062ixscy" path="res://Assets/Cockpits/Instruments/ControlStick.tscn" id="31_6ta3t"]
+[ext_resource type="Texture2D" uid="uid://dwbqi5ui31di" path="res://Gamedata/pcship.v00/001/000.png" id="33_0o7cm"]
+[ext_resource type="Texture2D" uid="uid://d0c5fwqnnpuyf" path="res://Gamedata/pcship.v00/002/000.png" id="34_8xk5u"]
+[ext_resource type="Texture2D" uid="uid://bcbtvnq8lsg0" path="res://Gamedata/pcship.v00/003/000.png" id="35_sg8xj"]
 
-[node name="Cockpit" type="Sprite2D"]
-texture = ExtResource("1_ukiyi")
+[node name="Cockpit" type="Node2D"]
+script = ExtResource("1_tt2uo")
+
+[node name="FrontView" type="Sprite2D" parent="."]
+texture = ExtResource("2_dd8eg")
 centered = false
-script = ExtResource("2_73fxs")
 
-[node name="Damages" type="Node2D" parent="."]
+[node name="Damages" type="Node2D" parent="FrontView"]
 
-[node name="Damage0" type="Sprite2D" parent="Damages"]
+[node name="Damage0" type="Sprite2D" parent="FrontView/Damages"]
 position = Vector2(896, 20)
-texture = ExtResource("3_te3q5")
+texture = ExtResource("3_pbfsu")
 
-[node name="Damage1" type="Sprite2D" parent="Damages"]
+[node name="Damage1" type="Sprite2D" parent="FrontView/Damages"]
 position = Vector2(528, 384)
-texture = ExtResource("4_c6sei")
+texture = ExtResource("4_y7dkc")
 
-[node name="Damage2" type="Sprite2D" parent="Damages"]
+[node name="Damage2" type="Sprite2D" parent="FrontView/Damages"]
 position = Vector2(932, 428)
-texture = ExtResource("5_1gisx")
+texture = ExtResource("5_or4a2")
 
-[node name="Damage3" type="Sprite2D" parent="Damages"]
+[node name="Damage3" type="Sprite2D" parent="FrontView/Damages"]
 position = Vector2(596, 644)
-texture = ExtResource("6_njjyj")
+texture = ExtResource("6_8f3ja")
 
-[node name="Radar" type="Node2D" parent="."]
+[node name="Radar" parent="FrontView" instance=ExtResource("7_6ul7b")]
 position = Vector2(636, 504)
-script = ExtResource("7_61hgm")
-radius = 75.0
+radius = 56.0
 
-[node name="Gauges" type="Node2D" parent="."]
+[node name="Gauges" type="Node2D" parent="FrontView"]
 
-[node name="Gauge0" type="Node2D" parent="Gauges"]
+[node name="Gauge0" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(860, 488)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge0"]
-texture = ExtResource("8_jpm5p")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge0"]
+texture = ExtResource("9_sai1y")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge0"]
-texture = ExtResource("9_bcdqg")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge0"]
+texture = ExtResource("10_1m360")
 centered = false
 
-[node name="Gauge1" type="Node2D" parent="Gauges"]
+[node name="Gauge1" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(572, 388)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge1"]
-texture = ExtResource("10_c7ttm")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge1"]
+texture = ExtResource("11_np61p")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge1"]
-texture = ExtResource("11_1kvy4")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge1"]
+texture = ExtResource("12_q6om7")
 centered = false
 
-[node name="Gauge2" type="Node2D" parent="Gauges"]
+[node name="Gauge2" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(456, 508)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge2"]
-texture = ExtResource("12_wa1mm")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge2"]
+texture = ExtResource("13_jqd7g")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge2"]
-texture = ExtResource("13_5eorv")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge2"]
+texture = ExtResource("14_qllkh")
 centered = false
 
-[node name="Gauge3" type="Node2D" parent="Gauges"]
+[node name="Gauge3" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(456, 572)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge3"]
-texture = ExtResource("14_i2n4l")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge3"]
+texture = ExtResource("15_3468o")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge3"]
-texture = ExtResource("15_043b7")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge3"]
+texture = ExtResource("16_6l84y")
 centered = false
 
-[node name="Gauge4" type="Node2D" parent="Gauges"]
+[node name="Gauge4" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(436, 528)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge4"]
-texture = ExtResource("16_ofmpe")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge4"]
+texture = ExtResource("17_u4ey1")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge4"]
-texture = ExtResource("17_mgwqq")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge4"]
+texture = ExtResource("18_l83oo")
 centered = false
 
-[node name="Gauge5" type="Node2D" parent="Gauges"]
+[node name="Gauge5" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(500, 528)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge5"]
-texture = ExtResource("18_xv38b")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge5"]
+texture = ExtResource("19_efg4u")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge5"]
-texture = ExtResource("19_d31qu")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge5"]
+texture = ExtResource("20_vkt1m")
 centered = false
 
-[node name="Gauge6" type="Node2D" parent="Gauges"]
+[node name="Gauge6" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(436, 488)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge6"]
-texture = ExtResource("20_6kvm8")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge6"]
+texture = ExtResource("21_3i668")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge6"]
-texture = ExtResource("21_2vnhu")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge6"]
+texture = ExtResource("22_gn11l")
 centered = false
 
-[node name="Gauge7" type="Node2D" parent="Gauges"]
+[node name="Gauge7" type="Node2D" parent="FrontView/Gauges"]
 position = Vector2(436, 592)
 
-[node name="OnSprite" type="Sprite2D" parent="Gauges/Gauge7"]
-texture = ExtResource("22_84utc")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge7"]
+texture = ExtResource("23_pfjo6")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Gauges/Gauge7"]
-texture = ExtResource("23_rn3g0")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Gauges/Gauge7"]
+texture = ExtResource("24_txb43")
 centered = false
 
-[node name="Lights" type="Node2D" parent="."]
+[node name="Lights" type="Node2D" parent="FrontView"]
 
-[node name="Light0" type="Node2D" parent="Lights"]
+[node name="Light0" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(404, 488)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light0"]
-texture = ExtResource("24_go453")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light0"]
+texture = ExtResource("25_1o46f")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light0"]
-texture = ExtResource("25_thdao")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light0"]
+texture = ExtResource("26_mvp4a")
 centered = false
 
-[node name="Light1" type="Node2D" parent="Lights"]
+[node name="Light1" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(404, 580)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light1"]
-texture = ExtResource("24_go453")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light1"]
+texture = ExtResource("25_1o46f")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light1"]
-texture = ExtResource("25_thdao")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light1"]
+texture = ExtResource("26_mvp4a")
 centered = false
 
-[node name="Light2" type="Node2D" parent="Lights"]
+[node name="Light2" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(756, 484)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light2"]
-texture = ExtResource("24_go453")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light2"]
+texture = ExtResource("25_1o46f")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light2"]
-texture = ExtResource("25_thdao")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light2"]
+texture = ExtResource("26_mvp4a")
 centered = false
 
-[node name="Light3" type="Node2D" parent="Lights"]
+[node name="Light3" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(548, 28)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light3"]
-texture = ExtResource("26_xjyfu")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light3"]
+texture = ExtResource("27_ipix6")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light3"]
-texture = ExtResource("27_qkovv")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light3"]
+texture = ExtResource("28_10221")
 centered = false
 
-[node name="Light4" type="Node2D" parent="Lights"]
+[node name="Light4" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(1060, 484)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light4"]
-texture = ExtResource("28_2ee2m")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light4"]
+texture = ExtResource("29_g4t8n")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light4"]
-texture = ExtResource("29_reyr8")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light4"]
+texture = ExtResource("30_inb8i")
 centered = false
 
-[node name="Light5" type="Node2D" parent="Lights"]
+[node name="Light5" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(-396, -396)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light5"]
-texture = ExtResource("24_go453")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light5"]
+texture = ExtResource("25_1o46f")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light5"]
-texture = ExtResource("25_thdao")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light5"]
+texture = ExtResource("26_mvp4a")
 centered = false
 
-[node name="Light6" type="Node2D" parent="Lights"]
+[node name="Light6" type="Node2D" parent="FrontView/Lights"]
 position = Vector2(812, 588)
 
-[node name="OnSprite" type="Sprite2D" parent="Lights/Light6"]
-texture = ExtResource("24_go453")
+[node name="OnSprite" type="Sprite2D" parent="FrontView/Lights/Light6"]
+texture = ExtResource("25_1o46f")
 centered = false
 
-[node name="OffSprite" type="Sprite2D" parent="Lights/Light6"]
-texture = ExtResource("25_thdao")
+[node name="OffSprite" type="Sprite2D" parent="FrontView/Lights/Light6"]
+texture = ExtResource("26_mvp4a")
 centered = false
 
-[node name="Readouts" type="Node2D" parent="."]
+[node name="Readouts" type="Node2D" parent="FrontView"]
 
-[node name="Readout0" type="Node2D" parent="Readouts"]
+[node name="Readout0" type="Node2D" parent="FrontView/Readouts"]
 position = Vector2(396, 520)
 
-[node name="Readout1" type="Node2D" parent="Readouts"]
+[node name="Readout1" type="Node2D" parent="FrontView/Readouts"]
 position = Vector2(396, 560)
 
-[node name="Readout2" type="Node2D" parent="Readouts"]
+[node name="Readout2" type="Node2D" parent="FrontView/Readouts"]
 position = Vector2(804, 420)
 
-[node name="Readout3" type="Node2D" parent="Readouts"]
+[node name="Readout3" type="Node2D" parent="FrontView/Readouts"]
 position = Vector2(448, 420)
 
-[node name="VideoDisplays" type="Node2D" parent="."]
+[node name="VideoDisplays" type="Node2D" parent="FrontView"]
 
-[node name="Left" type="Panel" parent="VideoDisplays"]
+[node name="Left" type="Panel" parent="FrontView/VideoDisplays"]
 offset_left = 40.0
 offset_top = 532.0
 offset_right = 328.0
 offset_bottom = 792.0
 
-[node name="Right" type="Panel" parent="VideoDisplays"]
+[node name="Right" type="Panel" parent="FrontView/VideoDisplays"]
 offset_left = 944.0
 offset_top = 532.0
 offset_right = 1236.0
 offset_bottom = 792.0
 
-[node name="CockpitMessaging" type="Node2D" parent="."]
+[node name="CockpitMessaging" type="Node2D" parent="FrontView"]
 position = Vector2(72, 56)
 
-[node name="ControlStick" type="Node2D" parent="."]
-position = Vector2(480, 608)
+[node name="ControlStick" parent="FrontView" instance=ExtResource("31_6ta3t")]
+position = Vector2(616, 748)
+
+[node name="RightView" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("33_0o7cm")
+centered = false
+
+[node name="LeftView" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("34_8xk5u")
+centered = false
+
+[node name="RearView" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("35_sg8xj")
+centered = false

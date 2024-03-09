@@ -1,0 +1,115 @@
+[gd_scene load_steps=21 format=3 uid="uid://b2r2h062ixscy"]
+
+[ext_resource type="Script" path="res://Assets/Cockpits/Instruments/ControlStick.gd" id="1_0acgt"]
+[ext_resource type="Texture2D" uid="uid://bus4iv7v02c2t" path="res://Gamedata/pilotanm.vga/003/000.png" id="2_1vipn"]
+[ext_resource type="Texture2D" uid="uid://c1bqp2ep3chh2" path="res://Gamedata/pilotanm.vga/003/001.png" id="3_v3dgg"]
+[ext_resource type="Texture2D" uid="uid://b8313e1a4bpfi" path="res://Gamedata/pilotanm.vga/003/002.png" id="4_kv7p1"]
+[ext_resource type="Texture2D" uid="uid://dra6ktro4c17l" path="res://Gamedata/pilotanm.vga/003/003.png" id="5_v8snb"]
+[ext_resource type="Texture2D" uid="uid://d28q1jltak33g" path="res://Gamedata/pilotanm.vga/003/004.png" id="6_amnlb"]
+[ext_resource type="Texture2D" uid="uid://byd2vamdwb6d7" path="res://Gamedata/pilotanm.vga/003/005.png" id="7_ipbv1"]
+[ext_resource type="Texture2D" uid="uid://dg3nbtd8f32dw" path="res://Gamedata/pilotanm.vga/003/006.png" id="8_ifyux"]
+[ext_resource type="Texture2D" uid="uid://bnfwjg2j8j4e4" path="res://Gamedata/pilotanm.vga/003/007.png" id="9_ey4x6"]
+[ext_resource type="Texture2D" uid="uid://b3pse0nietl4e" path="res://Gamedata/pilotanm.vga/003/008.png" id="10_8j1pu"]
+[ext_resource type="Texture2D" uid="uid://6hyjelt4nasq" path="res://Gamedata/pilotanm.vga/003/009.png" id="11_q7g6w"]
+[ext_resource type="Texture2D" uid="uid://cmu0rcmp8p0hw" path="res://Gamedata/pilotanm.vga/003/010.png" id="12_j7n55"]
+[ext_resource type="Texture2D" uid="uid://b62vvxg5mitgj" path="res://Gamedata/pilotanm.vga/003/011.png" id="13_i827j"]
+[ext_resource type="Texture2D" uid="uid://rxnvaprsqew3" path="res://Gamedata/pilotanm.vga/003/012.png" id="14_ak85m"]
+[ext_resource type="Texture2D" uid="uid://c82cxay57jcth" path="res://Gamedata/pilotanm.vga/003/013.png" id="15_6xg0r"]
+[ext_resource type="Texture2D" uid="uid://dssnbr08lsd3j" path="res://Gamedata/pilotanm.vga/003/014.png" id="16_56b0n"]
+[ext_resource type="Texture2D" uid="uid://dt4q1462vgktl" path="res://Gamedata/pilotanm.vga/003/015.png" id="17_psf3u"]
+[ext_resource type="Texture2D" uid="uid://cn2h0hfbge15y" path="res://Gamedata/pilotanm.vga/003/016.png" id="18_w42gy"]
+[ext_resource type="Texture2D" uid="uid://dqhdur68f8xjd" path="res://Gamedata/pilotanm.vga/003/017.png" id="19_p44a1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grqe4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1vipn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ipbv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ifyux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ey4x6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8j1pu")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1vipn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v3dgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kv7p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v8snb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_amnlb")
+}],
+"loop": true,
+"name": &"pull",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1vipn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6xg0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_56b0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_psf3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_w42gy")
+}],
+"loop": true,
+"name": &"push",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1vipn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_q7g6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j7n55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_i827j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ak85m")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}]
+
+[node name="ControlStick" type="Node2D"]
+script = ExtResource("1_0acgt")
+
+[node name="HandAnimSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_grqe4")
+animation = &"right"
+
+[node name="ArmSprite" type="Sprite2D" parent="."]
+position = Vector2(129, 165)
+texture = ExtResource("19_p44a1")

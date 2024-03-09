@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_d0bvg"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_nhiqs"]
+
+[sub_resource type="Resource" id="Resource_2w2rd"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(0, 0, 40)
+selected = true
+weapon_type = 31
+
+[sub_resource type="Resource" id="Resource_8qf3k"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(-5, -2, 35)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_wjgf7"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(5, 2, 35)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_jvl07"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(-15, 2, 0)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_ralf4"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(15, -2, 0)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_hqgxj"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(-7.5, -2, -35)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_rgmj6"]
+script = ExtResource("2_nhiqs")
+hardpoint = Vector3(7.5, 2, -35)
+selected = true
+weapon_type = 27
+
+[resource]
+script = ExtResource("1_d0bvg")
+ship_class = 13
+mass = 300000.0
+radius = 32.5
+shields_front = 20.0
+shields_back = 12.0
+armor_front = 20.0
+armor_left = 18.0
+armor_right = 18.0
+armor_back = 9.0
+angular_inertia = 18000.0
+cruise_speed = 100.0
+maximum_acceleration = 256.0
+maximum_speed = 150.0
+maximum_yaw = 0.2
+maximum_pitch = 0.2
+maximum_roll = 0.2
+damage = 90.0
+explosive_force = 20000.0
+fuel = 200000.0
+power_plant = 3.0
+weapons = Array[ExtResource("2_nhiqs")]([SubResource("Resource_2w2rd"), SubResource("Resource_8qf3k"), SubResource("Resource_wjgf7"), SubResource("Resource_jvl07"), SubResource("Resource_ralf4"), SubResource("Resource_hqgxj"), SubResource("Resource_rgmj6")])

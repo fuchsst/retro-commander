@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://f600upa3x8w"]
+
+[ext_resource type="PackedScene" uid="uid://hqji3px5w272" path="res://Assets/Ships/Hornet.tscn" id="1_d6mb2"]
+[ext_resource type="Resource" uid="uid://bsvigcsri36cg" path="res://Assets/Ships/ShipV00.tres" id="2_st141"]
+[ext_resource type="Script" path="res://Scenes/Mission/PlayerController.gd" id="3_y40bq"]
+[ext_resource type="Script" path="res://Scenes/Mission/PlayerCamera.gd" id="4_77wvo"]
+[ext_resource type="ArrayMesh" uid="uid://dvklbg13ci8q6" path="res://Assets/Ships/Dralthi.vox" id="5_gjx23"]
+[ext_resource type="ArrayMesh" uid="uid://voq18j7v7iv" path="res://Assets/Ships/Salthi.vox" id="6_fayoq"]
+[ext_resource type="ArrayMesh" uid="uid://danpfdpq34xej" path="res://Assets/Ships/Hornet.vox" id="7_4sri5"]
+
+[sub_resource type="Environment" id="Environment_e6nj2"]
+background_color = Color(0, 0, 0.0823529, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 0.980392, 0.835294, 1)
+ambient_light_energy = 0.5
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_gs0pe"]
+
+[node name="Space" type="CanvasLayer"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 143.6, 37.103, -66.3639)
+light_color = Color(1, 0.980392, 0.835294, 1)
+light_energy = 160.0
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 14.36
+light_bake_mode = 0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_e6nj2")
+camera_attributes = SubResource("CameraAttributesPractical_gs0pe")
+
+[node name="Ship" parent="." instance=ExtResource("1_d6mb2")]
+visible = false
+ship_properties = ExtResource("2_st141")
+
+[node name="PlayerController" type="Node3D" parent="Ship"]
+script = ExtResource("3_y40bq")
+
+[node name="PlayerCamera" type="Camera3D" parent="Ship"]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 0, 0)
+rotation_order = 0
+fov = 60.0
+script = ExtResource("4_77wvo")
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Dralthi" type="MeshInstance3D" parent="Enemies"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.5829, 4.76837e-07, 0.139225)
+mesh = ExtResource("5_gjx23")
+skeleton = NodePath("../../..")
+
+[node name="Salthi" type="MeshInstance3D" parent="Enemies"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.497811, 7.17911, 58.285)
+mesh = ExtResource("6_fayoq")
+skeleton = NodePath("../../..")
+
+[node name="NavPoints" type="Node" parent="."]
+
+[node name="AsteroidFields" type="Node" parent="."]
+
+[node name="Friends" type="Node" parent="."]
+
+[node name="Hornet" type="MeshInstance3D" parent="Friends"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.530968, 17.8811, -84.7203)
+mesh = ExtResource("7_4sri5")
+skeleton = NodePath("../../..")

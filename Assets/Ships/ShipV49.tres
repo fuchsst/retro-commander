@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_dy4dl"]
+
+[resource]
+script = ExtResource("1_dy4dl")
+ship_class = 5
+mass = 0.0
+radius = 0.0
+shields_front = 0.0
+shields_back = 0.0
+armor_front = 0.0
+armor_left = 0.0
+armor_right = 0.0
+armor_back = 0.0
+angular_inertia = 0.0
+cruise_speed = 0.0
+maximum_acceleration = 0.0
+maximum_speed = 0.0
+maximum_yaw = 0.0
+maximum_pitch = 0.1
+maximum_roll = 0.0
+damage = -1.0
+explosive_force = 6000.0
+fuel = 0.0
+power_plant = 0.0
+weapons = Array[Resource("res://Scripts/Ships/ShipWeaponProperties.gd")]([])

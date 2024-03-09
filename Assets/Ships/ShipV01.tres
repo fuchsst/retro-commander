@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=12 format=3 uid="uid://d3u7tb2e8q5e3"]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_bo0jk"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_85rxl"]
+
+[sub_resource type="Resource" id="Resource_3me3r"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(-7.5, 0, -4)
+selected = true
+weapon_type = 24
+
+[sub_resource type="Resource" id="Resource_7567p"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(7.5, 0, -4)
+selected = true
+weapon_type = 24
+
+[sub_resource type="Resource" id="Resource_20h6r"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(-14, 1, 3)
+selected = true
+weapon_type = 25
+
+[sub_resource type="Resource" id="Resource_8fetl"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(14, 1, 3)
+selected = true
+weapon_type = 25
+
+[sub_resource type="Resource" id="Resource_gkqul"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(0, 1, 1)
+selected = true
+weapon_type = 31
+
+[sub_resource type="Resource" id="Resource_efag7"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(-3, 1, -2)
+selected = true
+weapon_type = 30
+
+[sub_resource type="Resource" id="Resource_kqwgx"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(3, 1, -2)
+selected = true
+weapon_type = 30
+
+[sub_resource type="Resource" id="Resource_q77y3"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(-10, 1, 0)
+selected = true
+weapon_type = 28
+
+[sub_resource type="Resource" id="Resource_pxuuq"]
+script = ExtResource("2_85rxl")
+hardpoint = Vector3(10, 1, 0)
+selected = true
+weapon_type = 28
+
+[resource]
+script = ExtResource("1_bo0jk")
+ship_class = 12
+mass = 13500.0
+radius = 12.0
+shields_front = 8.0
+shields_back = 7.5
+armor_front = 6.0
+armor_left = 5.0
+armor_right = 5.0
+armor_back = 5.5
+angular_inertia = 1000.0
+cruise_speed = 250.0
+maximum_acceleration = 1075.0
+maximum_speed = 450.0
+maximum_yaw = 1.0
+maximum_pitch = 1.0
+maximum_roll = 1.0
+damage = 6.0
+explosive_force = 6000.0
+fuel = 250000.0
+power_plant = 3.0
+weapons = Array[ExtResource("2_85rxl")]([SubResource("Resource_3me3r"), SubResource("Resource_7567p"), SubResource("Resource_20h6r"), SubResource("Resource_8fetl"), SubResource("Resource_gkqul"), SubResource("Resource_efag7"), SubResource("Resource_kqwgx"), SubResource("Resource_q77y3"), SubResource("Resource_pxuuq")])

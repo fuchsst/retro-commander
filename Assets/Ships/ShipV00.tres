@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=8 format=3 uid="uid://bsvigcsri36cg"]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_7jnt5"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_ca37x"]
+
+[sub_resource type="Resource" id="Resource_jj6ij"]
+script = ExtResource("2_ca37x")
+hardpoint = Vector3(12, 1, 2)
+selected = true
+weapon_type = 24
+
+[sub_resource type="Resource" id="Resource_lcjib"]
+script = ExtResource("2_ca37x")
+hardpoint = Vector3(-12, 1, 2)
+selected = true
+weapon_type = 24
+
+[sub_resource type="Resource" id="Resource_0afvf"]
+script = ExtResource("2_ca37x")
+hardpoint = Vector3(7.5, 4.5, -3)
+selected = true
+weapon_type = 28
+
+[sub_resource type="Resource" id="Resource_6pcu0"]
+script = ExtResource("2_ca37x")
+hardpoint = Vector3(-7.5, 4.5, -3)
+selected = true
+weapon_type = 28
+
+[sub_resource type="Resource" id="Resource_e0fg7"]
+script = ExtResource("2_ca37x")
+hardpoint = Vector3(0, 5, 1)
+selected = true
+weapon_type = 29
+
+[resource]
+script = ExtResource("1_7jnt5")
+ship_class = 12
+mass = 12500.0
+radius = 10.0
+shields_front = 4.0
+shields_back = 4.0
+armor_front = 4.5
+armor_left = 3.0
+armor_right = 3.0
+armor_back = 4.0
+angular_inertia = 900.0
+cruise_speed = 300.0
+maximum_acceleration = 819.0
+maximum_speed = 420.0
+maximum_yaw = 0.8
+maximum_pitch = 0.9
+maximum_roll = 0.8
+damage = 5.0
+explosive_force = 4000.0
+fuel = 200000.0
+power_plant = 5.0
+weapons = Array[ExtResource("2_ca37x")]([SubResource("Resource_jj6ij"), SubResource("Resource_lcjib"), SubResource("Resource_0afvf"), SubResource("Resource_6pcu0"), SubResource("Resource_e0fg7")])

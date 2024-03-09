@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_kigfa"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_qmnmj"]
+
+[sub_resource type="Resource" id="Resource_jfhq3"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(-9, 0, 3)
+selected = true
+weapon_type = 26
+
+[sub_resource type="Resource" id="Resource_opn0j"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(9, 0, 3)
+selected = true
+weapon_type = 26
+
+[sub_resource type="Resource" id="Resource_7cr7m"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(-10, 1, -4)
+selected = true
+weapon_type = 28
+
+[sub_resource type="Resource" id="Resource_o27au"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(10, 1, -4)
+selected = true
+weapon_type = 28
+
+[sub_resource type="Resource" id="Resource_qhnp8"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(-3, -4, -3)
+selected = true
+weapon_type = 29
+
+[sub_resource type="Resource" id="Resource_acdkn"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(0, 0, 0)
+selected = true
+weapon_type = 29
+
+[sub_resource type="Resource" id="Resource_6wgi8"]
+script = ExtResource("2_qmnmj")
+hardpoint = Vector3(3, -4, -3)
+selected = true
+weapon_type = 29
+
+[resource]
+script = ExtResource("1_kigfa")
+ship_class = 12
+mass = 16000.0
+radius = 16.5
+shields_front = 6.0
+shields_back = 5.0
+armor_front = 8.5
+armor_left = 6.5
+armor_right = 6.5
+armor_back = 8.0
+angular_inertia = 1300.0
+cruise_speed = 150.0
+maximum_acceleration = 614.0
+maximum_speed = 360.0
+maximum_yaw = 0.6
+maximum_pitch = 0.6
+maximum_roll = 0.7
+damage = 7.0
+explosive_force = 6000.0
+fuel = 280000.0
+power_plant = 6.0
+weapons = Array[ExtResource("2_qmnmj")]([SubResource("Resource_jfhq3"), SubResource("Resource_opn0j"), SubResource("Resource_7cr7m"), SubResource("Resource_o27au"), SubResource("Resource_qhnp8"), SubResource("Resource_acdkn"), SubResource("Resource_6wgi8")])

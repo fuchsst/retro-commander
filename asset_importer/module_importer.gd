@@ -29,7 +29,7 @@ func convert_vega_campaign_module_file():
 				var mission_info_dict = json_as_dict["MissionInfos"][season_idx*4+mission_idx]
 				var mission_spheres_dict = json_as_dict["MissionSpheres"].slice(season_idx*4*16+mission_idx*16, season_idx*4*16+mission_idx*16 + 16)
 				var mission_flight_paths_dict = json_as_dict["MissionFlightPaths"].slice(season_idx*4*16+mission_idx*16, season_idx*4*16+mission_idx*16 + 16)
-				var mission_ships_dict = {} # json_as_dict["MissionShips"][season_idx*4+mission_idx]
+				var mission_ships_dict = json_as_dict["MissionShips"].slice(season_idx*4*32+mission_idx*32, season_idx*4*16+mission_idx*32 + 32)
 				var wing_name = json_as_dict["WingNames"][season_idx*4+mission_idx]
 
 				if mission_info_dict["YourShip"] != -1 or wing_name:
@@ -38,6 +38,8 @@ func convert_vega_campaign_module_file():
 					mission_info.convoy.assign(mission_info_dict["Convoy"])
 					mission_info.initial_sphere = mission_info_dict["InitialSphere"]
 					mission_info.spheres = _convert_spheres(mission_spheres_dict)
+					mission_info.flight_paths = _convert_flight_paths(mission_flight_paths_dict)
+					mission_info.ships = _convert_mission_ships(mission_ships_dict) # TODO check what this stores and how (why 32 entries?)
 					mission_info.your_ship = mission_info_dict["YourShip"]
 					mission_info.wing_name = wing_name
 					ResourceSaver.save(mission_info, season_dir + "MissionInfos" + str(mission_idx) + ".tres")
@@ -59,8 +61,52 @@ func convert_vega_campaign_module_file():
 	else:
 		print("Failed to open file: " + src_file)
 
-func _convert_spheres(sphere_dicts: Array[Dictionary]) -> Array[MissionSphereProperties]:
-	pass
+func _convert_spheres(sphere_dicts: Array) -> Array[MissionSphereProperties]:
+	var result: Array[MissionSphereProperties] = []
+	for sphere_dict in sphere_dicts:
+		var sphere_properties = MissionSphereProperties.new()
+		sphere_properties.center = Vector3(sphere_dict["Center"]["x"], sphere_dict["Center"]["y"], sphere_dict["Center"]["z"])
+		sphere_properties.name = sphere_dict["Name"]
+		sphere_properties.radius = sphere_dict["Radius"]
+		sphere_properties.ship_types.assign(sphere_dict["ShipTypes"])
+		sphere_properties.ships.assign(sphere_dict["Ships"])
+		sphere_properties.wave = sphere_dict["Wave"]
+		sphere_properties.triggers.assign(_convert_sphere_triggers(sphere_dict["Triggers"]))
+		result.append(sphere_properties)
+	return result
+
+func _convert_sphere_triggers(sphere_trigger_dicts: Array) -> Array[MissionSphereTriggerProperties]:
+	var result: Array[MissionSphereTriggerProperties] = []
+	for sphere_trigger_dict in sphere_trigger_dicts:
+		var phere_trigger_properties = MissionSphereTriggerProperties.new()
+		phere_trigger_properties.action = sphere_trigger_dict["Action"]
+		phere_trigger_properties.sphere = sphere_trigger_dict["Sphere"]
+		result.append(phere_trigger_properties)
+	return result
+
+func _convert_flight_paths(flight_path_dicts: Array) -> Array[MissionFlightPathProperties]:
+	var result: Array[MissionFlightPathProperties] = []
+	for flight_path_dict in flight_path_dicts:
+		if flight_path_dict["Objective"] != -1:
+			var flight_path_properties = MissionFlightPathProperties.new()
+			flight_path_properties.objective = flight_path_dict["Objective"]
+			flight_path_properties.target = flight_path_dict["Target"]
+			flight_path_properties.text = flight_path_dict["Text"]
+			result.append(flight_path_properties)
+	return result
+
+
+func _convert_mission_ships(mission_ship_dicts: Array) -> Array[MissionShipProperties]:
+	var result: Array[MissionShipProperties] = []
+	for mission_ship_dict in mission_ship_dicts:
+		print(mission_ship_dict)
+#		if flight_path_dict["Objective"] != -1:
+#			var mission_ship_properties = MissionShipProperties.new()
+#			mission_ship_properties.objective = mission_ship_dict["Objective"]
+#			mission_ship_properties.target = mission_ship_dict["Target"]
+#			mission_ship_properties.text = mission_ship_dict["Text"]
+#			result.append(mission_ship_properties)
+	return result
 
 func _on_pressed() -> void:
 	convert_vega_campaign_module_file()

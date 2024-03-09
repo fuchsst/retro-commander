@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://lk7a2haj36he"]
+
+[ext_resource type="Script" path="res://Scenes/Mission/Starfield.gd" id="1_fk67i"]
+[ext_resource type="Texture2D" uid="uid://csf7lj6sjlkvt" path="res://Gamedata/planets.vga/001/000.png" id="2_psrc3"]
+
+[node name="Starfield" type="Node3D"]
+script = ExtResource("1_fk67i")
+
+[node name="Stars" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="MainStar" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+texture = ExtResource("2_psrc3")

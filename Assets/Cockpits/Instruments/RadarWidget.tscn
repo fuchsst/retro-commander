@@ -2,10 +2,9 @@
 
 [ext_resource type="Script" path="res://Assets/Cockpits/Instruments/RadarWidget.gd" id="1_3i838"]
 
-[node name="RadarWidget" type="Node2D" node_paths=PackedStringArray("player_position")]
+[node name="RadarWidget" type="Node2D"]
 position = Vector2(302, 190)
 script = ExtResource("1_3i838")
-player_position = NodePath("Player")
 
 [node name="Player" type="Node3D" parent="."]
 

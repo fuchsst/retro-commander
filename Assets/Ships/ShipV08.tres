@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_xn1nv"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_t8vw2"]
+
+[sub_resource type="Resource" id="Resource_igapc"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(0, 0, 50)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_earbt"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(-20, 0, 25)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_5l8ea"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(20, 0, 25)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_pw58l"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(-30, 0, 0)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_1bgus"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(30, 0, 0)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_p1mr5"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(-20, 0, -25)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_mpj74"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(20, 0, -25)
+selected = true
+weapon_type = 27
+
+[sub_resource type="Resource" id="Resource_ror0c"]
+script = ExtResource("2_t8vw2")
+hardpoint = Vector3(0, 0, -50)
+selected = true
+weapon_type = 27
+
+[resource]
+script = ExtResource("1_xn1nv")
+ship_class = 13
+mass = 1e+06
+radius = 70.0
+shields_front = 30.0
+shields_back = 30.0
+armor_front = 24.0
+armor_left = 25.0
+armor_right = 25.0
+armor_back = 20.0
+angular_inertia = 20000.0
+cruise_speed = 0.0
+maximum_acceleration = 256.0
+maximum_speed = 0.0
+maximum_yaw = 0.1
+maximum_pitch = 0.1
+maximum_roll = 0.1
+damage = 560.0
+explosive_force = 30000.0
+fuel = 200000.0
+power_plant = 1.0
+weapons = Array[ExtResource("2_t8vw2")]([SubResource("Resource_igapc"), SubResource("Resource_earbt"), SubResource("Resource_5l8ea"), SubResource("Resource_pw58l"), SubResource("Resource_1bgus"), SubResource("Resource_p1mr5"), SubResource("Resource_mpj74"), SubResource("Resource_ror0c")])

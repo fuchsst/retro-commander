@@ -1,5 +1,7 @@
 extends Node
 
+signal camera_rotation_changed
+
 @export var color_pallete: ColorPalette
 var game_state: GameState = GameState.new()
 var current_mission_dialogs: MissionDialogs
@@ -12,6 +14,9 @@ func _ready() -> void:
 	game_state = game_state.load(0)
 	current_mission_dialogs = load_current_mission_dialogs()
 	current_bar_seating = load_current_bar_seating()
+	
+func _on_camera_rotation(rot: Vector3):
+	emit_signal("camera_rotation_changed", rot)
 	
 	
 func load_current_mission_dialogs():

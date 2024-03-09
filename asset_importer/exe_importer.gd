@@ -6,6 +6,7 @@ func convert_wc1_exe_file():
 	const assets_dir = "res://Assets/"
 	const image_dir = "res://Gamedata/"
 	const cockpits_dst_dir = assets_dir+ "Cockpits/"
+	const ships_dst_dir = assets_dir+ "Ships/"
 
 	var dir = DirAccess.open(assets_dir)
 	dir.make_dir_recursive(cockpits_dst_dir)
@@ -22,21 +23,92 @@ func convert_wc1_exe_file():
 			var _scene = create_cockpit_scene(ship_index, ship_image_dir, instrument_layouts[ship_index], damage_layouts.slice(ship_index*4, ship_index*4+4), messaging[ship_index])
 			var file_name = ("ShipV%02d" % ship_index) + ".tscn"
 			ResourceSaver.save(_scene, cockpits_dst_dir + file_name)
+			
+		var ships: Array = json_as_dict["Ships"]
+		for ship_index in range(len(ships)):
+			var _res = create_ship_properties_resource(ships[ship_index], json_as_dict["Hardpoints"])
+			var file_name = ("ShipV%02d" % ship_index) + ".tres"
+			ResourceSaver.save(_res, ships_dst_dir + file_name)
 
 	else:
 		print("Failed to open file: " + src_file)
+		
+func create_ship_properties_resource(ship_dict: Dictionary, hard_points:Array) -> ShipProperties:
+	var ship_properties = ShipProperties.new()
+	ship_properties.angular_inertia = ship_dict["AngularInertia"]
+	ship_properties.armor_front = ship_dict["Armor"][0]/10
+	ship_properties.armor_back = ship_dict["Armor"][1]/10
+	ship_properties.armor_left = ship_dict["Armor"][2]/10
+	ship_properties.armor_right = ship_dict["Armor"][3]/10
+	ship_properties.cruise_speed = ship_dict["CruiseSpeed"]
+	ship_properties.damage = ship_dict["Damage"]
+	ship_properties.explosive_force = ship_dict["ExplosiveForce"]
+	ship_properties.fuel = ship_dict["Fuel"]
+	ship_properties.mass = ship_dict["Mass"]
+	ship_properties.maximum_acceleration = ship_dict["MaximumAcceleration"]
+	ship_properties.maximum_speed = ship_dict["MaximumSpeed"]
+	ship_properties.maximum_yaw = ship_dict["MaximumYawPitchRoll"][0]/10
+	ship_properties.maximum_pitch = ship_dict["MaximumYawPitchRoll"][1]/10
+	ship_properties.maximum_roll = ship_dict["MaximumYawPitchRoll"][2]/10
+	ship_properties.power_plant = ship_dict["PowerPlant"]
+	ship_properties.radius = ship_dict["Radius"]/10
+	ship_properties.shields_front = ship_dict["Shields"][0]/10
+	ship_properties.shields_back = ship_dict["Shields"][1]/10
+	ship_properties.ship_class = ship_dict["ShipClass"]
+
+	var weapon_properties: Array[ShipWeaponProperties] = []
+	for weapon_idx in range(len(ship_dict["Weapons"])):
+		var weapon_dict = ship_dict["Weapons"][weapon_idx]
+		var weapon = ShipWeaponProperties.new()
+		var hardpoint_arr = hard_points[weapon_dict["Hardpoint"]]
+		weapon.hardpoint = Vector3(hardpoint_arr["x"]/10, hardpoint_arr["y"]/10, hardpoint_arr["z"]/10)
+		weapon.selected = weapon_dict["Selected"]
+		weapon.weapon_type = weapon_dict["WeaponType"]
+		weapon_properties.append(weapon)
+	ship_properties.weapons.assign(weapon_properties)
+	return ship_properties
+	
 
 func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_layout: Dictionary, damage_layouts: Array, messaging: Dictionary) -> PackedScene:
 
-	var root = Sprite2D.new()
+	var root = Node2D.new()
 	root.name = "Cockpit"
-	print(ship_image_dir)
-	root.texture = load(ship_image_dir + "000/000.png")
-	root.centered = false
+	
+	var front_view = Sprite2D.new()
+	front_view.name = "FrontView"
+	front_view.texture = load(ship_image_dir + "000/000.png")
+	front_view.centered = false
+	root.add_child(front_view)
+	front_view.owner = root
+	
+	var right_view = Sprite2D.new()
+	right_view.name = "RightView"
+	right_view.texture = load(ship_image_dir + "001/000.png")
+	right_view.centered = false
+	right_view.visible = false
+	root.add_child(right_view)
+	right_view.owner = root
+		
+	var left_view = Sprite2D.new()
+	left_view.name = "LeftView"
+	left_view.texture = load(ship_image_dir + "002/000.png")
+	left_view.centered = false
+	left_view.visible = false
+	root.add_child(left_view)
+	left_view.owner = root
+		
+	var rear_view = Sprite2D.new()
+	rear_view.name = "RearView"
+	rear_view.texture = load(ship_image_dir + "003/000.png")
+	rear_view.centered = false
+	rear_view.visible = false
+	root.add_child(rear_view)
+	rear_view.owner = root
+	
 		
 	var damages_node = Node2D.new()
 	damages_node.name = "Damages"
-	root.add_child(damages_node)
+	front_view.add_child(damages_node)
 	damages_node.owner = root
 	for damage_idx in range(4):
 		var damage = damage_layouts[damage_idx]
@@ -49,11 +121,10 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 		damages_node.add_child(damage_node)
 		damage_node.owner = root
 
-	# TODO: replace Node2D with radar scene
-	var radar_node = RadarWidget.new()
+	var radar_node = preload("res://Assets/Cockpits/Instruments/RadarWidget.tscn").instantiate()
 	radar_node.position.x = instrument_layout["Radar"]["Center"]["x"]
 	radar_node.position.y = instrument_layout["Radar"]["Center"]["y"]
-	radar_node.radius = min(
+	radar_node.radius = max(
 		instrument_layout["Radar"]["Center"]["x"] - instrument_layout["Radar"]["Bounds"]["x1"],
 		instrument_layout["Radar"]["Center"]["y"] - instrument_layout["Radar"]["Bounds"]["y1"],
 		instrument_layout["Radar"]["Bounds"]["x2"] - instrument_layout["Radar"]["Center"]["x"],
@@ -61,12 +132,12 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 	)
 	
 	radar_node.name = "Radar"
-	root.add_child(radar_node)
+	front_view.add_child(radar_node)
 	radar_node.owner = root
 
 	var gauges_node = Node2D.new()
 	gauges_node.name = "Gauges"
-	root.add_child(gauges_node)
+	front_view.add_child(gauges_node)
 	gauges_node.owner = root
 	for gauge_idx in range(len(instrument_layout["Gauges"])):
 		var gauge = instrument_layout["Gauges"][gauge_idx]
@@ -92,7 +163,7 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 		
 	var lights_node = Node2D.new()
 	lights_node.name = "Lights"
-	root.add_child(lights_node)
+	front_view.add_child(lights_node)
 	lights_node.owner = root
 	for light_idx in range(len(instrument_layout["Lights"])):
 		var light = instrument_layout["Lights"][light_idx]
@@ -118,7 +189,7 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 		
 	var readouts_node = Node2D.new()
 	readouts_node.name = "Readouts"
-	root.add_child(readouts_node)
+	front_view.add_child(readouts_node)
 	readouts_node.owner = root
 	for readout_idx in range(len(instrument_layout["Readouts"])):
 		var readout = instrument_layout["Readouts"][readout_idx]
@@ -131,7 +202,7 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 				
 	var displays_node = Node2D.new()
 	displays_node.name = "VideoDisplays"
-	root.add_child(displays_node)
+	front_view.add_child(displays_node)
 	displays_node.owner = root
 	var left_display = instrument_layout["VideoDisplays"]["Left"]
 	var left_display_node = Panel.new()
@@ -158,15 +229,14 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 	massagings_node.name = "CockpitMessaging"
 	massagings_node.position.x = messaging["x"]
 	massagings_node.position.y = messaging["y"]
-	root.add_child(massagings_node)
+	front_view.add_child(massagings_node)
 	massagings_node.owner = root
 
-	# TODO: replace Node2D with controlstick scene
-	var constrol_stick_node = Node2D.new()
-	constrol_stick_node.position.x = instrument_layout["ControlStick"]["Bounds"]["x1"]
-	constrol_stick_node.position.y = instrument_layout["ControlStick"]["Bounds"]["y1"]
+	var constrol_stick_node = preload("res://Assets/Cockpits/Instruments/ControlStick.tscn").instantiate()
+	constrol_stick_node.position.x = instrument_layout["ControlStick"]["Center"]["x"]
+	constrol_stick_node.position.y = instrument_layout["ControlStick"]["Center"]["y"]
 	constrol_stick_node.name = "ControlStick"
-	root.add_child(constrol_stick_node)
+	front_view.add_child(constrol_stick_node)
 	constrol_stick_node.owner = root
 		
 	

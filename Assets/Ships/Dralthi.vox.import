@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Dralthi.vox-4c7054089eea4689f93b48e593f9fe85.
 
 [params]
 
-Scale=0.1
+Scale=0.3
 GreedyMeshGenerator=true
 SnapToGround=false
 FirstKeyframeOnly=true

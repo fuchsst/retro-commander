@@ -1,11 +1,515 @@
-[gd_resource type="Resource" script_class="MissionInfoProperties" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="MissionInfoProperties" load_steps=88 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Campaign/MissionInfoProperties.gd" id="1_t4rp8"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionFlightPathProperties.gd" id="1_8qk61"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionInfoProperties.gd" id="2_idxe2"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionSphereProperties.gd" id="3_tf4rb"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionSphereTriggerProperties.gd" id="4_3inng"]
+
+[sub_resource type="Resource" id="Resource_jx74v"]
+script = ExtResource("1_8qk61")
+objective = 0
+target = 2
+text = "Proceed to jump point at Nav 1"
+
+[sub_resource type="Resource" id="Resource_bssqf"]
+script = ExtResource("1_8qk61")
+objective = 4
+target = 9
+text = "?Engage and Destroy Enemy Vessel of Unknown Class"
+
+[sub_resource type="Resource" id="Resource_ofoac"]
+script = ExtResource("1_8qk61")
+objective = 1
+target = 0
+text = "Return to Tiger's Claw"
+
+[sub_resource type="Resource" id="Resource_c5ajt"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_wbam6"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_4dwrl"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_17ois"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_5vhae"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = "Tiger's Claw"
+radius = 20000
+ship_types = Array[int]([8, -1])
+ships = Array[int]([0, 3, 4, -1, -1, -1, -1, -1, -1, -1])
+wave = 1
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_c5ajt"), SubResource("Resource_wbam6"), SubResource("Resource_4dwrl"), SubResource("Resource_17ois")])
+
+[sub_resource type="Resource" id="Resource_5wqix"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_p4wa7"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_00s4t"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_43svt"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_p1gpj"]
+script = ExtResource("3_tf4rb")
+center = Vector3(35000, 5000, -10000)
+name = "Encounter 1"
+radius = 15000
+ship_types = Array[int]([10, -1])
+ships = Array[int]([5, 6, 7, 8, -1, -1, -1, -1, -1, -1])
+wave = 1
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_5wqix"), SubResource("Resource_p4wa7"), SubResource("Resource_00s4t"), SubResource("Resource_43svt")])
+
+[sub_resource type="Resource" id="Resource_bau4m"]
+script = ExtResource("4_3inng")
+action = 0
+sphere = 1
+
+[sub_resource type="Resource" id="Resource_qo0a8"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_xudvy"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_0gslq"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_f3ogh"]
+script = ExtResource("3_tf4rb")
+center = Vector3(70000, 10000, -20000)
+name = "Nav 1"
+radius = 20000
+ship_types = Array[int]([17, 11])
+ships = Array[int]([9, 10, 11, -1, -1, -1, -1, -1, -1, -1])
+wave = 1
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_bau4m"), SubResource("Resource_qo0a8"), SubResource("Resource_xudvy"), SubResource("Resource_0gslq")])
+
+[sub_resource type="Resource" id="Resource_pcf6j"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_lnlib"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_kvw7u"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_fe4yj"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_cqsv3"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_pcf6j"), SubResource("Resource_lnlib"), SubResource("Resource_kvw7u"), SubResource("Resource_fe4yj")])
+
+[sub_resource type="Resource" id="Resource_rjy3t"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_85d21"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_7wveq"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_gni5b"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_qqoho"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_rjy3t"), SubResource("Resource_85d21"), SubResource("Resource_7wveq"), SubResource("Resource_gni5b")])
+
+[sub_resource type="Resource" id="Resource_jxx7n"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_5s0b7"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_i542w"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_eoq75"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_4b22o"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_jxx7n"), SubResource("Resource_5s0b7"), SubResource("Resource_i542w"), SubResource("Resource_eoq75")])
+
+[sub_resource type="Resource" id="Resource_ufrjf"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_uh5qq"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_jakn2"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_t4ity"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_rrd6r"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_ufrjf"), SubResource("Resource_uh5qq"), SubResource("Resource_jakn2"), SubResource("Resource_t4ity")])
+
+[sub_resource type="Resource" id="Resource_xyow4"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_i7yc7"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_npwgi"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_njyj5"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_2artv"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_xyow4"), SubResource("Resource_i7yc7"), SubResource("Resource_npwgi"), SubResource("Resource_njyj5")])
+
+[sub_resource type="Resource" id="Resource_24qny"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_lg63q"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_g4f0j"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_ummb5"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_nmcsj"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_24qny"), SubResource("Resource_lg63q"), SubResource("Resource_g4f0j"), SubResource("Resource_ummb5")])
+
+[sub_resource type="Resource" id="Resource_wbj8p"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_7t3m2"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_abo53"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_vg1vd"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_37ojh"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_wbj8p"), SubResource("Resource_7t3m2"), SubResource("Resource_abo53"), SubResource("Resource_vg1vd")])
+
+[sub_resource type="Resource" id="Resource_r0n8w"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_jia7g"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_rnhq8"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_kgppe"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_0tf4p"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_r0n8w"), SubResource("Resource_jia7g"), SubResource("Resource_rnhq8"), SubResource("Resource_kgppe")])
+
+[sub_resource type="Resource" id="Resource_50wvl"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_k5anm"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_h7n5e"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_cxfk8"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_pdb7a"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_50wvl"), SubResource("Resource_k5anm"), SubResource("Resource_h7n5e"), SubResource("Resource_cxfk8")])
+
+[sub_resource type="Resource" id="Resource_48ilb"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_64ldm"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_ovbba"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_jb703"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_slb5v"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_48ilb"), SubResource("Resource_64ldm"), SubResource("Resource_ovbba"), SubResource("Resource_jb703")])
+
+[sub_resource type="Resource" id="Resource_u8o5r"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_gtg6s"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_vniyr"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_vb38f"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_4widx"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_u8o5r"), SubResource("Resource_gtg6s"), SubResource("Resource_vniyr"), SubResource("Resource_vb38f")])
+
+[sub_resource type="Resource" id="Resource_5w6ww"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_v6p0j"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_3r3bf"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_c45ot"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_e58fa"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_5w6ww"), SubResource("Resource_v6p0j"), SubResource("Resource_3r3bf"), SubResource("Resource_c45ot")])
+
+[sub_resource type="Resource" id="Resource_xkpe8"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_3exsr"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_b5k4p"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_rj1df"]
+script = ExtResource("4_3inng")
+action = -1
+sphere = 0
+
+[sub_resource type="Resource" id="Resource_r06w8"]
+script = ExtResource("3_tf4rb")
+center = Vector3(0, 0, 0)
+name = ""
+radius = 0
+ship_types = Array[int]([-1, -1])
+ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+wave = 0
+triggers = Array[ExtResource("4_3inng")]([SubResource("Resource_xkpe8"), SubResource("Resource_3exsr"), SubResource("Resource_b5k4p"), SubResource("Resource_rj1df")])
 
 [resource]
-script = ExtResource("1_t4rp8")
+script = ExtResource("2_idxe2")
 carrier = 0
 convoy = Array[int]([2, -1, -1, -1, -1, -1, -1, -1])
 initial_sphere = 0
+spheres = Array[ExtResource("3_tf4rb")]([SubResource("Resource_5vhae"), SubResource("Resource_p1gpj"), SubResource("Resource_f3ogh"), SubResource("Resource_cqsv3"), SubResource("Resource_qqoho"), SubResource("Resource_4b22o"), SubResource("Resource_rrd6r"), SubResource("Resource_2artv"), SubResource("Resource_nmcsj"), SubResource("Resource_37ojh"), SubResource("Resource_0tf4p"), SubResource("Resource_pdb7a"), SubResource("Resource_slb5v"), SubResource("Resource_4widx"), SubResource("Resource_e58fa"), SubResource("Resource_r06w8")])
+flight_paths = Array[ExtResource("1_8qk61")]([SubResource("Resource_jx74v"), SubResource("Resource_bssqf"), SubResource("Resource_ofoac")])
+ships = Array[Resource("res://Scripts/Campaign/MissionShipProperties.gd")]([])
 your_ship = 0
 wing_name = "Theta Wing"

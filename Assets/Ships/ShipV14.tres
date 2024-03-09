@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_ere6t"]
+
+[resource]
+script = ExtResource("1_ere6t")
+ship_class = 13
+mass = 20000.0
+radius = 20.0
+shields_front = 7.0
+shields_back = 7.0
+armor_front = 8.0
+armor_left = 6.0
+armor_right = 6.0
+armor_back = 8.0
+angular_inertia = 4000.0
+cruise_speed = 100.0
+maximum_acceleration = 460.0
+maximum_speed = 150.0
+maximum_yaw = 0.4
+maximum_pitch = 0.4
+maximum_roll = 0.4
+damage = 45.0
+explosive_force = 12000.0
+fuel = 200000.0
+power_plant = 4.0
+weapons = Array[Resource("res://Scripts/Ships/ShipWeaponProperties.gd")]([])

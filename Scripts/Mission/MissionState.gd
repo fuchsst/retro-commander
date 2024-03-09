@@ -4,6 +4,7 @@ extends Node
 var nav_points: Array
 var asteroid_fields: Array
 var ships: Array[Ship]
+var player_ship: Ship
 
 
 # Called when the node enters the scene tree for the first time.
