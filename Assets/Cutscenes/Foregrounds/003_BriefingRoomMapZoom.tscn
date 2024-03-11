@@ -1,0 +1,183 @@
+[gd_scene load_steps=28 format=3 uid="uid://om1h6e3pb0mr"]
+
+[ext_resource type="Texture2D" uid="uid://dpay0mda5e6f3" path="res://Gamedata/briefing.vga/000/001.png" id="1_bvmpn"]
+[ext_resource type="Texture2D" uid="uid://dyjjh1ndvituu" path="res://Gamedata/briefing.vga/000/002.png" id="2_w6ejh"]
+[ext_resource type="Texture2D" uid="uid://dhiihla7cj1lb" path="res://Gamedata/briefing.vga/002/000.png" id="3_t6174"]
+[ext_resource type="Texture2D" uid="uid://bu5lf458oswak" path="res://Gamedata/briefing.vga/002/001.png" id="4_n0mf2"]
+[ext_resource type="Texture2D" uid="uid://d864i1jntmea" path="res://Gamedata/briefing.vga/002/002.png" id="5_c858n"]
+[ext_resource type="Texture2D" uid="uid://crc871binahkb" path="res://Gamedata/briefing.vga/002/003.png" id="6_nkx1y"]
+[ext_resource type="Texture2D" uid="uid://bq3nag2bqhmll" path="res://Gamedata/briefing.vga/002/004.png" id="7_2xb07"]
+[ext_resource type="Texture2D" uid="uid://bac3w2hw7ouyp" path="res://Gamedata/briefing.vga/002/005.png" id="8_hs2qx"]
+[ext_resource type="Texture2D" uid="uid://tiw703meckm" path="res://Gamedata/briefing.vga/002/006.png" id="9_5mdp6"]
+[ext_resource type="Texture2D" uid="uid://dd3h488i080et" path="res://Gamedata/briefing.vga/002/007.png" id="10_32185"]
+[ext_resource type="Texture2D" uid="uid://bn0westbdxtxo" path="res://Gamedata/briefing.vga/002/008.png" id="11_frhy7"]
+[ext_resource type="Texture2D" uid="uid://uexkvk8bsae8" path="res://Gamedata/briefing.vga/002/009.png" id="12_ctlja"]
+[ext_resource type="Texture2D" uid="uid://lm7u8vgywpi" path="res://Gamedata/briefing.vga/002/010.png" id="13_w0uyl"]
+[ext_resource type="Texture2D" uid="uid://cyq4dsefrt2hm" path="res://Gamedata/briefing.vga/002/011.png" id="14_dr4o2"]
+[ext_resource type="Texture2D" uid="uid://dx3t2tiyja8i7" path="res://Gamedata/briefing.vga/002/012.png" id="15_sug7t"]
+[ext_resource type="Texture2D" uid="uid://do4susw4268ul" path="res://Gamedata/briefing.vga/002/013.png" id="16_etujb"]
+[ext_resource type="Texture2D" uid="uid://bj8o4d3yrlbne" path="res://Gamedata/briefing.vga/002/014.png" id="17_vof1v"]
+[ext_resource type="Texture2D" uid="uid://c72kgesk8paic" path="res://Gamedata/briefing.vga/002/015.png" id="18_3fxw8"]
+[ext_resource type="Texture2D" uid="uid://1v4uy3hvmtug" path="res://Gamedata/briefing.vga/000/003.png" id="19_roiaq"]
+
+[sub_resource type="Animation" id="Animation_mkeod"]
+resource_name = "default"
+length = 2.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Wall/Commander")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Wall:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(388, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jbj6o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Wall:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_62qr6"]
+_data = {
+"RESET": SubResource("Animation_jbj6o"),
+"default": SubResource("Animation_mkeod")
+}
+
+[sub_resource type="Gradient" id="Gradient_x35ua"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_11721"]
+gradient = SubResource("Gradient_x35ua")
+width = 1280
+height = 144
+
+[sub_resource type="Gradient" id="Gradient_hi0md"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_12u5r"]
+gradient = SubResource("Gradient_hi0md")
+width = 1280
+height = 144
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bd0ol"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_t6174")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n0mf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_c858n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nkx1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2xb07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hs2qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5mdp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_32185")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_frhy7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ctlja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_w0uyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dr4o2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_sug7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_etujb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vof1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3fxw8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="BriefingRoomMapAndCommander" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_62qr6")
+}
+
+[node name="ColorRectTop" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_11721")
+centered = false
+
+[node name="ColorRectBottom" type="Sprite2D" parent="."]
+position = Vector2(0, 656)
+texture = SubResource("GradientTexture2D_12u5r")
+centered = false
+
+[node name="Wall" type="Node2D" parent="."]
+
+[node name="Map" type="Sprite2D" parent="Wall"]
+position = Vector2(-388, 0)
+texture = ExtResource("1_bvmpn")
+centered = false
+
+[node name="Panel" type="Sprite2D" parent="Wall"]
+position = Vector2(892, 0)
+texture = ExtResource("2_w6ejh")
+centered = false
+
+[node name="Commander" type="AnimatedSprite2D" parent="Wall"]
+position = Vector2(946, 290)
+sprite_frames = SubResource("SpriteFrames_bd0ol")
+frame = 9
+frame_progress = 0.64543
+
+[node name="Pult" type="Sprite2D" parent="Wall"]
+position = Vector2(1008, 460)
+texture = ExtResource("19_roiaq")
+region_rect = Rect2(10, 0, 80, 100)

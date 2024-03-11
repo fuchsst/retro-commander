@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3 uid="uid://um33i22m11dp"]
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_a34ka"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_fyqin"]
 
 [resource]
-script = ExtResource("1_a34ka")
+script = ExtResource("1_fyqin")
 ship_class = 6
 mass = 100.0
 radius = 0.6

@@ -7,4 +7,5 @@ addons/
 venv
 # these folder are populated by the asset_importer scripts
 Gamedata/
+Sounds/Music
 *.tmp

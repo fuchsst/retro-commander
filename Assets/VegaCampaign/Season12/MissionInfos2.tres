@@ -1,539 +1,446 @@
-[gd_resource type="Resource" script_class="MissionInfoProperties" load_steps=92 format=3]
+[gd_resource type="Resource" script_class="MissionInfoProperties" load_steps=47 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Campaign/MissionFlightPathProperties.gd" id="1_4ahf7"]
-[ext_resource type="Script" path="res://Scripts/Campaign/MissionInfoProperties.gd" id="2_lhb5g"]
-[ext_resource type="Script" path="res://Scripts/Campaign/MissionSphereProperties.gd" id="3_pg1o8"]
-[ext_resource type="Script" path="res://Scripts/Campaign/MissionSphereTriggerProperties.gd" id="4_kwkmh"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionFlightPathProperties.gd" id="1_c4hk3"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionInfoProperties.gd" id="2_7rrtp"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionSphereProperties.gd" id="3_evwnw"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionShipProperties.gd" id="4_skr83"]
+[ext_resource type="Script" path="res://Scripts/Campaign/MissionSphereTriggerProperties.gd" id="5_5ylfn"]
 
-[sub_resource type="Resource" id="Resource_0px1t"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_1xfh7"]
+script = ExtResource("1_c4hk3")
 objective = 0
 target = 4
 text = "Proceed to Nav 1"
 
-[sub_resource type="Resource" id="Resource_wu2wr"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_nrweo"]
+script = ExtResource("1_c4hk3")
 objective = 0
 target = 5
 text = "Proceed to Nav 2"
 
-[sub_resource type="Resource" id="Resource_odnu3"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_b2hgx"]
+script = ExtResource("1_c4hk3")
 objective = 0
 target = 6
 text = "Proceed to Nav 3"
 
-[sub_resource type="Resource" id="Resource_t2vfm"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_k85uh"]
+script = ExtResource("1_c4hk3")
 objective = 4
 target = 9
 text = "."
 
-[sub_resource type="Resource" id="Resource_jt8cg"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_uqi6c"]
+script = ExtResource("1_c4hk3")
 objective = 4
 target = 10
 text = ".Dakhath"
 
-[sub_resource type="Resource" id="Resource_e7nx4"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_oh37p"]
+script = ExtResource("1_c4hk3")
 objective = 0
 target = 3
 text = "Rendezvous with Tiger's Claw at Nav 4"
 
-[sub_resource type="Resource" id="Resource_ugmks"]
-script = ExtResource("1_4ahf7")
+[sub_resource type="Resource" id="Resource_2f2fm"]
+script = ExtResource("1_c4hk3")
 objective = 1
 target = 0
 text = ""
 
-[sub_resource type="Resource" id="Resource_ocj0b"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_6rpqu"]
+script = ExtResource("4_skr83")
+ship_id = 0
+flight_leader = -1
+formation = -1
+formation_slot = 0
+mission_type = -1
+orientation = Vector3(-2.35619, 0, 0)
+pilot_level = 3
+position = Vector3(0, 0, 0)
+ship_type = 8
+side = 0
+speed_size = 0
 sphere = 0
+status = 0
+target = 0
+wing_leader = -1
 
-[sub_resource type="Resource" id="Resource_jjfvd"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_c5do2"]
+script = ExtResource("4_skr83")
+ship_id = 3
+flight_leader = 0
+formation = 1
+formation_slot = 0
+mission_type = 3
+orientation = Vector3(-1.5708, 1.0472, 0)
+pilot_level = 3
+position = Vector3(0, 0, 0)
+ship_type = 1
+side = 0
+speed_size = 15
 sphere = 0
+status = 0
+target = 0
+wing_leader = -1
 
-[sub_resource type="Resource" id="Resource_n6jil"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_u0mp4"]
+script = ExtResource("4_skr83")
+ship_id = 4
+flight_leader = 0
+formation = 1
+formation_slot = 1
+mission_type = 4
+orientation = Vector3(-1.5708, 1.0472, 0)
+pilot_level = 3
+position = Vector3(750, 0, 0)
+ship_type = 1
+side = 0
+speed_size = 15
 sphere = 0
+status = 0
+target = 3
+wing_leader = 3
 
-[sub_resource type="Resource" id="Resource_3d5pn"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_cqhjf"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_wwqh0"]
+script = ExtResource("3_evwnw")
 center = Vector3(0, 0, 0)
 name = ".Tiger's Claw 1"
 radius = 20000
 ship_types = Array[int]([8, -1])
-ships = Array[int]([0, 3, 4, -1, -1, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_6rpqu"), SubResource("Resource_c5do2"), SubResource("Resource_u0mp4")])
 wave = 1
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_ocj0b"), SubResource("Resource_jjfvd"), SubResource("Resource_n6jil"), SubResource("Resource_3d5pn")])
+triggers = Array[ExtResource("5_5ylfn")]([])
 
-[sub_resource type="Resource" id="Resource_4mw8v"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_yc6st"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_hi10r"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_aujum"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_p5276"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_yyhab"]
+script = ExtResource("3_evwnw")
 center = Vector3(-7500, 10000, -30000)
 name = ".Tiger's Claw 2"
 radius = 20000
 ship_types = Array[int]([8, -1])
-ships = Array[int]([0, 3, 4, -1, -1, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_6rpqu"), SubResource("Resource_c5do2"), SubResource("Resource_u0mp4")])
 wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_4mw8v"), SubResource("Resource_yc6st"), SubResource("Resource_hi10r"), SubResource("Resource_aujum")])
+triggers = Array[ExtResource("5_5ylfn")]([])
 
-[sub_resource type="Resource" id="Resource_nvapc"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_42vf6"]
+script = ExtResource("4_skr83")
+ship_id = 12
+flight_leader = -1
+formation = 2
+formation_slot = 0
+mission_type = 2
+orientation = Vector3(-0.785398, 0, 0.174533)
+pilot_level = 4
+position = Vector3(2000, -3000, -10000)
+ship_type = 12
+side = 1
+speed_size = 20
 sphere = 0
+status = 0
+target = 0
+wing_leader = -1
 
-[sub_resource type="Resource" id="Resource_y4nrh"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_ja166"]
+script = ExtResource("4_skr83")
+ship_id = 13
+flight_leader = 12
+formation = 2
+formation_slot = 1
+mission_type = 4
+orientation = Vector3(-0.785398, 0, 0)
+pilot_level = 4
+position = Vector3(2750, -3000, -10500)
+ship_type = 12
+side = 1
+speed_size = 20
 sphere = 0
+status = 0
+target = 12
+wing_leader = 12
 
-[sub_resource type="Resource" id="Resource_jvub6"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_x4vr2"]
+script = ExtResource("4_skr83")
+ship_id = 14
+flight_leader = 12
+formation = 2
+formation_slot = 0
+mission_type = 2
+orientation = Vector3(2.0944, -0.174533, 0.436332)
+pilot_level = 4
+position = Vector3(2000, -3000, -10000)
+ship_type = 12
+side = 1
+speed_size = 20
 sphere = 0
+status = 0
+target = 0
+wing_leader = -1
 
-[sub_resource type="Resource" id="Resource_apw2g"]
-script = ExtResource("4_kwkmh")
-action = -1
+[sub_resource type="Resource" id="Resource_th2m2"]
+script = ExtResource("4_skr83")
+ship_id = 15
+flight_leader = 12
+formation = 2
+formation_slot = 1
+mission_type = 4
+orientation = Vector3(2.0944, -0.174533, 0.436332)
+pilot_level = 4
+position = Vector3(2750, -3000, -10500)
+ship_type = 12
+side = 1
+speed_size = 20
 sphere = 0
+status = 0
+target = 14
+wing_leader = 14
 
-[sub_resource type="Resource" id="Resource_74l47"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_yhceo"]
+script = ExtResource("3_evwnw")
 center = Vector3(-15000, 20000, -60000)
 name = ".Tiger's Claw 3"
 radius = 20000
 ship_types = Array[int]([8, 12])
-ships = Array[int]([0, 12, 13, 14, 15, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_6rpqu"), SubResource("Resource_42vf6"), SubResource("Resource_ja166"), SubResource("Resource_x4vr2"), SubResource("Resource_th2m2")])
 wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_nvapc"), SubResource("Resource_y4nrh"), SubResource("Resource_jvub6"), SubResource("Resource_apw2g")])
+triggers = Array[ExtResource("5_5ylfn")]([])
 
-[sub_resource type="Resource" id="Resource_v3ccv"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_ex1cv"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 6
 
-[sub_resource type="Resource" id="Resource_7iaug"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_ytm3p"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_7kh7y"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_if3qr"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_l8jgy"]
+script = ExtResource("3_evwnw")
 center = Vector3(-20000, 25000, -80000)
 name = "Rendezvous"
 radius = 20000
 ship_types = Array[int]([8, 12])
-ships = Array[int]([0, 12, 13, 14, 15, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_6rpqu"), SubResource("Resource_42vf6"), SubResource("Resource_ja166"), SubResource("Resource_x4vr2"), SubResource("Resource_th2m2")])
 wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_v3ccv"), SubResource("Resource_7iaug"), SubResource("Resource_ytm3p"), SubResource("Resource_7kh7y")])
+triggers = Array[ExtResource("5_5ylfn")]([SubResource("Resource_ex1cv")])
 
-[sub_resource type="Resource" id="Resource_2xu5d"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_1lc7g"]
+script = ExtResource("4_skr83")
+ship_id = 5
+flight_leader = -1
+formation = -1
+formation_slot = 0
+mission_type = -1
+orientation = Vector3(0, 0, 0)
+pilot_level = 0
+position = Vector3(0, 0, 5000)
+ship_type = 23
+side = 2
+speed_size = 5000
+sphere = 0
+status = 0
+target = 0
+wing_leader = -1
+
+[sub_resource type="Resource" id="Resource_gl0dv"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 0
 
-[sub_resource type="Resource" id="Resource_aokf6"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_2qfjg"]
+script = ExtResource("5_5ylfn")
 action = 1
 sphere = 1
 
-[sub_resource type="Resource" id="Resource_o3m5p"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_73ce8"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 2
 
-[sub_resource type="Resource" id="Resource_b7q6y"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_8oy1y"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 3
 
-[sub_resource type="Resource" id="Resource_xyj0g"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_7gg2i"]
+script = ExtResource("3_evwnw")
 center = Vector3(-40000, 10000, 0)
 name = "Nav 1"
 radius = 10000
 ship_types = Array[int]([23, -1])
-ships = Array[int]([5, -1, -1, -1, -1, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_1lc7g")])
 wave = 1
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_2xu5d"), SubResource("Resource_aokf6"), SubResource("Resource_o3m5p"), SubResource("Resource_b7q6y")])
+triggers = Array[ExtResource("5_5ylfn")]([SubResource("Resource_gl0dv"), SubResource("Resource_2qfjg"), SubResource("Resource_73ce8"), SubResource("Resource_8oy1y")])
 
-[sub_resource type="Resource" id="Resource_pnwjt"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_1vkhc"]
+script = ExtResource("4_skr83")
+ship_id = 6
+flight_leader = -1
+formation = -1
+formation_slot = 0
+mission_type = -1
+orientation = Vector3(0, 0, 0)
+pilot_level = 0
+position = Vector3(-5000, -1000, 5000)
+ship_type = 23
+side = 2
+speed_size = 5000
+sphere = 0
+status = 0
+target = 0
+wing_leader = -1
+
+[sub_resource type="Resource" id="Resource_nxb0p"]
+script = ExtResource("4_skr83")
+ship_id = 7
+flight_leader = -1
+formation = 2
+formation_slot = 0
+mission_type = 0
+orientation = Vector3(0.785398, 0, 0)
+pilot_level = 3
+position = Vector3(-5000, 0, -5000)
+ship_type = 13
+side = 1
+speed_size = 20
+sphere = 0
+status = 0
+target = 0
+wing_leader = -1
+
+[sub_resource type="Resource" id="Resource_0er4j"]
+script = ExtResource("4_skr83")
+ship_id = 8
+flight_leader = 7
+formation = 2
+formation_slot = 2
+mission_type = 4
+orientation = Vector3(0.785398, 0, 0)
+pilot_level = 2
+position = Vector3(-5750, 0, -5500)
+ship_type = 13
+side = 1
+speed_size = 20
+sphere = 0
+status = 0
+target = 7
+wing_leader = 7
+
+[sub_resource type="Resource" id="Resource_6i27w"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 0
 
-[sub_resource type="Resource" id="Resource_sy6vv"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_opvg0"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 1
 
-[sub_resource type="Resource" id="Resource_pdmwg"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_usuuq"]
+script = ExtResource("5_5ylfn")
 action = 1
 sphere = 2
 
-[sub_resource type="Resource" id="Resource_opieh"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_vulon"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 3
 
-[sub_resource type="Resource" id="Resource_fabv0"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_j71sv"]
+script = ExtResource("3_evwnw")
 center = Vector3(-60000, 15000, -20000)
 name = "Nav 2"
 radius = 15000
 ship_types = Array[int]([23, 13])
-ships = Array[int]([6, 7, 8, -1, -1, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_1vkhc"), SubResource("Resource_nxb0p"), SubResource("Resource_0er4j")])
 wave = 1
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_pnwjt"), SubResource("Resource_sy6vv"), SubResource("Resource_pdmwg"), SubResource("Resource_opieh")])
+triggers = Array[ExtResource("5_5ylfn")]([SubResource("Resource_6i27w"), SubResource("Resource_opvg0"), SubResource("Resource_usuuq"), SubResource("Resource_vulon")])
 
-[sub_resource type="Resource" id="Resource_12nj7"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_588wo"]
+script = ExtResource("4_skr83")
+ship_id = 9
+flight_leader = -1
+formation = -1
+formation_slot = 0
+mission_type = 0
+orientation = Vector3(2.35619, 0, 0)
+pilot_level = 3
+position = Vector3(5000, 5000, 5000)
+ship_type = 17
+side = 1
+speed_size = 10
+sphere = 0
+status = 0
+target = 0
+wing_leader = -1
+
+[sub_resource type="Resource" id="Resource_6arfm"]
+script = ExtResource("4_skr83")
+ship_id = 10
+flight_leader = 9
+formation = 1
+formation_slot = 0
+mission_type = 3
+orientation = Vector3(2.35619, 0, 0)
+pilot_level = 15
+position = Vector3(5000, 5000, 5000)
+ship_type = 10
+side = 1
+speed_size = 15
+sphere = 0
+status = 0
+target = 9
+wing_leader = -1
+
+[sub_resource type="Resource" id="Resource_gh4y5"]
+script = ExtResource("4_skr83")
+ship_id = 11
+flight_leader = 9
+formation = 1
+formation_slot = 2
+mission_type = 4
+orientation = Vector3(2.35619, 0, 0)
+pilot_level = 3
+position = Vector3(4250, 4900, 4750)
+ship_type = 10
+side = 1
+speed_size = 15
+sphere = 0
+status = 0
+target = 10
+wing_leader = 10
+
+[sub_resource type="Resource" id="Resource_8ri17"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 0
 
-[sub_resource type="Resource" id="Resource_lghms"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_ickj2"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 1
 
-[sub_resource type="Resource" id="Resource_al82x"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_0etrm"]
+script = ExtResource("5_5ylfn")
 action = 0
 sphere = 2
 
-[sub_resource type="Resource" id="Resource_7vpwq"]
-script = ExtResource("4_kwkmh")
+[sub_resource type="Resource" id="Resource_l7org"]
+script = ExtResource("5_5ylfn")
 action = 1
 sphere = 3
 
-[sub_resource type="Resource" id="Resource_7clh8"]
-script = ExtResource("3_pg1o8")
+[sub_resource type="Resource" id="Resource_tqiai"]
+script = ExtResource("3_evwnw")
 center = Vector3(-50000, 20000, -55000)
 name = "Nav 3"
 radius = 15000
 ship_types = Array[int]([17, 10])
-ships = Array[int]([9, 10, 11, -1, -1, -1, -1, -1, -1, -1])
+ships = Array[ExtResource("4_skr83")]([SubResource("Resource_588wo"), SubResource("Resource_6arfm"), SubResource("Resource_gh4y5")])
 wave = 1
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_12nj7"), SubResource("Resource_lghms"), SubResource("Resource_al82x"), SubResource("Resource_7vpwq")])
-
-[sub_resource type="Resource" id="Resource_t3x5s"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_vnseh"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_id7nt"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_4hie5"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_f5dlv"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_t3x5s"), SubResource("Resource_vnseh"), SubResource("Resource_id7nt"), SubResource("Resource_4hie5")])
-
-[sub_resource type="Resource" id="Resource_inp3k"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_b3gwh"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_byxc5"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_kromw"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_3mak8"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_inp3k"), SubResource("Resource_b3gwh"), SubResource("Resource_byxc5"), SubResource("Resource_kromw")])
-
-[sub_resource type="Resource" id="Resource_jlypf"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_i5ie6"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_8p02x"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_qut6o"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_66q0h"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_jlypf"), SubResource("Resource_i5ie6"), SubResource("Resource_8p02x"), SubResource("Resource_qut6o")])
-
-[sub_resource type="Resource" id="Resource_17wmi"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_jhldi"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_lkqgp"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_r8m27"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_runym"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_17wmi"), SubResource("Resource_jhldi"), SubResource("Resource_lkqgp"), SubResource("Resource_r8m27")])
-
-[sub_resource type="Resource" id="Resource_1uo48"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_8vtu5"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_bv2aq"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_ju6ig"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_uv11e"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_1uo48"), SubResource("Resource_8vtu5"), SubResource("Resource_bv2aq"), SubResource("Resource_ju6ig")])
-
-[sub_resource type="Resource" id="Resource_qh6uq"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_3666t"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_q3cxp"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_ubgat"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_al64t"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_qh6uq"), SubResource("Resource_3666t"), SubResource("Resource_q3cxp"), SubResource("Resource_ubgat")])
-
-[sub_resource type="Resource" id="Resource_7d45u"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_b3fhw"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_f5orx"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_8vg6d"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_wrmqc"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_7d45u"), SubResource("Resource_b3fhw"), SubResource("Resource_f5orx"), SubResource("Resource_8vg6d")])
-
-[sub_resource type="Resource" id="Resource_rwv55"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_c1h05"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_yhhqa"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_5o6bw"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_pw42a"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_rwv55"), SubResource("Resource_c1h05"), SubResource("Resource_yhhqa"), SubResource("Resource_5o6bw")])
-
-[sub_resource type="Resource" id="Resource_nslud"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_0kyt6"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_kk82g"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_vwhkd"]
-script = ExtResource("4_kwkmh")
-action = -1
-sphere = 0
-
-[sub_resource type="Resource" id="Resource_e8tbi"]
-script = ExtResource("3_pg1o8")
-center = Vector3(0, 0, 0)
-name = ""
-radius = 0
-ship_types = Array[int]([-1, -1])
-ships = Array[int]([-1, -1, -1, -1, -1, -1, -1, -1, -1, -1])
-wave = 0
-triggers = Array[ExtResource("4_kwkmh")]([SubResource("Resource_nslud"), SubResource("Resource_0kyt6"), SubResource("Resource_kk82g"), SubResource("Resource_vwhkd")])
+triggers = Array[ExtResource("5_5ylfn")]([SubResource("Resource_8ri17"), SubResource("Resource_ickj2"), SubResource("Resource_0etrm"), SubResource("Resource_l7org")])
 
 [resource]
-script = ExtResource("2_lhb5g")
+script = ExtResource("2_7rrtp")
 carrier = 0
-convoy = Array[int]([2, -1, -1, -1, -1, -1, -1, -1])
+convoy = Array[int]([])
 initial_sphere = 0
-spheres = Array[ExtResource("3_pg1o8")]([SubResource("Resource_cqhjf"), SubResource("Resource_p5276"), SubResource("Resource_74l47"), SubResource("Resource_if3qr"), SubResource("Resource_xyj0g"), SubResource("Resource_fabv0"), SubResource("Resource_7clh8"), SubResource("Resource_f5dlv"), SubResource("Resource_3mak8"), SubResource("Resource_66q0h"), SubResource("Resource_runym"), SubResource("Resource_uv11e"), SubResource("Resource_al64t"), SubResource("Resource_wrmqc"), SubResource("Resource_pw42a"), SubResource("Resource_e8tbi")])
-flight_paths = Array[ExtResource("1_4ahf7")]([SubResource("Resource_0px1t"), SubResource("Resource_wu2wr"), SubResource("Resource_odnu3"), SubResource("Resource_t2vfm"), SubResource("Resource_jt8cg"), SubResource("Resource_e7nx4"), SubResource("Resource_ugmks")])
-ships = Array[Resource("res://Scripts/Campaign/MissionShipProperties.gd")]([])
-your_ship = 0
+spheres = Array[ExtResource("3_evwnw")]([SubResource("Resource_wwqh0"), SubResource("Resource_yyhab"), SubResource("Resource_yhceo"), SubResource("Resource_l8jgy"), SubResource("Resource_7gg2i"), SubResource("Resource_j71sv"), SubResource("Resource_tqiai")])
+flight_paths = Array[ExtResource("1_c4hk3")]([SubResource("Resource_1xfh7"), SubResource("Resource_nrweo"), SubResource("Resource_b2hgx"), SubResource("Resource_k85uh"), SubResource("Resource_uqi6c"), SubResource("Resource_oh37p"), SubResource("Resource_2f2fm")])
+your_ship = SubResource("Resource_6rpqu")
 wing_name = "Phi Wing"

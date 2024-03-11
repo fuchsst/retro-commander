@@ -1,46 +1,46 @@
 [gd_resource type="Resource" script_class="ShipProperties" load_steps=9 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_jp00b"]
-[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_41u4t"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_d1fgv"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_3c5v6"]
 
-[sub_resource type="Resource" id="Resource_ttj0c"]
-script = ExtResource("2_41u4t")
+[sub_resource type="Resource" id="Resource_oop0m"]
+script = ExtResource("2_3c5v6")
 hardpoint = Vector3(12, 1, 2)
 selected = true
 weapon_type = 24
 
-[sub_resource type="Resource" id="Resource_gh6hq"]
-script = ExtResource("2_41u4t")
+[sub_resource type="Resource" id="Resource_kgmgy"]
+script = ExtResource("2_3c5v6")
 hardpoint = Vector3(-12, 1, 2)
 selected = true
 weapon_type = 24
 
-[sub_resource type="Resource" id="Resource_mypiq"]
-script = ExtResource("2_41u4t")
+[sub_resource type="Resource" id="Resource_fojlh"]
+script = ExtResource("2_3c5v6")
 hardpoint = Vector3(0, 1, 1)
 selected = true
 weapon_type = 30
 
-[sub_resource type="Resource" id="Resource_b1efv"]
-script = ExtResource("2_41u4t")
+[sub_resource type="Resource" id="Resource_xmcyi"]
+script = ExtResource("2_3c5v6")
 hardpoint = Vector3(0, 1, 1)
 selected = true
 weapon_type = 29
 
-[sub_resource type="Resource" id="Resource_x4is3"]
-script = ExtResource("2_41u4t")
+[sub_resource type="Resource" id="Resource_basqr"]
+script = ExtResource("2_3c5v6")
 hardpoint = Vector3(0, 1, 1)
 selected = true
 weapon_type = 29
 
-[sub_resource type="Resource" id="Resource_g8l27"]
-script = ExtResource("2_41u4t")
+[sub_resource type="Resource" id="Resource_1me2p"]
+script = ExtResource("2_3c5v6")
 hardpoint = Vector3(0, 1, 1)
 selected = true
 weapon_type = 29
 
 [resource]
-script = ExtResource("1_jp00b")
+script = ExtResource("1_d1fgv")
 ship_class = 12
 mass = 12600.0
 radius = 14.0
@@ -61,4 +61,4 @@ damage = 6.0
 explosive_force = 6000.0
 fuel = 200000.0
 power_plant = 5.0
-weapons = Array[ExtResource("2_41u4t")]([SubResource("Resource_ttj0c"), SubResource("Resource_gh6hq"), SubResource("Resource_mypiq"), SubResource("Resource_b1efv"), SubResource("Resource_x4is3"), SubResource("Resource_g8l27")])
+weapons = Array[ExtResource("2_3c5v6")]([SubResource("Resource_oop0m"), SubResource("Resource_kgmgy"), SubResource("Resource_fojlh"), SubResource("Resource_xmcyi"), SubResource("Resource_basqr"), SubResource("Resource_1me2p")])

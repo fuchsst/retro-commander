@@ -1,166 +1,105 @@
-[gd_scene load_steps=106 format=3 uid="uid://ehnv0r8gyjty"]
+[gd_scene load_steps=104 format=3 uid="uid://ehnv0r8gyjty"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/Bar.gd" id="1_d6lfd"]
-[ext_resource type="Texture2D" uid="uid://bniaenbl8oams" path="res://Gamedata/recroom.vga/000/000.png" id="1_q1mcf"]
-[ext_resource type="Texture2D" uid="uid://dftyurd73c0n0" path="res://Gamedata/title.vga/006/000.png" id="1_v0boc"]
-[ext_resource type="Texture2D" uid="uid://ctxaipxp4oddr" path="res://Gamedata/recroom.vga/011/000.png" id="2_g7jky"]
-[ext_resource type="Texture2D" uid="uid://ccjeroikj6i1o" path="res://Gamedata/recroom.vga/011/001.png" id="3_7u570"]
-[ext_resource type="Texture2D" uid="uid://b41himgb870dy" path="res://Gamedata/recroom.vga/011/002.png" id="4_pynbw"]
-[ext_resource type="Texture2D" uid="uid://nbr107cxs78g" path="res://Gamedata/recroom.vga/011/003.png" id="5_bryuu"]
-[ext_resource type="Texture2D" uid="uid://bvrn013isyajl" path="res://Gamedata/recroom.vga/011/004.png" id="6_2vifj"]
-[ext_resource type="Texture2D" uid="uid://b7hwt2w3fcb03" path="res://Gamedata/recroom.vga/011/005.png" id="7_gf6pm"]
-[ext_resource type="Texture2D" uid="uid://mmosixblappy" path="res://Gamedata/recroom.vga/011/006.png" id="8_g7621"]
-[ext_resource type="Texture2D" uid="uid://dg7euqrm0s5ui" path="res://Gamedata/recroom.vga/011/007.png" id="9_lrei4"]
-[ext_resource type="Texture2D" uid="uid://ch2f1gjvb6pvw" path="res://Gamedata/recroom.vga/011/008.png" id="10_ucktl"]
-[ext_resource type="Texture2D" uid="uid://dvi1ba5cj6vsw" path="res://Gamedata/recroom.vga/011/009.png" id="11_bgn8u"]
-[ext_resource type="Texture2D" uid="uid://wd24tdffq7p7" path="res://Gamedata/recroom.vga/011/010.png" id="12_v7wro"]
-[ext_resource type="Texture2D" uid="uid://btixpiscyxqe5" path="res://Gamedata/recroom.vga/011/011.png" id="13_k541e"]
-[ext_resource type="Texture2D" uid="uid://dtuq4rg6bj8pi" path="res://Gamedata/recroom.vga/011/012.png" id="14_82a6p"]
-[ext_resource type="Texture2D" uid="uid://crv0qex4swu6p" path="res://Gamedata/recroom.vga/011/013.png" id="15_eqrx6"]
-[ext_resource type="Texture2D" uid="uid://d3onjbvpn4o0" path="res://Gamedata/recroom.vga/011/014.png" id="16_gkbi6"]
-[ext_resource type="Texture2D" uid="uid://yjbqfihvcjwp" path="res://Gamedata/recroom.vga/011/015.png" id="17_2h18h"]
-[ext_resource type="Texture2D" uid="uid://b02chmm3xfjxy" path="res://Gamedata/recroom.vga/011/016.png" id="18_g4es5"]
-[ext_resource type="Texture2D" uid="uid://kv7nbruhrbsx" path="res://Gamedata/recroom.vga/011/017.png" id="19_fgurf"]
-[ext_resource type="Texture2D" uid="uid://kgv440ydnw6x" path="res://Gamedata/recroom.vga/011/018.png" id="20_fq8oy"]
-[ext_resource type="Texture2D" uid="uid://bvd6vg2xig4j4" path="res://Gamedata/recroom.vga/011/019.png" id="21_7rvfi"]
-[ext_resource type="Texture2D" uid="uid://b3wvu78xewcvc" path="res://Gamedata/recroom.vga/011/020.png" id="22_s5cje"]
-[ext_resource type="Texture2D" uid="uid://bganf5mkiumps" path="res://Gamedata/recroom.vga/011/021.png" id="23_gefun"]
-[ext_resource type="Texture2D" uid="uid://4mdqi0nla8i8" path="res://Gamedata/recroom.vga/011/022.png" id="24_kibnu"]
-[ext_resource type="Texture2D" uid="uid://b3e3rubho5rgy" path="res://Gamedata/recroom.vga/011/023.png" id="25_216w6"]
-[ext_resource type="Texture2D" uid="uid://pcke66u7678f" path="res://Gamedata/recroom.vga/011/024.png" id="26_lpf43"]
-[ext_resource type="Texture2D" uid="uid://d3dhyqmnvmk0d" path="res://Gamedata/recroom.vga/011/025.png" id="27_sgvj5"]
-[ext_resource type="Texture2D" uid="uid://cqmsg58dhj0ms" path="res://Gamedata/recroom.vga/011/026.png" id="28_4r5my"]
-[ext_resource type="Texture2D" uid="uid://pxj6m6qjwlqr" path="res://Gamedata/recroom.vga/011/027.png" id="29_t0ux3"]
-[ext_resource type="Texture2D" uid="uid://csldin8q6ayc0" path="res://Gamedata/recroom.vga/011/028.png" id="30_k07ak"]
-[ext_resource type="Texture2D" uid="uid://1xavk7mhnc10" path="res://Gamedata/recroom.vga/011/029.png" id="31_dsybo"]
-[ext_resource type="Texture2D" uid="uid://chea21jxke70a" path="res://Gamedata/recroom.vga/011/030.png" id="32_ar8ji"]
-[ext_resource type="Texture2D" uid="uid://b5thp5a62b032" path="res://Gamedata/recroom.vga/011/031.png" id="33_y2xdt"]
-[ext_resource type="Texture2D" uid="uid://bvx4nouxbaqyx" path="res://Gamedata/recroom.vga/011/032.png" id="34_0564o"]
-[ext_resource type="Texture2D" uid="uid://chv8ekggkwk4j" path="res://Gamedata/recroom.vga/011/033.png" id="35_e5vcg"]
-[ext_resource type="Texture2D" uid="uid://bybs0y4xrhwti" path="res://Gamedata/recroom.vga/011/034.png" id="36_hlk3p"]
-[ext_resource type="Texture2D" uid="uid://brwbxpjoeon03" path="res://Gamedata/recroom.vga/011/035.png" id="37_fi3wk"]
-[ext_resource type="Texture2D" uid="uid://dwgkpio82486w" path="res://Gamedata/recroom.vga/011/036.png" id="38_oksgt"]
-[ext_resource type="Texture2D" uid="uid://dr1uxmfnwdk7a" path="res://Gamedata/recroom.vga/011/037.png" id="39_5l3k7"]
-[ext_resource type="Texture2D" uid="uid://jy7il4df0vjh" path="res://Gamedata/recroom.vga/011/038.png" id="40_hd82i"]
-[ext_resource type="Texture2D" uid="uid://efvl2bragkop" path="res://Gamedata/recroom.vga/011/039.png" id="41_7chrt"]
-[ext_resource type="Texture2D" uid="uid://drkrcru1lly06" path="res://Gamedata/recroom.vga/011/040.png" id="42_wrgku"]
-[ext_resource type="Texture2D" uid="uid://cksn58ly1yy1d" path="res://Gamedata/recroom.vga/003/000.png" id="43_qam88"]
-[ext_resource type="Texture2D" uid="uid://b34g4hrfc2cw7" path="res://Gamedata/recroom.vga/003/001.png" id="44_ca8hu"]
+[ext_resource type="Texture2D" uid="uid://de2m0svx4i4v" path="res://Gamedata/recroom.vga/000/000.png" id="1_q1mcf"]
+[ext_resource type="World3D" uid="uid://buykx4nk5tqdb" path="res://Scenes/World3D.tres" id="2_a7xar"]
+[ext_resource type="Texture2D" uid="uid://cfv2m0qdqg45i" path="res://Gamedata/recroom.vga/011/000.png" id="2_g7jky"]
+[ext_resource type="Texture2D" uid="uid://b26mp2nrfmequ" path="res://Gamedata/recroom.vga/011/001.png" id="3_7u570"]
+[ext_resource type="PackedScene" uid="uid://lk7a2haj36he" path="res://Scenes/Mission/Starfield.tscn" id="3_y611h"]
+[ext_resource type="Texture2D" uid="uid://cxlu0n64gji7s" path="res://Gamedata/recroom.vga/011/002.png" id="4_pynbw"]
+[ext_resource type="Texture2D" uid="uid://5qsoxabpogbt" path="res://Gamedata/recroom.vga/011/003.png" id="5_bryuu"]
+[ext_resource type="Texture2D" uid="uid://b4lta5q4el0nn" path="res://Gamedata/recroom.vga/011/004.png" id="6_2vifj"]
+[ext_resource type="Texture2D" uid="uid://brhujg1e5a5rm" path="res://Gamedata/recroom.vga/011/005.png" id="7_gf6pm"]
+[ext_resource type="Texture2D" uid="uid://d0gkih1kwot23" path="res://Gamedata/recroom.vga/011/006.png" id="8_g7621"]
+[ext_resource type="Texture2D" uid="uid://7knj12mehabr" path="res://Gamedata/recroom.vga/011/007.png" id="9_lrei4"]
+[ext_resource type="Texture2D" uid="uid://csgnw0wsukc73" path="res://Gamedata/recroom.vga/011/008.png" id="10_ucktl"]
+[ext_resource type="Texture2D" uid="uid://d0w0istkahlu4" path="res://Gamedata/recroom.vga/011/009.png" id="11_bgn8u"]
+[ext_resource type="Texture2D" uid="uid://djv23m6gq8g2n" path="res://Gamedata/recroom.vga/011/010.png" id="12_v7wro"]
+[ext_resource type="Texture2D" uid="uid://drsj8mxksx5bw" path="res://Gamedata/recroom.vga/011/011.png" id="13_k541e"]
+[ext_resource type="Texture2D" uid="uid://munam1mdst2k" path="res://Gamedata/recroom.vga/011/012.png" id="14_82a6p"]
+[ext_resource type="Texture2D" uid="uid://dbn47l42d28wj" path="res://Gamedata/recroom.vga/011/013.png" id="15_eqrx6"]
+[ext_resource type="Texture2D" uid="uid://tkf03vc7a8tq" path="res://Gamedata/recroom.vga/011/014.png" id="16_gkbi6"]
+[ext_resource type="Texture2D" uid="uid://bihmvuxqxwunb" path="res://Gamedata/recroom.vga/011/015.png" id="17_2h18h"]
+[ext_resource type="Texture2D" uid="uid://cyvd86ckc42vx" path="res://Gamedata/recroom.vga/011/016.png" id="18_g4es5"]
+[ext_resource type="Texture2D" uid="uid://7pg610vu5k0k" path="res://Gamedata/recroom.vga/011/017.png" id="19_fgurf"]
+[ext_resource type="Texture2D" uid="uid://bagpek2cqp2pu" path="res://Gamedata/recroom.vga/011/018.png" id="20_fq8oy"]
+[ext_resource type="Texture2D" uid="uid://bvp06dxo5w80p" path="res://Gamedata/recroom.vga/011/019.png" id="21_7rvfi"]
+[ext_resource type="Texture2D" uid="uid://076v4frjjldu" path="res://Gamedata/recroom.vga/011/020.png" id="22_s5cje"]
+[ext_resource type="Texture2D" uid="uid://d3alddxcu6sq0" path="res://Gamedata/recroom.vga/011/021.png" id="23_gefun"]
+[ext_resource type="Texture2D" uid="uid://b4fy6i1a23mls" path="res://Gamedata/recroom.vga/011/022.png" id="24_kibnu"]
+[ext_resource type="Texture2D" uid="uid://by1u5a1xdre3d" path="res://Gamedata/recroom.vga/011/023.png" id="25_216w6"]
+[ext_resource type="Texture2D" uid="uid://dojk2k5ysf3ct" path="res://Gamedata/recroom.vga/011/024.png" id="26_lpf43"]
+[ext_resource type="Texture2D" uid="uid://d15mbt63fivhx" path="res://Gamedata/recroom.vga/011/025.png" id="27_sgvj5"]
+[ext_resource type="Texture2D" uid="uid://bqp5vu8jyumh6" path="res://Gamedata/recroom.vga/011/026.png" id="28_4r5my"]
+[ext_resource type="Texture2D" uid="uid://pvdbd24f27n" path="res://Gamedata/recroom.vga/011/027.png" id="29_t0ux3"]
+[ext_resource type="Texture2D" uid="uid://cyyddxvpo1fw5" path="res://Gamedata/recroom.vga/011/028.png" id="30_k07ak"]
+[ext_resource type="Texture2D" uid="uid://d206da5msbm2f" path="res://Gamedata/recroom.vga/011/029.png" id="31_dsybo"]
+[ext_resource type="Texture2D" uid="uid://7rrfncugewv6" path="res://Gamedata/recroom.vga/011/030.png" id="32_ar8ji"]
+[ext_resource type="Texture2D" uid="uid://tdd27tbxne2b" path="res://Gamedata/recroom.vga/011/031.png" id="33_y2xdt"]
+[ext_resource type="Texture2D" uid="uid://ckgqx0f3it6pb" path="res://Gamedata/recroom.vga/011/032.png" id="34_0564o"]
+[ext_resource type="Texture2D" uid="uid://dpja7fj3lemt5" path="res://Gamedata/recroom.vga/011/033.png" id="35_e5vcg"]
+[ext_resource type="Texture2D" uid="uid://btc82bfrbkpd2" path="res://Gamedata/recroom.vga/011/034.png" id="36_hlk3p"]
+[ext_resource type="Texture2D" uid="uid://byhm66f4wioqk" path="res://Gamedata/recroom.vga/011/035.png" id="37_fi3wk"]
+[ext_resource type="Texture2D" uid="uid://bnunkw227s3ha" path="res://Gamedata/recroom.vga/011/036.png" id="38_oksgt"]
+[ext_resource type="Texture2D" uid="uid://dtqrepi8oga71" path="res://Gamedata/recroom.vga/011/037.png" id="39_5l3k7"]
+[ext_resource type="Texture2D" uid="uid://bwm5e67l68i2a" path="res://Gamedata/recroom.vga/011/038.png" id="40_hd82i"]
+[ext_resource type="Texture2D" uid="uid://ek0kxfnon712" path="res://Gamedata/recroom.vga/011/039.png" id="41_7chrt"]
+[ext_resource type="Texture2D" uid="uid://bi34av0t688hp" path="res://Gamedata/recroom.vga/011/040.png" id="42_wrgku"]
+[ext_resource type="Texture2D" uid="uid://chpvnf2iqbw03" path="res://Gamedata/recroom.vga/003/000.png" id="43_qam88"]
+[ext_resource type="Texture2D" uid="uid://yt5ar8s05yl4" path="res://Gamedata/recroom.vga/003/001.png" id="44_ca8hu"]
 [ext_resource type="Script" path="res://Scenes/OnBoard/BarCharacter.gd" id="45_5cqss"]
-[ext_resource type="Texture2D" uid="uid://cencnx20e134b" path="res://Gamedata/recroom.vga/003/002.png" id="45_g0hua"]
-[ext_resource type="Texture2D" uid="uid://dw3tq10ccsx2m" path="res://Gamedata/recroom.vga/003/003.png" id="46_qk2tc"]
-[ext_resource type="Texture2D" uid="uid://cnq38mci0omnp" path="res://Gamedata/recroom.vga/003/004.png" id="47_77qf6"]
-[ext_resource type="Texture2D" uid="uid://dkox7b4i6rnkc" path="res://Gamedata/recroom.vga/003/005.png" id="48_mv3ac"]
-[ext_resource type="Texture2D" uid="uid://cdly12x8tqpml" path="res://Gamedata/recroom.vga/006/000.png" id="49_wgmmp"]
-[ext_resource type="Texture2D" uid="uid://c653miiu0l7aj" path="res://Gamedata/recroom.vga/006/001.png" id="50_ko4rl"]
-[ext_resource type="Texture2D" uid="uid://b8whaono1q8be" path="res://Gamedata/recroom.vga/006/002.png" id="51_qke1l"]
-[ext_resource type="Texture2D" uid="uid://bp55qbyi3i3bh" path="res://Gamedata/recroom.vga/006/003.png" id="52_phvb6"]
-[ext_resource type="Texture2D" uid="uid://dqmfyu1by3bk8" path="res://Gamedata/recroom.vga/006/004.png" id="53_etdcl"]
-[ext_resource type="Texture2D" uid="uid://bixb5wbp3ncgh" path="res://Gamedata/recroom.vga/006/005.png" id="54_mybfp"]
-[ext_resource type="Texture2D" uid="uid://bdswqc2mq4l2k" path="res://Gamedata/recroom.vga/008/000.png" id="55_pwid3"]
-[ext_resource type="Texture2D" uid="uid://b7ff4y8rmnbp6" path="res://Gamedata/recroom.vga/008/001.png" id="56_q4spd"]
-[ext_resource type="Texture2D" uid="uid://dw41jcm0ltwe0" path="res://Gamedata/recroom.vga/008/002.png" id="57_f2lkj"]
-[ext_resource type="Texture2D" uid="uid://drs1sa2stp8dr" path="res://Gamedata/recroom.vga/008/003.png" id="58_mftw4"]
-[ext_resource type="Texture2D" uid="uid://boyn8kc8vxidp" path="res://Gamedata/recroom.vga/008/004.png" id="59_yvdue"]
-[ext_resource type="Texture2D" uid="uid://vhgav22x81oh" path="res://Gamedata/recroom.vga/008/005.png" id="60_bhquq"]
-[ext_resource type="Texture2D" uid="uid://da0ly60loapvd" path="res://Gamedata/recroom.vga/009/000.png" id="61_4dwa6"]
-[ext_resource type="Texture2D" uid="uid://bugbsi8ig7gaf" path="res://Gamedata/recroom.vga/009/001.png" id="62_ewc42"]
-[ext_resource type="Texture2D" uid="uid://dj4qfqq3qb6nd" path="res://Gamedata/recroom.vga/009/002.png" id="63_h5xhh"]
-[ext_resource type="Texture2D" uid="uid://darw3ow0rbrvu" path="res://Gamedata/recroom.vga/009/003.png" id="64_cij31"]
-[ext_resource type="Texture2D" uid="uid://dulmd7fm8gtx5" path="res://Gamedata/recroom.vga/009/004.png" id="65_5v5y7"]
-[ext_resource type="Texture2D" uid="uid://dfoi2c62hugwd" path="res://Gamedata/recroom.vga/009/005.png" id="66_65yqy"]
-[ext_resource type="Texture2D" uid="uid://c7kwrj63i4wp6" path="res://Gamedata/recroom.vga/004/000.png" id="67_8h0nn"]
-[ext_resource type="Texture2D" uid="uid://b5dx2hvkphwtp" path="res://Gamedata/recroom.vga/004/001.png" id="68_2xpkp"]
-[ext_resource type="Texture2D" uid="uid://dttxyqtwjqpuv" path="res://Gamedata/recroom.vga/004/002.png" id="69_62m7e"]
-[ext_resource type="Texture2D" uid="uid://c6nvoyq65map3" path="res://Gamedata/recroom.vga/004/003.png" id="70_6gd8s"]
-[ext_resource type="Texture2D" uid="uid://7kx5yvf8pc61" path="res://Gamedata/recroom.vga/004/004.png" id="71_hdiqj"]
-[ext_resource type="Texture2D" uid="uid://crtiepiw8xtwr" path="res://Gamedata/recroom.vga/004/005.png" id="72_uw0fi"]
-[ext_resource type="Texture2D" uid="uid://dhgtuqtm44xwn" path="res://Gamedata/recroom.vga/005/000.png" id="73_bgjfi"]
-[ext_resource type="Texture2D" uid="uid://xiujew6inrfa" path="res://Gamedata/recroom.vga/005/001.png" id="74_ciuto"]
-[ext_resource type="Texture2D" uid="uid://do4yu30ftafmq" path="res://Gamedata/recroom.vga/005/002.png" id="75_s3ofj"]
-[ext_resource type="Texture2D" uid="uid://cb20k2hqr2mp7" path="res://Gamedata/recroom.vga/005/003.png" id="76_00340"]
-[ext_resource type="Texture2D" uid="uid://db0uvoed74a8o" path="res://Gamedata/recroom.vga/005/004.png" id="77_tihjt"]
-[ext_resource type="Texture2D" uid="uid://dpbppst03j6sx" path="res://Gamedata/recroom.vga/005/005.png" id="78_t6j02"]
-[ext_resource type="Texture2D" uid="uid://b1o32xf7vpxop" path="res://Gamedata/recroom.vga/007/000.png" id="79_ktjnf"]
-[ext_resource type="Texture2D" uid="uid://qpoavppmkqpk" path="res://Gamedata/recroom.vga/007/001.png" id="80_kkuq6"]
-[ext_resource type="Texture2D" uid="uid://b2giq04vloo5n" path="res://Gamedata/recroom.vga/007/002.png" id="81_dhcru"]
-[ext_resource type="Texture2D" uid="uid://cdf3xq45kox0q" path="res://Gamedata/recroom.vga/007/003.png" id="82_b2doa"]
-[ext_resource type="Texture2D" uid="uid://ba55uj6d4lria" path="res://Gamedata/recroom.vga/007/004.png" id="83_j28ig"]
-[ext_resource type="Texture2D" uid="uid://bw1si5sb0ms1c" path="res://Gamedata/recroom.vga/007/005.png" id="84_k65b2"]
-[ext_resource type="Texture2D" uid="uid://dqwje10kndtyj" path="res://Gamedata/recroom.vga/010/000.png" id="85_vyak0"]
-[ext_resource type="Texture2D" uid="uid://c6ohkaoxklrd0" path="res://Gamedata/recroom.vga/010/001.png" id="86_7uquc"]
-[ext_resource type="Texture2D" uid="uid://c5d407epfnq4p" path="res://Gamedata/recroom.vga/010/002.png" id="87_wgnin"]
-[ext_resource type="Texture2D" uid="uid://btk2ua66tma2s" path="res://Gamedata/recroom.vga/010/003.png" id="88_ylgs6"]
-[ext_resource type="Texture2D" uid="uid://cjyggdxpo31qn" path="res://Gamedata/recroom.vga/010/004.png" id="89_guxol"]
-[ext_resource type="Texture2D" uid="uid://cu14tsogpxcyr" path="res://Gamedata/recroom.vga/010/005.png" id="90_0wer0"]
-[ext_resource type="Texture2D" uid="uid://dirdhqtinmyg8" path="res://Gamedata/recroom.vga/000/001.png" id="91_am7l5"]
-[ext_resource type="Texture2D" uid="uid://b1gtqpd2ifovn" path="res://Gamedata/recroom.vga/000/002.png" id="92_wgrx3"]
-[ext_resource type="Texture2D" uid="uid://qnbqtfmi8i8t" path="res://Gamedata/recroom.vga/000/003.png" id="93_x7fjo"]
+[ext_resource type="Texture2D" uid="uid://bxp2coi36y8en" path="res://Gamedata/recroom.vga/003/002.png" id="45_g0hua"]
+[ext_resource type="Texture2D" uid="uid://ckllroo37mnic" path="res://Gamedata/recroom.vga/003/003.png" id="46_qk2tc"]
+[ext_resource type="Texture2D" uid="uid://csk75dtir26m7" path="res://Gamedata/recroom.vga/003/004.png" id="47_77qf6"]
+[ext_resource type="Texture2D" uid="uid://be3548lpe1yvx" path="res://Gamedata/recroom.vga/003/005.png" id="48_mv3ac"]
+[ext_resource type="Texture2D" uid="uid://dokjfc7ppygy6" path="res://Gamedata/recroom.vga/006/000.png" id="49_wgmmp"]
+[ext_resource type="Texture2D" uid="uid://bfdw85gvveb4b" path="res://Gamedata/recroom.vga/006/001.png" id="50_ko4rl"]
+[ext_resource type="Texture2D" uid="uid://c2xnb1m1gqnu8" path="res://Gamedata/recroom.vga/006/002.png" id="51_qke1l"]
+[ext_resource type="Texture2D" uid="uid://c68oeeuuqtds" path="res://Gamedata/recroom.vga/006/003.png" id="52_phvb6"]
+[ext_resource type="Texture2D" uid="uid://c3ogmy0jhm5l5" path="res://Gamedata/recroom.vga/006/004.png" id="53_etdcl"]
+[ext_resource type="Texture2D" uid="uid://kn03hf8yw48" path="res://Gamedata/recroom.vga/006/005.png" id="54_mybfp"]
+[ext_resource type="Texture2D" uid="uid://70hhx84l76lg" path="res://Gamedata/recroom.vga/008/000.png" id="55_pwid3"]
+[ext_resource type="Texture2D" uid="uid://b54uxxc3x01je" path="res://Gamedata/recroom.vga/008/001.png" id="56_q4spd"]
+[ext_resource type="Texture2D" uid="uid://10erd27lpdpq" path="res://Gamedata/recroom.vga/008/002.png" id="57_f2lkj"]
+[ext_resource type="Texture2D" uid="uid://fdb6p06if08u" path="res://Gamedata/recroom.vga/008/003.png" id="58_mftw4"]
+[ext_resource type="Texture2D" uid="uid://xl46jvis85lx" path="res://Gamedata/recroom.vga/008/004.png" id="59_yvdue"]
+[ext_resource type="Texture2D" uid="uid://b3aycms8j4akj" path="res://Gamedata/recroom.vga/008/005.png" id="60_bhquq"]
+[ext_resource type="Texture2D" uid="uid://dq5fglo2l7tk5" path="res://Gamedata/recroom.vga/009/000.png" id="61_4dwa6"]
+[ext_resource type="Texture2D" uid="uid://de4tdw0haktr3" path="res://Gamedata/recroom.vga/009/001.png" id="62_ewc42"]
+[ext_resource type="Texture2D" uid="uid://c5e8wupubbokd" path="res://Gamedata/recroom.vga/009/002.png" id="63_h5xhh"]
+[ext_resource type="Texture2D" uid="uid://ko5bojg6ebxs" path="res://Gamedata/recroom.vga/009/003.png" id="64_cij31"]
+[ext_resource type="Texture2D" uid="uid://byr57qdpyynj0" path="res://Gamedata/recroom.vga/009/004.png" id="65_5v5y7"]
+[ext_resource type="Texture2D" uid="uid://dn8j23cacijja" path="res://Gamedata/recroom.vga/009/005.png" id="66_65yqy"]
+[ext_resource type="Texture2D" uid="uid://dnb2hp6qhwgfr" path="res://Gamedata/recroom.vga/004/000.png" id="67_8h0nn"]
+[ext_resource type="Texture2D" uid="uid://jp3v2v0exqk4" path="res://Gamedata/recroom.vga/004/001.png" id="68_2xpkp"]
+[ext_resource type="Texture2D" uid="uid://dvhbhiice7dn" path="res://Gamedata/recroom.vga/004/002.png" id="69_62m7e"]
+[ext_resource type="Texture2D" uid="uid://j8puaqbpyb7f" path="res://Gamedata/recroom.vga/004/003.png" id="70_6gd8s"]
+[ext_resource type="Texture2D" uid="uid://6acv82tnbst0" path="res://Gamedata/recroom.vga/004/004.png" id="71_hdiqj"]
+[ext_resource type="Texture2D" uid="uid://du3k5dgp4gkga" path="res://Gamedata/recroom.vga/004/005.png" id="72_uw0fi"]
+[ext_resource type="Texture2D" uid="uid://d3rqvoirx6jo6" path="res://Gamedata/recroom.vga/005/000.png" id="73_bgjfi"]
+[ext_resource type="Texture2D" uid="uid://bf6gcfu5adi54" path="res://Gamedata/recroom.vga/005/001.png" id="74_ciuto"]
+[ext_resource type="Texture2D" uid="uid://drmiw2gmfnw2b" path="res://Gamedata/recroom.vga/005/002.png" id="75_s3ofj"]
+[ext_resource type="Texture2D" uid="uid://dn0v10ykcmp2r" path="res://Gamedata/recroom.vga/005/003.png" id="76_00340"]
+[ext_resource type="Texture2D" uid="uid://buxmef6atd75g" path="res://Gamedata/recroom.vga/005/004.png" id="77_tihjt"]
+[ext_resource type="Texture2D" uid="uid://ujh4ses3hs3v" path="res://Gamedata/recroom.vga/005/005.png" id="78_t6j02"]
+[ext_resource type="Texture2D" uid="uid://djmvcgl2bvsrt" path="res://Gamedata/recroom.vga/007/000.png" id="79_ktjnf"]
+[ext_resource type="Texture2D" uid="uid://cq7vfyaqhin6h" path="res://Gamedata/recroom.vga/007/001.png" id="80_kkuq6"]
+[ext_resource type="Texture2D" uid="uid://dc4ligfsoay41" path="res://Gamedata/recroom.vga/007/002.png" id="81_dhcru"]
+[ext_resource type="Texture2D" uid="uid://bue8nwvanycuw" path="res://Gamedata/recroom.vga/007/003.png" id="82_b2doa"]
+[ext_resource type="Texture2D" uid="uid://dck536yaqb8vs" path="res://Gamedata/recroom.vga/007/004.png" id="83_j28ig"]
+[ext_resource type="Texture2D" uid="uid://dil3bxt25eepe" path="res://Gamedata/recroom.vga/007/005.png" id="84_k65b2"]
+[ext_resource type="Texture2D" uid="uid://xakrj4vur8io" path="res://Gamedata/recroom.vga/010/000.png" id="85_vyak0"]
+[ext_resource type="Texture2D" uid="uid://nl6guqc1a63u" path="res://Gamedata/recroom.vga/010/001.png" id="86_7uquc"]
+[ext_resource type="Texture2D" uid="uid://b8wjepcinff0h" path="res://Gamedata/recroom.vga/010/002.png" id="87_wgnin"]
+[ext_resource type="Texture2D" uid="uid://b58u2c3cl163h" path="res://Gamedata/recroom.vga/010/003.png" id="88_ylgs6"]
+[ext_resource type="Texture2D" uid="uid://cmqdejmfhvxi7" path="res://Gamedata/recroom.vga/010/004.png" id="89_guxol"]
+[ext_resource type="Texture2D" uid="uid://dy1dobd7iubas" path="res://Gamedata/recroom.vga/010/005.png" id="90_0wer0"]
+[ext_resource type="Texture2D" uid="uid://b1bcq3n1iqr8m" path="res://Gamedata/recroom.vga/000/001.png" id="91_am7l5"]
+[ext_resource type="Texture2D" uid="uid://dxbkn3jscum7p" path="res://Gamedata/recroom.vga/000/002.png" id="92_wgrx3"]
+[ext_resource type="Texture2D" uid="uid://dmg5cnyeif0mq" path="res://Gamedata/recroom.vga/000/003.png" id="93_x7fjo"]
 [ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="94_jixm7"]
 [ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="96_8n8a7"]
 [ext_resource type="Script" path="res://Assets/TooltipText.gd" id="97_gfrr6"]
-
-[sub_resource type="Animation" id="Animation_r7oy7"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Space/Space1:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Space/Space2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(320, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_kslnu"]
-resource_name = "default"
-length = 15.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Space/Space1:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 15),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(-320, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Space/Space2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.89366, 15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(320, 16), Vector2(279.602, 0), Vector2(0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_30xru"]
-_data = {
-"RESET": SubResource("Animation_r7oy7"),
-"default": SubResource("Animation_kslnu")
-}
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n1igi"]
 animations = [{
@@ -323,25 +262,19 @@ script = ExtResource("1_d6lfd")
 
 [node name="BackgroundCanvas" type="CanvasLayer" parent="."]
 
-[node name="Space" type="Node2D" parent="BackgroundCanvas"]
-position = Vector2(0, 64)
+[node name="SubViewportContainer" type="SubViewportContainer" parent="BackgroundCanvas"]
+offset_left = 137.0
+offset_top = 51.0
+offset_right = 772.0
+offset_bottom = 486.0
 
-[node name="SpaceAnimation" type="AnimationPlayer" parent="BackgroundCanvas/Space"]
-root_node = NodePath("../..")
-libraries = {
-"": SubResource("AnimationLibrary_30xru")
-}
+[node name="Space2" type="SubViewport" parent="BackgroundCanvas/SubViewportContainer"]
+world_3d = ExtResource("2_a7xar")
+handle_input_locally = false
+size = Vector2i(640, 400)
+render_target_update_mode = 4
 
-[node name="Space1" type="Sprite2D" parent="BackgroundCanvas/Space"]
-scale = Vector2(1, 0.5)
-texture = ExtResource("1_v0boc")
-centered = false
-
-[node name="Space2" type="Sprite2D" parent="BackgroundCanvas/Space"]
-position = Vector2(320, 0)
-scale = Vector2(1, 0.5)
-texture = ExtResource("1_v0boc")
-centered = false
+[node name="Starfield" parent="BackgroundCanvas/SubViewportContainer/Space2" instance=ExtResource("3_y611h")]
 
 [node name="SceneBackground" type="TextureRect" parent="BackgroundCanvas"]
 offset_right = 320.0
@@ -629,6 +562,7 @@ vertical_alignment = 1
 script = ExtResource("97_gfrr6")
 
 [node name="Cursor" parent="OverlayCanvas" instance=ExtResource("94_jixm7")]
+position = Vector2(-141, -138)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1)

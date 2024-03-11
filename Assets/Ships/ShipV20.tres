@@ -1,58 +1,58 @@
 [gd_resource type="Resource" script_class="ShipProperties" load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_l5aix"]
-[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_478mk"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_rftu4"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_hr2l7"]
 
-[sub_resource type="Resource" id="Resource_ts7r4"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_obnho"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(0, 0, 40)
 selected = true
 weapon_type = 31
 
-[sub_resource type="Resource" id="Resource_neh70"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_fugvj"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(0, 0, 40)
 selected = true
 weapon_type = 31
 
-[sub_resource type="Resource" id="Resource_qjdht"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_7anjb"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(-5, -2, 35)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_526nt"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_na478"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(5, 2, 35)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_3fqxx"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_1ni4e"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(-15, 2, 0)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_6ssav"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_iaxgu"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(15, -2, 0)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_vyu5w"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_j7yhy"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(-7.5, -2, -35)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_see4b"]
-script = ExtResource("2_478mk")
+[sub_resource type="Resource" id="Resource_es1nk"]
+script = ExtResource("2_hr2l7")
 hardpoint = Vector3(7.5, 2, -35)
 selected = true
 weapon_type = 27
 
 [resource]
-script = ExtResource("1_l5aix")
+script = ExtResource("1_rftu4")
 ship_class = 13
 mass = 1.2e+06
 radius = 40.0
@@ -73,4 +73,4 @@ damage = 200.0
 explosive_force = 32000.0
 fuel = 200000.0
 power_plant = 1.0
-weapons = Array[ExtResource("2_478mk")]([SubResource("Resource_ts7r4"), SubResource("Resource_neh70"), SubResource("Resource_qjdht"), SubResource("Resource_526nt"), SubResource("Resource_3fqxx"), SubResource("Resource_6ssav"), SubResource("Resource_vyu5w"), SubResource("Resource_see4b")])
+weapons = Array[ExtResource("2_hr2l7")]([SubResource("Resource_obnho"), SubResource("Resource_fugvj"), SubResource("Resource_7anjb"), SubResource("Resource_na478"), SubResource("Resource_1ni4e"), SubResource("Resource_iaxgu"), SubResource("Resource_j7yhy"), SubResource("Resource_es1nk")])

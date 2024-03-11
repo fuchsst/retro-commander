@@ -61,7 +61,7 @@ texture = ExtResource("6_8f3ja")
 
 [node name="Radar" parent="FrontView" instance=ExtResource("7_6ul7b")]
 position = Vector2(636, 504)
-radius = 56.0
+radius = 70.0
 
 [node name="Gauges" type="Node2D" parent="FrontView"]
 

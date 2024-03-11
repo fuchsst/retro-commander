@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bctukdijcsc5b"]
 
-[ext_resource type="Texture2D" uid="uid://067q52y4tykl" path="res://Gamedata/recroom.vga/001/001.png" id="1_lltaq"]
+[ext_resource type="Texture2D" uid="uid://70dxh4ywafka" path="res://Gamedata/recroom.vga/001/001.png" id="1_lltaq"]
 
 [sub_resource type="Gradient" id="Gradient_x35ua"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)

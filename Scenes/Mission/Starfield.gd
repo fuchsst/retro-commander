@@ -1,7 +1,7 @@
 extends Node3D
 class_name Starfield
 
-@export var number_of_stars: int = 500
+@export var number_of_stars: int = 256
 @onready var main_star: Sprite3D = $MainStar
 @onready var stars: Node3D = $Stars
 @onready var camera_3d: Camera3D = $Camera3D
@@ -23,7 +23,7 @@ func _ready() -> void:
 	var stellar_bkg: StellarBackgroundProperties = load("res://Assets/VegaCampaign/Season" + str(World.game_state.series) + "/StellarBackground" + str(World.game_state.mission) + ".tres")
 	rotation_degrees = stellar_bkg.rotation
 	main_star.texture = load("res://Gamedata/planets.vga/" + str(stellar_bkg.image).pad_zeros(3) + "/000.png")
-		
+	camera_3d.rotation = Vector3.DOWN
 
 
 func generate_stars(images: Array[String]) -> void:

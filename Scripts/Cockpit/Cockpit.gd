@@ -9,8 +9,14 @@ enum CockpitView {FRONT, LEFT, REAR, RIGHT}
 @onready var rear: Node2D = $RearView
 @onready var radar: RadarWidget = $FrontView/Radar
 
-
-@export var mission_state: MissionState
+@export var player_ship: Ship:
+	set(value):
+		radar.player_position = value
+	get:
+		if radar:
+			return radar.player_position
+		else:
+			return null
 
 @export var view: CockpitView = CockpitView.FRONT:
 	set(value):

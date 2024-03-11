@@ -15,7 +15,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var input = Input.get_vector("Left","Right", "Up", "Down")
+	var input = Input.get_vector("Yaw Left","Yaw Right", "Pitch Up", "Pitch Down")
 	
 	if input.x != 0:
 		stick_direction.x += stick_direction_change_delta*delta*input.x

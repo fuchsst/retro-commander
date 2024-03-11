@@ -1,6 +1,6 @@
 [gd_scene load_steps=37 format=3 uid="uid://febouepvqdew"]
 
-[ext_resource type="Texture2D" uid="uid://7ur1tyswbwdm" path="res://Gamedata/recroom.vga/001/000.png" id="1_ep4wn"]
+[ext_resource type="Texture2D" uid="uid://cx26cska2orr6" path="res://Gamedata/recroom.vga/001/000.png" id="1_ep4wn"]
 [ext_resource type="Texture2D" uid="uid://dftyurd73c0n0" path="res://Gamedata/title.vga/006/000.png" id="1_wvotw"]
 [ext_resource type="Texture2D" uid="uid://jjky1pufuot2" path="res://Gamedata/planets.vga/000/032.png" id="2_50apm"]
 [ext_resource type="Texture2D" uid="uid://bi7r8g0fm5luj" path="res://Gamedata/planets.vga/000/033.png" id="3_02urn"]
@@ -29,11 +29,11 @@
 [ext_resource type="Texture2D" uid="uid://bwhfpmdubebn2" path="res://Gamedata/planets.vga/000/026.png" id="35_pggkb"]
 [ext_resource type="Texture2D" uid="uid://chcrbcic2onog" path="res://Gamedata/planets.vga/000/027.png" id="36_hgvlw"]
 
-[sub_resource type="Gradient" id="Gradient_x35ua"]
+[sub_resource type="Gradient" id="Gradient_kacfw"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_lix76"]
-gradient = SubResource("Gradient_x35ua")
+gradient = SubResource("Gradient_kacfw")
 width = 1280
 height = 144
 
@@ -128,11 +128,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Gradient" id="Gradient_hi0md"]
+[sub_resource type="Gradient" id="Gradient_awx0m"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_1rhrp"]
-gradient = SubResource("Gradient_hi0md")
+gradient = SubResource("Gradient_awx0m")
 width = 1280
 height = 144
 

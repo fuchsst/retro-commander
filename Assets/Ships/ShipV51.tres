@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3 uid="uid://bebcgj3g4q032"]
+[gd_resource type="Resource" script_class="ShipProperties" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_jgk22"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_t2hhd"]
 
 [resource]
-script = ExtResource("1_jgk22")
+script = ExtResource("1_t2hhd")
 ship_class = 5
 mass = 0.0
 radius = 0.0

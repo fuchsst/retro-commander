@@ -1,0 +1,149 @@
+[gd_scene load_steps=23 format=3 uid="uid://74wu2484uorn"]
+
+[ext_resource type="Script" path="res://Assets/Cutscenes/Foregrounds/ScrambleSprites/RunningPilotAnim.gd" id="1_slwdw"]
+[ext_resource type="Texture2D" uid="uid://bk8l8eaajvay" path="res://Gamedata/scramble.vga/000/003.png" id="2_n2vl5"]
+[ext_resource type="Texture2D" uid="uid://cmw1n4fmiuujt" path="res://Gamedata/scramble.vga/000/004.png" id="3_dord3"]
+[ext_resource type="Texture2D" uid="uid://b0ubqfo2nnplf" path="res://Gamedata/scramble.vga/000/005.png" id="4_cwuld"]
+[ext_resource type="Texture2D" uid="uid://bnuik5m06xnq2" path="res://Gamedata/scramble.vga/000/006.png" id="5_485dk"]
+[ext_resource type="Texture2D" uid="uid://bg5uyvdhq8q0y" path="res://Gamedata/scramble.vga/000/007.png" id="6_0cy05"]
+[ext_resource type="Texture2D" uid="uid://bh14nasr1tilu" path="res://Gamedata/scramble.vga/000/008.png" id="7_myip2"]
+[ext_resource type="Texture2D" uid="uid://m1f62h4ragdw" path="res://Gamedata/scramble.vga/000/009.png" id="8_5c575"]
+[ext_resource type="Texture2D" uid="uid://8vc4w35srtgi" path="res://Gamedata/scramble.vga/000/010.png" id="9_446tc"]
+[ext_resource type="Texture2D" uid="uid://3ivjxsd540e1" path="res://Gamedata/scramble.vga/000/011.png" id="10_0jsty"]
+[ext_resource type="Texture2D" uid="uid://dcu08wbxllts5" path="res://Gamedata/scramble.vga/000/012.png" id="11_yq2kj"]
+[ext_resource type="Texture2D" uid="uid://cm7dqoeqhfehj" path="res://Gamedata/scramble.vga/000/014.png" id="12_aeen3"]
+[ext_resource type="Texture2D" uid="uid://b6qqa7b6v8ll" path="res://Gamedata/scramble.vga/000/015.png" id="13_4i3xp"]
+[ext_resource type="Texture2D" uid="uid://b1swwf4gk356o" path="res://Gamedata/scramble.vga/000/016.png" id="14_7ennn"]
+[ext_resource type="Texture2D" uid="uid://dghcmlumcdsmo" path="res://Gamedata/scramble.vga/000/017.png" id="15_lnqie"]
+[ext_resource type="Texture2D" uid="uid://dafviq20gy5wc" path="res://Gamedata/scramble.vga/000/018.png" id="16_axxuv"]
+[ext_resource type="Texture2D" uid="uid://dsq54wcxbhgvl" path="res://Gamedata/scramble.vga/000/019.png" id="17_8d2p2"]
+[ext_resource type="Texture2D" uid="uid://67k6g60ermiw" path="res://Gamedata/scramble.vga/000/020.png" id="18_xq0g7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_63vpj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_0cy05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_myip2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5c575")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_446tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0jsty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yq2kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_aeen3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_4i3xp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7ennn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_lnqie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_axxuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8d2p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xq0g7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_q64ur"]
+script/source = "@tool
+extends AnimatedSprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	position.y = -sprite_frames.get_frame_texture(\"default\", frame).get_height()/2
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xxp45"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n2vl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dord3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cwuld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_485dk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_oybbp"]
+script/source = "@tool
+extends AnimatedSprite2D
+
+@onready var body: AnimatedSprite2D = $\"..\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	const offsets = [
+		Vector2(104,-120),
+		Vector2(112,-170),
+		Vector2( 20,-220),
+		Vector2( 20,-230),
+		Vector2( 10,-200),
+		Vector2(-16,-160),
+		Vector2( 90,-140),
+		Vector2( 66,-172),
+		Vector2(120,-210),
+		Vector2(140,-210),
+		Vector2(118,-180),
+		Vector2(140,-132),
+		Vector2(100,-142)
+	]
+	
+	position = offsets[body.frame]
+"
+
+[node name="Pilot" type="Node2D"]
+script = ExtResource("1_slwdw")
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -135)
+sprite_frames = SubResource("SpriteFrames_63vpj")
+frame = 12
+script = SubResource("GDScript_q64ur")
+
+[node name="Head" type="AnimatedSprite2D" parent="Body"]
+position = Vector2(101, -143)
+sprite_frames = SubResource("SpriteFrames_xxp45")
+frame = 3
+script = SubResource("GDScript_oybbp")

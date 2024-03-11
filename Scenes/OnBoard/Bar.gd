@@ -9,10 +9,6 @@ extends CanvasLayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var anim : Animation= $BackgroundCanvas/Space/SpaceAnimation.get_animation("default")
-	anim.loop_mode =(Animation.LOOP_LINEAR)
-	$BackgroundCanvas/Space/SpaceAnimation.play("default")
-	
 	left_character.active_character = World.current_bar_seating.left_pilot_id
 	right_character.active_character = World.current_bar_seating.right_pilot_id
 

@@ -1,22 +1,22 @@
 [gd_resource type="Resource" script_class="ShipProperties" load_steps=5 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_vxtta"]
-[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_ue67i"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_afnwl"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_cntbj"]
 
-[sub_resource type="Resource" id="Resource_hk216"]
-script = ExtResource("2_ue67i")
+[sub_resource type="Resource" id="Resource_hugg6"]
+script = ExtResource("2_cntbj")
 hardpoint = Vector3(15, -2, 0)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_tlw64"]
-script = ExtResource("2_ue67i")
+[sub_resource type="Resource" id="Resource_ivq2v"]
+script = ExtResource("2_cntbj")
 hardpoint = Vector3(-15, 2, 0)
 selected = true
 weapon_type = 27
 
 [resource]
-script = ExtResource("1_vxtta")
+script = ExtResource("1_afnwl")
 ship_class = 13
 mass = 40000.0
 radius = 24.0
@@ -37,4 +37,4 @@ damage = 70.0
 explosive_force = 20000.0
 fuel = 200000.0
 power_plant = 5.0
-weapons = Array[ExtResource("2_ue67i")]([SubResource("Resource_hk216"), SubResource("Resource_tlw64")])
+weapons = Array[ExtResource("2_cntbj")]([SubResource("Resource_hugg6"), SubResource("Resource_ivq2v")])

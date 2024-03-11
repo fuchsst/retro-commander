@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://6m5tvrm8clwv"]
 
 [ext_resource type="Script" path="res://Scenes/OnBoard/Scoreboard.gd" id="1_5d4bg"]
-[ext_resource type="Texture2D" uid="uid://c7q6xi4clxgao" path="res://Gamedata/recroom.vga/002/000.png" id="2_jrgka"]
+[ext_resource type="Texture2D" uid="uid://750tax7pj3jj" path="res://Gamedata/recroom.vga/002/000.png" id="2_jrgka"]
 [ext_resource type="PackedScene" uid="uid://cw0hthoxdkc04" path="res://Assets/Cursor.tscn" id="3_b3c0w"]
 [ext_resource type="FontFile" uid="uid://ndla46epdras" path="res://Fonts/EraserDust.ttf" id="3_uiief"]
 

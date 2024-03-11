@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://bakpgkjnkiyq7"]
+
+[ext_resource type="Script" path="res://Assets/Cutscenes/Foregrounds/004_BriefingRoomMap.gd" id="1_8c52h"]
+[ext_resource type="PackedScene" uid="uid://lk7a2haj36he" path="res://Scenes/Mission/Starfield.tscn" id="1_o1q48"]
+[ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="3_772h1"]
+
+[sub_resource type="Gradient" id="Gradient_je4yw"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xijkx"]
+gradient = SubResource("Gradient_je4yw")
+width = 1280
+height = 800
+
+[sub_resource type="Environment" id="Environment_o637f"]
+background_mode = 1
+background_color = Color(0, 0.00784314, 0.129412, 1)
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="World3D" id="World3D_j5ylk"]
+environment = SubResource("Environment_o637f")
+
+[sub_resource type="LabelSettings" id="LabelSettings_m17v3"]
+font = ExtResource("3_772h1")
+font_size = 48
+font_color = Color(0.45098, 0.611765, 0.168627, 1)
+
+[node name="BriefingRoomMapAndCommander" type="Node2D"]
+script = ExtResource("1_8c52h")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_xijkx")
+centered = false
+
+[node name="NavMapBackground" type="SubViewportContainer" parent="Background"]
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 608.0
+offset_bottom = 630.0
+
+[node name="SubViewport" type="SubViewport" parent="Background/NavMapBackground"]
+world_3d = SubResource("World3D_j5ylk")
+handle_input_locally = false
+size = Vector2i(600, 600)
+render_target_update_mode = 4
+
+[node name="Starfield" parent="Background/NavMapBackground/SubViewport" instance=ExtResource("1_o1q48")]
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 608.0
+offset_bottom = 630.0
+
+[node name="Label" type="Label" parent="Background"]
+offset_left = 640.0
+offset_top = 30.0
+offset_right = 1240.0
+offset_bottom = 630.0
+text = "Briefing Nav Map"
+label_settings = SubResource("LabelSettings_m17v3")
+horizontal_alignment = 1

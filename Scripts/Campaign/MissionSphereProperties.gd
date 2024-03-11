@@ -6,7 +6,7 @@ extends Resource
 @export var name: String
 @export var radius: int
 @export var ship_types: Array[int]
-@export var ships: Array[int]
+@export var ships: Array[MissionShipProperties]
 @export var wave: int
 @export var triggers: Array[MissionSphereTriggerProperties]
 

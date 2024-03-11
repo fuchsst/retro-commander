@@ -1,5 +1,11 @@
 extends Node
 
+var ship_name_lookup = {
+	"0" : "Hornet",
+	"1" : "Rapier",
+	"2" : "Scimitar",
+	"3" : "Raptor",
+}
 
 func convert_wc1_exe_file():
 	const src_file = "res://asset_importer/wc1_xml2json/output/wc.exe.json"
@@ -17,14 +23,23 @@ func convert_wc1_exe_file():
 
 		var instrument_layouts: Array = json_as_dict["CockpitInstrumentLayouts"]
 		var damage_layouts: Array = json_as_dict["CockpitDamageLayouts"]
+		var weapons_layouts: Array = json_as_dict["VideoDisplayWeapons"]
 		var messaging: Array = json_as_dict["CockpitMessaging"]
+		var ships: Array = json_as_dict["Ships"]
+
 		for ship_index in range(len(instrument_layouts)):
 			var ship_image_dir = image_dir + "pcship.v" + str(ship_index).pad_zeros(2) + "/"
-			var _scene = create_cockpit_scene(ship_index, ship_image_dir, instrument_layouts[ship_index], damage_layouts.slice(ship_index*4, ship_index*4+4), messaging[ship_index])
+			var _scene = create_cockpit_scene(
+							ship_index,
+							ship_image_dir,
+							instrument_layouts[ship_index],
+							damage_layouts.slice(ship_index*4, ship_index*4+4),
+							weapons_layouts.slice(ship_index*5, ship_index*5+5),
+							messaging[ship_index])
 			var file_name = ("ShipV%02d" % ship_index) + ".tscn"
 			ResourceSaver.save(_scene, cockpits_dst_dir + file_name)
 			
-		var ships: Array = json_as_dict["Ships"]
+
 		for ship_index in range(len(ships)):
 			var _res = create_ship_properties_resource(ships[ship_index], json_as_dict["Hardpoints"])
 			var file_name = ("ShipV%02d" % ship_index) + ".tres"
@@ -69,7 +84,7 @@ func create_ship_properties_resource(ship_dict: Dictionary, hard_points:Array) -
 	return ship_properties
 	
 
-func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_layout: Dictionary, damage_layouts: Array, messaging: Dictionary) -> PackedScene:
+func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_layout: Dictionary, damage_layouts: Array, weapons_layouts:Array, messaging: Dictionary) -> PackedScene:
 
 	var root = Node2D.new()
 	root.name = "Cockpit"
@@ -117,9 +132,9 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 		damage_node.position.y = damage["y"]
 		damage_node.texture = load(ship_image_dir + "004/" + str(damage_idx).pad_zeros(3) + ".png")
 		damage_node.name = "Damage" + str(damage_idx)
-		print(damage_node.name)
 		damages_node.add_child(damage_node)
 		damage_node.owner = root
+
 
 	var radar_node = preload("res://Assets/Cockpits/Instruments/RadarWidget.tscn").instantiate()
 	radar_node.position.x = instrument_layout["Radar"]["Center"]["x"]
@@ -213,6 +228,20 @@ func create_cockpit_scene(ship_index: int, ship_image_dir: String, instrument_la
 	left_display_node.name = "Left"
 	displays_node.add_child(left_display_node)
 	left_display_node.owner = root
+	
+	var weapons_node = Node2D.new()
+	weapons_node.name = "Weapons"
+	left_display_node.add_child(weapons_node)
+	weapons_node.owner = root
+	for weapons_idx in range(len(weapons_layouts)):
+		var weapon = weapons_layouts[weapons_idx]
+		var weapon_node = Sprite2D.new()
+		weapon_node.position.x = weapon["x"]
+		weapon_node.position.y = weapon["y"]
+		weapon_node.texture = load(ship_image_dir + "009/" + str(weapons_idx).pad_zeros(3) + ".png")
+		weapon_node.name = "Weapon" + str(weapons_idx)
+		weapons_node.add_child(weapon_node)
+		weapon_node.owner = root
 	
 	var right_display = instrument_layout["VideoDisplays"]["Right"]
 	var right_display_node = Panel.new()

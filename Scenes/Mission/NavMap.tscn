@@ -1,9 +1,85 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6qubbng4tjd5"]
+[gd_scene load_steps=8 format=3 uid="uid://c6qubbng4tjd5"]
 
 [ext_resource type="Texture2D" uid="uid://bvol2bksdsd14" path="res://Gamedata/cockpit.vga/001/000.png" id="1_nwd07"]
+[ext_resource type="World3D" uid="uid://buykx4nk5tqdb" path="res://Scenes/World3D.tres" id="2_7akn5"]
+[ext_resource type="PackedScene" uid="uid://lk7a2haj36he" path="res://Scenes/Mission/Starfield.tscn" id="3_fvrpv"]
+[ext_resource type="FontFile" uid="uid://dnp1htyo3rmv4" path="res://Fonts/Stop.ttf" id="4_krdy7"]
+
+[sub_resource type="Gradient" id="Gradient_dck76"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_p82cb"]
+gradient = SubResource("Gradient_dck76")
+width = 1280
+height = 800
+
+[sub_resource type="LabelSettings" id="LabelSettings_e7oxa"]
+font = ExtResource("4_krdy7")
+font_size = 32
+font_color = Color(0.454902, 0.584314, 0.207843, 1)
 
 [node name="NavMap" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("GradientTexture2D_p82cb")
 
 [node name="FrameSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_nwd07")
 centered = false
+
+[node name="Starfield" type="SubViewportContainer" parent="."]
+offset_left = 140.0
+offset_top = 120.0
+offset_right = 652.0
+offset_bottom = 632.0
+
+[node name="SubViewport" type="SubViewport" parent="Starfield"]
+world_3d = ExtResource("2_7akn5")
+
+[node name="Starfield" parent="Starfield/SubViewport" instance=ExtResource("3_fvrpv")]
+
+[node name="NavMapBlibs" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TimeLabel" type="Label" parent="."]
+offset_left = 142.0
+offset_top = 648.0
+offset_right = 360.0
+offset_bottom = 677.0
+text = "Standard Time"
+label_settings = SubResource("LabelSettings_e7oxa")
+
+[node name="LocationLabel" type="Label" parent="."]
+offset_left = 425.0
+offset_top = 649.0
+offset_right = 643.0
+offset_bottom = 678.0
+text = "Location:"
+label_settings = SubResource("LabelSettings_e7oxa")
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 780.0
+offset_top = 121.0
+offset_right = 1034.0
+offset_bottom = 150.0
+text = "ConFed Nav Scan"
+label_settings = SubResource("LabelSettings_e7oxa")
+
+[node name="SectorLabel" type="Label" parent="."]
+offset_left = 702.0
+offset_top = 178.0
+offset_right = 956.0
+offset_bottom = 207.0
+text = "Sector:"
+label_settings = SubResource("LabelSettings_e7oxa")
+
+[node name="SystemLabel" type="Label" parent="."]
+offset_left = 705.0
+offset_top = 220.0
+offset_right = 959.0
+offset_bottom = 249.0
+text = "System:"
+label_settings = SubResource("LabelSettings_e7oxa")

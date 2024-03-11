@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://cyeeki23p34lp"]
+[gd_scene load_steps=16 format=3 uid="uid://cyeeki23p34lp"]
 
 [ext_resource type="Script" path="res://Scenes/Mission/MissionScene.gd" id="1_mwj7f"]
 [ext_resource type="PackedScene" uid="uid://hqji3px5w272" path="res://Assets/Ships/Hornet.tscn" id="2_2ps62"]
+[ext_resource type="World3D" uid="uid://buykx4nk5tqdb" path="res://Scenes/World3D.tres" id="2_o2a2u"]
 [ext_resource type="Script" path="res://Scenes/Mission/PlayerController.gd" id="2_urwft"]
 [ext_resource type="PackedScene" uid="uid://lk7a2haj36he" path="res://Scenes/Mission/Starfield.tscn" id="2_wnr33"]
 [ext_resource type="PackedScene" uid="uid://clle2yu5u1sqv" path="res://Assets/Cockpits/ShipV00.tscn" id="3_565ps"]
@@ -10,14 +11,7 @@
 [ext_resource type="Script" path="res://Scenes/Mission/PlayerCamera.gd" id="5_iqnf7"]
 [ext_resource type="ArrayMesh" uid="uid://voq18j7v7iv" path="res://Assets/Ships/Salthi.vox" id="5_vtyh5"]
 [ext_resource type="ArrayMesh" uid="uid://danpfdpq34xej" path="res://Assets/Ships/Hornet.vox" id="6_i5g8o"]
-
-[sub_resource type="Environment" id="Environment_g8op7"]
-background_mode = 1
-background_color = Color(0, 0, 0.0823529, 1)
-ambient_light_color = Color(1, 0.980392, 0.835294, 1)
-
-[sub_resource type="World3D" id="World3D_vpv2n"]
-environment = SubResource("Environment_g8op7")
+[ext_resource type="Script" path="res://Scripts/Mission/NavPoint.gd" id="9_u0url"]
 
 [sub_resource type="Environment" id="Environment_wkg3h"]
 background_color = Color(0, 0, 0.0823529, 1)
@@ -26,6 +20,9 @@ ambient_light_color = Color(1, 0.980392, 0.835294, 1)
 ambient_light_energy = 0.5
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_stalb"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_mi2fd"]
+radius = 15000.0
 
 [node name="MissionScene" type="Node2D"]
 script = ExtResource("1_mwj7f")
@@ -37,7 +34,7 @@ stretch = true
 
 [node name="StarfieldViewport" type="SubViewport" parent="StarfieldViewportContainer"]
 own_world_3d = true
-world_3d = SubResource("World3D_vpv2n")
+world_3d = ExtResource("2_o2a2u")
 handle_input_locally = false
 size = Vector2i(1280, 800)
 render_target_update_mode = 4
@@ -69,6 +66,7 @@ environment = SubResource("Environment_wkg3h")
 camera_attributes = SubResource("CameraAttributesPractical_stalb")
 
 [node name="Ship" parent="SubViewportContainer/SubViewport" instance=ExtResource("2_2ps62")]
+visible = false
 ship_properties = ExtResource("3_knc2j")
 
 [node name="PlayerController" type="Node3D" parent="SubViewportContainer/SubViewport/Ship"]
@@ -94,6 +92,12 @@ skeleton = NodePath("../../..")
 
 [node name="NavPoints" type="Node" parent="SubViewportContainer/SubViewport"]
 
+[node name="NavPoint1" type="Area3D" parent="SubViewportContainer/SubViewport/NavPoints"]
+script = ExtResource("9_u0url")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SubViewportContainer/SubViewport/NavPoints/NavPoint1"]
+shape = SubResource("SphereShape3D_mi2fd")
+
 [node name="AsteroidFields" type="Node" parent="SubViewportContainer/SubViewport"]
 
 [node name="Friends" type="Node" parent="SubViewportContainer/SubViewport"]
@@ -103,5 +107,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.530968, 17.8811, -84.7203)
 mesh = ExtResource("6_i5g8o")
 skeleton = NodePath("../../..")
 
-[node name="CockpitOverlay" parent="." node_paths=PackedStringArray("mission_state") instance=ExtResource("3_565ps")]
-mission_state = NodePath("")
+[node name="CockpitOverlay" parent="." instance=ExtResource("3_565ps")]

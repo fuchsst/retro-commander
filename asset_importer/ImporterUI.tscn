@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://beq5k7lpj4hej"]
+[gd_scene load_steps=7 format=3 uid="uid://beq5k7lpj4hej"]
 
-[ext_resource type="Script" path="res://asset_importer/ship_importer.gd" id="1_xpnvy"]
 [ext_resource type="Script" path="res://asset_importer/briefing_cutscene_importer.gd" id="2_yfxlc"]
 [ext_resource type="Script" path="res://asset_importer/talking_importer.gd" id="3_0c0cy"]
 [ext_resource type="Script" path="res://asset_importer/camp_importer.gd" id="4_8x2f8"]
@@ -39,12 +38,6 @@ offset_left = -53.5
 offset_right = 53.5
 offset_bottom = 66.0
 grow_horizontal = 2
-
-[node name="import_ships_button" type="Button" parent="Panel/GridContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Import Ships"
-script = ExtResource("1_xpnvy")
 
 [node name="import_briefings_button" type="Button" parent="Panel/GridContainer"]
 layout_mode = 2
@@ -87,7 +80,6 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[connection signal="pressed" from="Panel/GridContainer/import_ships_button" to="Panel/GridContainer/import_ships_button" method="_on_pressed"]
 [connection signal="pressed" from="Panel/GridContainer/import_briefings_button" to="Panel/GridContainer/import_briefings_button" method="_on_pressed"]
 [connection signal="pressed" from="Panel/GridContainer/import_talking_button" to="Panel/GridContainer/import_talking_button" method="_on_pressed"]
 [connection signal="pressed" from="Panel/GridContainer/import_camp_button" to="Panel/GridContainer/import_camp_button" method="_on_pressed"]

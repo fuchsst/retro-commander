@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6rpfpdvxlc2u"]
+
+[ext_resource type="Texture2D" uid="uid://ck1p0c80leh7t" path="res://Gamedata/briefing.vga/000/004.png" id="2_h0fyp"]
+
+[sub_resource type="Gradient" id="Gradient_x35ua"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_11721"]
+gradient = SubResource("Gradient_x35ua")
+width = 1280
+height = 144
+
+[sub_resource type="Gradient" id="Gradient_hi0md"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_12u5r"]
+gradient = SubResource("Gradient_hi0md")
+width = 1280
+height = 144
+
+[node name="BriefingRoomWall" type="Node2D"]
+
+[node name="Wall" type="Sprite2D" parent="."]
+position = Vector2(0, 144)
+texture = ExtResource("2_h0fyp")
+centered = false
+
+[node name="ColorRectTop" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_11721")
+centered = false
+
+[node name="ColorRectBottom" type="Sprite2D" parent="."]
+position = Vector2(0, 656)
+texture = SubResource("GradientTexture2D_12u5r")
+centered = false

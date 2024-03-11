@@ -36,12 +36,14 @@ var view: PlayerView = PlayerView.COCKPIT_FRONT:
 			cockpit_camera.position = Vector3(0, 6, -25)
 			cockpit_camera.rotation = Vector3(0, deg_to_rad(-180), 0)
 		World._on_camera_rotation(cockpit_camera.global_rotation)
+		World.game_state
 			
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	World.current_mission_state
+	cockpit_overlay.player_ship = ship
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

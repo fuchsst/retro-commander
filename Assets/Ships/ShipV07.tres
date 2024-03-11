@@ -1,40 +1,40 @@
 [gd_resource type="Resource" script_class="ShipProperties" load_steps=8 format=3]
 
-[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_ut33l"]
-[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_rdl7b"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipProperties.gd" id="1_2csu6"]
+[ext_resource type="Script" path="res://Scripts/Ships/ShipWeaponProperties.gd" id="2_tu5oo"]
 
-[sub_resource type="Resource" id="Resource_o30ex"]
-script = ExtResource("2_rdl7b")
+[sub_resource type="Resource" id="Resource_ra516"]
+script = ExtResource("2_tu5oo")
 hardpoint = Vector3(0, 0, 40)
 selected = true
 weapon_type = 31
 
-[sub_resource type="Resource" id="Resource_ryrqs"]
-script = ExtResource("2_rdl7b")
+[sub_resource type="Resource" id="Resource_51xee"]
+script = ExtResource("2_tu5oo")
 hardpoint = Vector3(-5, -2, 35)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_cehke"]
-script = ExtResource("2_rdl7b")
+[sub_resource type="Resource" id="Resource_xceid"]
+script = ExtResource("2_tu5oo")
 hardpoint = Vector3(5, 2, 35)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_w71w0"]
-script = ExtResource("2_rdl7b")
+[sub_resource type="Resource" id="Resource_uk16h"]
+script = ExtResource("2_tu5oo")
 hardpoint = Vector3(-15, 2, 0)
 selected = true
 weapon_type = 27
 
-[sub_resource type="Resource" id="Resource_kwysm"]
-script = ExtResource("2_rdl7b")
+[sub_resource type="Resource" id="Resource_euepk"]
+script = ExtResource("2_tu5oo")
 hardpoint = Vector3(15, -2, 0)
 selected = true
 weapon_type = 27
 
 [resource]
-script = ExtResource("1_ut33l")
+script = ExtResource("1_2csu6")
 ship_class = 13
 mass = 500000.0
 radius = 50.0
@@ -55,4 +55,4 @@ damage = 200.0
 explosive_force = 30000.0
 fuel = 200000.0
 power_plant = 2.0
-weapons = Array[ExtResource("2_rdl7b")]([SubResource("Resource_o30ex"), SubResource("Resource_ryrqs"), SubResource("Resource_cehke"), SubResource("Resource_w71w0"), SubResource("Resource_kwysm")])
+weapons = Array[ExtResource("2_tu5oo")]([SubResource("Resource_ra516"), SubResource("Resource_51xee"), SubResource("Resource_xceid"), SubResource("Resource_uk16h"), SubResource("Resource_euepk")])
